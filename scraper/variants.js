@@ -8,7 +8,7 @@
 // (opcjonalnie) przez checkOfferAvailability. Jeśli najtańszy jest niedostępny,
 // bierzemy kolejny najtańszy.
 
-import { USER_AGENT } from "./config.js";
+import { getText, postJson as curlPostJson } from "./http.js";
 
 const VARIANTS_URL = (offerId) =>
   `https://www.wakacje.pl/v2/api/getCalculatorOfferVariants/${offerId}`;
@@ -16,14 +16,9 @@ const VARIANTS_URL = (offerId) =>
 const AVAIL_URL = "https://www.wakacje.pl/v2/api/checkOfferAvailability";
 
 const API_HEADERS = {
-  "Content-Type": "application/json",
-  Accept: "application/json, text/plain, */*",
-  "Accept-Language": "pl-PL,pl;q=0.9",
-  "User-Agent": USER_AGENT,
   Origin: "https://www.wakacje.pl",
+  Referer: "https://www.wakacje.pl/",
 };
-
-const TIMEOUT_MS = 20000;
 
 // Bezpieczniki chroniące przed blokadą / nadmiernym ruchem.
 const MAX_AVAILABILITY_CHECKS = 3; // ile wariantów sprawdzamy per oferta
@@ -79,15 +74,10 @@ function normalizeVariant(v) {
 }
 
 async function postJson(url, body) {
-  const res = await fetch(url, {
-    method: "POST",
-    headers: API_HEADERS,
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(TIMEOUT_MS),
-  });
-  if (BLOCK_STATUSES.includes(res.status)) throw new BlockedError(res.status);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return res.json();
+  const { status, body: text } = await curlPostJson(url, body, API_HEADERS);
+  if (BLOCK_STATUSES.includes(status)) throw new BlockedError(status);
+  if (status !== 200) throw new Error(`HTTP ${status}`);
+  return JSON.parse(text);
 }
 
 /**
@@ -135,14 +125,14 @@ export async function checkAvailability(offer, variant) {
   });
 
   try {
-    const res = await fetch(`${AVAIL_URL}?${params.toString()}`, {
-      headers: { ...API_HEADERS, "Content-Type": undefined },
-      signal: AbortSignal.timeout(TIMEOUT_MS),
-    });
+    const { status, body } = await getText(
+      `${AVAIL_URL}?${params.toString()}`,
+      { Accept: "application/json, text/plain, */*", Referer: "https://www.wakacje.pl/" }
+    );
     // Blokada/throttling — przerywamy, żeby nie eskalować ruchu.
-    if (BLOCK_STATUSES.includes(res.status)) throw new BlockedError(res.status);
-    if (!res.ok) return null;
-    const json = await res.json();
+    if (BLOCK_STATUSES.includes(status)) throw new BlockedError(status);
+    if (status !== 200) return null;
+    const json = JSON.parse(body);
     return json?.data?.availability === true;
   } catch (e) {
     if (e instanceof BlockedError) throw e; // propaguj blokadę wyżej

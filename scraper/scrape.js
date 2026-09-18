@@ -12,9 +12,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseOffers } from "./parse.js";
 import { pickCheapestAvailable, BlockedError } from "./variants.js";
+import { getText } from "./http.js";
 import {
   pageUrl,
-  USER_AGENT,
   MAX_PAGES,
   REQUEST_DELAY_MS,
   HISTORY_FILE,
@@ -31,15 +31,11 @@ const today = () => new Date().toISOString().slice(0, 10);
 const nowIso = () => new Date().toISOString();
 
 async function fetchPage(url) {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": USER_AGENT,
-      "Accept-Language": "pl-PL,pl;q=0.9",
-      Accept: "text/html,application/xhtml+xml",
-    },
+  const { status, body } = await getText(url, {
+    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
   });
-  if (!res.ok) throw new Error(`HTTP ${res.status} dla ${url}`);
-  return res.text();
+  if (status !== 200) throw new Error(`HTTP ${status} dla ${url}`);
+  return body;
 }
 
 /** Pobiera wszystkie strony listingu, zwraca zdeduplikowane oferty. */

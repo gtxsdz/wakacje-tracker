@@ -17,6 +17,7 @@ import {
   LATEST_FILE,
   DATA_DIR,
   LISTING_URL,
+  SEARCH_QUERY,
 } from "./config.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -194,7 +195,7 @@ function buildLatest(history, currentResults, date) {
       duration: r.offer.duration,
       departureDate: r.offer.departureDate,
       returnDate: r.offer.returnDate,
-      detailUrl: buildDetailUrl(r.offer),
+      detailUrl: buildDetailUrl(r.offer, r.chosen),
       variantCount: r.variants.length,
       altOffers: r.altOffers && r.altOffers.length ? r.altOffers : undefined,
       cheapest: flat,
@@ -290,15 +291,66 @@ function altInfo(r) {
   };
 }
 
-/** Odtwarza URL szczegółów oferty (informacyjnie, dla frontendu). */
-function buildDetailUrl(offer) {
+// Kod lotniska (IATA) -> slug miasta wylotu w URL wakacje.pl.
+const AIRPORT_SLUG = {
+  KTW: "katowic",
+  WAW: "warszawy",
+  WMI: "warszawy",
+  WRO: "wroclawia",
+  POZ: "poznania",
+  LCJ: "lodzi",
+  GDN: "gdanska",
+  KRK: "krakowa",
+  RZE: "rzeszowa",
+  SZZ: "szczecina",
+  BZG: "bydgoszczy",
+  LUZ: "lublina",
+};
+
+/** Slug wyżywienia w URL (serwis 1 = all inclusive). */
+function serviceSlug(serviceId) {
+  return serviceId === 1 ? "all-inclusive" : null;
+}
+
+/**
+ * Buduje URL szczegółów oferty z parametrami (data, długość, wyżywienie,
+ * miasto wylotu, skład osób), tak by strona otworzyła konkretny wariant.
+ * Przykład query: od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707
+ */
+function buildDetailUrl(offer, chosen) {
   const p = offer.place;
   if (!p || !offer.urlName) return null;
   const country = p.country?.urlName;
   const region = p.region?.urlName;
   const city = p.city?.urlName;
   if (!country || !region || !city) return null;
-  return `https://www.wakacje.pl/oferty/${country}/${region}/${city}/${offer.urlName}-${offer.offerId}.html`;
+
+  const url = `https://www.wakacje.pl/oferty/${country}/${region}/${city}/${offer.urlName}-${offer.offerId}.html`;
+
+  // Parametry filtra dla konkretnego wariantu.
+  const parts = [];
+  if (offer.departureDate) parts.push(`od-${offer.departureDate}`);
+  if (offer.duration) parts.push(`${offer.duration}-dni`);
+  const svc = serviceSlug(offer.service);
+  if (svc) parts.push(svc);
+
+  const airport = chosen?.departureCode || chosen?.outbound?.from?.airportCode;
+  const slug = airport ? AIRPORT_SLUG[airport] : null;
+  if (slug) parts.push(`z-${slug}`);
+
+  // Skład osób: 2 dorosłych + 2 dzieci z datami urodzenia (zgodnie z filtrem).
+  const room = SEARCH_QUERY.rooms && SEARCH_QUERY.rooms[0];
+  if (room) {
+    const adults = room.adult || 0;
+    const kids = room.kid || 0;
+    const ages = Array.isArray(room.ages) ? room.ages.join("-") : "";
+    let comp = `${adults}doros${adults === 1 ? "ly" : "le"}`;
+    if (kids > 0) comp += `-${kids}dzie${kids === 1 ? "cko" : "ci"}`;
+    if (ages) comp += `-${ages}`;
+    parts.push(comp);
+  }
+
+  return parts.length ? `${url}?${parts.join(",")}` : url;
 }
 
 async function main() {

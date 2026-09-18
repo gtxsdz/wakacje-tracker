@@ -25,6 +25,22 @@ const API_HEADERS = {
 
 const TIMEOUT_MS = 20000;
 
+// Bezpieczniki chroniące przed blokadą / nadmiernym ruchem.
+const MAX_AVAILABILITY_CHECKS = 3; // ile wariantów sprawdzamy per oferta
+const AVAIL_DELAY_MS = 600; // odstęp między zapytaniami o dostępność
+const BLOCK_STATUSES = [429, 449, 503]; // sygnały throttlingu/blokady
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** Błąd sygnalizujący blokadę serwisu — scraper powinien się wycofać. */
+export class BlockedError extends Error {
+  constructor(status) {
+    super(`Serwis odpowiada blokadą/throttlingiem (HTTP ${status}).`);
+    this.name = "BlockedError";
+    this.status = status;
+  }
+}
+
 /** Skraca węzeł lotu do prostej postaci. */
 function flightNode(n) {
   if (!n) return null;
@@ -69,6 +85,7 @@ async function postJson(url, body) {
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(TIMEOUT_MS),
   });
+  if (BLOCK_STATUSES.includes(res.status)) throw new BlockedError(res.status);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }
@@ -122,11 +139,14 @@ export async function checkAvailability(offer, variant) {
       headers: { ...API_HEADERS, "Content-Type": undefined },
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
+    // Blokada/throttling — przerywamy, żeby nie eskalować ruchu.
+    if (BLOCK_STATUSES.includes(res.status)) throw new BlockedError(res.status);
     if (!res.ok) return null;
     const json = await res.json();
     return json?.data?.availability === true;
-  } catch {
-    return null;
+  } catch (e) {
+    if (e instanceof BlockedError) throw e; // propaguj blokadę wyżej
+    return null; // inne błędy (timeout itp.) traktujemy jako "nie wiadomo"
   }
 }
 
@@ -148,17 +168,22 @@ export async function pickCheapestAvailable(offer, { verifyAvailability = false 
   }
 
   const soldOutCheaper = [];
-  for (const v of variants) {
-    const avail = await checkAvailability(offer, v);
+  // Sprawdzamy dostępność od najtańszego, ale najwyżej MAX_AVAILABILITY_CHECKS
+  // razy per oferta (bezpiecznik przed lawiną zapytań przy wielu wariantach).
+  const limit = Math.min(variants.length, MAX_AVAILABILITY_CHECKS);
+  for (let i = 0; i < limit; i++) {
+    const v = variants[i];
+    if (i > 0) await sleep(AVAIL_DELAY_MS); // odstęp między zapytaniami
+    const avail = await checkAvailability(offer, v); // może rzucić BlockedError
     if (avail === false) {
       soldOutCheaper.push(v);
       continue;
     }
     // true lub null (nie potwierdzono) => bierzemy jako wybrany.
-    return { chosen: v, variants, soldOutCheaper };
+    return { chosen: v, variants, soldOutCheaper, verified: true };
   }
-  // Wszystkie potwierdzone jako niedostępne — zwróć najtańszy mimo to.
-  return { chosen: variants[0], variants, soldOutCheaper };
+  // W ramach limitu nie znaleziono dostępnego — bierzemy najtańszy mimo to.
+  return { chosen: variants[0], variants, soldOutCheaper, verified: true };
 }
 
-export default { fetchVariants, checkAvailability, pickCheapestAvailable };
+export default { fetchVariants, checkAvailability, pickCheapestAvailable, BlockedError };

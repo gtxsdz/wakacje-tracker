@@ -167,9 +167,13 @@ a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
 - Parser i API mogą wymagać aktualizacji, jeśli wakacje.pl zmieni strukturę. Scraper w razie
   braku danych nie nadpisuje historii pustką (kończy się błędem, gdy nie znajdzie ofert).
 - Ceny to wartości za wszystkich uczestników dla wybranego wariantu.
-- Domyślnie nie weryfikujemy osobno dostępności każdego wariantu (`verifyAvailability=false`)
-  — ufamy, że API zwraca aktualnie sprzedawane. Można to włączyć w `scrape.js` kosztem
-  dodatkowych zapytań; wtedy notki „wyprzedane” są pewniejsze.
+- Nie weryfikujemy osobno dostępności wariantu (`verifyAvailability=false`). Sprawdziliśmy
+  endpoint `checkOfferAvailability`, ale okazał się niewiarygodny: wymaga `offerHash` z tej
+  samej sesji, a hashe z `getCalculatorOfferVariants` rotują, więc zwraca fałszywe
+  „niedostępne” nawet dla realnie dostępnych, najtańszych wariantów — co zawyżałoby cenę.
+  Dlatego ufamy liście z `getCalculatorOfferVariants` (to samo źródło, z którego serwis
+  liczy ceny). Kod weryfikacji i bezpieczniki (limit sprawdzeń, `BlockedError`, backoff na
+  429/449) zostają w `variants.js` na wypadek, gdyby dało się to później naprawić.
 
 ## Licencja
 

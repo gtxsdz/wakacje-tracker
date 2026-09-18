@@ -11,7 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseOffers } from "./parse.js";
-import { pickCheapestAvailable } from "./variants.js";
+import { pickCheapestAvailable, BlockedError } from "./variants.js";
 import {
   pageUrl,
   USER_AGENT,
@@ -305,8 +305,15 @@ async function main() {
     return;
   }
 
-  // Dla każdej oferty pobierz warianty i wybierz najtańszy dostępny.
+  // Dla każdej oferty pobierz warianty i wybierz najtańszy.
+  // UWAGA: weryfikacja dostępności (checkOfferAvailability) okazała się
+  // niewiarygodna — endpoint wymaga offerHash z tej samej sesji, a hashe z
+  // getCalculatorOfferVariants rotują, więc zwraca fałszywe "niedostępne" nawet
+  // dla realnie dostępnych, najtańszych wariantów. Włączenie jej zawyżałoby cenę.
+  // Dlatego ufamy liście z getCalculatorOfferVariants (to samo źródło, z którego
+  // serwis liczy ceny). Bezpieczniki (BlockedError, limity) zostają na przyszłość.
   const results = [];
+  let blocked = false;
   for (const offer of offers) {
     try {
       const picked = await pickCheapestAvailable(offer, { verifyAvailability: false });
@@ -315,13 +322,26 @@ async function main() {
       console.log(
         `  ${offer.hotel.slice(0, 30).padEnd(30)} → ${
           c ? `${c.price} zł | ${variantLabel(c)}` : "brak wariantów"
-        } (${picked.variants.length} wariantów)`
+        } (${picked.variants.length} wariantów${
+          picked.soldOutCheaper.length ? `, ${picked.soldOutCheaper.length} tańszych niedostępnych` : ""
+        })`
       );
     } catch (err) {
+      if (err instanceof BlockedError) {
+        // Serwis zaczął blokować/throttlować — przerywamy, by nie eskalować.
+        console.error(`\n⛔ ${err.message}\nPrzerywam pobieranie. Historia NIE zostanie nadpisana.`);
+        blocked = true;
+        break;
+      }
       console.error(`  ${offer.hotel}: błąd wariantów — ${err.message}`);
       results.push({ offer, chosen: null, variants: [], soldOutCheaper: [] });
     }
-    await sleep(400);
+    await sleep(700); // odstęp między ofertami
+  }
+
+  if (blocked) {
+    process.exitCode = 1;
+    return;
   }
 
   const withVariants = results.filter((r) => r.chosen);

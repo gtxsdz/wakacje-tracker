@@ -1,15 +1,17 @@
-// Główny scraper: pobiera oferty Egiptu z wakacje.pl, parsuje,
-// dopisuje snapshot cen do historii i wylicza zmiany (spadki/wzrosty).
+// Główny scraper: pobiera listing Egiptu z wakacje.pl, a dla każdej oferty
+// pobiera warianty wylotów (lotnisko/pokój/godziny/cena) przez API i śledzi
+// NAJTAŃSZY dostępny wariant. Zapisuje historię cen i aktualny snapshot.
 //
 // Uruchomienie: node scraper/scrape.js
 // Wynik:
-//   data/history.json - pełna historia (per oferta: lista {date, price})
-//   data/latest.json  - aktualny stan + wyliczone zmiany dla frontendu
+//   data/history.json - historia (per oferta: śledzony wariant + punkty cenowe)
+//   data/latest.json  - aktualny stan z pełnymi danymi lotu i zmianami
 
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseOffers } from "./parse.js";
+import { pickCheapestAvailable } from "./variants.js";
 import {
   pageUrl,
   USER_AGENT,
@@ -25,75 +27,34 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const today = () => new Date().toISOString().slice(0, 10);
+const nowIso = () => new Date().toISOString();
 
-/** Data w formacie YYYY-MM-DD (UTC). */
-function today() {
-  return new Date().toISOString().slice(0, 10);
+async function fetchPage(url) {
+  const res = await fetch(url, {
+    headers: {
+      "User-Agent": USER_AGENT,
+      "Accept-Language": "pl-PL,pl;q=0.9",
+      Accept: "text/html,application/xhtml+xml",
+    },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} dla ${url}`);
+  return res.text();
 }
 
-/** Pełny znacznik czasu ISO. */
-function nowIso() {
-  return new Date().toISOString();
-}
-
-// Pełny zestaw nagłówków imitujący przeglądarkę Chrome. Niektóre zabezpieczenia
-// anty-botowe (m.in. odpowiedź HTTP 449) odrzucają żądania bez tych nagłówków,
-// zwłaszcza z adresów IP centrów danych (np. runnery GitHub Actions).
-const BROWSER_HEADERS = {
-  "User-Agent": USER_AGENT,
-  Accept:
-    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-  "Accept-Language": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7",
-  "Accept-Encoding": "gzip, deflate, br",
-  "Cache-Control": "no-cache",
-  Pragma: "no-cache",
-  "Upgrade-Insecure-Requests": "1",
-  "Sec-Ch-Ua": '"Chromium";v="120", "Not(A:Brand";v="24", "Google Chrome";v="120"',
-  "Sec-Ch-Ua-Mobile": "?0",
-  "Sec-Ch-Ua-Platform": '"Windows"',
-  "Sec-Fetch-Dest": "document",
-  "Sec-Fetch-Mode": "navigate",
-  "Sec-Fetch-Site": "none",
-  "Sec-Fetch-User": "?1",
-  Referer: "https://www.wakacje.pl/",
-};
-
-const sleepMs = (ms) => new Promise((r) => setTimeout(r, ms));
-
-async function fetchPage(url, attempt = 1) {
-  const MAX_ATTEMPTS = 4;
-  const res = await fetch(url, { headers: BROWSER_HEADERS, redirect: "follow" });
-  if (res.ok) return res.text();
-
-  // Blokady anty-botowe (429/449/503) — ponawiamy z rosnącym odstępem.
-  const retryable = [429, 449, 503].includes(res.status);
-  if (retryable && attempt < MAX_ATTEMPTS) {
-    const wait = 2000 * attempt;
-    console.warn(
-      `HTTP ${res.status} — ponawiam za ${wait} ms (próba ${attempt + 1}/${MAX_ATTEMPTS})`
-    );
-    await sleepMs(wait);
-    return fetchPage(url, attempt + 1);
-  }
-  throw new Error(`HTTP ${res.status} dla ${url}`);
-}
-
-/** Pobiera wszystkie strony listingu i zwraca zdeduplikowaną tablicę ofert. */
-async function scrapeAll() {
+/** Pobiera wszystkie strony listingu, zwraca zdeduplikowane oferty. */
+async function scrapeListing() {
   const seen = new Map();
   for (let page = 1; page <= MAX_PAGES; page++) {
-    const url = pageUrl(page);
     let html;
     try {
-      html = await fetchPage(url);
+      html = await fetchPage(pageUrl(page));
     } catch (err) {
       console.error(`Błąd pobierania strony ${page}: ${err.message}`);
       break;
     }
-
     const offers = parseOffers(html);
-    console.log(`Strona ${page}: znaleziono ${offers.length} ofert`);
-
+    console.log(`Strona ${page}: ${offers.length} ofert`);
     if (offers.length === 0) break;
 
     let added = 0;
@@ -103,13 +64,60 @@ async function scrapeAll() {
         added++;
       }
     }
-
-    // Mniej niż pełna strona lub brak nowych ofert => koniec paginacji.
     if (offers.length < 10 || added === 0) break;
-
     if (page < MAX_PAGES) await sleep(REQUEST_DELAY_MS);
   }
   return [...seen.values()];
+}
+
+/** Krótki, czytelny opis wariantu (do notek i porównań). */
+function variantLabel(v) {
+  if (!v) return "";
+  const dep = v.outbound?.from;
+  const ret = v.inbound?.from;
+  return [
+    v.room,
+    dep ? `${dep.airportCode} ${dep.customDate} ${dep.time}` : "",
+    ret ? `powrót ${ret.customDate} ${ret.time}` : "",
+  ]
+    .filter(Boolean)
+    .join(" • ");
+}
+
+/**
+ * Stabilna sygnatura wariantu (offerHash z API rotuje między zapytaniami,
+ * więc tożsamość budujemy z realnych atrybutów: pokój + lotnisko + daty/godziny).
+ */
+function variantSignature(v) {
+  if (!v) return "";
+  const d = v.outbound?.from;
+  const r = v.inbound?.from;
+  return [
+    (v.room || "").toLowerCase().trim(),
+    v.departureCode || d?.airportCode || "",
+    d?.date || "",
+    d?.time || "",
+    r?.date || "",
+    r?.time || "",
+  ].join("|");
+}
+
+/** Spłaszcza wybrany wariant do postaci zapisywanej w historii/snapshotcie. */
+function flattenVariant(v) {
+  if (!v) return null;
+  return {
+    variantId: variantSignature(v),
+    apiHash: v.id, // token z API (rotuje) — tylko poglądowo
+    price: v.price,
+    currency: v.currency,
+    room: v.room,
+    departureCode: v.departureCode || v.outbound?.from?.airportCode || "",
+    luggageIncluded: v.luggageIncluded,
+    carrier: v.carrier,
+    outbound: v.outbound,
+    inbound: v.inbound,
+    label: variantLabel(v),
+  };
 }
 
 function readJson(absPath, fallback) {
@@ -126,88 +134,68 @@ function writeJson(absPath, data) {
 }
 
 /**
- * Aktualizuje historię: dla każdej oferty dopisuje punkt {date, price},
- * jeśli cena się zmieniła lub to nowy dzień. Zwraca zaktualizowaną historię.
+ * Aktualizuje historię o dzisiejszy najtańszy wariant danej oferty.
+ * Wykrywa zmianę śledzonego wariantu (np. poprzedni się wyprzedał).
  */
-function updateHistory(history, offers, date) {
-  const offersByKey = history.offers || {};
+function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
+  const flat = flattenVariant(chosen);
 
-  for (const o of offers) {
-    const existing = offersByKey[o.key];
-    if (!existing) {
-      offersByKey[o.key] = {
-        key: o.key,
-        hotel: o.hotel,
-        region: o.region,
-        dateRange: o.dateRange,
-        duration: o.duration,
-        departure: o.departure,
-        board: o.board,
-        operator: o.operator,
-        stars: o.stars,
-        rating: o.rating,
-        opinions: o.opinions,
-        detailUrl: o.detailUrl,
-        firstSeen: date,
-        lastSeen: date,
-        prices: [{ date, price: o.price }],
-      };
-      continue;
-    }
+  // Metadane oferty (mogą się zmieniać: ocena, liczba opinii).
+  entry.offerId = offer.offerId;
+  entry.hotel = offer.hotel;
+  entry.region = offer.region;
+  entry.stars = offer.stars ?? entry.stars;
+  entry.rating = offer.rating ?? entry.rating;
+  entry.opinions = offer.opinions ?? entry.opinions;
+  entry.operator = offer.operator;
+  entry.duration = offer.duration;
+  entry.departureDate = offer.departureDate;
+  entry.returnDate = offer.returnDate;
+  entry.lastSeen = date;
+  if (!entry.firstSeen) entry.firstSeen = date;
 
-    // Aktualizacja metadanych (mogą się zmienić: ocena, liczba opinii itp.).
-    existing.hotel = o.hotel;
-    existing.region = o.region;
-    existing.duration = o.duration;
-    existing.board = o.board;
-    existing.operator = o.operator;
-    existing.stars = o.stars ?? existing.stars;
-    existing.rating = o.rating ?? existing.rating;
-    existing.opinions = o.opinions ?? existing.opinions;
-    existing.detailUrl = o.detailUrl ?? existing.detailUrl;
-    existing.lastSeen = date;
+  entry.prices = entry.prices || [];
+  entry.variantChanges = entry.variantChanges || [];
 
-    const prices = existing.prices;
-    const last = prices[prices.length - 1];
-    if (!last) {
-      prices.push({ date, price: o.price });
-    } else if (last.date === date) {
-      // Ten sam dzień: nadpisz najnowszą ceną.
-      last.price = o.price;
-    } else if (last.price !== o.price) {
-      // Inny dzień i inna cena: dopisz punkt.
-      prices.push({ date, price: o.price });
-    } else {
-      // Inny dzień, ta sama cena: aktualizuj lastSeen tylko (już zrobione).
-      // Dopisujemy też punkt, by wykres pokazywał ciągłość obserwacji.
-      prices.push({ date, price: o.price });
-    }
+  const prev = entry.prices[entry.prices.length - 1];
+
+  // Zmiana śledzonego wariantu (inny variantId niż ostatnio zapisany).
+  if (prev && flat && prev.variantId !== flat.variantId) {
+    entry.variantChanges.push({
+      date,
+      from: { variantId: prev.variantId, label: prev.label, price: prev.price },
+      to: { variantId: flat.variantId, label: flat.label, price: flat.price },
+      // Jeśli poprzedni był wśród niedostępnych/tańszych — prawdopodobnie wyprzedany.
+      reason:
+        soldOutCheaper.some((v) => variantSignature(v) === prev.variantId)
+          ? "poprzedni wariant wyprzedany"
+          : "zmiana najtańszego wariantu",
+    });
   }
 
-  history.offers = offersByKey;
-  history.lastUpdated = nowIso();
-  history.sourceUrl = LISTING_URL;
-  return history;
+  if (!flat) return; // brak dostępnego wariantu — nie dopisujemy punktu
+
+  const point = { date, ...flat };
+  if (!prev) {
+    entry.prices.push(point);
+  } else if (prev.date === date) {
+    entry.prices[entry.prices.length - 1] = point; // nadpisz ten sam dzień
+  } else {
+    entry.prices.push(point);
+  }
 }
 
-/**
- * Buduje snapshot latest.json z wyliczonymi zmianami cen.
- * Dla każdej aktualnie dostępnej oferty:
- *  - price (aktualna)
- *  - prevPrice (poprzedni punkt historii, jeśli istnieje)
- *  - change / changePct (względem poprzedniego punktu)
- *  - minPrice / maxPrice (z całej historii)
- */
-function buildLatest(history, currentOffers, date) {
-  const currentKeys = new Set(currentOffers.map((o) => o.key));
-  const items = [];
+/** Buduje snapshot latest.json ze zmianami cen. */
+function buildLatest(history, currentResults, date) {
+  const offers = [];
 
-  for (const o of currentOffers) {
-    const h = history.offers[o.key];
-    const prices = h ? h.prices : [{ date, price: o.price }];
-    const current = o.price;
+  for (const r of currentResults) {
+    const entry = history.offers[r.offer.key];
+    const prices = entry ? entry.prices : [];
+    const flat = flattenVariant(r.chosen);
+    const current = flat ? flat.price : null;
 
-    // Poprzedni RÓŻNY od dzisiejszej obserwacji punkt (poprzednia znana cena).
+    // Poprzednia znana cena (punkt z innego dnia).
     let prevPrice = null;
     for (let i = prices.length - 1; i >= 0; i--) {
       if (prices[i].date !== date) {
@@ -216,56 +204,70 @@ function buildLatest(history, currentOffers, date) {
       }
     }
 
-    const values = prices.map((p) => p.price);
-    const minPrice = Math.min(...values, current);
-    const maxPrice = Math.max(...values, current);
+    const values = prices.map((p) => p.price).filter((n) => n != null);
+    if (current != null) values.push(current);
+    const minPrice = values.length ? Math.min(...values) : null;
+    const maxPrice = values.length ? Math.max(...values) : null;
 
     let change = null;
     let changePct = null;
-    if (prevPrice != null) {
+    if (prevPrice != null && current != null) {
       change = current - prevPrice;
       changePct = prevPrice ? +((change / prevPrice) * 100).toFixed(2) : null;
     }
 
-    items.push({
-      key: o.key,
-      hotel: o.hotel,
-      region: o.region,
-      dateRange: o.dateRange,
-      duration: o.duration,
-      departure: o.departure,
-      board: o.board,
-      operator: o.operator,
-      stars: o.stars,
-      rating: o.rating,
-      opinions: o.opinions,
-      detailUrl: o.detailUrl,
+    const lastChange =
+      entry && entry.variantChanges && entry.variantChanges.length
+        ? entry.variantChanges[entry.variantChanges.length - 1]
+        : null;
+    const variantChangedToday = lastChange && lastChange.date === date;
+
+    offers.push({
+      key: r.offer.key,
+      offerId: r.offer.offerId,
+      hotel: r.offer.hotel,
+      region: r.offer.region,
+      stars: r.offer.stars,
+      rating: r.offer.rating,
+      opinions: r.offer.opinions,
+      operator: r.offer.operator,
+      duration: r.offer.duration,
+      departureDate: r.offer.departureDate,
+      returnDate: r.offer.returnDate,
+      detailUrl: buildDetailUrl(r.offer),
+      variantCount: r.variants.length,
+      cheapest: flat,
       price: current,
       prevPrice,
       change,
       changePct,
       minPrice,
       maxPrice,
-      isLowest: current <= minPrice,
+      isLowest: current != null && minPrice != null && current <= minPrice,
       pointCount: prices.length,
-      firstSeen: h ? h.firstSeen : date,
+      firstSeen: entry ? entry.firstSeen : date,
+      soldOutNote: variantChangedToday
+        ? lastChange.reason
+        : null,
+      soldOutCheaperCount: r.soldOutCheaper.length,
     });
   }
 
-  // Oferty z historii, których dziś nie ma (zniknęły z listingu).
+  offers.sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity));
+
+  // Oferty z historii nieobecne dziś.
+  const currentKeys = new Set(currentResults.map((r) => r.offer.key));
   const disappeared = [];
   for (const key of Object.keys(history.offers)) {
     if (!currentKeys.has(key)) {
-      const h = history.offers[key];
-      const last = h.prices[h.prices.length - 1];
+      const e = history.offers[key];
+      const last = e.prices && e.prices.length ? e.prices[e.prices.length - 1] : null;
       disappeared.push({
         key,
-        hotel: h.hotel,
-        region: h.region,
-        dateRange: h.dateRange,
-        departure: h.departure,
+        hotel: e.hotel,
+        region: e.region,
         lastPrice: last ? last.price : null,
-        lastSeen: h.lastSeen,
+        lastSeen: e.lastSeen,
       });
     }
   }
@@ -274,48 +276,83 @@ function buildLatest(history, currentOffers, date) {
     generatedAt: nowIso(),
     date,
     sourceUrl: LISTING_URL,
-    count: items.length,
-    offers: items,
+    count: offers.length,
+    offers,
     disappeared,
   };
 }
 
+/** Odtwarza URL szczegółów oferty (informacyjnie, dla frontendu). */
+function buildDetailUrl(offer) {
+  const p = offer.place;
+  if (!p || !offer.urlName) return null;
+  const country = p.country?.urlName;
+  const region = p.region?.urlName;
+  const city = p.city?.urlName;
+  if (!country || !region || !city) return null;
+  return `https://www.wakacje.pl/oferty/${country}/${region}/${city}/${offer.urlName}-${offer.offerId}.html`;
+}
+
 async function main() {
   const date = today();
-  console.log(`=== Scraper wakacje.pl (Egipt) — ${date} ===`);
+  console.log(`=== Scraper wakacje.pl (Egipt, warianty) — ${date} ===`);
 
-  const offers = await scrapeAll();
-  console.log(`Łącznie unikalnych ofert: ${offers.length}`);
-
+  const offers = await scrapeListing();
+  console.log(`Ofert z listingu: ${offers.length}`);
   if (offers.length === 0) {
-    console.error(
-      "Nie znaleziono żadnych ofert. Struktura strony mogła się zmienić — historia nie została nadpisana."
-    );
+    console.error("Brak ofert — struktura strony mogła się zmienić. Nie nadpisuję historii.");
+    process.exitCode = 1;
+    return;
+  }
+
+  // Dla każdej oferty pobierz warianty i wybierz najtańszy dostępny.
+  const results = [];
+  for (const offer of offers) {
+    try {
+      const picked = await pickCheapestAvailable(offer, { verifyAvailability: false });
+      results.push({ offer, ...picked });
+      const c = picked.chosen;
+      console.log(
+        `  ${offer.hotel.slice(0, 30).padEnd(30)} → ${
+          c ? `${c.price} zł | ${variantLabel(c)}` : "brak wariantów"
+        } (${picked.variants.length} wariantów)`
+      );
+    } catch (err) {
+      console.error(`  ${offer.hotel}: błąd wariantów — ${err.message}`);
+      results.push({ offer, chosen: null, variants: [], soldOutCheaper: [] });
+    }
+    await sleep(400);
+  }
+
+  const withVariants = results.filter((r) => r.chosen);
+  if (withVariants.length === 0) {
+    console.error("Żadna oferta nie zwróciła wariantów — nie nadpisuję historii.");
     process.exitCode = 1;
     return;
   }
 
   const historyPath = path.join(ROOT, HISTORY_FILE);
   const latestPath = path.join(ROOT, LATEST_FILE);
-
   const history = readJson(historyPath, { offers: {} });
-  updateHistory(history, offers, date);
-  const latest = buildLatest(history, offers, date);
+  history.offers = history.offers || {};
+
+  for (const r of results) {
+    const entry = history.offers[r.offer.key] || {};
+    updateOfferHistory(entry, r.offer, r.chosen, r.soldOutCheaper, date);
+    history.offers[r.offer.key] = entry;
+  }
+  history.lastUpdated = nowIso();
+  history.sourceUrl = LISTING_URL;
+
+  const latest = buildLatest(history, results, date);
 
   writeJson(historyPath, history);
   writeJson(latestPath, latest);
 
-  // Krótkie podsumowanie zmian.
   const drops = latest.offers.filter((o) => o.change != null && o.change < 0);
   const rises = latest.offers.filter((o) => o.change != null && o.change > 0);
-  console.log(`Zapisano dane do ${DATA_DIR}/`);
-  console.log(`Spadki: ${drops.length}, Wzrosty: ${rises.length}`);
-  if (drops.length) {
-    const biggest = drops.sort((a, b) => a.change - b.change)[0];
-    console.log(
-      `Największy spadek: ${biggest.hotel} ${biggest.change} zł (${biggest.changePct}%)`
-    );
-  }
+  const changes = latest.offers.filter((o) => o.soldOutNote);
+  console.log(`Zapisano do ${DATA_DIR}/  | spadki: ${drops.length}, wzrosty: ${rises.length}, zmiany wariantu: ${changes.length}`);
 }
 
 main().catch((err) => {

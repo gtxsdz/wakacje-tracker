@@ -3,6 +3,10 @@
 Witryna śledząca ceny wycieczek all inclusive do Egiptu z [wakacje.pl](https://www.wakacje.pl) —
 pokazuje aktualne ceny oraz **spadki i wzrosty** w czasie na wykresach.
 
+Dla każdej z 10 ofert śledzimy **najtańszy dostępny wariant wylotu** — konkretne
+lotnisko, pokój oraz godziny lotu tam i z powrotem. Gdy śledzony wariant znika
+(np. się wyprzeda), tracker przechodzi na kolejny najtańszy i odnotowuje zmianę.
+
 Dane pobiera lokalny skrypt (z domowego IP) i wypycha je do repo, a witryna jest
 publikowana na GitHub Pages.
 
@@ -30,19 +34,35 @@ wakacje.pl ─► scraper ─► data/*.json ─► git push ─► GitHub Pages
               (npm run push, cyklicznie)                serwuje data/*.json
 ```
 
-1. **`scraper/scrape.js`** pobiera strony listingu, parsuje oferty (po trwałych atrybutach
-   `data-testid`) i aktualizuje dane.
-2. **`data/history.json`** — pełna historia: dla każdej oferty lista punktów `{date, price}`.
-3. **`data/latest.json`** — aktualny snapshot z wyliczonymi zmianami (`change`, `changePct`,
-   `minPrice`, `maxPrice`, `isLowest`) oraz listą ofert, które zniknęły z listingu.
-4. **Frontend** (`index.html`, `app.js`, `styles.css`) czyta oba pliki i pokazuje listę ofert
-   ze strzałkami ▲/▼, a po kliknięciu — wykres historii ceny.
+1. **`scraper/parse.js`** wyciąga listę ofert z osadzonego w HTML JSON-a (stabilniejsze
+   niż klasy CSS). Dla każdej oferty ma `offerId`, `hotelId`, operatora itd.
+2. **`scraper/variants.js`** dla każdej oferty woła publiczne API
+   `POST /v2/api/getCalculatorOfferVariants/{offerId}` (bez autoryzacji). Zwraca ono
+   wszystkie warianty (każde lotnisko × pokój) z ceną, lotniskami i godzinami lotów.
+   Wybieramy **najtańszy dostępny**.
+3. **`scraper/scrape.js`** łączy powyższe i aktualizuje dane.
+4. **`data/history.json`** — historia: per oferta śledzony wariant + punkty
+   `{date, price, room, departureCode, godziny lotów}` oraz `variantChanges[]`
+   (kiedy i z czego na co zmienił się śledzony wariant).
+5. **`data/latest.json`** — aktualny snapshot: najtańszy wariant każdej oferty z pełnym
+   rozkładem lotu, zmianą ceny (`change`, `changePct`, `minPrice`, `maxPrice`, `isLowest`),
+   notką o zmianie wariantu i listą ofert, które zniknęły.
+6. **Frontend** (`index.html`, `app.js`, `styles.css`) pokazuje listę z lotniskiem
+   i godzinami, strzałkami ▲/▼, a po kliknięciu — wykres historii ceny i log zmian wariantu.
 
-Identyfikacja oferty (klucz historii) = `hotel + termin + wyloty`, odporna na kolejność miast.
+Klucz historii = `offer-{offerId}` (stabilny). Tożsamość wariantu budujemy z jego
+atrybutów (pokój + lotnisko + daty/godziny), bo token `offerHash` z API zmienia się
+przy każdym zapytaniu.
+
+> **API zamiast HTML.** Konkretny wylot (lotnisko, dzień, godzina) nie jest w HTML strony
+> oferty — doładowuje go przeglądarka z powyższego API. Namierzyliśmy je narzędziem
+> badawczym (Playwright, folder `research/`), ale **produkcyjny scraper używa zwykłego
+> `fetch`** — Playwright nie jest potrzebny do działania.
 
 ## Uruchomienie lokalne
 
-Wymagany Node.js 18+ (używa wbudowanego `fetch`). Brak zależności npm.
+Wymagany Node.js 18+ (używa wbudowanego `fetch`). Produkcja nie ma zależności npm;
+`playwright` jest tylko `devDependency` do narzędzi badawczych w `research/`.
 
 ```bash
 # samo pobranie danych (zapisze data/latest.json i data/history.json)
@@ -123,10 +143,14 @@ a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
 │   └── latest.json       # aktualny snapshot ze zmianami (generowany)
 ├── scraper/
 │   ├── config.js         # filtr, adresy, ustawienia
-│   ├── parse.js          # parser HTML listingu
-│   ├── scrape.js         # główny scraper
+│   ├── parse.js          # parser listingu (osadzony JSON)
+│   ├── variants.js       # pobieranie wariantów wylotu z API
+│   ├── scrape.js         # główny scraper (listing + warianty + historia)
 │   ├── push.js           # scrape + commit + push (do automatyzacji)
 │   └── serve.js          # lokalny serwer podglądu
+├── research/             # narzędzia badawcze (namierzanie API; Playwright)
+│   ├── sniff.js          # przechwytywanie XHR na stronie oferty
+│   └── try-api.js        # test wołania API bez przeglądarki
 ├── automation/
 │   ├── windows-setup-task.ps1   # rejestracja zadania w Harmonogramie Windows
 │   ├── scrape.sh                # skrypt uruchomieniowy dla Linuksa
@@ -138,12 +162,14 @@ a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
 
 ## Uwagi
 
-- Projekt niekomercyjny, do użytku prywatnego. Scraper pobiera strony z rozsądnym odstępem
+- Projekt niekomercyjny, do użytku prywatnego. Scraper pobiera dane z rozsądnym odstępem
   i standardowym nagłówkiem User-Agent.
-- Parser opiera się na atrybutach `data-testid` z wakacje.pl. Jeśli serwis zmieni strukturę
-  strony, może wymagać aktualizacji `scraper/parse.js` — scraper w takim wypadku nie nadpisze
-  historii pustymi danymi (kończy się błędem, gdy nie znajdzie ofert).
-- Ceny to wartości „od” za wszystkich uczestników.
+- Parser i API mogą wymagać aktualizacji, jeśli wakacje.pl zmieni strukturę. Scraper w razie
+  braku danych nie nadpisuje historii pustką (kończy się błędem, gdy nie znajdzie ofert).
+- Ceny to wartości za wszystkich uczestników dla wybranego wariantu.
+- Domyślnie nie weryfikujemy osobno dostępności każdego wariantu (`verifyAvailability=false`)
+  — ufamy, że API zwraca aktualnie sprzedawane. Można to włączyć w `scrape.js` kosztem
+  dodatkowych zapytań; wtedy notki „wyprzedane” są pewniejsze.
 
 ## Licencja
 

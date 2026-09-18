@@ -1,180 +1,151 @@
-// Parser HTML listingu wakacje.pl.
-// Oferty renderowane są server-side z trwałymi atrybutami data-testid.
-// Każda oferta w kolejności zawiera: geo -> name -> category -> duration-date
-// -> duration-day -> transport -> services -> tour-operator -> ocena -> price.
+// Parser listingu wakacje.pl.
 //
-// Dzielimy dokument na bloki ofert wg pozycji "offer-listing-geo"
-// (geo jest pierwszym polem oferty), a każdy blok kończy się tam,
-// gdzie zaczyna się kolejny (albo na końcu dokumentu).
+// Strona osadza w HTML czysty JSON z ofertami (React Query cache):
+//   "offers":{"data":[ { ...oferta... }, ... ]}
+// Parsujemy tę tablicę zamiast kruchego HTML-a (klasy CSS są hashowane).
+// Z każdej oferty wyciągamy pola potrzebne do wywołania API wariantów wylotów.
 
-/** Usuwa tagi HTML i dekoduje podstawowe encje. */
-function stripHtml(s) {
-  return decodeEntities(String(s).replace(/<[^>]*>/g, "")).trim();
+/**
+ * Znajduje i parsuje tablicę ofert osadzoną w HTML.
+ * Zwraca surowe obiekty ofert (jak w JSON serwisu) albo [] gdy nie znaleziono.
+ */
+export function extractRawOffers(html) {
+  const marker = '"offers":{"data":[';
+  const at = html.indexOf(marker);
+  if (at === -1) return [];
+
+  // Początek tablicy = pozycja '[' po markerze.
+  const arrStart = at + marker.length - 1; // wskazuje na '['
+  const jsonArray = scanBalanced(html, arrStart, "[", "]");
+  if (!jsonArray) return [];
+
+  try {
+    return JSON.parse(jsonArray);
+  } catch {
+    return [];
+  }
 }
 
-function decodeEntities(s) {
-  return s
-    .replace(/<!--.*?-->/g, "")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&apos;/g, "'")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&oacute;/g, "ó")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-/** Wyciąga tekstową zawartość elementu o danym data-testid z fragmentu HTML. */
-function extractTestId(block, testid) {
-  const re = new RegExp(
-    `data-testid="${testid}"[^>]*>([\\s\\S]*?)</`,
-    "i"
-  );
-  const m = block.match(re);
-  return m ? stripHtml(m[1]) : "";
-}
-
-/** Cena: pierwsze wystąpienie liczby przed "zł" w bloku ceny. */
-function extractPrice(block) {
-  // Blok ceny zawiera np. "od </span>11 238<!-- --> <!-- -->zł"
-  const priceBlockRe =
-    /data-testid="offer-listing-section-price"[\s\S]*?<\/h4>/i;
-  const pm = block.match(priceBlockRe);
-  const scope = pm ? pm[0] : block;
-  const cleaned = stripHtml(scope);
-  // Szukamy liczby (z możliwymi spacjami/nbsp jako separatorem tysięcy) przed "zł"
-  const m = cleaned.match(/([\d\s\u00a0]+)\s*zł/);
-  if (!m) return null;
-  const digits = m[1].replace(/[^\d]/g, "");
-  return digits ? parseInt(digits, 10) : null;
-}
-
-/** Liczba gwiazdek z atrybutu title/aria-label kategorii. */
-function extractStars(block) {
-  // title może stać przed lub po data-testid, więc szukamy w całym tagu kategorii.
-  const tagM = block.match(/<[^>]*data-testid="offer-listing-category"[^>]*>/i);
-  const tag = tagM ? tagM[0] : "";
-  const m = tag.match(/(?:title|aria-label)="([^"]*)"/i);
-  const label = m ? m[1] : "";
-  const map = {
-    "jednogwiazdkowy": 1,
-    "dwugwiazdkowy": 2,
-    "trzygwiazdkowy": 3,
-    "czterogwiazdkowy": 4,
-    "pięciogwiazdkowy": 5,
-  };
-  for (const [k, v] of Object.entries(map)) {
-    if (label.toLowerCase().includes(k)) return v;
+/**
+ * Skanuje zbalansowany fragment (nawiasy), respektując stringi JSON.
+ * Zwraca podłańcuch od openIdx do pasującego domknięcia (włącznie) lub null.
+ */
+function scanBalanced(str, openIdx, openCh, closeCh) {
+  let depth = 0;
+  let inStr = false;
+  let esc = false;
+  for (let i = openIdx; i < str.length; i++) {
+    const ch = str[i];
+    if (inStr) {
+      if (esc) esc = false;
+      else if (ch === "\\") esc = true;
+      else if (ch === '"') inStr = false;
+      continue;
+    }
+    if (ch === '"') inStr = true;
+    else if (ch === openCh) depth++;
+    else if (ch === closeCh) {
+      depth--;
+      if (depth === 0) return str.slice(openIdx, i + 1);
+    }
   }
   return null;
 }
 
-/** Ocena liczbowa (np. 8.5). */
-function extractRating(block) {
-  const v = extractTestId(block, "RateBox-Paragraph");
-  const n = parseFloat(v.replace(",", "."));
-  return Number.isFinite(n) ? n : null;
-}
-
-/** Liczba opinii. */
-function extractOpinions(block) {
-  const v = extractTestId(block, "OpinionsCount-Paragraph");
-  const m = v.match(/\d+/);
-  return m ? parseInt(m[0], 10) : null;
-}
-
-/** Link do szczegółów oferty (jeśli obecny w bloku). */
-function extractDetailUrl(block) {
-  const m = block.match(/href="(\/oferty\/[^"]+\.html[^"]*)"/i);
-  if (!m) return null;
-  return "https://www.wakacje.pl" + m[1];
+/** Kod dostawcy z offerHash, np. "JOIP:188808" -> "JOIP". */
+function providerFromHash(offerHash) {
+  if (!offerHash || typeof offerHash !== "string") return null;
+  const i = offerHash.indexOf(":");
+  return i > 0 ? offerHash.slice(0, i) : offerHash;
 }
 
 /**
- * Buduje stabilny klucz oferty: hotel + termin + wylot.
- * Odporny na kolejność miast wylotu i drobne różnice w spacjach.
+ * Buduje stabilny klucz oferty na podstawie identyfikatorów serwisu.
+ * Preferujemy offerId (stabilny), z fallbackiem na hotelId+termin.
  */
-export function makeOfferKey({ hotel, dateRange, departure }) {
+export function makeOfferKey(o) {
+  if (o.offerId) return `offer-${o.offerId}`;
   const norm = (s) =>
     (s || "")
+      .toString()
       .toLowerCase()
-      // polskie znaki, których NFD nie rozkłada (ł) i dla pewności pozostałe
       .replace(/ł/g, "l")
-      .replace(/ą/g, "a")
-      .replace(/ć/g, "c")
-      .replace(/ę/g, "e")
-      .replace(/ń/g, "n")
-      .replace(/ó/g, "o")
-      .replace(/ś/g, "s")
-      .replace(/ż/g, "z")
-      .replace(/ź/g, "z")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
-  const dep = norm(departure).split("-").filter(Boolean).sort().join("-");
-  return [norm(hotel), norm(dateRange), dep].join("__");
+  return `h${o.hotelId || norm(o.hotel)}-${norm(o.departureDate)}`;
 }
 
 /**
- * Parsuje pełny HTML strony listingu i zwraca tablicę ofert.
+ * Normalizuje surową ofertę z listingu do postaci używanej w projekcie.
+ * Zwraca też parametry potrzebne do API wariantów (params).
  */
-export function parseOffers(html) {
-  // Pozycje początków bloków ofert (geo jest pierwszym polem).
-  const geoRe = /data-testid="offer-listing-geo"/gi;
-  const starts = [];
-  let m;
-  while ((m = geoRe.exec(html)) !== null) {
-    starts.push(m.index);
-  }
-  if (starts.length === 0) return [];
+export function normalizeOffer(raw) {
+  const offerId = raw.offerId ?? null;
+  const hotelId = raw.hotelId ?? null;
+  const tourId = raw.tourOperator ?? null; // w listingu tourOperator = tourId
+  const providerCode = providerFromHash(raw.offerHash);
+  const service = raw.service ?? 1;
+  const duration = raw.duration ?? raw.durationNights ?? null;
+  const departureDate = raw.departureDate ?? null;
 
-  const offers = [];
-  for (let i = 0; i < starts.length; i++) {
-    const start = starts[i];
-    const end = i + 1 < starts.length ? starts[i + 1] : html.length;
-    const block = html.slice(start, end);
+  const offer = {
+    offerId,
+    hotelId,
+    hotel: raw.name ?? "",
+    region: raw.placeName ?? "",
+    stars: raw.category ?? null,
+    rating: raw.ratingValue ?? null,
+    opinions: raw.ratingRecommends ?? raw.ratingReservationCount ?? null,
+    operator: raw.tourOperatorName ?? "",
+    tourId,
+    providerCode,
+    service,
+    serviceDesc: raw.serviceDesc ?? "",
+    duration,
+    durationNights: raw.durationNights ?? null,
+    departureDate,
+    returnDate: raw.returnDate ?? null,
+    departurePlaces: raw.departurePlaces ?? [],
+    cheapestDeparturePlace: raw.departurePlace ?? null,
+    listingPrice: raw.price ?? null,
+    roomType: raw.roomType ?? "",
+    offerHash: raw.offerHash ?? null,
+    place: raw.place ?? null,
+    urlName: raw.urlName ?? null,
+  };
+  offer.key = makeOfferKey(offer);
 
-    const geo = extractTestId(block, "offer-listing-geo");
-    const hotel = extractTestId(block, "offer-listing-name");
-    const dateRange = extractTestId(block, "offer-listing-duration-date");
-    const duration = extractTestId(block, "offer-listing-duration-day");
-    const departure = extractTestId(block, "offer-listing-transport-plane");
-    const board = extractTestId(block, "offer-listing-services");
-    const operator = extractTestId(block, "offer-listing-tour-operator");
-    const price = extractPrice(block);
-    const stars = extractStars(block);
-    const rating = extractRating(block);
-    const opinions = extractOpinions(block);
-    const detailUrl = extractDetailUrl(block);
+  // Parametry do POST getCalculatorOfferVariants (bez departureCityId ->
+  // API zwraca warianty ze wszystkich lotnisk).
+  offer.variantParams = {
+    adults: 2,
+    kids: 2,
+    infants: 0,
+    kidsAges: ["20091119", "20150707"],
+    serviceId: service,
+    duration,
+    departureDate,
+    transportId: 1,
+    hotelId,
+    tourOp: providerCode,
+    tourId,
+    cruiseId: 0,
+    roundTripId: 0,
+    isAlternativeRoom: false,
+    isOffer77: false,
+  };
 
-    // Pomijamy bloki bez nazwy lub ceny (śmieci / niepełne).
-    if (!hotel || price == null) continue;
-
-    const key = makeOfferKey({ hotel, dateRange, departure });
-
-    offers.push({
-      key,
-      hotel,
-      region: geo,
-      dateRange,
-      duration,
-      departure,
-      board,
-      operator,
-      stars,
-      rating,
-      opinions,
-      price,
-      currency: "PLN",
-      detailUrl,
-    });
-  }
-
-  return offers;
+  return offer;
 }
 
-export default { parseOffers, makeOfferKey };
+/** Parsuje listing i zwraca znormalizowane oferty. */
+export function parseOffers(html) {
+  const raw = extractRawOffers(html);
+  return raw
+    .filter((o) => o && (o.offerId || o.hotelId))
+    .map(normalizeOffer);
+}
+
+export default { parseOffers, extractRawOffers, normalizeOffer, makeOfferKey };

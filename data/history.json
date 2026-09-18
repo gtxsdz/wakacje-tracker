@@ -1,226 +1,656 @@
 {
   "offers": {
-    "gravity-hotel-aquapark-hurghada-ex-samra-bay-resort__28-09-2026-05-10-2026__katowice-warszawa-wroclaw": {
-      "key": "gravity-hotel-aquapark-hurghada-ex-samra-bay-resort__28-09-2026-05-10-2026__katowice-warszawa-wroclaw",
+    "offer-1166489": {
+      "offerId": 1166489,
       "hotel": "Gravity Hotel & Aquapark Hurghada (ex. Samra Bay Resort)",
       "region": "Egipt / Hurghada",
-      "dateRange": "28.09.2026- 05.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Warszawa, Wrocław, Katowice",
-      "board": "All Inclusive",
-      "operator": "Join UP",
       "stars": 5,
       "rating": 8.5,
       "opinions": 91,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 11238
+          "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|10:20",
+          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw4Ke01QZI-O0GUENY5QFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA0xqBUw",
+          "price": 11238,
+          "currency": "PLN",
+          "room": "Superior room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "dreams-vacation-sharm-resort__29-09-2026-07-10-2026__katowice": {
-      "key": "dreams-vacation-sharm-resort__29-09-2026-07-10-2026__katowice",
+    "offer-1166986": {
+      "offerId": 1166986,
       "hotel": "Dreams Vacation Sharm Resort",
       "region": "Egipt / Sharm el Sheikh",
-      "dateRange": "29.09.2026- 07.10.2026",
-      "duration": "(9 dni / 7 nocy)",
-      "departure": "Katowice",
-      "board": "All Inclusive",
-      "operator": "Join UP",
       "stars": 4,
       "rating": 8.5,
       "opinions": 320,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 11810
+          "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw4ae01QZInYpIUEVY_QFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAtAJuG1",
+          "price": 11810,
+          "currency": "PLN",
+          "room": "Standard room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort__29-09-2026-06-10-2026__katowice-lodz-warszawa": {
-      "key": "akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort__29-09-2026-06-10-2026__katowice-lodz-warszawa",
+    "offer-254866": {
+      "offerId": 254866,
       "hotel": "Akassia Swiss Resort (ex. Calimera Club Akassia Swiss Resort)",
       "region": "Egipt / Marsa El Alam / Al-Kusajr",
-      "dateRange": "29.09.2026- 06.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Katowice, Warszawa, Łódź",
-      "board": "All Inclusive",
-      "operator": "Coral Travel",
       "stars": 5,
       "rating": 8.5,
       "opinions": 670,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 12346
+          "variantId": "standard room garden view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
+          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkw1ae01QZIgZ8HUENY_QFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgs1B9v_",
+          "price": 11866,
+          "currency": "PLN",
+          "room": "Standard room garden view",
+          "departureCode": "LCJ",
+          "luggageIncluded": true,
+          "carrier": "ENT 4855",
+          "outbound": {
+            "from": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "16:20"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "22:20"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:25"
+            },
+            "to": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:30"
+            }
+          },
+          "label": "Standard room garden view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "xperience-kiroseiz-premier__29-09-2026-07-10-2026__katowice": {
-      "key": "xperience-kiroseiz-premier__29-09-2026-07-10-2026__katowice",
+    "offer-1166735": {
+      "offerId": 1166735,
       "hotel": "Xperience Kiroseiz Premier",
       "region": "Egipt / Sharm el Sheikh / Naama Bay",
-      "dateRange": "29.09.2026- 07.10.2026",
-      "duration": "(9 dni / 7 nocy)",
-      "departure": "Katowice",
-      "board": "All Inclusive",
-      "operator": "Join UP",
       "stars": 5,
       "rating": 8.3,
       "opinions": 10,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 12482
+          "variantId": "superior room|KTW|2026-09-29|02:05|2026-10-06|23:50",
+          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw4qe01QZIwmFQQVj9AWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC_SMpMs",
+          "price": 12482,
+          "currency": "PLN",
+          "room": "Superior room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "rewaya-majestic-resort__28-09-2026-05-10-2026__warszawa-wroclaw": {
-      "key": "rewaya-majestic-resort__28-09-2026-05-10-2026__warszawa-wroclaw",
+    "offer-1166909": {
+      "offerId": 1166909,
       "hotel": "Rewaya Majestic Resort",
       "region": "Egipt / Hurghada",
-      "dateRange": "28.09.2026- 05.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Warszawa, Wrocław",
-      "board": "All Inclusive Ultimate",
-      "operator": "Join UP",
       "stars": 5,
       "rating": 8.4,
       "opinions": 257,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 12568
+          "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|15:30",
+          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAw46e01QZI4tpMUEVY5QFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQAN2_actA",
+          "price": 12568,
+          "currency": "PLN",
+          "room": "Standard room",
+          "departureCode": "WRO",
+          "luggageIncluded": true,
+          "carrier": "SM 3616",
+          "outbound": {
+            "from": {
+              "airportCode": "WRO",
+              "airportName": "Wrocław",
+              "city": "Wrocław",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "21:00"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:15"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "15:30"
+            },
+            "to": {
+              "airportCode": "WRO",
+              "airportName": "Wrocław",
+              "city": "Wrocław",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "20:00"
+            }
+          },
+          "label": "Standard room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 15:30"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "titanic-palace-resort__28-09-2026-05-10-2026__wroclaw": {
-      "key": "titanic-palace-resort__28-09-2026-05-10-2026__wroclaw",
+    "offer-1050343": {
+      "offerId": 1050343,
       "hotel": "Titanic Palace Resort",
       "region": "Egipt / Hurghada",
-      "dateRange": "28.09.2026- 05.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Wrocław",
-      "board": "Ultra All Inclusive",
-      "operator": "Exim Tours",
       "stars": 5,
       "rating": 8,
-      "opinions": 494,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "opinions": 495,
+      "operator": "Exim Tours",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 12636
+          "variantId": "standard standard pool view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
+          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0w46e01QZI3GJQAVjlAWACagNVQUlyIRwRj7sGuQTs_z2rBBQb6e9OGMPRSwGonLTWDQMAYwECC-zLbJM",
+          "price": 12636,
+          "currency": "PLN",
+          "room": "Standard standard pool view triple room",
+          "departureCode": "WRO",
+          "luggageIncluded": true,
+          "carrier": "",
+          "outbound": {
+            "from": {
+              "airportCode": "WRO",
+              "airportName": "Wrocław",
+              "city": "Wrocław",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "21:00"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:15"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "16:30"
+            },
+            "to": {
+              "airportCode": "WRO",
+              "airportName": "Wrocław",
+              "city": "Wrocław",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "20:00"
+            }
+          },
+          "label": "Standard standard pool view triple room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "stella-gardens-resort-spa-ex-stella-di-mare-gardens__28-09-2026-05-10-2026__katowice-warszawa-wroclaw": {
-      "key": "stella-gardens-resort-spa-ex-stella-di-mare-gardens__28-09-2026-05-10-2026__katowice-warszawa-wroclaw",
+    "offer-1166540": {
+      "offerId": 1166540,
       "hotel": "Stella Gardens Resort & Spa (ex Stella Di Mare Gardens)",
       "region": "Egipt / Hurghada / Makadi Bay",
-      "dateRange": "28.09.2026- 05.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Warszawa, Wrocław, Katowice",
-      "board": "All Inclusive",
-      "operator": "Join UP",
       "stars": 5,
       "rating": 8.1,
       "opinions": 264,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 12732
+          "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
+          "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw16e01QZIvGNQQVjlAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABG-EV7pHkzS0DoN0_yXCSAAAffJ0LCzhsygMAMOYwEADfXd3NI",
+          "price": 12732,
+          "currency": "PLN",
+          "room": "Family room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "titanic-palace-resort__29-09-2026-06-10-2026__katowice": {
-      "key": "titanic-palace-resort__29-09-2026-06-10-2026__katowice",
+    "offer-14032": {
+      "offerId": 14032,
       "hotel": "Titanic Palace Resort",
       "region": "Egipt / Hurghada",
-      "dateRange": "29.09.2026- 06.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Katowice",
-      "board": "Ultra All Inclusive",
-      "operator": "Coral Travel",
       "stars": 5,
       "rating": 8,
-      "opinions": 494,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "opinions": 495,
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 12976
+          "variantId": "coral standard room|KTW|2026-09-29|03:10|2026-10-06|09:15",
+          "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw5Ke01QZIoJlPUEVY_QFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYL0jH50w",
+          "price": 12976,
+          "currency": "PLN",
+          "room": "Coral standard room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "ENT 4039",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "03:10"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "08:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:15"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:10"
+            }
+          },
+          "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "sindbad-club__28-09-2026-05-10-2026__katowice-warszawa-wroclaw": {
-      "key": "sindbad-club__28-09-2026-05-10-2026__katowice-warszawa-wroclaw",
+    "offer-1167460": {
+      "offerId": 1167460,
       "hotel": "Sindbad Club",
       "region": "Egipt / Hurghada",
-      "dateRange": "28.09.2026- 05.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Warszawa, Wrocław, Katowice",
-      "board": "All Inclusive Club",
-      "operator": "Join UP",
       "stars": 4,
       "rating": 8.3,
       "opinions": 538,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 13032
+          "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
+          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw2Ke01QZI6GVQQVjlAWACagMwMlhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBHHF0yLuToN0_yXCSAAAfDZ8Ji0hsygMAMNYwEACwWZp-o",
+          "price": 13032,
+          "currency": "PLN",
+          "room": "Superior family room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
-      ]
+      ],
+      "variantChanges": []
     },
-    "pickalbatros-aqua-blu-resort__30-09-2026-07-10-2026__katowice": {
-      "key": "pickalbatros-aqua-blu-resort__30-09-2026-07-10-2026__katowice",
+    "offer-1166455": {
+      "offerId": 1166455,
       "hotel": "Pickalbatros Aqua Blu Resort",
       "region": "Egipt / Hurghada",
-      "dateRange": "30.09.2026- 07.10.2026",
-      "duration": "(8 dni / 7 nocy)",
-      "departure": "Katowice",
-      "board": "All Inclusive",
-      "operator": "Join UP",
       "stars": 4,
       "rating": 8.8,
       "opinions": 562,
-      "detailUrl": null,
-      "firstSeen": "2026-09-18",
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-30",
+      "returnDate": "2026-10-07",
       "lastSeen": "2026-09-18",
+      "firstSeen": "2026-09-18",
       "prices": [
         {
           "date": "2026-09-18",
-          "price": 13074
+          "variantId": "garden view|KTW|2026-09-30|12:30|2026-10-07|08:05",
+          "apiHash": "pYudf4q4VCHJpZokgv8zUvAAogevKScI82OVeb3Z1nxVIwKAGowmXf5xuKtFirsM-7dRgqBEpPSVAw2ae01QZIkmZQQViVAmACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBGFFUzNuzoN1fyXCSAAAZKU-I-Uh8ygMAMNYwEADLO1AT8",
+          "price": 13074,
+          "currency": "PLN",
+          "room": "Garden view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7363",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "12:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "17:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "08:05"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "11:35"
+            }
+          },
+          "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
         }
-      ]
+      ],
+      "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-18T10:05:49.136Z",
+  "lastUpdated": "2026-09-18T10:35:17.806Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

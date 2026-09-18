@@ -1,5 +1,13 @@
 node_modules/
 *.log
 .DS_Store
+
+# artefakty testowe scrapera
 scraper/_*.html
 scraper/_*.json
+
+# zrzuty z narzędzia badawczego (mogą być duże, zawierają tokeny sesyjne)
+research/captures/
+
+# przeglądarki Playwright (instalowane lokalnie do badań)
+.playwright/

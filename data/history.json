@@ -16,8 +16,8 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw0L601QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA0tZGe6",
+          "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
+          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwocO01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA2Dtecr",
           "price": 11238,
           "currency": "PLN",
           "room": "Superior room",
@@ -49,7 +49,7 @@
               "city": "Hurghada",
               "date": "2026-10-05",
               "customDate": "05.10 (Pon.)",
-              "time": "10:20"
+              "time": "09:05"
             },
             "to": {
               "airportCode": "KTW",
@@ -57,13 +57,28 @@
               "city": "Katowice",
               "date": "2026-10-05",
               "customDate": "05.10 (Pon.)",
-              "time": "13:50"
+              "time": "12:35"
             }
           },
-          "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+          "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
         }
       ],
-      "variantChanges": []
+      "variantChanges": [
+        {
+          "date": "2026-09-18",
+          "from": {
+            "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|10:20",
+            "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
+            "price": 11238
+          },
+          "to": {
+            "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
+            "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
+            "price": 11238
+          },
+          "reason": "zmiana najtańszego wariantu"
+        }
+      ]
     },
     "offer-1166986": {
       "offerId": 1166986,
@@ -82,7 +97,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw0b601QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAtcUaV_",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwosO01QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAsvByKK",
           "price": 11810,
           "currency": "PLN",
           "room": "Standard room",
@@ -147,7 +162,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard room garden view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkw0r601QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgtou69V",
+          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwo8O01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgs9-KZj",
           "price": 11866,
           "currency": "PLN",
           "room": "Standard room garden view",
@@ -212,7 +227,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|15:30",
-          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAw07601QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQANLlPyCw",
+          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwpMO01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQANqgMlVA",
           "price": 12460,
           "currency": "PLN",
           "room": "Standard room",
@@ -277,7 +292,7 @@
         {
           "date": "2026-09-18",
           "variantId": "superior room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw1L601QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAs8hFE2",
+          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwpcO01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAst-Xd3",
           "price": 12483,
           "currency": "PLN",
           "room": "Superior room",
@@ -342,7 +357,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard standard pool view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0w1b601QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgs4t8ml",
+          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wpsO01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAguDZoYi",
           "price": 12629,
           "currency": "PLN",
           "room": "Standard standard pool view triple room",
@@ -406,8 +421,8 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-          "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw1r601QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA10_zjX",
+          "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
+          "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwp8O01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA0Xy30f",
           "price": 12732,
           "currency": "PLN",
           "room": "Family room",
@@ -439,7 +454,7 @@
               "city": "Hurghada",
               "date": "2026-10-05",
               "customDate": "05.10 (Pon.)",
-              "time": "10:20"
+              "time": "09:05"
             },
             "to": {
               "airportCode": "KTW",
@@ -447,13 +462,28 @@
               "city": "Katowice",
               "date": "2026-10-05",
               "customDate": "05.10 (Pon.)",
-              "time": "13:50"
+              "time": "12:35"
             }
           },
-          "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+          "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
         }
       ],
-      "variantChanges": []
+      "variantChanges": [
+        {
+          "date": "2026-09-18",
+          "from": {
+            "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
+            "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
+            "price": 12732
+          },
+          "to": {
+            "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
+            "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
+            "price": 12732
+          },
+          "reason": "zmiana najtańszego wariantu"
+        }
+      ]
     },
     "offer-1167460": {
       "offerId": 1167460,
@@ -471,8 +501,8 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw17601QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAvrQUNe",
+          "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
+          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwqMO01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAvOVHYm",
           "price": 12926,
           "currency": "PLN",
           "room": "Superior family room",
@@ -504,7 +534,7 @@
               "city": "Hurghada",
               "date": "2026-10-05",
               "customDate": "05.10 (Pon.)",
-              "time": "10:20"
+              "time": "09:05"
             },
             "to": {
               "airportCode": "KTW",
@@ -512,13 +542,28 @@
               "city": "Katowice",
               "date": "2026-10-05",
               "customDate": "05.10 (Pon.)",
-              "time": "13:50"
+              "time": "12:35"
             }
           },
-          "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+          "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
         }
       ],
-      "variantChanges": []
+      "variantChanges": [
+        {
+          "date": "2026-09-18",
+          "from": {
+            "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
+            "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
+            "price": 12926
+          },
+          "to": {
+            "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
+            "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
+            "price": 12926
+          },
+          "reason": "zmiana najtańszego wariantu"
+        }
+      ]
     },
     "offer-14032": {
       "offerId": 14032,
@@ -537,7 +582,7 @@
         {
           "date": "2026-09-18",
           "variantId": "coral standard room|KTW|2026-09-29|03:10|2026-10-06|09:15",
-          "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw2L601QZIoJlPUEVY_AFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLp3fx2Q",
+          "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwqcO01QZIoJlPUEVY_AFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLKWlC-A",
           "price": 12976,
           "currency": "PLN",
           "room": "Coral standard room",
@@ -602,7 +647,7 @@
         {
           "date": "2026-09-18",
           "variantId": "superior pool view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw2b601QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC0avcVw",
+          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwqsO01QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC7_tzzo",
           "price": 13116,
           "currency": "PLN",
           "room": "Superior pool view",
@@ -667,6 +712,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-18T11:24:10.625Z",
+  "lastUpdated": "2026-09-18T11:34:03.039Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

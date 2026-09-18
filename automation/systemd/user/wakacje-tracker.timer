@@ -1,11 +1,11 @@
-# Timer użytkownika: 2x dziennie o 10:00 i 18:00.
+# Timer użytkownika: 3x dziennie o 08:30, 12:30 i 18:30.
 # Persistent=true => nadrobi po włączeniu maszyny, jeśli była wyłączona.
 
 [Unit]
-Description=Pobranie cen wakacje.pl (2x dziennie: 10:00 i 18:00)
+Description=Pobranie cen wakacje.pl (3x dziennie: 08:30, 12:30, 18:30)
 
 [Timer]
-OnCalendar=*-*-* 10,18:00:00
+OnCalendar=*-*-* 08,12,18:30:00
 Persistent=true
 
 [Install]

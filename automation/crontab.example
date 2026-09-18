@@ -1,11 +1,11 @@
-# Przykładowy wpis cron — 2x dziennie (10:00 i 18:00) pobranie cen i push.
+# Przykładowy wpis cron — 3x dziennie (08:30, 12:30, 18:30) pobranie cen i push.
 # Edycja: crontab -e   (a potem wklej poniższą linię, dostosowując ścieżki)
 #
 # Cron ma minimalny PATH, więc podajemy pełną ścieżkę do node lub ustawiamy PATH.
 # Sprawdź ścieżkę do node:  which node
 
 # Wariant 1: wywołanie skryptu pomocniczego (sam ustala katalog projektu):
-0 10,18 * * * /home/USERNAME/wakacje-tracker/automation/scrape.sh >> /home/USERNAME/wakacje-tracker/scrape.log 2>&1
+30 8,12,18 * * * /home/USERNAME/wakacje-tracker/automation/scrape.sh >> /home/USERNAME/wakacje-tracker/scrape.log 2>&1
 
 # Wariant 2: bezpośrednio node (odkomentuj i dostosuj, jeśli wolisz):
-# 0 10,18 * * * cd /home/USERNAME/wakacje-tracker && /usr/bin/node scraper/push.js >> scrape.log 2>&1
+# 30 8,12,18 * * * cd /home/USERNAME/wakacje-tracker && /usr/bin/node scraper/push.js >> scrape.log 2>&1

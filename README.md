@@ -34,8 +34,11 @@ wakacje.pl ─► scraper ─► data/*.json ─► git push ─► GitHub Pages
               (npm run push, cyklicznie)                serwuje data/*.json
 ```
 
-1. **`scraper/parse.js`** wyciąga listę ofert z osadzonego w HTML JSON-a (stabilniejsze
-   niż klasy CSS). Dla każdej oferty ma `offerId`, `hotelId`, operatora itd.
+1. **`scraper/listing.js`** pobiera pełną listę ofert przez API wyszukiwarki
+   (`POST /v2/api/offers`, metoda `search.tripsSearch`) — z **paginacją** przez
+   `query.pageNumber` (10 na stronę), aż zbierze wszystkie wyniki (`count`).
+   To ważne: strona WWW pokazuje tylko pierwsze 10, a ofert jest zwykle kilkadziesiąt.
+   `scraper/parse.js` normalizuje każdą ofertę (`offerId`, `hotelId`, operator itd.).
 2. **`scraper/variants.js`** dla każdej oferty woła publiczne API
    `POST /v2/api/getCalculatorOfferVariants/{offerId}` (bez autoryzacji). Zwraca ono
    wszystkie warianty (każde lotnisko × pokój) z ceną, lotniskami i godzinami lotów.
@@ -155,8 +158,10 @@ a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
 │   ├── history.json      # pełna historia cen (generowana)
 │   └── latest.json       # aktualny snapshot ze zmianami (generowany)
 ├── scraper/
-│   ├── config.js         # filtr, adresy, ustawienia
-│   ├── parse.js          # parser listingu (osadzony JSON)
+│   ├── config.js         # filtr, adresy, parametry wyszukiwarki
+│   ├── listing.js        # pobieranie pełnej listy ofert (API + paginacja)
+│   ├── parse.js          # normalizacja pojedynczej oferty
+│   ├── http.js           # transport HTTP przez curl
 │   ├── variants.js       # pobieranie wariantów wylotu z API
 │   ├── scrape.js         # główny scraper (listing + warianty + historia)
 │   ├── push.js           # scrape + commit + push (do automatyzacji)

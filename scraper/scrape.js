@@ -10,13 +10,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseOffers } from "./parse.js";
 import { pickCheapestAvailable, BlockedError } from "./variants.js";
-import { getText } from "./http.js";
+import { fetchAllOffers } from "./listing.js";
 import {
-  pageUrl,
-  MAX_PAGES,
-  REQUEST_DELAY_MS,
   HISTORY_FILE,
   LATEST_FILE,
   DATA_DIR,
@@ -29,42 +25,6 @@ const ROOT = path.resolve(__dirname, "..");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const today = () => new Date().toISOString().slice(0, 10);
 const nowIso = () => new Date().toISOString();
-
-async function fetchPage(url) {
-  const { status, body } = await getText(url, {
-    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-  });
-  if (status !== 200) throw new Error(`HTTP ${status} dla ${url}`);
-  return body;
-}
-
-/** Pobiera wszystkie strony listingu, zwraca zdeduplikowane oferty. */
-async function scrapeListing() {
-  const seen = new Map();
-  for (let page = 1; page <= MAX_PAGES; page++) {
-    let html;
-    try {
-      html = await fetchPage(pageUrl(page));
-    } catch (err) {
-      console.error(`Błąd pobierania strony ${page}: ${err.message}`);
-      break;
-    }
-    const offers = parseOffers(html);
-    console.log(`Strona ${page}: ${offers.length} ofert`);
-    if (offers.length === 0) break;
-
-    let added = 0;
-    for (const o of offers) {
-      if (!seen.has(o.key)) {
-        seen.set(o.key, o);
-        added++;
-      }
-    }
-    if (offers.length < 10 || added === 0) break;
-    if (page < MAX_PAGES) await sleep(REQUEST_DELAY_MS);
-  }
-  return [...seen.values()];
-}
 
 /** Krótki, czytelny opis wariantu (do notek i porównań). */
 function variantLabel(v) {
@@ -186,6 +146,9 @@ function buildLatest(history, currentResults, date) {
   const offers = [];
 
   for (const r of currentResults) {
+    // Pomijamy hotele bez dostępnego wariantu (brak ceny do śledzenia).
+    if (!r.chosen) continue;
+
     const entry = history.offers[r.offer.key];
     const prices = entry ? entry.prices : [];
     const flat = flattenVariant(r.chosen);
@@ -342,10 +305,17 @@ async function main() {
   const date = today();
   console.log(`=== Scraper wakacje.pl (Egipt, warianty) — ${date} ===`);
 
-  const offers = await scrapeListing();
-  console.log(`Ofert z listingu: ${offers.length}`);
+  let offers, total;
+  try {
+    ({ offers, total } = await fetchAllOffers({ delayMs: 500 }));
+  } catch (err) {
+    console.error(`Błąd pobierania listy ofert: ${err.message}. Nie nadpisuję historii.`);
+    process.exitCode = 1;
+    return;
+  }
+  console.log(`Ofert z listingu: ${offers.length}${total != null ? ` / ${total}` : ""}`);
   if (offers.length === 0) {
-    console.error("Brak ofert — struktura strony mogła się zmienić. Nie nadpisuję historii.");
+    console.error("Brak ofert — API mogło się zmienić. Nie nadpisuję historii.");
     process.exitCode = 1;
     return;
   }
@@ -410,6 +380,7 @@ async function main() {
   history.offers = history.offers || {};
 
   for (const r of hotelResults) {
+    if (!r.chosen) continue; // brak wariantu — nie zakładamy wpisu historii
     const entry = history.offers[r.offer.key] || {};
     updateOfferHistory(entry, r.offer, r.chosen, r.soldOutCheaper, date);
     history.offers[r.offer.key] = entry;

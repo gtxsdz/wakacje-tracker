@@ -17,6 +17,31 @@ export function pageUrl(page) {
 export const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
+// Endpoint wyszukiwarki ofert (paginacja przez query.pageNumber, 10 na stronę).
+export const SEARCH_API = "https://www.wakacje.pl/v2/api/offers";
+
+// Parametry zapytania odpowiadające filtrowi (patrz BASE_FILTER powyżej).
+// departure = ID miast wylotu: Katowice 2622, Łódź 2654, Poznań 2632,
+// Warszawa 278, Wrocław 256. attribute ["21"] = z aquaparkiem. service [1] = AI.
+export const SEARCH_QUERY = {
+  departureDate: "2026-09-28",
+  arrivalDate: "2026-10-07",
+  departure: [2622, 2654, 2632, 278, 256],
+  type: [1], // samolot
+  duration: { min: 7, max: 28 },
+  minPrice: null,
+  maxPrice: "14000",
+  service: [1], // all inclusive
+  attribute: ["21"], // z aquaparkiem
+  maxCategory: 50,
+  sort: 1,
+  order: 0,
+  totalPrice: true,
+  pricePerPerson: false,
+  rank: 80, // ocena od 8.0
+  rooms: [{ adult: 2, kid: 2, ages: ["20091119", "20150707"] }],
+};
+
 // Ile stron maksymalnie odpytać (zabezpieczenie przed pętlą).
 export const MAX_PAGES = 15;
 

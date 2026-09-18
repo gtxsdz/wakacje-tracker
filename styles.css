@@ -160,15 +160,20 @@ body {
   border-color: var(--down);
   box-shadow: 0 0 0 1px var(--down), var(--shadow);
 }
+.offer-main {
+  min-width: 0; /* pozwala treści zawijać się w gridzie zamiast rozpychać kartę */
+}
 .offer-main .hotel {
   margin: 0 0 4px;
   font-size: 1.1rem;
   font-weight: 700;
+  overflow-wrap: anywhere; /* bardzo długie nazwy hoteli nie rozpychają layoutu */
 }
 .offer-main .region {
   color: var(--text-dim);
   font-size: 0.9rem;
   margin: 0 0 10px;
+  overflow-wrap: anywhere;
 }
 .tags {
   display: flex;
@@ -366,25 +371,23 @@ body {
     min-width: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline;
-    gap: 8px 12px;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 6px;
     padding-top: 12px;
     border-top: 1px solid var(--border);
   }
   .price-now { font-size: 1.4rem; }
-  .price-unit { align-self: flex-end; }
-  /* Zmiana i zakres w jednej linii z ceną, znaczek na całą szerokość. */
+  /* "za wszystkich" tuż przy cenie, nie odklejone na bok. */
+  .price-unit { align-self: center; }
+  /* Zmiana obok ceny; zakres i znaczek w osobnej linii na całą szerokość. */
   .change { margin-top: 0; }
-  .price-range { margin-top: 0; width: 100%; }
+  .price-range { margin-top: 0; flex-basis: 100%; }
   .badge-lowest { margin-top: 0; }
 
-  /* Loty: etykieta nad rozkładem, żeby nic się nie ścinało. */
-  .flight-line {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-  }
-  .flight-label { min-width: 0; }
+  /* (Nadpisania lotów i logu zmian są na końcu pliku — muszą wystąpić PO
+     regułach bazowych .flight-line / .change-item, bo media query nie
+     zwiększa specyficzności; decyduje kolejność w źródle.) */
 
   /* Modal na pełny ekran od dołu — wygodniejszy kciukiem. */
   .modal { padding: 0; align-items: flex-end; }
@@ -406,12 +409,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  /* Log zmian wariantu w kolumnie — bez ściskania na wąskim ekranie. */
-  .change-item {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
-  .change-item .creason { grid-column: 1; }
 }
 
 /* Bardzo wąskie ekrany (małe telefony). */
@@ -513,4 +510,24 @@ body {
   margin-top: 6px;
   font-size: 0.78rem;
   color: var(--text-dim);
+}
+
+/* ===== Mobilne nadpisania dla elementów definiowanych niżej w pliku =====
+   Te reguły MUSZĄ być na końcu: media query nie zwiększa specyficzności,
+   więc muszą wystąpić PO bazowych .flight-line / .change-item, żeby je nadpisać. */
+@media (max-width: 560px) {
+  /* Loty: etykieta nad rozkładem, żeby nic się nie ścinało. */
+  .flight-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .flight-label { min-width: 0; }
+
+  /* Log zmian wariantu w kolumnie — bez ściskania na wąskim ekranie. */
+  .change-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .change-item .creason { grid-column: 1; }
 }

@@ -1,0 +1,77 @@
+name: Scrape ceny i publikacja
+
+on:
+  schedule:
+    # Codziennie o 06:12 UTC (~08:12 czasu PL). Losowa minuta zmniejsza kolizje.
+    - cron: "12 6 * * *"
+  workflow_dispatch: {} # ręczne uruchomienie z zakładki Actions
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "app.js"
+      - "styles.css"
+      - "scraper/**"
+      - ".github/workflows/scrape.yml"
+
+# Uprawnienia potrzebne do commitowania danych i publikacji Pages.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Tylko jeden bieg naraz.
+concurrency:
+  group: scrape-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pobierz ceny i zaktualizuj historię
+        run: npm run scrape
+
+      - name: Commit zaktualizowanych danych
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Brak zmian w danych."
+          else
+            git commit -m "data: aktualizacja cen $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout (po commicie danych)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact (cała witryna)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

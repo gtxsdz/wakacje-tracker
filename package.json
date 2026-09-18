@@ -1,0 +1,14 @@
+{
+  "name": "wakacje-tracker",
+  "version": "1.0.0",
+  "description": "Śledzenie cen wycieczek do Egiptu z wakacje.pl (spadki i wzrosty w czasie)",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scraper/scrape.js",
+    "serve": "node scraper/serve.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

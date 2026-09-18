@@ -1,0 +1,226 @@
+{
+  "offers": {
+    "gravity-hotel-aquapark-hurghada-ex-samra-bay-resort__28-09-2026-05-10-2026__katowice-warszawa-wroclaw": {
+      "key": "gravity-hotel-aquapark-hurghada-ex-samra-bay-resort__28-09-2026-05-10-2026__katowice-warszawa-wroclaw",
+      "hotel": "Gravity Hotel & Aquapark Hurghada (ex. Samra Bay Resort)",
+      "region": "Egipt / Hurghada",
+      "dateRange": "28.09.2026- 05.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Warszawa, Wrocław, Katowice",
+      "board": "All Inclusive",
+      "operator": "Join UP",
+      "stars": 5,
+      "rating": 8.5,
+      "opinions": 91,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 11238
+        }
+      ]
+    },
+    "dreams-vacation-sharm-resort__29-09-2026-07-10-2026__katowice": {
+      "key": "dreams-vacation-sharm-resort__29-09-2026-07-10-2026__katowice",
+      "hotel": "Dreams Vacation Sharm Resort",
+      "region": "Egipt / Sharm el Sheikh",
+      "dateRange": "29.09.2026- 07.10.2026",
+      "duration": "(9 dni / 7 nocy)",
+      "departure": "Katowice",
+      "board": "All Inclusive",
+      "operator": "Join UP",
+      "stars": 4,
+      "rating": 8.5,
+      "opinions": 320,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 11810
+        }
+      ]
+    },
+    "akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort__29-09-2026-06-10-2026__katowice-lodz-warszawa": {
+      "key": "akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort__29-09-2026-06-10-2026__katowice-lodz-warszawa",
+      "hotel": "Akassia Swiss Resort (ex. Calimera Club Akassia Swiss Resort)",
+      "region": "Egipt / Marsa El Alam / Al-Kusajr",
+      "dateRange": "29.09.2026- 06.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Katowice, Warszawa, Łódź",
+      "board": "All Inclusive",
+      "operator": "Coral Travel",
+      "stars": 5,
+      "rating": 8.5,
+      "opinions": 670,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 12346
+        }
+      ]
+    },
+    "xperience-kiroseiz-premier__29-09-2026-07-10-2026__katowice": {
+      "key": "xperience-kiroseiz-premier__29-09-2026-07-10-2026__katowice",
+      "hotel": "Xperience Kiroseiz Premier",
+      "region": "Egipt / Sharm el Sheikh / Naama Bay",
+      "dateRange": "29.09.2026- 07.10.2026",
+      "duration": "(9 dni / 7 nocy)",
+      "departure": "Katowice",
+      "board": "All Inclusive",
+      "operator": "Join UP",
+      "stars": 5,
+      "rating": 8.3,
+      "opinions": 10,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 12482
+        }
+      ]
+    },
+    "rewaya-majestic-resort__28-09-2026-05-10-2026__warszawa-wroclaw": {
+      "key": "rewaya-majestic-resort__28-09-2026-05-10-2026__warszawa-wroclaw",
+      "hotel": "Rewaya Majestic Resort",
+      "region": "Egipt / Hurghada",
+      "dateRange": "28.09.2026- 05.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Warszawa, Wrocław",
+      "board": "All Inclusive Ultimate",
+      "operator": "Join UP",
+      "stars": 5,
+      "rating": 8.4,
+      "opinions": 257,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 12568
+        }
+      ]
+    },
+    "titanic-palace-resort__28-09-2026-05-10-2026__wroclaw": {
+      "key": "titanic-palace-resort__28-09-2026-05-10-2026__wroclaw",
+      "hotel": "Titanic Palace Resort",
+      "region": "Egipt / Hurghada",
+      "dateRange": "28.09.2026- 05.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Wrocław",
+      "board": "Ultra All Inclusive",
+      "operator": "Exim Tours",
+      "stars": 5,
+      "rating": 8,
+      "opinions": 494,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 12636
+        }
+      ]
+    },
+    "stella-gardens-resort-spa-ex-stella-di-mare-gardens__28-09-2026-05-10-2026__katowice-warszawa-wroclaw": {
+      "key": "stella-gardens-resort-spa-ex-stella-di-mare-gardens__28-09-2026-05-10-2026__katowice-warszawa-wroclaw",
+      "hotel": "Stella Gardens Resort & Spa (ex Stella Di Mare Gardens)",
+      "region": "Egipt / Hurghada / Makadi Bay",
+      "dateRange": "28.09.2026- 05.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Warszawa, Wrocław, Katowice",
+      "board": "All Inclusive",
+      "operator": "Join UP",
+      "stars": 5,
+      "rating": 8.1,
+      "opinions": 264,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 12732
+        }
+      ]
+    },
+    "titanic-palace-resort__29-09-2026-06-10-2026__katowice": {
+      "key": "titanic-palace-resort__29-09-2026-06-10-2026__katowice",
+      "hotel": "Titanic Palace Resort",
+      "region": "Egipt / Hurghada",
+      "dateRange": "29.09.2026- 06.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Katowice",
+      "board": "Ultra All Inclusive",
+      "operator": "Coral Travel",
+      "stars": 5,
+      "rating": 8,
+      "opinions": 494,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 12976
+        }
+      ]
+    },
+    "sindbad-club__28-09-2026-05-10-2026__katowice-warszawa-wroclaw": {
+      "key": "sindbad-club__28-09-2026-05-10-2026__katowice-warszawa-wroclaw",
+      "hotel": "Sindbad Club",
+      "region": "Egipt / Hurghada",
+      "dateRange": "28.09.2026- 05.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Warszawa, Wrocław, Katowice",
+      "board": "All Inclusive Club",
+      "operator": "Join UP",
+      "stars": 4,
+      "rating": 8.3,
+      "opinions": 538,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 13032
+        }
+      ]
+    },
+    "pickalbatros-aqua-blu-resort__30-09-2026-07-10-2026__katowice": {
+      "key": "pickalbatros-aqua-blu-resort__30-09-2026-07-10-2026__katowice",
+      "hotel": "Pickalbatros Aqua Blu Resort",
+      "region": "Egipt / Hurghada",
+      "dateRange": "30.09.2026- 07.10.2026",
+      "duration": "(8 dni / 7 nocy)",
+      "departure": "Katowice",
+      "board": "All Inclusive",
+      "operator": "Join UP",
+      "stars": 4,
+      "rating": 8.8,
+      "opinions": 562,
+      "detailUrl": null,
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "prices": [
+        {
+          "date": "2026-09-18",
+          "price": 13074
+        }
+      ]
+    }
+  },
+  "lastUpdated": "2026-09-18T09:52:35.766Z",
+  "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
+}

@@ -48,9 +48,9 @@ if (!changed) {
   process.exit(0);
 }
 
-// 3. Commit + push.
+// 3. Commit.
 const date = new Date().toISOString().slice(0, 10);
-log("Wykryto zmiany, commit i push…");
+log("Wykryto zmiany, commit…");
 run("git", ["add", "data/"]);
 
 const commit = run("git", ["commit", "-m", `data: aktualizacja cen ${date}`]);
@@ -59,10 +59,29 @@ if (commit.status !== 0) {
   process.exit(commit.status || 1);
 }
 
-const push = run("git", ["push"]);
-if (push.status !== 0) {
-  log("Push nie powiódł się. Sprawdź konfigurację remote/uprawnienia.");
-  process.exit(push.status || 1);
+// 4. Push z odpornością na rozjazd z remote.
+// Jeśli zdalne repo jest z przodu (np. commit z innego miejsca), robimy
+// rebase na origin/main i ponawiamy push. Dane są regenerowane co przebieg,
+// więc rebase jest bezpieczny.
+function tryPush() {
+  return run("git", ["push"]).status === 0;
+}
+
+if (!tryPush()) {
+  log("Push odrzucony — synchronizuję z remote (pull --rebase) i ponawiam…");
+  run("git", ["fetch", "origin"]);
+  const rebase = run("git", ["rebase", "origin/main"]);
+  if (rebase.status !== 0) {
+    // Konflikt (np. równoległa edycja tych samych danych) — przerwij rebase,
+    // żeby nie zostawić repo w połowie operacji.
+    run("git", ["rebase", "--abort"]);
+    log("Rebase nie powiódł się (konflikt). Push wymaga ręcznej interwencji.");
+    process.exit(1);
+  }
+  if (!tryPush()) {
+    log("Push nie powiódł się nawet po rebase. Sprawdź remote/uprawnienia.");
+    process.exit(1);
+  }
 }
 
 log("Gotowe — dane wypchnięte. GitHub Pages opublikuje aktualizację automatycznie.");

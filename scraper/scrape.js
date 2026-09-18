@@ -36,18 +36,46 @@ function nowIso() {
   return new Date().toISOString();
 }
 
-async function fetchPage(url) {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": USER_AGENT,
-      "Accept-Language": "pl-PL,pl;q=0.9",
-      Accept: "text/html,application/xhtml+xml",
-    },
-  });
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status} dla ${url}`);
+// Pełny zestaw nagłówków imitujący przeglądarkę Chrome. Niektóre zabezpieczenia
+// anty-botowe (m.in. odpowiedź HTTP 449) odrzucają żądania bez tych nagłówków,
+// zwłaszcza z adresów IP centrów danych (np. runnery GitHub Actions).
+const BROWSER_HEADERS = {
+  "User-Agent": USER_AGENT,
+  Accept:
+    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+  "Accept-Language": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7",
+  "Accept-Encoding": "gzip, deflate, br",
+  "Cache-Control": "no-cache",
+  Pragma: "no-cache",
+  "Upgrade-Insecure-Requests": "1",
+  "Sec-Ch-Ua": '"Chromium";v="120", "Not(A:Brand";v="24", "Google Chrome";v="120"',
+  "Sec-Ch-Ua-Mobile": "?0",
+  "Sec-Ch-Ua-Platform": '"Windows"',
+  "Sec-Fetch-Dest": "document",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-User": "?1",
+  Referer: "https://www.wakacje.pl/",
+};
+
+const sleepMs = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function fetchPage(url, attempt = 1) {
+  const MAX_ATTEMPTS = 4;
+  const res = await fetch(url, { headers: BROWSER_HEADERS, redirect: "follow" });
+  if (res.ok) return res.text();
+
+  // Blokady anty-botowe (429/449/503) — ponawiamy z rosnącym odstępem.
+  const retryable = [429, 449, 503].includes(res.status);
+  if (retryable && attempt < MAX_ATTEMPTS) {
+    const wait = 2000 * attempt;
+    console.warn(
+      `HTTP ${res.status} — ponawiam za ${wait} ms (próba ${attempt + 1}/${MAX_ATTEMPTS})`
+    );
+    await sleepMs(wait);
+    return fetchPage(url, attempt + 1);
   }
-  return res.text();
+  throw new Error(`HTTP ${res.status} dla ${url}`);
 }
 
 /** Pobiera wszystkie strony listingu i zwraca zdeduplikowaną tablicę ofert. */

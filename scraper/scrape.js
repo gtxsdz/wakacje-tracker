@@ -221,6 +221,7 @@ function buildLatest(history, currentResults, date) {
     offers.push({
       key: r.offer.key,
       offerId: r.offer.offerId,
+      hotelId: r.offer.hotelId,
       hotel: r.offer.hotel,
       region: r.offer.region,
       stars: r.offer.stars,
@@ -232,6 +233,7 @@ function buildLatest(history, currentResults, date) {
       returnDate: r.offer.returnDate,
       detailUrl: buildDetailUrl(r.offer),
       variantCount: r.variants.length,
+      altOffers: r.altOffers && r.altOffers.length ? r.altOffers : undefined,
       cheapest: flat,
       price: current,
       prevPrice,
@@ -275,6 +277,53 @@ function buildLatest(history, currentResults, date) {
     count: offers.length,
     offers,
     disappeared,
+  };
+}
+
+/**
+ * Scala wyniki per hotel: ten sam hotel (hotelId) może pochodzić z kilku ofert
+ * (różni operatorzy). Zostawiamy jeden wynik na hotel — ten z najtańszym
+ * wybranym wariantem. Klucz historii ustawiamy na hotel-{hotelId}, żeby historia
+ * była spójna niezależnie od tego, przez którego operatora hotel akurat jest tani.
+ */
+function collapseByHotel(results) {
+  const byHotel = new Map();
+  for (const r of results) {
+    const hotelId = r.offer.hotelId;
+    // Klucz na poziomie hotelu (fallback na dotychczasowy, gdy brak hotelId).
+    const hotelKey = hotelId ? `hotel-${hotelId}` : r.offer.key;
+    const prev = byHotel.get(hotelKey);
+
+    const price = r.chosen ? r.chosen.price : Infinity;
+    const prevPrice = prev && prev.chosen ? prev.chosen.price : Infinity;
+
+    if (!prev || price < prevPrice) {
+      // Ta oferta daje tańszy (lub pierwszy) wariant dla tego hotelu.
+      const merged = {
+        ...r,
+        offer: { ...r.offer, key: hotelKey, hotelId },
+        // zachowaj informację o alternatywnych ofertach tego hotelu
+        altOffers: prev ? [...(prev.altOffers || []), altInfo(prev)] : [],
+      };
+      byHotel.set(hotelKey, merged);
+    } else {
+      // Ten wariant nie jest tańszy — dopisz jako alternatywę.
+      prev.altOffers = prev.altOffers || [];
+      prev.altOffers.push(altInfo(r));
+    }
+  }
+  // Sort po cenie wybranego wariantu.
+  return [...byHotel.values()].sort(
+    (a, b) => (a.chosen?.price ?? Infinity) - (b.chosen?.price ?? Infinity)
+  );
+}
+
+/** Skrótowa informacja o alternatywnej ofercie hotelu (inny operator). */
+function altInfo(r) {
+  return {
+    offerId: r.offer.offerId,
+    operator: r.offer.operator,
+    price: r.chosen ? r.chosen.price : null,
   };
 }
 
@@ -347,12 +396,20 @@ async function main() {
     return;
   }
 
+  // Deduplikacja po hotelu: ten sam hotel bywa w kilku ofertach (różni
+  // operatorzy). Dla każdego hotelu bierzemy ofertę z najtańszym wariantem.
+  const hotelResults = collapseByHotel(results);
+  const collapsed = offers.length - hotelResults.length;
+  if (collapsed > 0) {
+    console.log(`Scalono duplikaty hoteli: ${offers.length} ofert → ${hotelResults.length} hoteli`);
+  }
+
   const historyPath = path.join(ROOT, HISTORY_FILE);
   const latestPath = path.join(ROOT, LATEST_FILE);
   const history = readJson(historyPath, { offers: {} });
   history.offers = history.offers || {};
 
-  for (const r of results) {
+  for (const r of hotelResults) {
     const entry = history.offers[r.offer.key] || {};
     updateOfferHistory(entry, r.offer, r.chosen, r.soldOutCheaper, date);
     history.offers[r.offer.key] = entry;
@@ -360,7 +417,7 @@ async function main() {
   history.lastUpdated = nowIso();
   history.sourceUrl = LISTING_URL;
 
-  const latest = buildLatest(history, results, date);
+  const latest = buildLatest(history, hotelResults, date);
 
   writeJson(historyPath, history);
   writeJson(latestPath, latest);

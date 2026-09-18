@@ -1,6 +1,6 @@
 {
   "offers": {
-    "offer-1166489": {
+    "hotel-32171": {
       "offerId": 1166489,
       "hotel": "Gravity Hotel & Aquapark Hurghada (ex. Samra Bay Resort)",
       "region": "Egipt / Hurghada",
@@ -17,7 +17,7 @@
         {
           "date": "2026-09-18",
           "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwkMS01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA1IwQ7M",
+          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwmcu01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA3NC-QY",
           "price": 11238,
           "currency": "PLN",
           "room": "Superior room",
@@ -63,24 +63,9 @@
           "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
         }
       ],
-      "variantChanges": [
-        {
-          "date": "2026-09-18",
-          "from": {
-            "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-            "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
-            "price": 11238
-          },
-          "to": {
-            "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-            "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
-            "price": 11238
-          },
-          "reason": "zmiana najtańszego wariantu"
-        }
-      ]
+      "variantChanges": []
     },
-    "offer-1166986": {
+    "hotel-7231": {
       "offerId": 1166986,
       "hotel": "Dreams Vacation Sharm Resort",
       "region": "Egipt / Sharm el Sheikh",
@@ -97,7 +82,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwkcS01QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAspV-9j",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw_Mq01QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAurw5AA",
           "price": 11810,
           "currency": "PLN",
           "room": "Standard room",
@@ -145,7 +130,7 @@
       ],
       "variantChanges": []
     },
-    "offer-254866": {
+    "hotel-20313": {
       "offerId": 254866,
       "hotel": "Akassia Swiss Resort (ex. Calimera Club Akassia Swiss Resort)",
       "region": "Egipt / Marsa El Alam / Al-Kusajr",
@@ -162,7 +147,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard room garden view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwksS01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgukHXaE",
+          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwucu01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgujrW_8",
           "price": 11866,
           "currency": "PLN",
           "room": "Standard room garden view",
@@ -210,7 +195,7 @@
       ],
       "variantChanges": []
     },
-    "offer-1166909": {
+    "hotel-263513": {
       "offerId": 1166909,
       "hotel": "Rewaya Majestic Resort",
       "region": "Egipt / Hurghada",
@@ -227,7 +212,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|15:30",
-          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwlMS01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQANyVRVCw",
+          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwusu01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQAN7OPgRA",
           "price": 12460,
           "currency": "PLN",
           "room": "Standard room",
@@ -275,7 +260,7 @@
       ],
       "variantChanges": []
     },
-    "offer-1166735": {
+    "hotel-30896": {
       "offerId": 1166735,
       "hotel": "Xperience Kiroseiz Premier",
       "region": "Egipt / Sharm el Sheikh / Naama Bay",
@@ -292,7 +277,7 @@
         {
           "date": "2026-09-18",
           "variantId": "superior room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwlcS01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAsZV1Nv",
+          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwu8u01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAtJG_sS",
           "price": 12483,
           "currency": "PLN",
           "room": "Superior room",
@@ -340,7 +325,7 @@
       ],
       "variantChanges": []
     },
-    "offer-1050343": {
+    "hotel-20196": {
       "offerId": 1050343,
       "hotel": "Titanic Palace Resort",
       "region": "Egipt / Hurghada",
@@ -357,7 +342,7 @@
         {
           "date": "2026-09-18",
           "variantId": "standard standard pool view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wlsS01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgu5izwH",
+          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wvcu01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAguwnmHC",
           "price": 12629,
           "currency": "PLN",
           "room": "Standard standard pool view triple room",
@@ -405,7 +390,7 @@
       ],
       "variantChanges": []
     },
-    "offer-1166540": {
+    "hotel-23085": {
       "offerId": 1166540,
       "hotel": "Stella Gardens Resort & Spa (ex Stella Di Mare Gardens)",
       "region": "Egipt / Hurghada / Makadi Bay",
@@ -422,7 +407,7 @@
         {
           "date": "2026-09-18",
           "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-          "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwl8S01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA3uJM0T",
+          "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwv8u01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA0EbBOY",
           "price": 12732,
           "currency": "PLN",
           "room": "Family room",
@@ -468,24 +453,9 @@
           "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
         }
       ],
-      "variantChanges": [
-        {
-          "date": "2026-09-18",
-          "from": {
-            "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-            "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
-            "price": 12732
-          },
-          "to": {
-            "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-            "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
-            "price": 12732
-          },
-          "reason": "zmiana najtańszego wariantu"
-        }
-      ]
+      "variantChanges": []
     },
-    "offer-1167460": {
+    "hotel-6373": {
       "offerId": 1167460,
       "hotel": "Sindbad Club",
       "region": "Egipt / Hurghada",
@@ -502,7 +472,7 @@
         {
           "date": "2026-09-18",
           "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwmMS01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAuS9Dbz",
+          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwwMu01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAtqSwD5",
           "price": 12926,
           "currency": "PLN",
           "room": "Superior family room",
@@ -552,8 +522,8 @@
         {
           "date": "2026-09-18",
           "from": {
-            "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-            "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
+            "variantId": "premium family|KTW|2026-09-28|14:30|2026-10-05|09:05",
+            "label": "Premium family • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
             "price": 12926
           },
           "to": {
@@ -565,72 +535,7 @@
         }
       ]
     },
-    "offer-14032": {
-      "offerId": 14032,
-      "hotel": "Titanic Palace Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8,
-      "opinions": 495,
-      "operator": "Coral Travel",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "lastSeen": "2026-09-18",
-      "firstSeen": "2026-09-18",
-      "prices": [
-        {
-          "date": "2026-09-18",
-          "variantId": "coral standard room|KTW|2026-09-29|03:10|2026-10-06|09:15",
-          "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwmcS01QZIoJlPUEVY_AFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLbR08sQ",
-          "price": 12976,
-          "currency": "PLN",
-          "room": "Coral standard room",
-          "departureCode": "KTW",
-          "luggageIncluded": true,
-          "carrier": "ENT 4039",
-          "outbound": {
-            "from": {
-              "airportCode": "KTW",
-              "airportName": "Katowice",
-              "city": "Katowice",
-              "date": "2026-09-29",
-              "customDate": "29.09 (Wt.)",
-              "time": "03:10"
-            },
-            "to": {
-              "airportCode": "HRG",
-              "airportName": "Hurghada",
-              "city": "Hurghada",
-              "date": "2026-09-29",
-              "customDate": "29.09 (Wt.)",
-              "time": "08:45"
-            }
-          },
-          "inbound": {
-            "from": {
-              "airportCode": "HRG",
-              "airportName": "Hurghada",
-              "city": "Hurghada",
-              "date": "2026-10-06",
-              "customDate": "06.10 (Wt.)",
-              "time": "09:15"
-            },
-            "to": {
-              "airportCode": "KTW",
-              "airportName": "Katowice",
-              "city": "Katowice",
-              "date": "2026-10-06",
-              "customDate": "06.10 (Wt.)",
-              "time": "13:10"
-            }
-          },
-          "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
-        }
-      ],
-      "variantChanges": []
-    },
-    "offer-1166973": {
+    "hotel-6218": {
       "offerId": 1166973,
       "hotel": "Xperience Kiroseiz Parkland",
       "region": "Egipt / Sharm el Sheikh / Naama Bay",
@@ -647,7 +552,7 @@
         {
           "date": "2026-09-18",
           "variantId": "superior pool view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwmsS01QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC7awfwU",
+          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwhcu01QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEACxKelqo",
           "price": 13116,
           "currency": "PLN",
           "room": "Superior pool view",
@@ -695,7 +600,7 @@
       ],
       "variantChanges": []
     },
-    "offer-1185337": {
+    "hotel-7204": {
       "offerId": 1185337,
       "hotel": "Aladdin Beach Resort",
       "region": "Egipt / Hurghada",
@@ -712,6 +617,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-18T11:35:54.882Z",
+  "lastUpdated": "2026-09-18T11:51:29.913Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

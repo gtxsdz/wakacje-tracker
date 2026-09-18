@@ -114,6 +114,13 @@ function offerCard(o) {
     ? `<div class="sold-note">⚠ ${o.soldOutNote} — pokazujemy kolejny najtańszy wariant</div>`
     : "";
 
+  const alt =
+    o.altOffers && o.altOffers.length
+      ? `<div class="alt-offers">Ten hotel też u: ${o.altOffers
+          .map((a) => `${a.operator || "inny operator"} (${fmtPrice(a.price)})`)
+          .join(", ")}</div>`
+      : "";
+
   const lowestBadge =
     o.isLowest && o.pointCount > 1 ? `<span class="badge-lowest">najniższa dotąd</span>` : "";
 
@@ -130,6 +137,7 @@ function offerCard(o) {
         ${airportLine}
         ${flightMarkup(v)}
         <div class="tags">${tags.join("")}</div>
+        ${alt}
         ${soldOut}
       </div>
       <div class="offer-price">

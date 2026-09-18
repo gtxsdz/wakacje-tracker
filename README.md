@@ -50,9 +50,11 @@ wakacje.pl ─► scraper ─► data/*.json ─► git push ─► GitHub Pages
 6. **Frontend** (`index.html`, `app.js`, `styles.css`) pokazuje listę z lotniskiem
    i godzinami, strzałkami ▲/▼, a po kliknięciu — wykres historii ceny i log zmian wariantu.
 
-Klucz historii = `offer-{offerId}` (stabilny). Tożsamość wariantu budujemy z jego
-atrybutów (pokój + lotnisko + daty/godziny), bo token `offerHash` z API zmienia się
-przy każdym zapytaniu.
+Jeden wpis na hotel: ten sam hotel bywa w kilku ofertach (różni operatorzy) —
+scalamy je po `hotelId` i pokazujemy najtańszy wariant ze wszystkich, a pozostałe
+oferty hotelu trafiają do pola `altOffers`. Klucz historii = `hotel-{hotelId}`
+(stabilny). Tożsamość wariantu budujemy z jego atrybutów (pokój + lotnisko +
+daty/godziny), bo token `offerHash` z API zmienia się przy każdym zapytaniu.
 
 > **API zamiast HTML.** Konkretny wylot (lotnisko, dzień, godzina) nie jest w HTML strony
 > oferty — doładowuje go przeglądarka z powyższego API. Namierzyliśmy je narzędziem

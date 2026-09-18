@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-09-18T11:35:54.884Z",
+  "generatedAt": "2026-09-18T11:51:29.914Z",
   "date": "2026-09-18",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
-  "count": 10,
+  "count": 9,
   "offers": [
     {
-      "key": "offer-1166489",
+      "key": "hotel-32171",
       "offerId": 1166489,
+      "hotelId": 32171,
       "hotel": "Gravity Hotel & Aquapark Hurghada (ex. Samra Bay Resort)",
       "region": "Egipt / Hurghada",
       "stars": 5,
@@ -20,7 +21,7 @@
       "variantCount": 6,
       "cheapest": {
         "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwkMS01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA1IwQ7M",
+        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwmcu01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA3NC-QY",
         "price": 11238,
         "currency": "PLN",
         "room": "Superior room",
@@ -74,85 +75,13 @@
       "isLowest": true,
       "pointCount": 1,
       "firstSeen": "2026-09-18",
-      "soldOutNote": "zmiana najtańszego wariantu",
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "offer-1166986",
-      "offerId": 1166986,
-      "hotel": "Dreams Vacation Sharm Resort",
-      "region": "Egipt / Sharm el Sheikh",
-      "stars": 4,
-      "rating": 8.5,
-      "opinions": 320,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/dreams-vacation-sharm-resort-1166986.html",
-      "variantCount": 4,
-      "cheapest": {
-        "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwkcS01QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAspV-9j",
-        "price": 11810,
-        "currency": "PLN",
-        "room": "Standard room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7345",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:05"
-          },
-          "to": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "07:10"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "23:50"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "03:10"
-          }
-        },
-        "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
-      },
-      "price": 11810,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 11810,
-      "maxPrice": 11810,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-254866",
+      "key": "hotel-20313",
       "offerId": 254866,
+      "hotelId": 20313,
       "hotel": "Akassia Swiss Resort (ex. Calimera Club Akassia Swiss Resort)",
       "region": "Egipt / Marsa El Alam / Al-Kusajr",
       "stars": 5,
@@ -166,7 +95,7 @@
       "variantCount": 90,
       "cheapest": {
         "variantId": "standard room garden view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-        "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwksS01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgukHXaE",
+        "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwucu01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgujrW_8",
         "price": 11866,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -224,8 +153,9 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-1166909",
+      "key": "hotel-263513",
       "offerId": 1166909,
+      "hotelId": 263513,
       "hotel": "Rewaya Majestic Resort",
       "region": "Egipt / Hurghada",
       "stars": 5,
@@ -239,7 +169,7 @@
       "variantCount": 4,
       "cheapest": {
         "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|15:30",
-        "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwlMS01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQANyVRVCw",
+        "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwusu01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQAN7OPgRA",
         "price": 12460,
         "currency": "PLN",
         "room": "Standard room",
@@ -297,8 +227,9 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-1166735",
+      "key": "hotel-30896",
       "offerId": 1166735,
+      "hotelId": 30896,
       "hotel": "Xperience Kiroseiz Premier",
       "region": "Egipt / Sharm el Sheikh / Naama Bay",
       "stars": 5,
@@ -312,7 +243,7 @@
       "variantCount": 2,
       "cheapest": {
         "variantId": "superior room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwlcS01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAsZV1Nv",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwu8u01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAtJG_sS",
         "price": 12483,
         "currency": "PLN",
         "room": "Superior room",
@@ -370,8 +301,9 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-1050343",
+      "key": "hotel-20196",
       "offerId": 1050343,
+      "hotelId": 20196,
       "hotel": "Titanic Palace Resort",
       "region": "Egipt / Hurghada",
       "stars": 5,
@@ -383,9 +315,16 @@
       "returnDate": "2026-10-05",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-1050343.html",
       "variantCount": 3,
+      "altOffers": [
+        {
+          "offerId": 14032,
+          "operator": "Coral Travel",
+          "price": 12976
+        }
+      ],
       "cheapest": {
         "variantId": "standard standard pool view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wlsS01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgu5izwH",
+        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wvcu01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAguwnmHC",
         "price": 12629,
         "currency": "PLN",
         "room": "Standard standard pool view triple room",
@@ -443,8 +382,9 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-1166540",
+      "key": "hotel-23085",
       "offerId": 1166540,
+      "hotelId": 23085,
       "hotel": "Stella Gardens Resort & Spa (ex Stella Di Mare Gardens)",
       "region": "Egipt / Hurghada / Makadi Bay",
       "stars": 5,
@@ -458,7 +398,7 @@
       "variantCount": 3,
       "cheapest": {
         "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-        "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwl8S01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA3uJM0T",
+        "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwv8u01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA0EbBOY",
         "price": 12732,
         "currency": "PLN",
         "room": "Family room",
@@ -512,12 +452,13 @@
       "isLowest": true,
       "pointCount": 1,
       "firstSeen": "2026-09-18",
-      "soldOutNote": "zmiana najtańszego wariantu",
+      "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-1167460",
+      "key": "hotel-6373",
       "offerId": 1167460,
+      "hotelId": 6373,
       "hotel": "Sindbad Club",
       "region": "Egipt / Hurghada",
       "stars": 4,
@@ -531,7 +472,7 @@
       "variantCount": 6,
       "cheapest": {
         "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwmMS01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAuS9Dbz",
+        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwwMu01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAtqSwD5",
         "price": 12926,
         "currency": "PLN",
         "room": "Superior family room",
@@ -589,147 +530,57 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-14032",
-      "offerId": 14032,
-      "hotel": "Titanic Palace Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8,
-      "opinions": 495,
-      "operator": "Coral Travel",
+      "key": "hotel-7231",
+      "offerId": 1166986,
+      "hotelId": 7231,
+      "hotel": "Dreams Vacation Sharm Resort",
+      "region": "Egipt / Sharm el Sheikh",
+      "stars": 4,
+      "rating": 8.5,
+      "opinions": 320,
+      "operator": "Join UP",
       "duration": 7,
       "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-14032.html",
-      "variantCount": 5,
-      "cheapest": {
-        "variantId": "coral standard room|KTW|2026-09-29|03:10|2026-10-06|09:15",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwmcS01QZIoJlPUEVY_AFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLbR08sQ",
-        "price": 12976,
-        "currency": "PLN",
-        "room": "Coral standard room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "ENT 4039",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "03:10"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "08:45"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "09:15"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "13:10"
-          }
-        },
-        "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
-      },
-      "price": 12976,
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/dreams-vacation-sharm-resort-1166986.html",
+      "variantCount": 0,
+      "cheapest": null,
+      "price": null,
       "prevPrice": null,
       "change": null,
       "changePct": null,
-      "minPrice": 12976,
-      "maxPrice": 12976,
-      "isLowest": true,
+      "minPrice": 11810,
+      "maxPrice": 11810,
+      "isLowest": false,
       "pointCount": 1,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "offer-1166973",
-      "offerId": 1166973,
-      "hotel": "Xperience Kiroseiz Parkland",
-      "region": "Egipt / Sharm el Sheikh / Naama Bay",
-      "stars": 5,
-      "rating": 8.2,
-      "opinions": 389,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/naama-bay/xperience-kiroseiz-parkland-1166973.html",
-      "variantCount": 1,
-      "cheapest": {
-        "variantId": "superior pool view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwmsS01QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC7awfwU",
-        "price": 13116,
-        "currency": "PLN",
-        "room": "Superior pool view",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7345",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:05"
-          },
-          "to": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "07:10"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "23:50"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "03:10"
-          }
-        },
-        "label": "Superior pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
-      },
-      "price": 13116,
+      "key": "hotel-7204",
+      "offerId": 1185337,
+      "hotelId": 7204,
+      "hotel": "Aladdin Beach Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.3,
+      "opinions": 732,
+      "operator": "TUI",
+      "duration": 8,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/aladdin-beach-resort-1185337.html",
+      "variantCount": 0,
+      "cheapest": null,
+      "price": null,
       "prevPrice": null,
       "change": null,
       "changePct": null,
-      "minPrice": 13116,
-      "maxPrice": 13116,
-      "isLowest": true,
-      "pointCount": 1,
+      "minPrice": null,
+      "maxPrice": null,
+      "isLowest": false,
+      "pointCount": 0,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -737,10 +588,10 @@
   ],
   "disappeared": [
     {
-      "key": "offer-1185337",
-      "hotel": "Aladdin Beach Resort",
-      "region": "Egipt / Hurghada",
-      "lastPrice": null,
+      "key": "hotel-6218",
+      "hotel": "Xperience Kiroseiz Parkland",
+      "region": "Egipt / Sharm el Sheikh / Naama Bay",
+      "lastPrice": 13116,
       "lastSeen": "2026-09-18"
     }
   ]

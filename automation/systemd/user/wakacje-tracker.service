@@ -1,0 +1,21 @@
+# Jednostka systemd użytkownika (bez sudo). Wariant użyty na maszynie Debian.
+# Instalacja:
+#   mkdir -p ~/.config/systemd/user
+#   cp automation/systemd/user/wakacje-tracker.* ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now wakacje-tracker.timer
+#   sudo loginctl enable-linger $USER   # by działało bez aktywnej sesji
+#
+# %h = katalog domowy. Zakłada Node w ~/.local/node/bin (instalacja binarki).
+# Jeśli node jest w /usr/bin, zmień PATH i ExecStart.
+
+[Unit]
+Description=Wakacje.pl tracker cen - pobranie i push danych
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/wakacje-tracker
+Environment=PATH=%h/.local/node/bin:/usr/bin:/bin
+ExecStart=%h/.local/node/bin/node scraper/push.js

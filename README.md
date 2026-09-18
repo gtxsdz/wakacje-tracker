@@ -109,24 +109,35 @@ był wyłączony, zadanie odpali się przy najbliższej okazji.
 
 ### Linux (docelowa maszyna działająca 24/7)
 
-Wariant A — **systemd timer** (zalecany dla maszyny non-stop):
+Tak wygląda faktyczne wdrożenie na Debianie (bez roota, timer użytkownika):
 
 ```bash
-# dostosuj User i ścieżki w plikach jednostek
-sudo cp automation/systemd/wakacje-tracker.service /etc/systemd/system/
-sudo cp automation/systemd/wakacje-tracker.timer   /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable --now wakacje-tracker.timer
+# 1. Node (jeśli brak) — binarka do katalogu domowego, bez sudo:
+curl -fsSL -o /tmp/node.tar.xz https://nodejs.org/dist/v20.18.1/node-v20.18.1-linux-x64.tar.xz
+mkdir -p ~/.local && tar -xf /tmp/node.tar.xz -C ~/.local
+mv ~/.local/node-v20.18.1-linux-x64 ~/.local/node
+echo 'export PATH="$HOME/.local/node/bin:$PATH"' >> ~/.bashrc
 
-systemctl list-timers | grep wakacje        # podgląd harmonogramu
-journalctl -u wakacje-tracker.service -f     # logi
+# 2. Repo + push przez deploy key (klucz SSH z prawem zapisu w ustawieniach repo):
+git clone git@github.com:<uzytkownik>/<repo>.git ~/wakacje-tracker
+
+# 3. Timer użytkownika (2x dziennie 10:00 i 18:00):
+mkdir -p ~/.config/systemd/user
+cp ~/wakacje-tracker/automation/systemd/user/wakacje-tracker.* ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now wakacje-tracker.timer
+sudo loginctl enable-linger $USER          # by działało bez aktywnej sesji SSH
+
+systemctl --user list-timers                 # podgląd harmonogramu
+journalctl --user -u wakacje-tracker.service # logi
 ```
 
-Wariant B — **cron**: patrz `automation/crontab.example` (gotowa linia do `crontab -e`).
+Alternatywnie **cron**: patrz `automation/crontab.example`. Warianty systemowe (z sudo)
+są w `automation/systemd/` (bez podkatalogu `user/`).
 
-W obu wariantach maszyna musi mieć dostęp do gita z uprawnieniem do push
-(klucz SSH lub token w credential helperze). Pierwsze `git push` wykonaj ręcznie,
-żeby zapisać poświadczenia.
+> **HTTP przez curl.** Scraper używa `curl` jako transportu (`scraper/http.js`), bo
+> wakacje.pl blokuje wbudowany `fetch` Node po odcisku TLS (HTTP 449), szczególnie na
+> Linuksie. `curl` jest standardowo dostępny; nic nie trzeba dodatkowo instalować.
 
 Historia cen buduje się z czasem — pierwszego dnia wszystkie oferty mają jeden pomiar,
 a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.

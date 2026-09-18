@@ -42,28 +42,29 @@ function variantLabel(v) {
 }
 
 /**
- * Stabilna sygnatura wariantu (offerHash z API rotuje między zapytaniami,
- * więc tożsamość budujemy z realnych atrybutów: pokój + lotnisko + daty/godziny).
+ * Tożsamość ŚLEDZONEJ oferty hotelu = biuro podróży (operator).
+ *
+ * Świadomie NIE uwzględniamy tu lotniska, godzin, daty ani pokoju: te kryteria
+ * są już zawężone filtrem wyszukiwania (interesujące miasta wylotu i termin),
+ * a nas interesuje wyłącznie NAJNIŻSZA cena danego hotelu. Dzięki temu zmiana
+ * lotniska/godziny/pokoju w obrębie tego samego biura nie generuje sztucznej
+ * „zmiany wariantu" — liczy się tylko cena (spadek/wzrost) i ewentualna zmiana
+ * biura, przez które hotel jest teraz najtańszy.
  */
-function variantSignature(v) {
-  if (!v) return "";
-  const d = v.outbound?.from;
-  const r = v.inbound?.from;
-  return [
-    (v.room || "").toLowerCase().trim(),
-    v.departureCode || d?.airportCode || "",
-    d?.date || "",
-    d?.time || "",
-    r?.date || "",
-    r?.time || "",
-  ].join("|");
+function variantSignature(operator) {
+  return (operator || "").toLowerCase().trim();
 }
 
-/** Spłaszcza wybrany wariant do postaci zapisywanej w historii/snapshotcie. */
-function flattenVariant(v) {
+/**
+ * Spłaszcza wybrany wariant do postaci zapisywanej w historii/snapshotcie.
+ * `operator` (biuro podróży) pochodzi z oferty, nie z samego wariantu, i służy
+ * jako tożsamość śledzonej oferty hotelu.
+ */
+function flattenVariant(v, operator) {
   if (!v) return null;
   return {
-    variantId: variantSignature(v),
+    variantId: variantSignature(operator),
+    operator: operator || "",
     apiHash: v.id, // token z API (rotuje) — tylko poglądowo
     price: v.price,
     currency: v.currency,
@@ -91,11 +92,11 @@ function writeJson(absPath, data) {
 }
 
 /**
- * Aktualizuje historię o dzisiejszy najtańszy wariant danej oferty.
- * Wykrywa zmianę śledzonego wariantu (np. poprzedni się wyprzedał).
+ * Aktualizuje historię o dzisiejszą najniższą cenę danego hotelu.
+ * Wykrywa zmianę biura, przez które hotel jest teraz najtańszy.
  */
 function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
-  const flat = flattenVariant(chosen);
+  const flat = flattenVariant(chosen, offer.operator);
 
   // Metadane oferty (mogą się zmieniać: ocena, liczba opinii).
   entry.offerId = offer.offerId;
@@ -116,17 +117,18 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
 
   const prev = entry.prices[entry.prices.length - 1];
 
-  // Zmiana śledzonego wariantu (inny variantId niż ostatnio zapisany).
+  // Zmiana BIURA, przez które hotel jest teraz najtańszy (inny operator niż
+  // ostatnio). Nie notujemy zmian lotniska/godziny/pokoju w obrębie tego samego
+  // biura — dla śledzenia liczy się wyłącznie najniższa cena hotelu.
   if (prev && flat && prev.variantId !== flat.variantId) {
+    const cheaper = flat.price != null && prev.price != null && flat.price < prev.price;
     entry.variantChanges.push({
       date,
-      from: { variantId: prev.variantId, label: prev.label, price: prev.price },
-      to: { variantId: flat.variantId, label: flat.label, price: flat.price },
-      // Jeśli poprzedni był wśród niedostępnych/tańszych — prawdopodobnie wyprzedany.
-      reason:
-        soldOutCheaper.some((v) => variantSignature(v) === prev.variantId)
-          ? "poprzedni wariant wyprzedany"
-          : "zmiana najtańszego wariantu",
+      from: { variantId: prev.variantId, operator: prev.operator || prev.variantId, price: prev.price },
+      to: { variantId: flat.variantId, operator: flat.operator || flat.variantId, price: flat.price },
+      reason: cheaper
+        ? "najtańsze teraz w innym biurze (taniej)"
+        : "najtańsze teraz w innym biurze",
     });
   }
 
@@ -448,7 +450,7 @@ async function main() {
   const drops = latest.offers.filter((o) => o.change != null && o.change < 0);
   const rises = latest.offers.filter((o) => o.change != null && o.change > 0);
   const changes = latest.offers.filter((o) => o.soldOutNote);
-  console.log(`Zapisano do ${DATA_DIR}/  | spadki: ${drops.length}, wzrosty: ${rises.length}, zmiany wariantu: ${changes.length}`);
+  console.log(`Zapisano do ${DATA_DIR}/  | spadki: ${drops.length}, wzrosty: ${rises.length}, zmiany biura: ${changes.length}`);
 }
 
 main().catch((err) => {

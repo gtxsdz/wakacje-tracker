@@ -9,5 +9,8 @@ scraper/_*.json
 # zrzuty z narzędzia badawczego (mogą być duże, zawierają tokeny sesyjne)
 research/captures/
 
+# zrzuty ekranu z podglądu mobilnego (lokalne, duże)
+screenshots/
+
 # przeglądarki Playwright (instalowane lokalnie do badań)
 .playwright/

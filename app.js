@@ -52,7 +52,7 @@ function renderSummary() {
     { label: "Spadki", value: String(drops.length), cls: drops.length ? "down" : "" },
     { label: "Wzrosty", value: String(rises.length), cls: rises.length ? "up" : "" },
     { label: "Największy spadek", value: biggestDrop ? fmtPrice(biggestDrop.change) : "—", cls: biggestDrop ? "down" : "" },
-    { label: "Zmiany wariantu", value: String(soldOut.length), cls: soldOut.length ? "up" : "" },
+    { label: "Zmiany biura", value: String(soldOut.length), cls: soldOut.length ? "up" : "" },
   ];
 
   $("#summary").innerHTML = cards
@@ -111,7 +111,7 @@ function offerCard(o) {
     : "";
 
   const soldOut = o.soldOutNote
-    ? `<div class="sold-note">⚠ ${o.soldOutNote} — pokazujemy kolejny najtańszy wariant</div>`
+    ? `<div class="sold-note">⚠ ${o.soldOutNote}</div>`
     : "";
 
   const alt =
@@ -215,19 +215,21 @@ function openModal(key) {
     .map((s) => `<div class="stat"><div class="l">${s.l}</div><div class="v">${s.v}</div></div>`)
     .join("");
 
-  // Historia zmian wariantu (jeśli była).
+  // Historia zmian biura, przez które hotel był najtańszy (jeśli była).
+  // Fallback na .label dla starszych wpisów sprzed zmiany modelu.
   const holder = $("#modal-changes");
   if (changes.length) {
+    const who = (side) => side?.operator || side?.label || "?";
     holder.hidden = false;
     holder.innerHTML =
-      `<h3>Zmiany śledzonego wariantu</h3>` +
+      `<h3>Zmiany biura z najtańszą ofertą</h3>` +
       changes
         .slice()
         .reverse()
         .map(
           (c) => `<div class="change-item">
             <span class="cdate">${c.date}</span>
-            <span>${c.from?.label || "?"} (${fmtPrice(c.from?.price)}) → ${c.to?.label || "?"} (${fmtPrice(c.to?.price)})</span>
+            <span>${who(c.from)} (${fmtPrice(c.from?.price)}) → ${who(c.to)} (${fmtPrice(c.to?.price)})</span>
             <span class="creason">${c.reason || ""}</span>
           </div>`
         )

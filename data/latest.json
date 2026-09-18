@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T11:34:03.042Z",
+  "generatedAt": "2026-09-18T11:35:54.884Z",
   "date": "2026-09-18",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
   "count": 10,
@@ -20,7 +20,7 @@
       "variantCount": 6,
       "cheapest": {
         "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwocO01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA2Dtecr",
+        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwkMS01QZI-O0GUENY5AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA1IwQ7M",
         "price": 11238,
         "currency": "PLN",
         "room": "Superior room",
@@ -93,7 +93,7 @@
       "variantCount": 4,
       "cheapest": {
         "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwosO01QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAsvByKK",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwkcS01QZInYpIUEVY_AFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAspV-9j",
         "price": 11810,
         "currency": "PLN",
         "room": "Standard room",
@@ -166,7 +166,7 @@
       "variantCount": 90,
       "cheapest": {
         "variantId": "standard room garden view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-        "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwo8O01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgs9-KZj",
+        "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwksS01QZIiLZIUEVY_AFgA2oJRW50ZXIgQWlyckKeAR8AAgEcABYEFwIS6wIVvgYYlQMTDxTYBBHIH0CtUFDyVksATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgukHXaE",
         "price": 11866,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -239,7 +239,7 @@
       "variantCount": 4,
       "cheapest": {
         "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|15:30",
-        "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwpMO01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQANqgMlVA",
+        "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwlMS01QZI0IZMUEVY5AFgAmoDQ0dtckObARQBFQUXAVwDWAVWAkDKBk-rAV0AUuarAVMAXq9PS8lIYQARidEBTIC3OA3T_JcJIAEBlL7U6NSGzKAwAw5jAQANyVRVCw",
         "price": 12460,
         "currency": "PLN",
         "room": "Standard room",
@@ -312,7 +312,7 @@
       "variantCount": 2,
       "cheapest": {
         "variantId": "superior room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwpcO01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAst-Xd3",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwlcS01QZIm5hMUEVY_AFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAsZV1Nv",
         "price": 12483,
         "currency": "PLN",
         "room": "Superior room",
@@ -385,7 +385,7 @@
       "variantCount": 3,
       "cheapest": {
         "variantId": "standard standard pool view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wpsO01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAguDZoYi",
+        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wlsS01QZI0IpNUAVY5AFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgu5izwH",
         "price": 12629,
         "currency": "PLN",
         "room": "Standard standard pool view triple room",
@@ -458,7 +458,7 @@
       "variantCount": 3,
       "cheapest": {
         "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-        "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwp8O01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA0Xy30f",
+        "apiHash": "plNIq2Okx0S7iKZbwwCTvGAAogg9o86QRKPxfMw1rTDyTp_K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwl8S01QZIgdtNUEVY5AFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQARvhFe6R5M0tA6DdP8lwkgAAH3ydCws4bMoDADDmMBAA3uJM0T",
         "price": 12732,
         "currency": "PLN",
         "room": "Family room",
@@ -531,7 +531,7 @@
       "variantCount": 6,
       "cheapest": {
         "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwqMO01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAvOVHYm",
+        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwmMS01QZI7_EHUENY5AFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAuS9Dbz",
         "price": 12926,
         "currency": "PLN",
         "room": "Superior family room",
@@ -604,7 +604,7 @@
       "variantCount": 5,
       "cheapest": {
         "variantId": "coral standard room|KTW|2026-09-29|03:10|2026-10-06|09:15",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwqcO01QZIoJlPUEVY_AFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLKWlC-A",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwmcS01QZIoJlPUEVY_AFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLbR08sQ",
         "price": 12976,
         "currency": "PLN",
         "room": "Coral standard room",
@@ -677,7 +677,7 @@
       "variantCount": 1,
       "cheapest": {
         "variantId": "superior pool view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwqsO01QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC7_tzzo",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwmsS01QZIzYZQUEVY_AFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC7awfwU",
         "price": 13116,
         "currency": "PLN",
         "room": "Superior pool view",

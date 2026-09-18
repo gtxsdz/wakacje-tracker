@@ -22,12 +22,16 @@ body {
   background: linear-gradient(180deg, #0b1119 0%, #0f1720 100%);
   color: var(--text);
   line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
 }
 
 .wrap {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
+  /* Płynny padding + bezpieczne marginesy dla notcha na telefonach. */
+  padding: 0 clamp(14px, 4vw, 20px);
+  padding-left: max(clamp(14px, 4vw, 20px), env(safe-area-inset-left));
+  padding-right: max(clamp(14px, 4vw, 20px), env(safe-area-inset-right));
 }
 
 /* Header */
@@ -112,14 +116,21 @@ body {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 6px 10px;
-  font-size: 0.9rem;
+  padding: 8px 10px;
+  /* 16px zapobiega auto-zoomowi Safari przy focusie na iOS. */
+  font-size: 16px;
 }
 .controls .checkbox {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   cursor: pointer;
+  min-height: 32px;
+}
+.controls .checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
 }
 
 /* Offers */
@@ -300,9 +311,119 @@ body {
 }
 .state.error { color: var(--up); }
 
+/* ===================== RESPONSYWNOŚĆ / MOBILE ===================== */
+
+/* Tablety i węższe: mniej powietrza, elastyczne kafelki podsumowania. */
+@media (max-width: 768px) {
+  .site-header { padding: 24px 0 20px; }
+  .summary {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .summary-card { padding: 12px 14px; }
+  .summary-card .value { font-size: 1.35rem; }
+}
+
+/* Telefony: karta oferty w jednej kolumnie, cena jako pasek pod treścią. */
 @media (max-width: 560px) {
-  .offer-card { grid-template-columns: 1fr; }
-  .offer-price { align-items: flex-start; text-align: left; }
+  .site-header { padding: 20px 0 16px; }
+  .subtitle { font-size: 0.88rem; }
+
+  .meta-bar { gap: 8px; }
+  .meta-pill { font-size: 0.8rem; padding: 5px 12px; }
+
+  /* Kafelki podsumowania: dwa w rzędzie, czytelne na wąskim ekranie. */
+  .summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* Kontrolki jedna pod drugą, pełna szerokość i wygodny dotyk. */
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 14px;
+  }
+  .controls > label:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .controls select { margin-left: 0; flex: 1; min-height: 44px; }
+  .controls .checkbox { min-height: 40px; }
+
+  /* Karta: treść na górze, blok ceny jako pasek na dole. */
+  .offer-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+  .offer-card:hover { transform: none; }
+  .offer-price {
+    text-align: left;
+    min-width: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .price-now { font-size: 1.4rem; }
+  .price-unit { align-self: flex-end; }
+  /* Zmiana i zakres w jednej linii z ceną, znaczek na całą szerokość. */
+  .change { margin-top: 0; }
+  .price-range { margin-top: 0; width: 100%; }
+  .badge-lowest { margin-top: 0; }
+
+  /* Loty: etykieta nad rozkładem, żeby nic się nie ścinało. */
+  .flight-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .flight-label { min-width: 0; }
+
+  /* Modal na pełny ekran od dołu — wygodniejszy kciukiem. */
+  .modal { padding: 0; align-items: flex-end; }
+  .modal-body {
+    width: 100%;
+    max-height: 92vh;
+    border-radius: 16px 16px 0 0;
+    padding: 20px 16px calc(20px + env(safe-area-inset-bottom));
+  }
+  .modal-close {
+    top: 8px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+  .chart-holder { height: 240px; }
+  .modal-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* Log zmian wariantu w kolumnie — bez ściskania na wąskim ekranie. */
+  .change-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .change-item .creason { grid-column: 1; }
+}
+
+/* Bardzo wąskie ekrany (małe telefony). */
+@media (max-width: 360px) {
+  .summary { grid-template-columns: 1fr; }
+  .price-now { font-size: 1.25rem; }
+}
+
+/* Urządzenia dotykowe: bez efektu hover (nie „przykleja się" po tapnięciu). */
+@media (hover: none) {
+  .offer-card:hover { transform: none; border-color: var(--border); }
+  .offer-card:active { border-color: var(--accent); }
 }
 
 /* --- Warianty wylotów --- */

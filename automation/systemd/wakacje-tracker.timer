@@ -1,0 +1,13 @@
+# Timer systemd uruchamiający wakacje-tracker.service codziennie o 08:15.
+# Persistent=true => jeśli maszyna była wyłączona o zaplanowanej porze,
+# zadanie uruchomi się zaraz po starcie.
+
+[Unit]
+Description=Codzienne pobranie cen wakacje.pl
+
+[Timer]
+OnCalendar=*-*-* 08:15:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

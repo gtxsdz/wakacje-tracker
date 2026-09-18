@@ -3,7 +3,13 @@
 Witryna śledząca ceny wycieczek all inclusive do Egiptu z [wakacje.pl](https://www.wakacje.pl) —
 pokazuje aktualne ceny oraz **spadki i wzrosty** w czasie na wykresach.
 
-Dane pobierane są automatycznie raz dziennie przez GitHub Actions i publikowane na GitHub Pages.
+Dane pobiera lokalny skrypt (z domowego IP) i wypycha je do repo, a witryna jest
+publikowana na GitHub Pages.
+
+> **Dlaczego nie w całości w chmurze?** wakacje.pl blokuje żądania z adresów IP
+> centrów danych (odpowiada wtedy HTTP 449 — blokada anty-bot). Dotyczy to GitHub
+> Actions, Firebase/Google Cloud itp. Dlatego **scraper musi działać z „normalnego"
+> IP** (dom, własna maszyna), a chmura służy tylko do hostowania gotowej witryny.
 
 ## Śledzony filtr
 
@@ -18,8 +24,10 @@ skopiuj nowy fragment z adresu wakacje.pl po zastosowaniu filtrów i podmień t�
 ## Jak to działa
 
 ```
-wakacje.pl  ──►  scraper (Node)  ──►  data/history.json  ──►  frontend (Chart.js)
-                                      data/latest.json
+maszyna lokalna (domowe IP)                    chmura
+───────────────────────────                    ──────
+wakacje.pl ─► scraper ─► data/*.json ─► git push ─► GitHub Pages (frontend)
+              (npm run push, cyklicznie)                serwuje data/*.json
 ```
 
 1. **`scraper/scrape.js`** pobiera strony listingu, parsuje oferty (po trwałych atrybutach
@@ -37,8 +45,11 @@ Identyfikacja oferty (klucz historii) = `hotel + termin + wyloty`, odporna na ko
 Wymagany Node.js 18+ (używa wbudowanego `fetch`). Brak zależności npm.
 
 ```bash
-# pobranie danych (zapisze data/latest.json i data/history.json)
+# samo pobranie danych (zapisze data/latest.json i data/history.json)
 npm run scrape
+
+# pobranie danych + commit + push do repo (używane w automatyzacji)
+npm run push
 
 # podgląd witryny lokalnie -> http://localhost:8080
 npm run serve
@@ -46,16 +57,56 @@ npm run serve
 
 ## Publikacja na GitHub
 
-1. Utwórz repozytorium i wypchnij projekt:
+1. Repozytorium i push:
    ```bash
    git remote add origin https://github.com/<uzytkownik>/<repo>.git
    git push -u origin main
    ```
-2. W ustawieniach repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Gotowe. Workflow `.github/workflows/scrape.yml`:
-   - uruchamia się **codziennie o 06:12 UTC** (ok. 08:12 czasu PL),
-   - można go też odpalić ręcznie w zakładce **Actions → Scrape ceny i publikacja → Run workflow**,
-   - pobiera ceny, commituje zmiany w `data/` i publikuje witrynę na GitHub Pages.
+2. W ustawieniach repo: **Settings → Pages → Source: GitHub Actions**.
+3. Workflow `.github/workflows/scrape.yml` publikuje witrynę na GitHub Pages przy
+   każdym pushu danych (`data/**`) lub zmianie frontendu. Można go też odpalić ręcznie
+   w zakładce **Actions**.
+
+## Automatyczne pobieranie cen (cyklicznie)
+
+Scraper uruchamiamy lokalnie, cyklicznie. `npm run push` pobiera ceny, a następnie
+sam commituje i wypycha `data/` — po pushu GitHub Pages odświeża witrynę.
+
+### Windows (Harmonogram zadań)
+
+Jednorazowo, z katalogu projektu:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File automation\windows-setup-task.ps1
+```
+
+Rejestruje zadanie `WakacjeTracker-Scrape` uruchamiane **codziennie o 08:15**
+(godzinę zmienisz parametrem `-Time`). `StartWhenAvailable` sprawia, że jeśli komputer
+był wyłączony, zadanie odpali się przy najbliższej okazji.
+
+- Test od razu: `Start-ScheduledTask -TaskName WakacjeTracker-Scrape`
+- Usunięcie: `Unregister-ScheduledTask -TaskName WakacjeTracker-Scrape -Confirm:$false`
+
+### Linux (docelowa maszyna działająca 24/7)
+
+Wariant A — **systemd timer** (zalecany dla maszyny non-stop):
+
+```bash
+# dostosuj User i ścieżki w plikach jednostek
+sudo cp automation/systemd/wakacje-tracker.service /etc/systemd/system/
+sudo cp automation/systemd/wakacje-tracker.timer   /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now wakacje-tracker.timer
+
+systemctl list-timers | grep wakacje        # podgląd harmonogramu
+journalctl -u wakacje-tracker.service -f     # logi
+```
+
+Wariant B — **cron**: patrz `automation/crontab.example` (gotowa linia do `crontab -e`).
+
+W obu wariantach maszyna musi mieć dostęp do gita z uprawnieniem do push
+(klucz SSH lub token w credential helperze). Pierwsze `git push` wykonaj ręcznie,
+żeby zapisać poświadczenia.
 
 Historia cen buduje się z czasem — pierwszego dnia wszystkie oferty mają jeden pomiar,
 a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
@@ -74,9 +125,15 @@ a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
 │   ├── config.js         # filtr, adresy, ustawienia
 │   ├── parse.js          # parser HTML listingu
 │   ├── scrape.js         # główny scraper
+│   ├── push.js           # scrape + commit + push (do automatyzacji)
 │   └── serve.js          # lokalny serwer podglądu
+├── automation/
+│   ├── windows-setup-task.ps1   # rejestracja zadania w Harmonogramie Windows
+│   ├── scrape.sh                # skrypt uruchomieniowy dla Linuksa
+│   ├── crontab.example          # przykładowy wpis cron
+│   └── systemd/                 # jednostka + timer systemd
 └── .github/workflows/
-    └── scrape.yml        # codzienne pobieranie + deploy Pages
+    └── scrape.yml        # deploy witryny na GitHub Pages
 ```
 
 ## Uwagi

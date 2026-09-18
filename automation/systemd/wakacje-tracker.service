@@ -1,0 +1,21 @@
+# Jednostka systemd (typu oneshot) uruchamiająca scraper.
+# Skopiuj do /etc/systemd/system/ (lub ~/.config/systemd/user/ dla trybu --user)
+# i dostosuj User oraz ścieżkę WorkingDirectory / ExecStart.
+#
+#   sudo cp automation/systemd/wakacje-tracker.* /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now wakacje-tracker.timer
+#
+# Podgląd logów:  journalctl -u wakacje-tracker.service -f
+
+[Unit]
+Description=Wakacje.pl tracker cen - pobranie i push danych
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+# ZMIEŃ: użytkownik z dostępem do git (klucz SSH / token) oraz ścieżka projektu.
+User=USERNAME
+WorkingDirectory=/home/USERNAME/wakacje-tracker
+ExecStart=/usr/bin/node scraper/push.js

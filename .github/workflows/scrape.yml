@@ -1,68 +1,40 @@
-name: Scrape ceny i publikacja
+name: Deploy na GitHub Pages
+
+# Uwaga: scrapowanie NIE działa z GitHub Actions — wakacje.pl zwraca HTTP 449
+# dla adresów IP centrów danych (blokada anty-bot). Dane pobiera lokalny skrypt
+# (npm run push) z domowego IP i wypycha je do repo. Ten workflow tylko publikuje
+# witrynę na GitHub Pages po każdym pushu danych lub zmianie frontendu.
 
 on:
-  schedule:
-    # Codziennie o 06:12 UTC (~08:12 czasu PL). Losowa minuta zmniejsza kolizje.
-    - cron: "12 6 * * *"
-  workflow_dispatch: {} # ręczne uruchomienie z zakładki Actions
   push:
     branches: [main]
     paths:
       - "index.html"
       - "app.js"
       - "styles.css"
-      - "scraper/**"
+      - "data/**"
+      - ".nojekyll"
       - ".github/workflows/scrape.yml"
+  workflow_dispatch: {}
 
-# Uprawnienia potrzebne do commitowania danych i publikacji Pages.
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
-# Tylko jeden bieg naraz.
 concurrency:
-  group: scrape-and-deploy
-  cancel-in-progress: false
+  group: pages-deploy
+  cancel-in-progress: true
 
 jobs:
-  scrape:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Pobierz ceny i zaktualizuj historię
-        run: npm run scrape
-
-      - name: Commit zaktualizowanych danych
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          if git diff --cached --quiet; then
-            echo "Brak zmian w danych."
-          else
-            git commit -m "data: aktualizacja cen $(date -u +%Y-%m-%d)"
-            git push
-          fi
-
   deploy:
-    needs: scrape
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout (po commicie danych)
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: main
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

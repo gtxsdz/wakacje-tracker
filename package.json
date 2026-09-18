@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "scrape": "node scraper/scrape.js",
+    "push": "node scraper/push.js",
     "serve": "node scraper/serve.js"
   },
   "license": "MIT",

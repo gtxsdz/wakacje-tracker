@@ -16,8 +16,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwwc611QZI-O0GUENY3wFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA3H_QQo",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwweW11QZI-O0GUENY3gFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA15rkpn",
           "price": 11238,
           "currency": "PLN",
           "room": "Superior room",
@@ -63,22 +64,7 @@
           "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
-      "variantChanges": [
-        {
-          "date": "2026-09-18",
-          "from": {
-            "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-            "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
-            "price": 11238
-          },
-          "to": {
-            "variantId": "superior room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-            "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
-            "price": 11238
-          },
-          "reason": "zmiana najtańszego wariantu"
-        }
-      ]
+      "variantChanges": []
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -96,8 +82,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwws611QZInYpIUEVY9wFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAv6e1ti",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwwuW11QZInYpIUEVY9gFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAtNxALJ",
           "price": 11810,
           "currency": "PLN",
           "room": "Standard room",
@@ -161,8 +148,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard room garden view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkww8611QZIiLZIUEVY9wFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBguwz_w6",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkww-W11QZIiLZIUEVY9gFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgt96MHz",
           "price": 11866,
           "currency": "PLN",
           "room": "Standard room garden view",
@@ -226,8 +214,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|15:30",
-          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwxc611QZIrGFQQVjfAWACagNDR21yQ5sBFAEVBRcBXANYBVYCQMoGT6sBXQBS5qsBUwBer09LyUhhABGJ0QFMgLc4DdP8lwkgAQGUvtTo1IbMoDADDmMBAA2VOXuq",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwxOW11QZIrGFQQVjeAWACagNDR21yQ5sBFAEVBRcBXANYBVYCQMoGT6sBXQBS5qsBUwBer09LyUhhABGJ0QFMgLc4DdP8lwkgAQGUvtTo1IbMoDADDmMBAA1heusd",
           "price": 12460,
           "currency": "PLN",
           "room": "Standard room",
@@ -291,8 +280,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwxs611QZIm5hMUEVY9wFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAvRlTBM",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwxeW11QZIm5hMUEVY9gFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAu7iwpf",
           "price": 12483,
           "currency": "PLN",
           "room": "Superior room",
@@ -356,8 +346,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard standard pool view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wxs611QZI0IpNUAVY3wFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgvlaIsk",
+          "variantId": "exim tours",
+          "operator": "Exim Tours",
+          "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wx-W11QZI0IpNUAVY3gFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgvPXvrD",
           "price": 12629,
           "currency": "PLN",
           "room": "Standard standard pool view triple room",
@@ -421,8 +412,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "family room|KTW|2026-09-30|12:30|2026-10-07|08:05",
-          "apiHash": "pB6nIDLKWNss872-6xOWn9AAogg9o86QRKPxfMw1rTDyTp_AGowmXf5xuKtFirsM-7dRgqBEpPSVAwzM611QZI_mVQQViPAmACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABG-EV7pHkzS0DoN1fyXCSAAAY7G0LCzhsygMAMOYwEADaHhIBk",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pB6nIDLKWNss872-6xOWn9AAogg9o86QRKPxfMw1rTDyTp_AGowmXf5xuKtFirsM-7dRgqBEpPSVAwzOW11QZI_mVQQViOAmACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABG-EV7pHkzS0DoN1fyXCSAAAY7G0LCzhsygMAMOYwEADTlBqqQ",
           "price": 13054,
           "currency": "PLN",
           "room": "Family room",
@@ -468,22 +460,7 @@
           "label": "Family room • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
         }
       ],
-      "variantChanges": [
-        {
-          "date": "2026-09-18",
-          "from": {
-            "variantId": "family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-            "label": "Family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
-            "price": 12732
-          },
-          "to": {
-            "variantId": "family room|KTW|2026-09-30|12:30|2026-10-07|08:05",
-            "label": "Family room • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05",
-            "price": 13054
-          },
-          "reason": "zmiana najtańszego wariantu"
-        }
-      ]
+      "variantChanges": []
     },
     "hotel-6373": {
       "offerId": 1167460,
@@ -501,8 +478,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwyc611QZI7_EHUENY3wFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAta5Ee6",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwyeW11QZI7_EHUENY3gFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAuNa_Q6",
           "price": 12926,
           "currency": "PLN",
           "room": "Superior family room",
@@ -548,22 +526,7 @@
           "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
-      "variantChanges": [
-        {
-          "date": "2026-09-18",
-          "from": {
-            "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|09:05",
-            "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
-            "price": 12926
-          },
-          "to": {
-            "variantId": "superior family room|KTW|2026-09-28|14:30|2026-10-05|10:20",
-            "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
-            "price": 12926
-          },
-          "reason": "zmiana najtańszego wariantu"
-        }
-      ]
+      "variantChanges": []
     },
     "hotel-6218": {
       "offerId": 1166973,
@@ -581,8 +544,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior pool view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwzs611QZIzYZQUEVY9wFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC2J54_E",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwzuW11QZIzYZQUEVY9gFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC2-OvFg",
           "price": 13116,
           "currency": "PLN",
           "room": "Superior pool view",
@@ -646,8 +610,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "family room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwz8611QZIj5FQUEVY9wFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARp0lMhec5DdT8lwkgAAGZvoCJ9YjMoDADDWMBAAz3nDq4",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwz-W11QZIj5FQUEVY9gFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARp0lMhec5DdT8lwkgAAGZvoCJ9YjMoDADDWMBAAxDctl-",
           "price": 13129,
           "currency": "PLN",
           "room": "Family room",
@@ -711,8 +676,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "deluxe deluxe triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "p-N5Vj9xg96ZLpYpDRCsksAAogqVN3A3sPnzqhNqlMV41tRxBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0M611QZI-MdQUAVY3wFgAmoCQUlyIRwRjaEGuQTumT6rBBQbzrssGJCALwH5-4WPCAMAYwECDZuXnIM",
+          "variantId": "exim tours",
+          "operator": "Exim Tours",
+          "apiHash": "p-N5Vj9xg96ZLpYpDRCsksAAogqVN3A3sPnzqhNqlMV41tRxBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0OW11QZI-MdQUAVY3gFgAmoCQUlyIRwRjaEGuQTumT6rBBQbzrssGJCALwH5-4WPCAMAYwECDdhCi8Y",
           "price": 13199,
           "currency": "PLN",
           "room": "Deluxe deluxe triple room",
@@ -776,8 +742,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwys611QZIjWVQQVj3AWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAw7BK5c",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwyuW11QZIjWVQQVj2AWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAzk0aL-",
           "price": 12941,
           "currency": "PLN",
           "room": "Standard room",
@@ -841,8 +808,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard standard garden view triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "pR1CmKggGzj1ubKygiNOZvAAogPQx-GWHA97m3xJUqpfWK1xBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0c611QZIvmdQAVjfAWACagJBSXIhHBGBoQa5BPqZPqsEFBusuSwY2oAvAav0g48IAwBjAQIMrEmTLg",
+          "variantId": "exim tours",
+          "operator": "Exim Tours",
+          "apiHash": "pR1CmKggGzj1ubKygiNOZvAAogPQx-GWHA97m3xJUqpfWK1xBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0eW11QZIvmdQAVjeAWACagJBSXIhHBGBoQa5BPqZPqsEFBusuSwY2oAvAav0g48IAwBjAQIMD3NyVA",
           "price": 13246,
           "currency": "PLN",
           "room": "Standard standard garden view triple room",
@@ -906,8 +874,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "deluxe deluxe triple room|WAW|2026-09-29|14:10|2026-10-06|09:20",
-          "apiHash": "p8shQE-XgsrVEOEnJfH7M0AAoganhEgIKHuh4Cl6tRLsA1uk06hx9ocs0uTwVzFzEHmYkqBEVYSU0w08611QZIkL1RUAVY9wFgAmoCQUlyIRwRrKEGuQS-nT6rBBwbrLQsGOf_LgHgm9OOCAMAYwECDYla0ng",
+          "variantId": "exim tours",
+          "operator": "Exim Tours",
+          "apiHash": "p8shQE-XgsrVEOEnJfH7M0AAoganhEgIKHuh4Cl6tRLsA1uk06hx9ocs0uTwVzFzEHmYkqBEVYSU0w0-W11QZIkL1RUAVY9gFgAmoCQUlyIRwRrKEGuQS-nT6rBBwbrLQsGOf_LgHgm9OOCAMAYwECDfyzsB8",
           "price": 13349,
           "currency": "PLN",
           "room": "Deluxe deluxe triple room",
@@ -971,8 +940,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "splash room aqua park|KTW|2026-09-28|14:30|2026-10-05|10:20",
-          "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw1s611QZIjM9SUEVY3wFgAmoDTGZJckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEfwZS4wFYQBepzBM0tA6DdP8lwkgAAHy28CY44bMoDADDWMBAAy60Ibz",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw1uW11QZIjM9SUEVY3gFgAmoDTGZJckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEfwZS4wFYQBepzBM0tA6DdP8lwkgAAHy28CY44bMoDADDWMBAAxEKDBT",
           "price": 13536,
           "currency": "PLN",
           "room": "Splash room aqua park",
@@ -1018,22 +988,7 @@
           "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
-      "variantChanges": [
-        {
-          "date": "2026-09-18",
-          "from": {
-            "variantId": "splash room aqua park|KTW|2026-09-28|14:30|2026-10-05|09:05",
-            "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05",
-            "price": 13536
-          },
-          "to": {
-            "variantId": "splash room aqua park|KTW|2026-09-28|14:30|2026-10-05|10:20",
-            "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20",
-            "price": 13536
-          },
-          "reason": "zmiana najtańszego wariantu"
-        }
-      ]
+      "variantChanges": []
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -1051,8 +1006,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "family room|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw18611QZIo-FSUEVY9wFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEdYTUtAMUwBMrLA6DdT8lwkgAAGZxoyZpYnMoDADDWMBAAwuyAdr",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw1-W11QZIo-FSUEVY9gFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEdYTUtAMUwBMrLA6DdT8lwkgAAGZxoyZpYnMoDADDWMBAAy-VZ9z",
           "price": 13559,
           "currency": "PLN",
           "room": "Family room",
@@ -1116,8 +1072,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "deluxe pool view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw2c611QZIt6oIUENY9wFgAmoDMEZIckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEcPGAUv0A2EAXqcwUqYgUwBMrLA6DdT8lwkgAAGDtvigs4nMoDADDWMBAAunpV5O",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw2eW11QZIt6oIUENY9gFgAmoDMEZIckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEcPGAUv0A2EAXqcwUqYgUwBMrLA6DdT8lwkgAAGDtvigs4nMoDADDWMBAAs7FCMz",
           "price": 13650,
           "currency": "PLN",
           "room": "Deluxe pool view",
@@ -1181,8 +1138,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "garden view|KTW|2026-09-30|12:30|2026-10-07|08:05",
-          "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAw2s611QZIscBTUEVYjwJgAmoDMDBGckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEacZS-EFYQBepzBM0tA6DdX8lwkgAAGCoMCAlIfMoDADDWMBAAybZ-Bk",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAw2uW11QZIscBTUEVYjgJgAmoDMDBGckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEacZS-EFYQBepzBM0tA6DdX8lwkgAAGCoMCAlIfMoDADDWMBAAzOzEam",
           "price": 13681,
           "currency": "PLN",
           "room": "Garden view",
@@ -1246,8 +1204,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "premium sea view|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-          "apiHash": "p6U8-LfnqJKwwNtV1EtKhnAAogkvrV3zuEguAPWAqW5XhgcwAAAABtqAQAiagEAAcAAQAqBFdFWlkw28611QZIgq0IUENY9wFgA2oJRW50ZXIgQWlyagQwOTI1ckOeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBED1b0vyVlAATMQ_TwAR7Z8BHamZDyAcG6enMg2R2I8JARJjAg5jAQYND92C5Q",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "p6U8-LfnqJKwwNtV1EtKhnAAogkvrV3zuEguAPWAqW5XhgcwAAAABtqAQAiagEAAcAAQAqBFdFWlkw2-W11QZIgq0IUENY9gFgA2oJRW50ZXIgQWlyagQwOTI1ckOeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBED1b0vyVlAATMQ_TwAR7Z8BHamZDyAcG6enMg2R2I8JARJjAg5jAQYNqw7d8g",
           "price": 13683,
           "currency": "PLN",
           "room": "Premium sea view",
@@ -1311,8 +1270,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "superior poolview|LCJ|2026-09-29|16:20|2026-10-06|09:25",
-          "apiHash": "pkCg7Lbkwkqcm2w-PC2qXvAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAAQAqBFdFWlkw3M611QZIgq0IUENY9wFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC_uxcuM",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "pkCg7Lbkwkqcm2w-PC2qXvAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAAQAqBFdFWlkw3OW11QZIgq0IUENY9gFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC6iPN2A",
           "price": 13683,
           "currency": "PLN",
           "room": "Superior poolview",
@@ -1376,8 +1336,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "sea view|KTW|2026-09-29|02:05|2026-10-06|23:50",
-          "apiHash": "pRNt7-ocygaLwzuw6a075eAAogUyY3lApVfPlEEDeNxSjYHC8PvU47v8YC-6AwDzyZL18qBEpPSVAw3c611QZIu-pTUEVY9wFgAmoDMTJickKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEa3GAUuKBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIlPC_g4nMoDADDWMBAAvpJcTM",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pRNt7-ocygaLwzuw6a075eAAogUyY3lApVfPlEEDeNxSjYHC8PvU47v8YC-6AwDzyZL18qBEpPSVAw3eW11QZIu-pTUEVY9gFgAmoDMTJickKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEa3GAUuKBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIlPC_g4nMoDADDWMBAAvU_PRK",
           "price": 13735,
           "currency": "PLN",
           "room": "Sea view",
@@ -1441,8 +1402,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "pc4h8QIyucsTFw89bM1I_ZAAog8CZdi5V-BfPQUCh_oWvUIOXVZaqOWzSjSEOb_wtYXP4qBFNGUEww3s611QZI12tQQVjfAWADciQLBhUBIgQSI1zMAkAuW-MEDbXI1AlRp6C99gMCEmMBDGMBBAviebEs",
+          "variantId": "sun&fun",
+          "operator": "Sun&Fun",
+          "apiHash": "pc4h8QIyucsTFw89bM1I_ZAAog8CZdi5V-BfPQUCh_oWvUIOXVZaqOWzSjSEOb_wtYXP4qBFNGUEww3uW11QZI12tQQVjeAWADciQLBhUBIgQSI1zMAkAuW-MEDbXI1AlRp6C99gMCEmMBDGMBBAtSeKAB",
           "price": 13783,
           "currency": "PLN",
           "room": "Standard room",
@@ -1506,8 +1468,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "standard room gv|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "p8D3_SlYOOC1nA1H0QyGYeAAogZbXzIBCE0YKIAcdVq1M5OuXVZaqOWzSjSEOb_wtYXP4qBFNGUEww38611QZI7GtQQVjfAWADciULBhUBIgUSIlzMAkAuW-fwUQ2x3IIJUYeevfYDAhJjAQ1jAQIMKMYOxw",
+          "variantId": "sun&fun",
+          "operator": "Sun&Fun",
+          "apiHash": "p8D3_SlYOOC1nA1H0QyGYeAAogZbXzIBCE0YKIAcdVq1M5OuXVZaqOWzSjSEOb_wtYXP4qBFNGUEww4OW11QZI7GtQQVjeAWADciULBhUBIgUSIlzMAkAuW-fwUQ2x3IIJUYeevfYDAhJjAQ1jAQIM9zSRpQ",
           "price": 13804,
           "currency": "PLN",
           "room": "Standard room gv",
@@ -1571,8 +1534,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "family family triple room|WRO|2026-09-28|21:00|2026-10-05|16:30",
-          "apiHash": "pEPOJ4hTiNv1dZ9oPca0aCAAogjHp4AynsOB_VAor_0l2CthBoRXUWerNxRHeDmlcvUqwqBEVYSU0w4s611QZIuPpUUAVY3wFgAmoCQUlyIRwR2KAGuQSjmj6rBBQbubosGMmALwH8_4GPCAMAYwECDEp-Kvc",
+          "variantId": "exim tours",
+          "operator": "Exim Tours",
+          "apiHash": "pEPOJ4hTiNv1dZ9oPca0aCAAogjHp4AynsOB_VAor_0l2CthBoRXUWerNxRHeDmlcvUqwqBEVYSU0w4eW11QZIuPpUUAVY3gFgAmoCQUlyIRwR2KAGuQSjmj6rBBQbubosGMmALwH8_4GPCAMAYwECDPE5-Ek",
           "price": 13919,
           "currency": "PLN",
           "room": "Family family triple room",
@@ -1636,8 +1600,9 @@
       "prices": [
         {
           "date": "2026-09-18",
-          "variantId": "pokój 2 os. + 2 dostawki|KTW|2026-09-29|17:00|2026-10-06|22:50",
-          "apiHash": "pHkhysMiViNSpMRRvpnz_BAAog1MieKbMjPneXzKomjvcTykKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw5M611QZIrG1QQVj3AWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-Ng5DYjUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMB7HxLQ",
+          "variantId": "itaka",
+          "operator": "Itaka",
+          "apiHash": "pHkhysMiViNSpMRRvpnz_BAAog1MieKbMjPneXzKomjvcTykKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw5OW11QZIrG1QQVj2AWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-Ng5DYjUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMZrvz1Q",
           "price": 14116,
           "currency": "PLN",
           "room": "Pokój 2 os. + 2 dostawki",
@@ -1686,6 +1651,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-18T16:31:32.927Z",
+  "lastUpdated": "2026-09-18T17:20:36.881Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

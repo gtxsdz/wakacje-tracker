@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-18T17:20:36.882Z",
-  "date": "2026-09-18",
+  "generatedAt": "2026-09-19T06:31:30.422Z",
+  "date": "2026-09-19",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
-  "count": 25,
+  "count": 24,
   "offers": [
     {
       "key": "hotel-32171",
@@ -22,8 +22,8 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwweW11QZI-O0GUENY3gFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA15rkpn",
-        "price": 11238,
+        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwodi41QZIjFlQQVjRAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN0_yXCSAAAfDDlLmEic6gMAMOYwEADWSA-tM",
+        "price": 11404,
         "currency": "PLN",
         "room": "Superior room",
         "departureCode": "KTW",
@@ -67,89 +67,14 @@
         },
         "label": "Superior room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
       },
-      "price": 11238,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "price": 11404,
+      "prevPrice": 11238,
+      "change": 166,
+      "changePct": 1.48,
       "minPrice": 11238,
-      "maxPrice": 11238,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-7231",
-      "offerId": 1166986,
-      "hotelId": 7231,
-      "hotel": "Dreams Vacation Sharm Resort",
-      "region": "Egipt / Sharm el Sheikh",
-      "stars": 4,
-      "rating": 8.5,
-      "opinions": 320,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/dreams-vacation-sharm-resort-1166986.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 4,
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwwuW11QZInYpIUEVY9gFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAtNxALJ",
-        "price": 11810,
-        "currency": "PLN",
-        "room": "Standard room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7345",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:05"
-          },
-          "to": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "07:10"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "23:50"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "03:10"
-          }
-        },
-        "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
-      },
-      "price": 11810,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 11810,
-      "maxPrice": 11810,
-      "isLowest": true,
-      "pointCount": 1,
+      "maxPrice": 11404,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -172,7 +97,7 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkww-W11QZIiLZIUEVY9gFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgt96MHz",
+        "apiHash": "pCEi37xDeiit23i-wh0MoNAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAQAqBFdFWlkwoti41QZIiLZIUEVY6QFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgscS-T7",
         "price": 11866,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -218,344 +143,37 @@
         "label": "Standard room garden view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
       },
       "price": 11866,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "prevPrice": 11866,
+      "change": 0,
+      "changePct": 0,
       "minPrice": 11866,
       "maxPrice": 11866,
       "isLowest": true,
-      "pointCount": 1,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-263513",
-      "offerId": 1166909,
-      "hotelId": 263513,
-      "hotel": "Rewaya Majestic Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8.4,
-      "opinions": 257,
+      "key": "hotel-7231",
+      "offerId": 1166986,
+      "hotelId": 7231,
+      "hotel": "Dreams Vacation Sharm Resort",
+      "region": "Egipt / Sharm el Sheikh",
+      "stars": 4,
+      "rating": 8.5,
+      "opinions": 320,
       "operator": "Join UP",
       "duration": 7,
-      "departureDate": "2026-09-28",
-      "returnDate": "2026-10-05",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/rewaya-majestic-resort-1166909.html?od-2026-09-28,7-dni,all-inclusive,z-wroclawia,2dorosle-2dzieci-20091119-20150707",
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/dreams-vacation-sharm-resort-1166986.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
       "variantCount": 4,
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwxOW11QZIrGFQQVjeAWACagNDR21yQ5sBFAEVBRcBXANYBVYCQMoGT6sBXQBS5qsBUwBer09LyUhhABGJ0QFMgLc4DdP8lwkgAQGUvtTo1IbMoDADDmMBAA1heusd",
-        "price": 12460,
-        "currency": "PLN",
-        "room": "Standard room",
-        "departureCode": "WRO",
-        "luggageIncluded": true,
-        "carrier": "SM 3616",
-        "outbound": {
-          "from": {
-            "airportCode": "WRO",
-            "airportName": "Wrocław",
-            "city": "Wrocław",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "21:00"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:15"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "15:30"
-          },
-          "to": {
-            "airportCode": "WRO",
-            "airportName": "Wrocław",
-            "city": "Wrocław",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "20:00"
-          }
-        },
-        "label": "Standard room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 15:30"
-      },
-      "price": 12460,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 12460,
-      "maxPrice": 12460,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-30896",
-      "offerId": 1166735,
-      "hotelId": 30896,
-      "hotel": "Xperience Kiroseiz Premier",
-      "region": "Egipt / Sharm el Sheikh / Naama Bay",
-      "stars": 5,
-      "rating": 8.3,
-      "opinions": 10,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/naama-bay/xperience-kiroseiz-premier-1166735.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 2,
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwxeW11QZIm5hMUEVY9gFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAu7iwpf",
-        "price": 12483,
-        "currency": "PLN",
-        "room": "Superior room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7345",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:05"
-          },
-          "to": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "07:10"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "23:50"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "03:10"
-          }
-        },
-        "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
-      },
-      "price": 12483,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 12483,
-      "maxPrice": 12483,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-20196",
-      "offerId": 1050343,
-      "hotelId": 20196,
-      "hotel": "Titanic Palace Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8,
-      "opinions": 495,
-      "operator": "Exim Tours",
-      "duration": 7,
-      "departureDate": "2026-09-28",
-      "returnDate": "2026-10-05",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-1050343.html?od-2026-09-28,7-dni,all-inclusive,z-wroclawia,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 3,
-      "altOffers": [
-        {
-          "offerId": 14032,
-          "operator": "Coral Travel",
-          "price": 12976
-        }
-      ],
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wx-W11QZI0IpNUAVY3gFgAmoDVUFJciEcEY-7BrkE7P89qwQUG-nvThjD0UsBqJy01g0DAGMBAgvPXvrD",
-        "price": 12629,
-        "currency": "PLN",
-        "room": "Standard standard pool view triple room",
-        "departureCode": "WRO",
-        "luggageIncluded": true,
-        "carrier": "",
-        "outbound": {
-          "from": {
-            "airportCode": "WRO",
-            "airportName": "Wrocław",
-            "city": "Wrocław",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "21:00"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:15"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "16:30"
-          },
-          "to": {
-            "airportCode": "WRO",
-            "airportName": "Wrocław",
-            "city": "Wrocław",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "20:00"
-          }
-        },
-        "label": "Standard standard pool view triple room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
-      },
-      "price": 12629,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 12629,
-      "maxPrice": 12629,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-6373",
-      "offerId": 1167460,
-      "hotelId": 6373,
-      "hotel": "Sindbad Club",
-      "region": "Egipt / Hurghada",
-      "stars": 4,
-      "rating": 8.3,
-      "opinions": 538,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-28",
-      "returnDate": "2026-10-05",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/sindbad-club-1167460.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 6,
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwyeW11QZI7_EHUENY3gFgAmoDMDJYckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARxxdMi7k6DdP8lwkgAAHw2fCYtIbMoDADDWMBAAuNa_Q6",
-        "price": 12926,
-        "currency": "PLN",
-        "room": "Superior family room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 8941",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "14:30"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "19:45"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "10:20"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "13:50"
-          }
-        },
-        "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
-      },
-      "price": 12926,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 12926,
-      "maxPrice": 12926,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-67092",
-      "offerId": 1166936,
-      "hotelId": 67092,
-      "hotel": "Pickalbatros Laguna Club Resort",
-      "region": "Egipt / Sharm el Sheikh",
-      "stars": 4,
-      "rating": 8.6,
-      "opinions": 23,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/pickalbatros-laguna-club-resort-1166936.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 3,
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwyuW11QZIjWVQQVj2AWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAzk0aL-",
-        "price": 12941,
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwo9i41QZIgl5QQVjpAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEACxpBiOE",
+        "price": 12034,
         "currency": "PLN",
         "room": "Standard room",
         "departureCode": "KTW",
@@ -599,59 +217,59 @@
         },
         "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
       },
-      "price": 12941,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 12941,
-      "maxPrice": 12941,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 12034,
+      "prevPrice": 11810,
+      "change": 224,
+      "changePct": 1.9,
+      "minPrice": 11810,
+      "maxPrice": 12034,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-23085",
-      "offerId": 1166540,
-      "hotelId": 23085,
-      "hotel": "Stella Gardens Resort & Spa (ex Stella Di Mare Gardens)",
-      "region": "Egipt / Hurghada / Makadi Bay",
+      "key": "hotel-263513",
+      "offerId": 1166909,
+      "hotelId": 263513,
+      "hotel": "Rewaya Majestic Resort",
+      "region": "Egipt / Hurghada",
       "stars": 5,
-      "rating": 8.1,
-      "opinions": 264,
+      "rating": 8.4,
+      "opinions": 257,
       "operator": "Join UP",
       "duration": 7,
-      "departureDate": "2026-09-30",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/makadi-bay/stella-gardens-resort-spa-ex-stella-di-mare-gardens-1166540.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 1,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/rewaya-majestic-resort-1166909.html?od-2026-09-28,7-dni,all-inclusive,z-wroclawia,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 4,
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pB6nIDLKWNss872-6xOWn9AAogg9o86QRKPxfMw1rTDyTp_AGowmXf5xuKtFirsM-7dRgqBEpPSVAwzOW11QZI_mVQQViOAmACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABG-EV7pHkzS0DoN1fyXCSAAAY7G0LCzhsygMAMOYwEADTlBqqQ",
-        "price": 13054,
+        "apiHash": "pavZ3JYvkawIgIKGLwQm2mAAognzPS7_zhqez5PNEk5hgIrG74IGnRUfQaj4NzmbGh5dQqBEpPSVAwpNi41QZIkWJQQVjRAWACagNDR21yQ5sBFAEVBRcBXANYBVYCQMoGT6sBXQBS5qsBUwBer09LyUhhABGJ0QFMgLc4DdP8lwkgAQGUvtTo1IbMoDADDmMBAA0dFV11",
+        "price": 12561,
         "currency": "PLN",
-        "room": "Family room",
-        "departureCode": "KTW",
+        "room": "Standard room",
+        "departureCode": "WRO",
         "luggageIncluded": true,
-        "carrier": "U5 7363",
+        "carrier": "SM 3616",
         "outbound": {
           "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "12:30"
+            "airportCode": "WRO",
+            "airportName": "Wrocław",
+            "city": "Wrocław",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "21:00"
           },
           "to": {
             "airportCode": "HRG",
             "airportName": "Hurghada",
             "city": "Hurghada",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "17:45"
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:15"
           }
         },
         "inbound": {
@@ -659,130 +277,55 @@
             "airportCode": "HRG",
             "airportName": "Hurghada",
             "city": "Hurghada",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "08:05"
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "15:30"
           },
           "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "11:35"
+            "airportCode": "WRO",
+            "airportName": "Wrocław",
+            "city": "Wrocław",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "20:00"
           }
         },
-        "label": "Family room • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+        "label": "Standard room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 15:30"
       },
-      "price": 13054,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13054,
-      "maxPrice": 13054,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 12561,
+      "prevPrice": 12460,
+      "change": 101,
+      "changePct": 0.81,
+      "minPrice": 12460,
+      "maxPrice": 12561,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-6218",
-      "offerId": 1166973,
-      "hotelId": 6218,
-      "hotel": "Xperience Kiroseiz Parkland",
+      "key": "hotel-30896",
+      "offerId": 1166735,
+      "hotelId": 30896,
+      "hotel": "Xperience Kiroseiz Premier",
       "region": "Egipt / Sharm el Sheikh / Naama Bay",
       "stars": 5,
-      "rating": 8.2,
-      "opinions": 389,
+      "rating": 8.3,
+      "opinions": 10,
       "operator": "Join UP",
       "duration": 7,
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/naama-bay/xperience-kiroseiz-parkland-1166973.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 1,
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwzuW11QZIzYZQUEVY9gFgAnJDFAEVBhcAXANYBVYCQMoGT-IBXQBb8gIRxcMBS4AEYQBepzBSpiBTAEyssDoN1PyXCSAAAYjAlJnziMygMAMNYwEAC2-OvFg",
-        "price": 13116,
-        "currency": "PLN",
-        "room": "Superior pool view",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7345",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:05"
-          },
-          "to": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "07:10"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "23:50"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "03:10"
-          }
-        },
-        "label": "Superior pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
-      },
-      "price": 13116,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13116,
-      "maxPrice": 13116,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-23785",
-      "offerId": 1166531,
-      "hotelId": 23785,
-      "hotel": "Charmillion Club Aqua Park",
-      "region": "Egipt / Sharm el Sheikh",
-      "stars": 4,
-      "rating": 8.1,
-      "opinions": 87,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": null,
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/naama-bay/xperience-kiroseiz-premier-1166735.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
       "variantCount": 2,
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwz-W11QZIj5FQUEVY9gFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARp0lMhec5DdT8lwkgAAGZvoCJ9YjMoDADDWMBAAxDctl-",
-        "price": 13129,
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwpdi41QZIuGJQQVjpAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC6yMbq4",
+        "price": 12600,
         "currency": "PLN",
-        "room": "Family room",
+        "room": "Superior room",
         "departureCode": "KTW",
         "luggageIncluded": true,
         "carrier": "U5 7345",
@@ -822,16 +365,248 @@
             "time": "03:10"
           }
         },
-        "label": "Family room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
       },
-      "price": 13129,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13129,
-      "maxPrice": 13129,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 12600,
+      "prevPrice": 12483,
+      "change": 117,
+      "changePct": 0.94,
+      "minPrice": 12483,
+      "maxPrice": 12600,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-20196",
+      "offerId": 1050343,
+      "hotelId": 20196,
+      "hotel": "Titanic Palace Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 5,
+      "rating": 8,
+      "opinions": 495,
+      "operator": "Exim Tours",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-1050343.html?od-2026-09-28,7-dni,all-inclusive,z-wroclawia,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 3,
+      "altOffers": [
+        {
+          "offerId": 14032,
+          "operator": "Coral Travel",
+          "price": 12976
+        }
+      ],
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0wpti41QZI3GJQAVjRAWACagNVQUlyIRwRj7sGuQTs_z2rBBQb6e9OGMPRSwGonLTWDQMAYwECC7v5vgM",
+        "price": 12636,
+        "currency": "PLN",
+        "room": "Standard standard pool view triple room",
+        "departureCode": "WRO",
+        "luggageIncluded": true,
+        "carrier": "",
+        "outbound": {
+          "from": {
+            "airportCode": "WRO",
+            "airportName": "Wrocław",
+            "city": "Wrocław",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "21:00"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:15"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "16:30"
+          },
+          "to": {
+            "airportCode": "WRO",
+            "airportName": "Wrocław",
+            "city": "Wrocław",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "20:00"
+          }
+        },
+        "label": "Standard standard pool view triple room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
+      },
+      "price": 12636,
+      "prevPrice": 12629,
+      "change": 7,
+      "changePct": 0.06,
+      "minPrice": 12629,
+      "maxPrice": 12636,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-67092",
+      "offerId": 1166936,
+      "hotelId": 67092,
+      "hotel": "Pickalbatros Laguna Club Resort",
+      "region": "Egipt / Sharm el Sheikh",
+      "stars": 4,
+      "rating": 8.6,
+      "opinions": 23,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/pickalbatros-laguna-club-resort-1166936.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 3,
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwqti41QZIyGZQQVjpAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAyvSUwC",
+        "price": 13128,
+        "currency": "PLN",
+        "room": "Standard room",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7345",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:05"
+          },
+          "to": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "07:10"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "23:50"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "03:10"
+          }
+        },
+        "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+      },
+      "price": 13128,
+      "prevPrice": 12941,
+      "change": 187,
+      "changePct": 1.45,
+      "minPrice": 12941,
+      "maxPrice": 13128,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-6373",
+      "offerId": 1167460,
+      "hotelId": 6373,
+      "hotel": "Sindbad Club",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.3,
+      "opinions": 538,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/sindbad-club-1167460.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 6,
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwq9i41QZI4mZQQVjRAWACagMwMlhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBHHF0yLuToN0_yXCSAAAfDZ8Ji0hsygMAMNYwEAC-ZfHak",
+        "price": 13154,
+        "currency": "PLN",
+        "room": "Superior family room",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 8941",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "14:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "19:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "10:20"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "13:50"
+          }
+        },
+        "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+      },
+      "price": 13154,
+      "prevPrice": 12926,
+      "change": 228,
+      "changePct": 1.76,
+      "minPrice": 12926,
+      "maxPrice": 13154,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -854,8 +629,8 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "p-N5Vj9xg96ZLpYpDRCsksAAogqVN3A3sPnzqhNqlMV41tRxBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0OW11QZI-MdQUAVY3gFgAmoCQUlyIRwRjaEGuQTumT6rBBQbzrssGJCALwH5-4WPCAMAYwECDdhCi8Y",
-        "price": 13199,
+        "apiHash": "p-N5Vj9xg96ZLpYpDRCsksAAogqVN3A3sPnzqhNqlMV41tRxBoRXUWerNxRHeDmlcvUqwqBEVYSU0wrNi41QZIlmdQAVjRAWACagJBSXIhHBGNoQa5BO6ZPqsEFBvOuywYkIAvAfn7hY8IAwBjAQINznOnJQ",
+        "price": 13206,
         "currency": "PLN",
         "room": "Deluxe deluxe triple room",
         "departureCode": "WRO",
@@ -899,276 +674,102 @@
         },
         "label": "Deluxe deluxe triple room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
       },
-      "price": 13199,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "price": 13206,
+      "prevPrice": 13199,
+      "change": 7,
+      "changePct": 0.05,
       "minPrice": 13199,
-      "maxPrice": 13199,
-      "isLowest": true,
-      "pointCount": 1,
+      "maxPrice": 13206,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-7065",
-      "offerId": 1028557,
-      "hotelId": 7065,
-      "hotel": "Pickalbatros Aqua Park (Hurghada)",
-      "region": "Egipt / Hurghada",
-      "stars": 4,
-      "rating": 8.6,
-      "opinions": 362,
-      "operator": "Exim Tours",
-      "duration": 7,
-      "departureDate": "2026-09-28",
-      "returnDate": "2026-10-05",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-aqua-park-hurghada-1028557.html?od-2026-09-28,7-dni,all-inclusive,z-wroclawia,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 4,
-      "altOffers": [
-        {
-          "offerId": 1166815,
-          "operator": "Join UP",
-          "price": 13628
-        },
-        {
-          "offerId": 666184,
-          "operator": "Sun&Fun",
-          "price": 13804
-        }
-      ],
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "pR1CmKggGzj1ubKygiNOZvAAogPQx-GWHA97m3xJUqpfWK1xBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0eW11QZIvmdQAVjeAWACagJBSXIhHBGBoQa5BPqZPqsEFBusuSwY2oAvAav0g48IAwBjAQIMD3NyVA",
-        "price": 13246,
-        "currency": "PLN",
-        "room": "Standard standard garden view triple room",
-        "departureCode": "WRO",
-        "luggageIncluded": true,
-        "carrier": "",
-        "outbound": {
-          "from": {
-            "airportCode": "WRO",
-            "airportName": "Wrocław",
-            "city": "Wrocław",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "21:00"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:15"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "16:30"
-          },
-          "to": {
-            "airportCode": "WRO",
-            "airportName": "Wrocław",
-            "city": "Wrocław",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "20:00"
-          }
-        },
-        "label": "Standard standard garden view triple room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
-      },
-      "price": 13246,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13246,
-      "maxPrice": 13246,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-17532",
-      "offerId": 1027392,
-      "hotelId": 17532,
-      "hotel": "Fantazia Resort",
-      "region": "Egipt / Marsa El Alam",
-      "stars": 4,
+      "key": "hotel-6218",
+      "offerId": 1166973,
+      "hotelId": 6218,
+      "hotel": "Xperience Kiroseiz Parkland",
+      "region": "Egipt / Sharm el Sheikh / Naama Bay",
+      "stars": 5,
       "rating": 8.2,
-      "opinions": 238,
-      "operator": "Exim Tours",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": null,
-      "variantCount": 4,
-      "altOffers": [
-        {
-          "offerId": 1179261,
-          "operator": "TUI",
-          "price": null
-        },
-        {
-          "offerId": 254865,
-          "operator": "Coral Travel",
-          "price": 13411
-        }
-      ],
-      "cheapest": {
-        "variantId": "",
-        "operator": "",
-        "apiHash": "p8shQE-XgsrVEOEnJfH7M0AAoganhEgIKHuh4Cl6tRLsA1uk06hx9ocs0uTwVzFzEHmYkqBEVYSU0w0-W11QZIkL1RUAVY9gFgAmoCQUlyIRwRrKEGuQS-nT6rBBwbrLQsGOf_LgHgm9OOCAMAYwECDfyzsB8",
-        "price": 13349,
-        "currency": "PLN",
-        "room": "Deluxe deluxe triple room",
-        "departureCode": "WAW",
-        "luggageIncluded": true,
-        "carrier": "",
-        "outbound": {
-          "from": {
-            "airportCode": "WAW",
-            "airportName": "Warszawa - Chopin",
-            "city": "Warszawa - Chopin",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "14:10"
-          },
-          "to": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "19:50"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "09:20"
-          },
-          "to": {
-            "airportCode": "WAW",
-            "airportName": "Warszawa - Chopin",
-            "city": "Warszawa - Chopin",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "13:10"
-          }
-        },
-        "label": "Deluxe deluxe triple room • WAW 29.09 (Wt.) 14:10 • powrót 06.10 (Wt.) 09:20"
-      },
-      "price": 13349,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13349,
-      "maxPrice": 13349,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
-      "key": "hotel-17802",
-      "offerId": 1166521,
-      "hotelId": 17802,
-      "hotel": "Pickalbatros Jungle Aqua Park Resort Neverland",
-      "region": "Egipt / Hurghada",
-      "stars": 4,
-      "rating": 9,
-      "opinions": 903,
+      "opinions": 389,
       "operator": "Join UP",
       "duration": 7,
-      "departureDate": "2026-09-28",
-      "returnDate": "2026-10-05",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-jungle-aqua-park-resort-neverland-1166521.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 6,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/naama-bay/xperience-kiroseiz-parkland-1166973.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 1,
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw1uW11QZIjM9SUEVY3gFgAmoDTGZJckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEfwZS4wFYQBepzBM0tA6DdP8lwkgAAHy28CY44bMoDADDWMBAAxEKDBT",
-        "price": 13536,
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwrdi41QZItmdQQVjpAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALUwFmzw",
+        "price": 13238,
         "currency": "PLN",
-        "room": "Splash room aqua park",
+        "room": "Superior pool view",
         "departureCode": "KTW",
         "luggageIncluded": true,
-        "carrier": "U5 8941",
+        "carrier": "U5 7345",
         "outbound": {
           "from": {
             "airportCode": "KTW",
             "airportName": "Katowice",
             "city": "Katowice",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "14:30"
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:05"
           },
           "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-28",
-            "customDate": "28.09 (Pon.)",
-            "time": "19:45"
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "07:10"
           }
         },
         "inbound": {
           "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "10:20"
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "23:50"
           },
           "to": {
             "airportCode": "KTW",
             "airportName": "Katowice",
             "city": "Katowice",
-            "date": "2026-10-05",
-            "customDate": "05.10 (Pon.)",
-            "time": "13:50"
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "03:10"
           }
         },
-        "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        "label": "Superior pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
       },
-      "price": 13536,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13536,
-      "maxPrice": 13536,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 13238,
+      "prevPrice": 13116,
+      "change": 122,
+      "changePct": 0.93,
+      "minPrice": 13116,
+      "maxPrice": 13238,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-24497",
-      "offerId": 1166496,
-      "hotelId": 24497,
-      "hotel": "Coral Sea Aqua Club",
+      "key": "hotel-23785",
+      "offerId": 1166531,
+      "hotelId": 23785,
+      "hotel": "Charmillion Club Aqua Park",
       "region": "Egipt / Sharm el Sheikh",
       "stars": 4,
-      "rating": 8.6,
-      "opinions": 25,
+      "rating": 8.1,
+      "opinions": 87,
       "operator": "Join UP",
       "duration": 7,
       "departureDate": "2026-09-29",
@@ -1178,8 +779,8 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw1-W11QZIo-FSUEVY9gFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEdYTUtAMUwBMrLA6DdT8lwkgAAGZxoyZpYnMoDADDWMBAAy-VZ9z",
-        "price": 13559,
+        "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwrti41QZIxGdQQVjpAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABGnSUyF5zkN1PyXCSAAAZm-gIn1iMygMAMNYwEADKWqkzI",
+        "price": 13252,
         "currency": "PLN",
         "room": "Family room",
         "departureCode": "KTW",
@@ -1223,134 +824,141 @@
         },
         "label": "Family room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
       },
-      "price": 13559,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13559,
-      "maxPrice": 13559,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 13252,
+      "prevPrice": 13129,
+      "change": 123,
+      "changePct": 0.94,
+      "minPrice": 13129,
+      "maxPrice": 13252,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-1679",
-      "offerId": 1166464,
-      "hotelId": 1679,
-      "hotel": "Doubletree by Hilton Sharks Bay (ex. Hilton Sharks Bay)",
-      "region": "Egipt / Sharm el Sheikh / Sharm El Sheikh",
-      "stars": 4,
-      "rating": 8.1,
-      "opinions": 71,
-      "operator": "Join UP",
+      "key": "hotel-17532",
+      "offerId": 254865,
+      "hotelId": 17532,
+      "hotel": "Fantazia Resort",
+      "region": "Egipt / Marsa El Alam",
+      "stars": 5,
+      "rating": 8.2,
+      "opinions": 238,
+      "operator": "Coral Travel",
       "duration": 7,
       "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/doubletree-by-hilton-sharks-bay-ex-hilton-sharks-bay-1166464.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 4,
+      "returnDate": "2026-10-06",
+      "detailUrl": null,
+      "variantCount": 10,
+      "altOffers": [
+        {
+          "offerId": 1179261,
+          "operator": "TUI",
+          "price": null
+        }
+      ],
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw2eW11QZIt6oIUENY9gFgAmoDMEZIckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEcPGAUv0A2EAXqcwUqYgUwBMrLA6DdT8lwkgAAGDtvigs4nMoDADDWMBAAs7FCMz",
-        "price": 13650,
+        "apiHash": "pD4107S2Ylc75BPMXqOpwaAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcAAQAqBFdFWlkwr9i41QZIku1RUEVY6QFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg1_QxgP",
+        "price": 13411,
         "currency": "PLN",
-        "room": "Deluxe pool view",
-        "departureCode": "KTW",
+        "room": "Diamond sea view",
+        "departureCode": "LCJ",
         "luggageIncluded": true,
-        "carrier": "U5 7345",
+        "carrier": "ENT 4855",
         "outbound": {
           "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
             "date": "2026-09-29",
             "customDate": "29.09 (Wt.)",
-            "time": "02:05"
+            "time": "16:20"
           },
           "to": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
             "date": "2026-09-29",
             "customDate": "29.09 (Wt.)",
-            "time": "07:10"
+            "time": "22:20"
           }
         },
         "inbound": {
           "from": {
-            "airportCode": "SSH",
-            "airportName": "Sharm El Sheikh",
-            "city": "Sharm El Sheikh",
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
             "date": "2026-10-06",
             "customDate": "06.10 (Wt.)",
-            "time": "23:50"
+            "time": "09:25"
           },
           "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "03:10"
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "13:30"
           }
         },
-        "label": "Deluxe pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        "label": "Diamond sea view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
       },
-      "price": 13650,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13650,
-      "maxPrice": 13650,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 13411,
+      "prevPrice": 13349,
+      "change": 62,
+      "changePct": 0.46,
+      "minPrice": 13349,
+      "maxPrice": 13411,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
-      "soldOutNote": null,
+      "soldOutNote": "najtańsze teraz w innym biurze",
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-15278",
-      "offerId": 1166543,
-      "hotelId": 15278,
-      "hotel": "Pickalbatros Aqua Vista Resort",
+      "key": "hotel-17802",
+      "offerId": 1166521,
+      "hotelId": 17802,
+      "hotel": "Pickalbatros Jungle Aqua Park Resort Neverland",
       "region": "Egipt / Hurghada",
       "stars": 4,
-      "rating": 8.8,
-      "opinions": 193,
+      "rating": 9,
+      "opinions": 903,
       "operator": "Join UP",
       "duration": 7,
-      "departureDate": "2026-09-30",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-aqua-vista-resort-1166543.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 1,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-jungle-aqua-park-resort-neverland-1166521.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 6,
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAw2uW11QZIscBTUEVYjgJgAmoDMDBGckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEacZS-EFYQBepzBM0tA6DdX8lwkgAAGCoMCAlIfMoDADDWMBAAzOzEam",
-        "price": 13681,
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAws9i41QZI32pQQVjRAWACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADL8AmTQ",
+        "price": 13663,
         "currency": "PLN",
-        "room": "Garden view",
+        "room": "Splash room aqua park",
         "departureCode": "KTW",
         "luggageIncluded": true,
-        "carrier": "U5 7363",
+        "carrier": "U5 8941",
         "outbound": {
           "from": {
             "airportCode": "KTW",
             "airportName": "Katowice",
             "city": "Katowice",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "12:30"
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "14:30"
           },
           "to": {
             "airportCode": "HRG",
             "airportName": "Hurghada",
             "city": "Hurghada",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "17:45"
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "19:45"
           }
         },
         "inbound": {
@@ -1358,29 +966,29 @@
             "airportCode": "HRG",
             "airportName": "Hurghada",
             "city": "Hurghada",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "08:05"
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "10:20"
           },
           "to": {
             "airportCode": "KTW",
             "airportName": "Katowice",
             "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "11:35"
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "13:50"
           }
         },
-        "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+        "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
       },
-      "price": 13681,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13681,
-      "maxPrice": 13681,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 13663,
+      "prevPrice": 13536,
+      "change": 127,
+      "changePct": 0.94,
+      "minPrice": 13536,
+      "maxPrice": 13663,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -1400,10 +1008,17 @@
       "returnDate": "2026-10-06",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/al-kusajr/sirena-beach-resort-spa-813153.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
       "variantCount": 5,
+      "altOffers": [
+        {
+          "offerId": 1145328,
+          "operator": "TUI",
+          "price": null
+        }
+      ],
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "p6U8-LfnqJKwwNtV1EtKhnAAogkvrV3zuEguAPWAqW5XhgcwAAAABtqAQAiagEAAcAAQAqBFdFWlkw2-W11QZIgq0IUENY9gFgA2oJRW50ZXIgQWlyagQwOTI1ckOeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBED1b0vyVlAATMQ_TwAR7Z8BHamZDyAcG6enMg2R2I8JARJjAg5jAQYNqw7d8g",
+        "apiHash": "p6U8-LfnqJKwwNtV1EtKhnAAogkvrV3zuEguAPWAqW5XhgcwAAAABtqAQAiagEAAcAAQAqBFdFWlkwtNi41QZIgq0IUENY6QFgA2oJRW50ZXIgQWlyagQwOTI1ckOeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBED1b0vyVlAATMQ_TwAR7Z8BHamZDyAcG6enMg2R2I8JARJjAg5jAQYNi6iOtA",
         "price": 13683,
         "currency": "PLN",
         "room": "Premium sea view",
@@ -1449,13 +1064,13 @@
         "label": "Premium sea view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
       },
       "price": 13683,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "prevPrice": 13683,
+      "change": 0,
+      "changePct": 0,
       "minPrice": 13683,
       "maxPrice": 13683,
       "isLowest": true,
-      "pointCount": 1,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -1478,7 +1093,7 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pkCg7Lbkwkqcm2w-PC2qXvAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAAQAqBFdFWlkw3OW11QZIgq0IUENY9gFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC6iPN2A",
+        "apiHash": "pkCg7Lbkwkqcm2w-PC2qXvAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAAQAqBFdFWlkwtdi41QZIgq0IUENY6QFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECCwB3PJc",
         "price": 13683,
         "currency": "PLN",
         "room": "Superior poolview",
@@ -1524,39 +1139,39 @@
         "label": "Superior poolview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
       },
       "price": 13683,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "prevPrice": 13683,
+      "change": 0,
+      "changePct": 0,
       "minPrice": 13683,
       "maxPrice": 13683,
       "isLowest": true,
-      "pointCount": 1,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-10838",
-      "offerId": 1166500,
-      "hotelId": 10838,
-      "hotel": "Naama Bay Hotel & Resort",
+      "key": "hotel-24497",
+      "offerId": 1166496,
+      "hotelId": 24497,
+      "hotel": "Coral Sea Aqua Club",
       "region": "Egipt / Sharm el Sheikh",
-      "stars": 5,
-      "rating": 8,
-      "opinions": 38,
+      "stars": 4,
+      "rating": 8.6,
+      "opinions": 25,
       "operator": "Join UP",
       "duration": 7,
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "detailUrl": null,
-      "variantCount": 1,
+      "variantCount": 2,
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pRNt7-ocygaLwzuw6a075eAAogUyY3lApVfPlEEDeNxSjYHC8PvU47v8YC-6AwDzyZL18qBEpPSVAw3eW11QZIu-pTUEVY9gFgAmoDMTJickKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEa3GAUuKBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIlPC_g4nMoDADDWMBAAvU_PRK",
-        "price": 13735,
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwtti41QZI9mpQQVjpAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADHxTF-A",
+        "price": 13686,
         "currency": "PLN",
-        "room": "Sea view",
+        "room": "Family room",
         "departureCode": "KTW",
         "luggageIncluded": true,
         "carrier": "U5 7345",
@@ -1596,18 +1211,100 @@
             "time": "03:10"
           }
         },
-        "label": "Sea view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        "label": "Family room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
       },
-      "price": 13735,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13735,
-      "maxPrice": 13735,
-      "isLowest": true,
-      "pointCount": 1,
+      "price": 13686,
+      "prevPrice": 13559,
+      "change": 127,
+      "changePct": 0.94,
+      "minPrice": 13559,
+      "maxPrice": 13686,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-7065",
+      "offerId": 1166815,
+      "hotelId": 7065,
+      "hotel": "Pickalbatros Aqua Park (Hurghada)",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.6,
+      "opinions": 362,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-aqua-park-hurghada-1166815.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 3,
+      "altOffers": [
+        {
+          "offerId": 666184,
+          "operator": "Sun&Fun",
+          "price": 13804
+        }
+      ],
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "pBF3pa2tY7ONaFDISXuMiBAAogchgViV8PBl9ZGaFN0o_Hea1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwt9i41QZIvGtQQVjRAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN0_yXCSAAAZSU0JiUh8ygMAMNYwEADAf0f-g",
+        "price": 13756,
+        "currency": "PLN",
+        "room": "Garden view",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 8941",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "14:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "19:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "10:20"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "13:50"
+          }
+        },
+        "label": "Garden view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+      },
+      "price": 13756,
+      "prevPrice": 13246,
+      "change": 510,
+      "changePct": 3.85,
+      "minPrice": 13246,
+      "maxPrice": 13756,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": "najtańsze teraz w innym biurze",
       "soldOutCheaperCount": 0
     },
     {
@@ -1628,7 +1325,7 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pc4h8QIyucsTFw89bM1I_ZAAog8CZdi5V-BfPQUCh_oWvUIOXVZaqOWzSjSEOb_wtYXP4qBFNGUEww3uW11QZI12tQQVjeAWADciQLBhUBIgQSI1zMAkAuW-MEDbXI1AlRp6C99gMCEmMBDGMBBAtSeKAB",
+        "apiHash": "pc4h8QIyucsTFw89bM1I_ZAAog8CZdi5V-BfPQUCh_oWvUIOXVZaqOWzSjSEOb_wtYXP4qBFNGUEwwuNi41QZI12tQQVjRAWADciQLBhUBIgQSI1zMAkAuW-MEDbXI1AlRp6C99gMCEmMBDGMBBAvUQm2w",
         "price": 13783,
         "currency": "PLN",
         "room": "Standard room",
@@ -1674,13 +1371,13 @@
         "label": "Standard room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
       },
       "price": 13783,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "prevPrice": 13783,
+      "change": 0,
+      "changePct": 0,
       "minPrice": 13783,
       "maxPrice": 13783,
       "isLowest": true,
-      "pointCount": 1,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -1703,7 +1400,7 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "p8D3_SlYOOC1nA1H0QyGYeAAogZbXzIBCE0YKIAcdVq1M5OuXVZaqOWzSjSEOb_wtYXP4qBFNGUEww4OW11QZI7GtQQVjeAWADciULBhUBIgUSIlzMAkAuW-fwUQ2x3IIJUYeevfYDAhJjAQ1jAQIM9zSRpQ",
+        "apiHash": "p8D3_SlYOOC1nA1H0QyGYeAAogZbXzIBCE0YKIAcdVq1M5OuXVZaqOWzSjSEOb_wtYXP4qBFNGUEwwuti41QZI7GtQQVjRAWADciULBhUBIgUSIlzMAkAuW-fwUQ2x3IIJUYeevfYDAhJjAQ1jAQIMv4nukQ",
         "price": 13804,
         "currency": "PLN",
         "room": "Standard room gv",
@@ -1749,13 +1446,238 @@
         "label": "Standard room gv • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
       },
       "price": 13804,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "prevPrice": 13804,
+      "change": 0,
+      "changePct": 0,
       "minPrice": 13804,
       "maxPrice": 13804,
       "isLowest": true,
-      "pointCount": 1,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-15278",
+      "offerId": 1166543,
+      "hotelId": 15278,
+      "hotel": "Pickalbatros Aqua Vista Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.8,
+      "opinions": 193,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-30",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-aqua-vista-resort-1166543.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 1,
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAwu9i41QZI8WtQQViBAmACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARpxlL4QVhAF6nMEzS0DoN1fyXCSAAAYKgwICUh8ygMAMNYwEADLLbrxE",
+        "price": 13809,
+        "currency": "PLN",
+        "room": "Garden view",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7363",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "12:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "17:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "08:05"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "11:35"
+          }
+        },
+        "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+      },
+      "price": 13809,
+      "prevPrice": 13681,
+      "change": 128,
+      "changePct": 0.94,
+      "minPrice": 13681,
+      "maxPrice": 13809,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-10838",
+      "offerId": 1166500,
+      "hotelId": 10838,
+      "hotel": "Naama Bay Hotel & Resort",
+      "region": "Egipt / Sharm el Sheikh",
+      "stars": 5,
+      "rating": 8,
+      "opinions": 38,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": null,
+      "variantCount": 1,
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "pRNt7-ocygaLwzuw6a075eAAogUyY3lApVfPlEEDeNxSjYHC8PvU47v8YC-6AwDzyZL18qBEpPSVAwvdi41QZIqGxQQVjpAWACagMxMmJyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARrcYBS4oEYQBepzBSpiBTAEyssDoN1PyXCSAAAYiU8L-DicygMAMNYwEAC-c2QUs",
+        "price": 13864,
+        "currency": "PLN",
+        "room": "Sea view",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7345",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:05"
+          },
+          "to": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "07:10"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "23:50"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "03:10"
+          }
+        },
+        "label": "Sea view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+      },
+      "price": 13864,
+      "prevPrice": 13735,
+      "change": 129,
+      "changePct": 0.94,
+      "minPrice": 13735,
+      "maxPrice": 13864,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-1679",
+      "offerId": 1166464,
+      "hotelId": 1679,
+      "hotel": "Doubletree by Hilton Sharks Bay (ex. Hilton Sharks Bay)",
+      "region": "Egipt / Sharm el Sheikh / Sharm El Sheikh",
+      "stars": 4,
+      "rating": 8.1,
+      "opinions": 71,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/doubletree-by-hilton-sharks-bay-ex-hilton-sharks-bay-1166464.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 4,
+      "cheapest": {
+        "variantId": "",
+        "operator": "",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwvti41QZIv2xQQVjpAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEAC3wHdeU",
+        "price": 13887,
+        "currency": "PLN",
+        "room": "Deluxe pool view",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7345",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:05"
+          },
+          "to": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "07:10"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "23:50"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "03:10"
+          }
+        },
+        "label": "Deluxe pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+      },
+      "price": 13887,
+      "prevPrice": 13650,
+      "change": 237,
+      "changePct": 1.74,
+      "minPrice": 13650,
+      "maxPrice": 13887,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -1778,8 +1700,8 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pEPOJ4hTiNv1dZ9oPca0aCAAogjHp4AynsOB_VAor_0l2CthBoRXUWerNxRHeDmlcvUqwqBEVYSU0w4eW11QZIuPpUUAVY3gFgAmoCQUlyIRwR2KAGuQSjmj6rBBQbubosGMmALwH8_4GPCAMAYwECDPE5-Ek",
-        "price": 13919,
+        "apiHash": "pEPOJ4hTiNv1dZ9oPca0aCAAogjHp4AynsOB_VAor_0l2CthBoRXUWerNxRHeDmlcvUqwqBEVYSU0wv9i41QZI5mxQAVjRAWACagJBSXIhHBHYoAa5BKOaPqsEFBu5uiwYyYAvAfz_gY8IAwBjAQIMMU2dxg",
+        "price": 13926,
         "currency": "PLN",
         "room": "Family family triple room",
         "departureCode": "WRO",
@@ -1823,14 +1745,14 @@
         },
         "label": "Family family triple room • WRO 28.09 (Pon.) 21:00 • powrót 05.10 (Pon.) 16:30"
       },
-      "price": 13919,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "price": 13926,
+      "prevPrice": 13919,
+      "change": 7,
+      "changePct": 0.05,
       "minPrice": 13919,
-      "maxPrice": 13919,
-      "isLowest": true,
-      "pointCount": 1,
+      "maxPrice": 13926,
+      "isLowest": false,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -1853,7 +1775,7 @@
       "cheapest": {
         "variantId": "",
         "operator": "",
-        "apiHash": "pHkhysMiViNSpMRRvpnz_BAAog1MieKbMjPneXzKomjvcTykKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw5OW11QZIrG1QQVj2AWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-Ng5DYjUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMZrvz1Q",
+        "apiHash": "pHkhysMiViNSpMRRvpnz_BAAog1MieKbMjPneXzKomjvcTykKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwwdi41QZIrG1QQVjpAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-Ng5DYjUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMHe3FOw",
         "price": 14116,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1899,17 +1821,25 @@
         "label": "Pokój 2 os. + 2 dostawki • KTW 29.09 (Wt.) 17:00 • powrót 06.10 (Wt.) 22:50"
       },
       "price": 14116,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
+      "prevPrice": 14116,
+      "change": 0,
+      "changePct": 0,
       "minPrice": 14116,
       "maxPrice": 14116,
       "isLowest": true,
-      "pointCount": 1,
+      "pointCount": 2,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     }
   ],
-  "disappeared": []
+  "disappeared": [
+    {
+      "key": "hotel-23085",
+      "hotel": "Stella Gardens Resort & Spa (ex Stella Di Mare Gardens)",
+      "region": "Egipt / Hurghada / Makadi Bay",
+      "lastPrice": 13054,
+      "lastSeen": "2026-09-18"
+    }
+  ]
 }

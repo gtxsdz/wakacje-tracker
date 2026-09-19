@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-19T09:24:26.602Z",
+  "generatedAt": "2026-09-19T09:24:40.854Z",
   "date": "2026-09-19",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
-  "count": 21,
+  "count": 22,
   "offers": [
     {
       "key": "hotel-32171",
@@ -22,7 +22,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwram51QZI-O0GUENYzgFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA2mH4GL",
+        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwu6m51QZI-O0GUENYzgFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAS4gfYQBepzARuD9MmpE6DdP8lwkgAAHww5S5hInOoDADDmMBAA3533mL",
         "price": 11238,
         "currency": "PLN",
         "room": "Superior room",
@@ -97,7 +97,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5MpF0D4ukxUYUTDIY0aG3AAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAAAqBFdFWlkwrqm51QZIgZ8HUENY5gFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgujdt64",
+        "apiHash": "p5MpF0D4ukxUYUTDIY0aG3AAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAAAqBFdFWlkwvKm51QZIgZ8HUENY5gFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgse3qyP",
         "price": 11866,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -172,7 +172,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwr6m51QZI62BQQVjmAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEACy9hEmI",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwvqm51QZI62BQQVjmAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEAC0iB114",
         "price": 12395,
         "currency": "PLN",
         "room": "Standard room",
@@ -247,7 +247,7 @@
       "cheapest": {
         "variantId": "rainbow",
         "operator": "Rainbow",
-        "apiHash": "plHv3hlgEJZn_luh3HPEtYAAog0vbtXFLenCisbzCeF1ss3WC1OzpkmkuOnFPfcjsvXEMqBFJOQlcwsKm51QZIiOtLUEVY5gFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVyP5YBngEVBxcAWAgK5AFA5AUR0CwZsygQyB1M4BlL8j5hAFPjRFIAD-rqQB1eIKLNkQkNAF-9-v-BAwMOYwEGDeINFcY",
+        "apiHash": "plHv3hlgEJZn_luh3HPEtYAAog0vbtXFLenCisbzCeF1ss3WC1OzpkmkuOnFPfcjsvXEMqBFJOQlcwv6m51QZIiOtLUEVY5gFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVyP5YBngEVBxcAWAgK5AFA5AUR0CwZsygQyB1M4BlL8j5hAFPjRFIAD-rqQB1eIKLNkQkNAF-9-v-BAwMOYwEGDbKT4s4",
         "price": 12425,
         "currency": "PLN",
         "room": "Junior suita z widokiem na basen",
@@ -397,7 +397,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAws6m51QZIoWVQQVjmAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC2SBLmc",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwwqm51QZIoWVQQVjmAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC0exwQI",
         "price": 12961,
         "currency": "PLN",
         "room": "Superior room",
@@ -472,10 +472,10 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pTt-w9EDIyZny9f9hrfiUmAAog_vp5ORLWcXNDJw47eCwoBK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwtKm51QZIrWVQQVjOAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDT_JcJDQAB8dnwmLSGzKAwAw1jAQALkokjFQ",
+        "apiHash": "pMmzQoXIqh0yOXIqPv-6i_AAogB-dFRCRrnK_vMQ6gk45Sk61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAww6m51QZIrWVQQVjOAWACagMwMlhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBHHF0yLuToN0_yXCSAAAfDZ8Ji0hsygMAMNYwEAC66Kr44",
         "price": 12973,
         "currency": "PLN",
-        "room": "Premium family",
+        "room": "Superior family room",
         "departureCode": "KTW",
         "luggageIncluded": true,
         "carrier": "U5 8941",
@@ -515,7 +515,7 @@
             "time": "12:35"
           }
         },
-        "label": "Premium family • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
+        "label": "Superior family room • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 09:05"
       },
       "price": 12973,
       "prevPrice": 13154,
@@ -547,7 +547,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwtam51QZIoJlPUEVY5gFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLVpxpLg",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwxKm51QZIoJlPUEVY5gFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLLuOr5Q",
         "price": 12976,
         "currency": "PLN",
         "room": "Coral standard room",
@@ -697,7 +697,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwuKm51QZIxGdQQVjmAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABGnSUyF5zkN1PyXCSAAAZm-gIn1iMygMAMNYwEADMknt8w",
+        "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwx6m51QZIxGdQQVjmAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABGnSUyF5zkN1PyXCSAAAZm-gIn1iMygMAMNYwEADLVmBQc",
         "price": 13252,
         "currency": "PLN",
         "room": "Family room",
@@ -779,7 +779,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pOlEjXm-CR06yH6BTy3ePZAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcAAAAqBFdFWlkwuam51QZIlO1RUEVY5gFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg3krs1n",
+        "apiHash": "pOlEjXm-CR06yH6BTy3ePZAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcAAAAqBFdFWlkwyKm51QZIlO1RUEVY5gFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg0bFjC5",
         "price": 13411,
         "currency": "PLN",
         "room": "Diamond sea view",
@@ -854,7 +854,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwuqm51QZIqmlQQVjOAWACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADHW1DIE",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwyam51QZIqmlQQVjOAWACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADA0o96c",
         "price": 13482,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -1086,7 +1086,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwwKm51QZIoGpQQVjmAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALzamYvg",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwzqm51QZIoGpQQVjmAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALPJUjDw",
         "price": 13600,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -1219,6 +1219,88 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-45236",
+      "offerId": 813153,
+      "hotelId": 45236,
+      "hotel": "Sirena Beach Resort & Spa",
+      "region": "Egipt / Marsa El Alam / Al-Kusajr",
+      "stars": 5,
+      "rating": 8.3,
+      "opinions": 108,
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/al-kusajr/sirena-beach-resort-spa-813153.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 5,
+      "altOffers": [
+        {
+          "offerId": 1145328,
+          "operator": "TUI",
+          "price": null
+        }
+      ],
+      "cheapest": {
+        "variantId": "coral travel",
+        "operator": "Coral Travel",
+        "apiHash": "pqwK3m-QFAOyGrumDd_eRWAAogkvrV3zuEguAPWAqW5XhgcwAAAABtqAQAiagEAAcAAAAqBFdFWlkw0Km51QZIlsJTUEVY5gFgA2oJRW50ZXIgQWlyagQwOTI1ckOeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBED1b0vyVlAATMQ_TwAR7Z8BHamZDyAcG6enMg2R2I8JARJjAg5jAQYNEciREw",
+        "price": 13683,
+        "currency": "PLN",
+        "room": "Premium sea view",
+        "departureCode": "LCJ",
+        "luggageIncluded": true,
+        "carrier": "ENT 4855",
+        "outbound": {
+          "from": {
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "16:20"
+          },
+          "to": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "22:20"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "09:25"
+          },
+          "to": {
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "13:30"
+          }
+        },
+        "label": "Premium sea view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
+      },
+      "price": 13683,
+      "prevPrice": null,
+      "change": null,
+      "changePct": null,
+      "minPrice": 13683,
+      "maxPrice": 13683,
+      "isLowest": true,
+      "pointCount": 2,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-37058",
       "offerId": 583304,
       "hotelId": 37058,
@@ -1311,7 +1393,7 @@
       "cheapest": {
         "variantId": "sun&fun",
         "operator": "Sun&Fun",
-        "apiHash": "p8D3_SlYOOC1nA1H0QyGYeAAogZbXzIBCE0YKIAcdVq1M5OuXVZaqOWzSjSEOb_wtYXP4qBFNGUEwwxKm51QZI7GtQQVjOAWADciULBhUBIgUSIlzMAkAuW-fwUQ2x3IIJUYeevfYDAhJjAQ1jAQIMuR1p-A",
+        "apiHash": "p8D3_SlYOOC1nA1H0QyGYeAAogZbXzIBCE0YKIAcdVq1M5OuXVZaqOWzSjSEOb_wtYXP4qBFNGUEww0am51QZI7GtQQVjOAWADciULBhUBIgUSIlzMAkAuW-fwUQ2x3IIJUYeevfYDAhJjAQ1jAQIMSxLNEw",
         "price": 13804,
         "currency": "PLN",
         "room": "Standard room gv",
@@ -1386,7 +1468,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAwxam51QZI8WtQQVj-AWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARpxlL4QVhAF6nMEzS0DoN1fyXCSAAAYKgwICUh8ygMAMNYwEADOx9RUI",
+        "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAw1Km51QZI8WtQQVj-AWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARpxlL4QVhAF6nMEzS0DoN1fyXCSAAAYKgwICUh8ygMAMNYwEADM29XNo",
         "price": 13809,
         "currency": "PLN",
         "room": "Garden view",
@@ -1461,7 +1543,7 @@
       "cheapest": {
         "variantId": "exim tours",
         "operator": "Exim Tours",
-        "apiHash": "pEPOJ4hTiNv1dZ9oPca0aCAAogjHp4AynsOB_VAor_0l2CthBoRXUWerNxRHeDmlcvUqwqBEVYSU0wx6m51QZI5mxQAVjOAWACagJBSXIhHBHYoAa5BKOaPqsEFBu5uiwYyYAvAfz_gY8IAwBjAQIMNwkkMA",
+        "apiHash": "pEPOJ4hTiNv1dZ9oPca0aCAAogjHp4AynsOB_VAor_0l2CthBoRXUWerNxRHeDmlcvUqwqBEVYSU0w1qm51QZI5mxQAVjOAWACagJBSXIhHBHYoAa5BKOaPqsEFBu5uiwYyYAvAfz_gY8IAwBjAQIMs85CaQ",
         "price": 13926,
         "currency": "PLN",
         "room": "Family family triple room",

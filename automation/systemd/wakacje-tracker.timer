@@ -1,12 +1,12 @@
-# Timer systemd uruchamiający wakacje-tracker.service 3x dziennie: 08:30, 12:30, 18:30.
+# Timer systemd uruchamiający wakacje-tracker.service co 2h w oknie 08:30–22:30.
 # Persistent=true => jeśli maszyna była wyłączona o zaplanowanej porze,
 # zadanie uruchomi się zaraz po starcie.
 
 [Unit]
-Description=Pobranie cen wakacje.pl (3x dziennie: 08:30, 12:30, 18:30)
+Description=Pobranie cen wakacje.pl (co 2h: 08:30–22:30)
 
 [Timer]
-OnCalendar=*-*-* 08,12,18:30:00
+OnCalendar=*-*-* 08,10,12,14,16,18,20,22:30:00
 Persistent=true
 
 [Install]

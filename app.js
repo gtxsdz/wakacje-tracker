@@ -198,7 +198,9 @@ function openModal(key) {
     ? `${offer.region || ""} • ${v.room} • ✈ ${v.departureCode} ${v.outbound?.from?.customDate || ""} ${v.outbound?.from?.time || ""}`
     : offer.region || "";
 
-  const points = hist && hist.prices ? hist.prices : (v ? [{ date: state.latest.date, price: v.price }] : []);
+  const points = hist && hist.prices && hist.prices.length
+    ? hist.prices
+    : (v ? [{ date: state.latest.date, at: state.latest.generatedAt, price: v.price, operator: v.operator, room: v.room, outbound: v.outbound, inbound: v.inbound }] : []);
   drawChart(points);
 
   const values = points.map((p) => p.price);
@@ -208,7 +210,7 @@ function openModal(key) {
     { l: "Poprzednia", v: fmtPrice(offer.prevPrice) },
     { l: "Min", v: values.length ? fmtPrice(Math.min(...values)) : "—" },
     { l: "Max", v: values.length ? fmtPrice(Math.max(...values)) : "—" },
-    { l: "Pomiarów", v: String(points.length) },
+    { l: "Zanotowanych cen", v: String(points.length) },
     { l: "Wariantów teraz", v: String(offer.variantCount ?? "—") },
   ];
   $("#modal-stats").innerHTML = stats
@@ -221,6 +223,9 @@ function openModal(key) {
   if (changes.length) {
     const who = (side) => side?.operator || side?.label || "?";
     holder.hidden = false;
+    const whenChange = (c) => c.at
+      ? new Date(c.at).toLocaleString("pl-PL", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })
+      : c.date;
     holder.innerHTML =
       `<h3>Zmiany biura z najtańszą ofertą</h3>` +
       changes
@@ -228,7 +233,7 @@ function openModal(key) {
         .reverse()
         .map(
           (c) => `<div class="change-item">
-            <span class="cdate">${c.date}</span>
+            <span class="cdate">${whenChange(c)}</span>
             <span>${who(c.from)} (${fmtPrice(c.from?.price)}) → ${who(c.to)} (${fmtPrice(c.to?.price)})</span>
             <span class="creason">${c.reason || ""}</span>
           </div>`
@@ -251,12 +256,31 @@ function closeModal() {
   if (state.chart) { state.chart.destroy(); state.chart = null; }
 }
 
+// Etykieta osi X: data + godzina jeśli punkt ma znacznik czasu (at),
+// w przeciwnym razie sama data (stare punkty sprzed modelu śróddziennego).
+function pointLabel(p) {
+  const iso = p.at || p.date;
+  const d = new Date(iso);
+  if (p.at) {
+    return d.toLocaleString("pl-PL", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
+  }
+  return d.toLocaleDateString("pl-PL", { day: "2-digit", month: "2-digit" });
+}
+
+// Krótki opis lotu punktu (tam + powrót) do tooltipa.
+function flightSummary(p) {
+  const out = p.outbound?.from;
+  const inb = p.inbound?.from;
+  const parts = [];
+  if (out) parts.push(`✈ ${out.airportCode || "?"} ${out.customDate || out.date || ""} ${out.time || ""}`.trim());
+  if (inb) parts.push(`↩ powrót ${inb.customDate || inb.date || ""} ${inb.time || ""}`.trim());
+  return parts;
+}
+
 function drawChart(points) {
   const ctx = $("#history-chart").getContext("2d");
   if (state.chart) state.chart.destroy();
-  const labels = points.map((p) =>
-    new Date(p.date).toLocaleDateString("pl-PL", { day: "2-digit", month: "2-digit" })
-  );
+  const labels = points.map(pointLabel);
   state.chart = new Chart(ctx, {
     type: "line",
     data: {
@@ -271,13 +295,46 @@ function drawChart(points) {
     },
     options: {
       responsive: true, maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
       plugins: {
         legend: { display: false },
-        tooltip: { callbacks: { label: (c) => new Intl.NumberFormat("pl-PL").format(c.parsed.y) + " zł" } },
+        tooltip: {
+          padding: 10,
+          callbacks: {
+            // Nagłówek: pełna data i godzina punktu.
+            title: (items) => {
+              const p = points[items[0].dataIndex];
+              const iso = p?.at || p?.date;
+              return iso
+                ? new Date(iso).toLocaleString("pl-PL", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" })
+                : "";
+            },
+            // Treść: cena, różnica względem poprzedniego punktu, biuro, pokój, lot.
+            label: (c) => {
+              const i = c.dataIndex;
+              const p = points[i];
+              const lines = [`Cena: ${new Intl.NumberFormat("pl-PL").format(p.price)} zł`];
+              const prev = i > 0 ? points[i - 1] : null;
+              if (prev && prev.price != null && p.price != null) {
+                const diff = p.price - prev.price;
+                const sign = diff > 0 ? "▲ +" : diff < 0 ? "▼ " : "→ ";
+                const pct = prev.price ? ` (${diff > 0 ? "+" : ""}${((diff / prev.price) * 100).toFixed(1)}%)` : "";
+                lines.push(`Poprzednia: ${new Intl.NumberFormat("pl-PL").format(prev.price)} zł`);
+                lines.push(`Zmiana: ${sign}${new Intl.NumberFormat("pl-PL").format(diff)} zł${pct}`);
+              } else {
+                lines.push("Pierwszy pomiar");
+              }
+              if (p.operator) lines.push(`Biuro: ${p.operator}`);
+              if (p.room) lines.push(`Pokój: ${p.room}`);
+              for (const f of flightSummary(p)) lines.push(f);
+              return lines;
+            },
+          },
+        },
       },
       scales: {
         y: { ticks: { color: "#9fb0c3", callback: (v) => new Intl.NumberFormat("pl-PL").format(v) }, grid: { color: "rgba(255,255,255,0.06)" } },
-        x: { ticks: { color: "#9fb0c3" }, grid: { color: "rgba(255,255,255,0.06)" } },
+        x: { ticks: { color: "#9fb0c3", maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }, grid: { color: "rgba(255,255,255,0.06)" } },
       },
     },
   });

@@ -95,7 +95,7 @@ function writeJson(absPath, data) {
  * Aktualizuje historię o dzisiejszą najniższą cenę danego hotelu.
  * Wykrywa zmianę biura, przez które hotel jest teraz najtańszy.
  */
-function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
+function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   const flat = flattenVariant(chosen, offer.operator);
 
   // Metadane oferty (mogą się zmieniać: ocena, liczba opinii).
@@ -110,6 +110,7 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
   entry.departureDate = offer.departureDate;
   entry.returnDate = offer.returnDate;
   entry.lastSeen = date;
+  entry.lastSeenAt = at;
   if (!entry.firstSeen) entry.firstSeen = date;
 
   entry.prices = entry.prices || [];
@@ -117,13 +118,21 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
 
   const prev = entry.prices[entry.prices.length - 1];
 
+  if (!flat) return; // brak dostępnego wariantu — nie dopisujemy punktu
+
+  // Czy coś realnego się zmieniło od ostatniego punktu? Zapisujemy punkt tylko
+  // przy zmianie CENY lub BIURA — inaczej baza puchłaby przy częstych przebiegach.
+  const priceChanged = !prev || prev.price !== flat.price;
+  const operatorChanged = !prev || prev.variantId !== flat.variantId;
+
   // Zmiana BIURA, przez które hotel jest teraz najtańszy (inny operator niż
   // ostatnio). Nie notujemy zmian lotniska/godziny/pokoju w obrębie tego samego
   // biura — dla śledzenia liczy się wyłącznie najniższa cena hotelu.
-  if (prev && flat && prev.variantId !== flat.variantId) {
+  if (prev && operatorChanged) {
     const cheaper = flat.price != null && prev.price != null && flat.price < prev.price;
     entry.variantChanges.push({
       date,
+      at,
       from: { variantId: prev.variantId, operator: prev.operator || prev.variantId, price: prev.price },
       to: { variantId: flat.variantId, operator: flat.operator || flat.variantId, price: flat.price },
       reason: cheaper
@@ -132,16 +141,10 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date) {
     });
   }
 
-  if (!flat) return; // brak dostępnego wariantu — nie dopisujemy punktu
+  // Nic się nie zmieniło (ta sama cena i to samo biuro) — nie dopisujemy punktu.
+  if (prev && !priceChanged && !operatorChanged) return;
 
-  const point = { date, ...flat };
-  if (!prev) {
-    entry.prices.push(point);
-  } else if (prev.date === date) {
-    entry.prices[entry.prices.length - 1] = point; // nadpisz ten sam dzień
-  } else {
-    entry.prices.push(point);
-  }
+  entry.prices.push({ date, at, ...flat });
 }
 
 /** Buduje snapshot latest.json ze zmianami cen. */
@@ -154,13 +157,15 @@ function buildLatest(history, currentResults, date) {
 
     const entry = history.offers[r.offer.key];
     const prices = entry ? entry.prices : [];
-    const flat = flattenVariant(r.chosen);
+    const flat = flattenVariant(r.chosen, r.offer.operator);
     const current = flat ? flat.price : null;
 
-    // Poprzednia znana cena (punkt z innego dnia).
+    // Poprzednia cena = ostatni zanotowany punkt o INNEJ cenie niż aktualna.
+    // Punkty zapisujemy tylko przy zmianie, więc to naturalnie „cena sprzed
+    // ostatniej zmiany" — niezależnie od tego, czy była dziś, czy wcześniej.
     let prevPrice = null;
     for (let i = prices.length - 1; i >= 0; i--) {
-      if (prices[i].date !== date) {
+      if (prices[i].price !== current) {
         prevPrice = prices[i].price;
         break;
       }
@@ -357,7 +362,8 @@ function buildDetailUrl(offer, chosen) {
 
 async function main() {
   const date = today();
-  console.log(`=== Scraper wakacje.pl (Egipt, warianty) — ${date} ===`);
+  const at = nowIso(); // znacznik czasu przebiegu (punkty śróddzienne)
+  console.log(`=== Scraper wakacje.pl (Egipt, warianty) — ${date} ${at} ===`);
 
   let offers, total;
   try {
@@ -436,10 +442,10 @@ async function main() {
   for (const r of hotelResults) {
     if (!r.chosen) continue; // brak wariantu — nie zakładamy wpisu historii
     const entry = history.offers[r.offer.key] || {};
-    updateOfferHistory(entry, r.offer, r.chosen, r.soldOutCheaper, date);
+    updateOfferHistory(entry, r.offer, r.chosen, r.soldOutCheaper, date, at);
     history.offers[r.offer.key] = entry;
   }
-  history.lastUpdated = nowIso();
+  history.lastUpdated = at;
   history.sourceUrl = LISTING_URL;
 
   const latest = buildLatest(history, hotelResults, date);

@@ -266,7 +266,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -484,7 +484,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -652,7 +652,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-263513": {
       "offerId": 1166909,
@@ -1188,7 +1188,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-20196": {
       "offerId": 1050343,
@@ -1537,7 +1537,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -1922,7 +1922,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-6218": {
       "offerId": 1166973,
@@ -2090,7 +2090,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-23785": {
       "offerId": 1166531,
@@ -2408,7 +2408,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-1086": {
       "offerId": 1027388,
@@ -2576,7 +2576,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-67092": {
       "offerId": 1166936,
@@ -2744,7 +2744,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-7065": {
       "offerId": 1166815,
@@ -3058,7 +3058,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-17532": {
       "offerId": 254865,
@@ -3192,7 +3192,7 @@
           "at": "2026-09-19T12:00:00.000Z"
         }
       ],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -3657,10 +3657,60 @@
             }
           },
           "label": "Family sliding door pool view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-20",
+          "at": "2026-09-20T12:30:53.094Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwmaS_1QZIl4VVUEVYswFgAmoDTGZJckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEfwZS4wFYQBepzBM0tA6DdP8lwkgAAHy28CY44bMoDADDWMBAAyY_qqF",
+          "price": 13933,
+          "currency": "PLN",
+          "room": "Splash room aqua park",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -4062,7 +4112,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-45236": {
       "offerId": 813153,
@@ -4498,7 +4548,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-10838": {
       "offerId": 1166500,
@@ -4733,7 +4783,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-7991": {
       "offerId": 666646,
@@ -4851,7 +4901,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-43694": {
       "offerId": 1027389,
@@ -5087,7 +5137,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-20T10:30:53.095Z"
+      "lastSeenAt": "2026-09-20T12:30:53.094Z"
     },
     "hotel-27771": {
       "offerId": 725111,
@@ -5101,7 +5151,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-20",
-      "lastSeenAt": "2026-09-20T10:30:53.095Z",
+      "lastSeenAt": "2026-09-20T12:30:53.094Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -5208,6 +5258,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-20T10:30:53.095Z",
+  "lastUpdated": "2026-09-20T12:30:53.094Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

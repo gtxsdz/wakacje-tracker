@@ -320,19 +320,49 @@ function serviceSlug(serviceId) {
 }
 
 /**
+ * Slug do URL wakacje.pl: małe litery, bez ogonków, spacje/znaki -> myślniki.
+ * Np. "Sharm el Sheikh" -> "sharm-el-sheikh", "Charmillion Club" -> "charmillion-club".
+ */
+function urlSlug(s) {
+  return (s || "")
+    .toString()
+    .toLowerCase()
+    .replace(/ł/g, "l")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
  * Buduje URL szczegółów oferty z parametrami (data, długość, wyżywienie,
  * miasto wylotu, skład osób), tak by strona otworzyła konkretny wariant.
  * Przykład query: od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707
+ *
+ * Gdy API nie zwróci pełnego `place`/`urlName` (zdarza się przy części
+ * operatorów), budujemy URL z regionu i nazwy hotelu — wakacje.pl przyjmuje
+ * `/oferty/egipt/{region}/{slug-nazwy}-{offerId}.html` i tak samo otwiera ofertę.
  */
 function buildDetailUrl(offer, chosen) {
-  const p = offer.place;
-  if (!p || !offer.urlName) return null;
-  const country = p.country?.urlName;
-  const region = p.region?.urlName;
-  const city = p.city?.urlName;
-  if (!country || !region || !city) return null;
+  if (!offer.offerId) return null;
 
-  const url = `https://www.wakacje.pl/oferty/${country}/${region}/${city}/${offer.urlName}-${offer.offerId}.html`;
+  const p = offer.place;
+  let base = null;
+
+  if (p && offer.urlName && p.country?.urlName && p.region?.urlName && p.city?.urlName) {
+    // Ścieżka pełna (z danych API): kraj/region/miasto/nazwa.
+    base = `https://www.wakacje.pl/oferty/${p.country.urlName}/${p.region.urlName}/${p.city.urlName}/${offer.urlName}-${offer.offerId}.html`;
+  } else {
+    // Fallback: region z pola `region` ("Egipt / Sharm el Sheikh") + slug nazwy.
+    // Wystarcza wakacje.pl do otwarcia właściwej oferty po offerId.
+    const regionName = (offer.region || "").split("/").pop().trim();
+    const regionSlug = urlSlug(regionName);
+    const nameSlug = urlSlug(offer.hotel);
+    if (!regionSlug || !nameSlug) return null;
+    base = `https://www.wakacje.pl/oferty/egipt/${regionSlug}/${nameSlug}-${offer.offerId}.html`;
+  }
+
+  const url = base;
 
   // Parametry filtra dla konkretnego wariantu.
   const parts = [];

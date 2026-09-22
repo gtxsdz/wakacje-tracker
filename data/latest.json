@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22T14:31:21.133Z",
+  "generatedAt": "2026-09-22T16:32:53.483Z",
   "date": "2026-09-22",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
-  "count": 17,
+  "count": 19,
   "offers": [
     {
       "key": "hotel-32171",
@@ -22,7 +22,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pD1tNOMj7HPrwgSrJK_mO3AAogE8yPh1VruY-OenUD9BO6rgGowmXf5xuKtFirsM-7dRgqBEpPSVAwoKLK1QZIqVZQQVixAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN1fyXCSAAAZLElLmEic6gMAMOYwEADQTOqtw",
+        "apiHash": "pD1tNOMj7HPrwgSrJK_mO3AAogE8yPh1VruY-OenUD9BO6rgGowmXf5xuKtFirsM-7dRgqBEpPSVAwxNrK1QZIqVZQQVivAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN1fyXCSAAAZLElLmEic6gMAMOYwEADYCDSs8",
         "price": 11049,
         "currency": "PLN",
         "room": "Superior room",
@@ -93,7 +93,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/al-kusajr/akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort-254866.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 64,
+      "variantCount": 72,
       "altOffers": [
         {
           "offerId": 1187870,
@@ -104,7 +104,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkwoaLK1QZIiLZIUEVYmQFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgv892Ke",
+        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkwxdrK1QZIiLZIUEVYlwFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBguhTXbJ",
         "price": 11866,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -162,6 +162,81 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-27771",
+      "offerId": 725111,
+      "hotelId": 27771,
+      "hotel": "Radisson Individuals Marina Port Ghalib (ex. Sunrise Marina Resort)",
+      "region": "Egipt / Marsa El Alam / Port Ghalib",
+      "stars": 5,
+      "rating": 8.1,
+      "opinions": 265,
+      "operator": "Rainbow",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/port-ghalib/radisson-individuals-marina-port-ghalib-ex-sunrise-marina-resort-725111.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 3,
+      "cheapest": {
+        "variantId": "rainbow",
+        "operator": "Rainbow",
+        "apiHash": "pRjAYqpu-eWrXqMawQz899AAog0vbtXFLenCisbzCeF1ss3QYYz-qb1QuxQH25V7P9SB4qBFJOQlcwx9rK1QZIo-dKUEVYlwFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNOPLQ1w",
+        "price": 12256,
+        "currency": "PLN",
+        "room": "Junior suita z widokiem na basen",
+        "departureCode": "KTW",
+        "luggageIncluded": false,
+        "carrier": "ENT1155",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "04:15"
+          },
+          "to": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "10:00"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "10:30"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "14:25"
+          }
+        },
+        "label": "Junior suita z widokiem na basen • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
+      },
+      "price": 12256,
+      "prevPrice": 13194,
+      "change": -938,
+      "changePct": -7.11,
+      "minPrice": 11712,
+      "maxPrice": 13194,
+      "isLowest": false,
+      "pointCount": 11,
+      "firstSeen": "2026-09-19",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-7231",
       "offerId": 1166986,
       "hotelId": 7231,
@@ -179,7 +254,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwo6LK1QZI6M5LUEVYmQFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAtcb4lg",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwyNrK1QZI6M5LUEVYlwFgAmoDQ0dtckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AEaXGAUuSBGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGEvoyQhYnMoDADDWMBAAtPYMk3",
         "price": 12389,
         "currency": "PLN",
         "room": "Standard room",
@@ -254,7 +329,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAwpqLK1QZI3WNQQViZAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA0HURRQ",
+        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw2drK1QZI3WNQQViXAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA0_bSWa",
         "price": 12765,
         "currency": "PLN",
         "room": "Standard room",
@@ -329,7 +404,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAwpqLK1QZItmRQQVixAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALaws5Ag",
+        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAw2trK1QZItmRQQVivAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALWaW27w",
         "price": 12854,
         "currency": "PLN",
         "room": "Premium family",
@@ -387,81 +462,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-20196",
-      "offerId": 14032,
-      "hotelId": 20196,
-      "hotel": "Titanic Palace Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8,
-      "opinions": 495,
-      "operator": "Coral Travel",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-14032.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 5,
-      "cheapest": {
-        "variantId": "coral travel",
-        "operator": "Coral Travel",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwp6LK1QZIoJlPUEVYmQFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYL0hfjMw",
-        "price": 12976,
-        "currency": "PLN",
-        "room": "Coral standard room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "ENT 4039",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "03:10"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "08:45"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "09:15"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "13:10"
-          }
-        },
-        "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
-      },
-      "price": 12976,
-      "prevPrice": 12936,
-      "change": 40,
-      "changePct": 0.31,
-      "minPrice": 12629,
-      "maxPrice": 12976,
-      "isLowest": false,
-      "pointCount": 9,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-30896",
       "offerId": 1166735,
       "hotelId": 30896,
@@ -479,7 +479,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwqqLK1QZI5edPUEVYmQFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAvuONIC",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw5NrK1QZI5edPUEVYlwFgAmoDMDJZckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwEeYSUsANUwBMrLA6DdT8lwkgAAGFstCQ84jMoDADDWMBAAv4qOTj",
         "price": 13076,
         "currency": "PLN",
         "room": "Superior room",
@@ -537,81 +537,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-27771",
-      "offerId": 725111,
-      "hotelId": 27771,
-      "hotel": "Radisson Individuals Marina Port Ghalib (ex. Sunrise Marina Resort)",
-      "region": "Egipt / Marsa El Alam / Port Ghalib",
-      "stars": 5,
-      "rating": 8.1,
-      "opinions": 265,
-      "operator": "Rainbow",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/port-ghalib/radisson-individuals-marina-port-ghalib-ex-sunrise-marina-resort-725111.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 3,
-      "cheapest": {
-        "variantId": "rainbow",
-        "operator": "Rainbow",
-        "apiHash": "pRjAYqpu-eWrXqMawQz899AAog0vbtXFLenCisbzCeF1ss3QYYz-qb1QuxQH25V7P9SB4qBFJOQlcwq6LK1QZIicRQUEVYmQFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNSaZeNw",
-        "price": 13194,
-        "currency": "PLN",
-        "room": "Junior suita z widokiem na basen",
-        "departureCode": "KTW",
-        "luggageIncluded": false,
-        "carrier": "ENT1155",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "04:15"
-          },
-          "to": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "10:00"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "10:30"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "14:25"
-          }
-        },
-        "label": "Junior suita z widokiem na basen • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
-      },
-      "price": 13194,
-      "prevPrice": 12425,
-      "change": 769,
-      "changePct": 6.19,
-      "minPrice": 11712,
-      "maxPrice": 13194,
-      "isLowest": false,
-      "pointCount": 10,
-      "firstSeen": "2026-09-19",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-17802",
       "offerId": 1166521,
       "hotelId": 17802,
@@ -629,7 +554,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwraLK1QZIr2hQQViBAWACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADBrCy_E",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9trK1QZIr2hQQVh_YAJqA0xmSXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABH8GUuMBWEAXqcwTNLQOg3T_JcJIAAB8tvAmOOGzKAwAw1jAQAMqOLJ1g",
         "price": 13359,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -687,6 +612,81 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-20196",
+      "offerId": 14032,
+      "hotelId": 20196,
+      "hotel": "Titanic Palace Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 5,
+      "rating": 8,
+      "opinions": 495,
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-14032.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 5,
+      "cheapest": {
+        "variantId": "coral travel",
+        "operator": "Coral Travel",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw99rK1QZI1dFRUEVYlwFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLFSW5Tg",
+        "price": 13376,
+        "currency": "PLN",
+        "room": "Coral standard room",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "ENT 4039",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "03:10"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "08:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "09:15"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "13:10"
+          }
+        },
+        "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
+      },
+      "price": 13376,
+      "prevPrice": 12976,
+      "change": 400,
+      "changePct": 3.08,
+      "minPrice": 12629,
+      "maxPrice": 13376,
+      "isLowest": false,
+      "pointCount": 10,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-7065",
       "offerId": 1166815,
       "hotelId": 7065,
@@ -704,7 +704,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAwr6LK1QZI4WhQQVixAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADCLo2jc",
+        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAwitvK1QZIg-xRUEVYrwFgAmoDMDBGckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AUq-rAVMAEaoZS94FYQBepzBM0tA6DdX8lwkgAAGQ3syYlIfMoDADDWMBAAw824zI",
         "price": 13409,
         "currency": "PLN",
         "room": "Garden view",
@@ -786,7 +786,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkwsKLK1QZIku1RUEVYmQFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg0LUj0l",
+        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkwi9vK1QZIku1RUEVYlwFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg027bGP",
         "price": 13411,
         "currency": "PLN",
         "room": "Diamond sea view",
@@ -861,7 +861,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwsaLK1QZI-mhQQViZAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALq-s5RA",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwjNvK1QZI-mhQQViXAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALYviKaA",
         "price": 13434,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -936,7 +936,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwsqLK1QZI9dRSUEVYmQFgAmoDQ0dtckObARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARtrsBTPb0OA3U_JcJIAABhti4uKOJzKAwAw1jAQAM_p_iuw",
+        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwjdvK1QZI9dRSUEVYlwFgAmoDQ0dtckObARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARtrsBTPb0OA3U_JcJIAABhti4uKOJzKAwAw1jAQAMaMRwGw",
         "price": 13544,
         "currency": "PLN",
         "room": "Standard room",
@@ -1018,8 +1018,8 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p93cjLl6z7HWc2Qr6NW5mrAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcABQAqBFdFWlkws6LK1QZI4ZtTUEVYmQFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECCyWCQRM",
-        "price": 13634,
+        "apiHash": "p93cjLl6z7HWc2Qr6NW5mrAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcABQAqBFdFWlkwpdvK1QZIgq0IUENYlwFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECCyBQnz8",
+        "price": 13683,
         "currency": "PLN",
         "room": "Superior poolview",
         "departureCode": "LCJ",
@@ -1063,14 +1063,89 @@
         },
         "label": "Superior poolview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
       },
-      "price": 13634,
-      "prevPrice": 13683,
-      "change": -49,
-      "changePct": -0.36,
+      "price": 13683,
+      "prevPrice": 13634,
+      "change": 49,
+      "changePct": 0.36,
       "minPrice": 13634,
       "maxPrice": 13683,
-      "isLowest": true,
-      "pointCount": 7,
+      "isLowest": false,
+      "pointCount": 8,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-24497",
+      "offerId": 1166496,
+      "hotelId": 24497,
+      "hotel": "Coral Sea Aqua Club",
+      "region": "Egipt / Sharm el Sheikh",
+      "stars": 4,
+      "rating": 8.6,
+      "opinions": 25,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/coral-sea-aqua-club-1166496.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 2,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwptvK1QZI_GpQQViXAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADNCstcY",
+        "price": 13692,
+        "currency": "PLN",
+        "room": "Family room",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7345",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:05"
+          },
+          "to": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "07:10"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "23:50"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "03:10"
+          }
+        },
+        "label": "Family room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+      },
+      "price": 13692,
+      "prevPrice": 13686,
+      "change": 6,
+      "changePct": 0.04,
+      "minPrice": 13559,
+      "maxPrice": 13692,
+      "isLowest": false,
+      "pointCount": 3,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -1105,7 +1180,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwtaLK1QZIpetTUEVYmQFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARp0lMhec5DdT8lwkgAAGZvoCJ9YjMoDADDWMBAAyS-epL",
+        "apiHash": "p6CMOS9YBJmmyrDez4gX3YAAogY6LEhqeFy4qwv8bqP50T3y8PvU47v8YC-6AwDzyZL18qBEpPSVAwsNvK1QZIpetTUEVYlwFgAmoDMDBNckKbARQBFQYXAFwDWAVWAkDKBk_iAV0AS7fKAWEAXqcwUqYgUwARp0lMhec5DdT8lwkgAAGZvoCJ9YjMoDADDWMBAAyC1Wbq",
         "price": 13736,
         "currency": "PLN",
         "room": "Family room",
@@ -1180,7 +1255,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pQYjNrvgspxP4CaoGMPr_tAAog1LB9NTIxywkhzOmNBdnl8UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwtqLK1QZIgGtQQViZAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-9g5DYXUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIM-QiPmw",
+        "apiHash": "pQYjNrvgspxP4CaoGMPr_tAAog1LB9NTIxywkhzOmNBdnl8UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwsdvK1QZIgGtQQViXAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-9g5DYXUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMJ6e7sg",
         "price": 13816,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1238,6 +1313,81 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-1679",
+      "offerId": 1166464,
+      "hotelId": 1679,
+      "hotel": "Doubletree by Hilton Sharks Bay (ex. Hilton Sharks Bay)",
+      "region": "Egipt / Sharm el Sheikh / Sharm El Sheikh",
+      "stars": 4,
+      "rating": 8.1,
+      "opinions": 71,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/sharm-el-sheikh/sharm-el-sheikh/doubletree-by-hilton-sharks-bay-ex-hilton-sharks-bay-1166464.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 4,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwstvK1QZInm1QQViXAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEAC2DoCLg",
+        "price": 13982,
+        "currency": "PLN",
+        "room": "Deluxe pool view",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7345",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "02:05"
+          },
+          "to": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "07:10"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "SSH",
+            "airportName": "Sharm El Sheikh",
+            "city": "Sharm El Sheikh",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "23:50"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "03:10"
+          }
+        },
+        "label": "Deluxe pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+      },
+      "price": 13982,
+      "prevPrice": 13887,
+      "change": 95,
+      "changePct": 0.68,
+      "minPrice": 13650,
+      "maxPrice": 13982,
+      "isLowest": false,
+      "pointCount": 3,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-8684",
       "offerId": 412468,
       "hotelId": 8684,
@@ -1255,7 +1405,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pB7OdOmeFKuX8dJNcVnMIrAAogyu7wXfpJYRzBjtO1IiAaNkKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwt6LK1QZIrG1QQViZAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-9g5DYXUmAkgAF3klZXsqAFPrITfxkBRn8ITAw1jAQIM5C5q1g",
+        "apiHash": "pB7OdOmeFKuX8dJNcVnMIrAAogyu7wXfpJYRzBjtO1IiAaNkKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwtNvK1QZIrG1QQViXAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM-9g5DYXUmAkgAF3klZXsqAFPrITfxkBRn8ITAw1jAQIMYdw0dw",
         "price": 14116,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1327,20 +1477,6 @@
       "region": "Egipt / Hurghada",
       "lastPrice": 13206,
       "lastSeen": "2026-09-21"
-    },
-    {
-      "key": "hotel-24497",
-      "hotel": "Coral Sea Aqua Club",
-      "region": "Egipt / Sharm el Sheikh",
-      "lastPrice": 13686,
-      "lastSeen": "2026-09-19"
-    },
-    {
-      "key": "hotel-1679",
-      "hotel": "Doubletree by Hilton Sharks Bay (ex. Hilton Sharks Bay)",
-      "region": "Egipt / Sharm el Sheikh / Sharm El Sheikh",
-      "lastPrice": 13887,
-      "lastSeen": "2026-09-19"
     },
     {
       "key": "hotel-15278",

@@ -513,10 +513,60 @@
             }
           },
           "label": "Superior sea view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-22",
+          "at": "2026-09-22T20:30:53.099Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwgMvL1QZI6lZQQVh7YAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW_gCU7eoAVIAS4gfYQBepzARuD9MmpE6INP8lwkNAAGVxJS5hInOoDADDmMBAA3O3mQR",
+          "price": 11114,
+          "currency": "PLN",
+          "room": "Superior sea view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Superior sea view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -1034,7 +1084,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -1502,7 +1552,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-263513": {
       "offerId": 1166909,
@@ -1720,7 +1770,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-30896": {
       "offerId": 1166735,
@@ -3002,7 +3052,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -3734,10 +3784,60 @@
             }
           },
           "label": "Premium family • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+        },
+        {
+          "date": "2026-09-22",
+          "at": "2026-09-22T20:30:53.099Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAwhcvL1QZIzWFQQVirAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQAL-f3RFQ",
+          "price": 12493,
+          "currency": "PLN",
+          "room": "Premium family",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7363",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "12:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "17:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "08:05"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "11:35"
+            }
+          },
+          "label": "Premium family • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-6218": {
       "offerId": 1166973,
@@ -3955,7 +4055,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-23785": {
       "offerId": 1166531,
@@ -4404,7 +4504,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-1086": {
       "offerId": 1027388,
@@ -4890,7 +4990,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-7065": {
       "offerId": 1166815,
@@ -5614,7 +5714,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-17532": {
       "offerId": 254865,
@@ -5748,7 +5848,7 @@
           "at": "2026-09-19T12:00:00.000Z"
         }
       ],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -6663,10 +6763,60 @@
             }
           },
           "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-22",
+          "at": "2026-09-22T20:30:53.099Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwicvL1QZIkWRQQVh7YAJqA0xmSXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABH8GUuMBWEAXqcwTNLQOg3T_JcJIAAB8tvAmOOGzKAwAw1jAQAMaarNNw",
+          "price": 12817,
+          "currency": "PLN",
+          "room": "Splash room aqua park",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -6834,7 +6984,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-1679": {
       "offerId": 1166464,
@@ -7002,7 +7152,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-15278": {
       "offerId": 1166543,
@@ -7267,10 +7417,60 @@
             }
           },
           "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+        },
+        {
+          "date": "2026-09-22",
+          "at": "2026-09-22T20:30:53.099Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAwi8vL1QZI-GVQQVirAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARpxlL4QVhAF6nMEzS0DoN1fyXCSAAAYKgwICUh8ygMAMNYwEADKLPjvc",
+          "price": 13048,
+          "currency": "PLN",
+          "room": "Garden view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7363",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "12:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "17:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "08:05"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "11:35"
+            }
+          },
+          "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-45236": {
       "offerId": 813153,
@@ -7806,7 +8006,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-10838": {
       "offerId": 1166500,
@@ -8445,7 +8645,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T19:30:53.064Z"
+      "lastSeenAt": "2026-09-22T20:30:53.099Z"
     },
     "hotel-27771": {
       "offerId": 725111,
@@ -8459,7 +8659,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-22",
-      "lastSeenAt": "2026-09-22T19:30:53.064Z",
+      "lastSeenAt": "2026-09-22T20:30:53.099Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -9027,7 +9227,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-22",
-      "lastSeenAt": "2026-09-22T19:30:53.064Z",
+      "lastSeenAt": "2026-09-22T20:30:53.099Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -9084,6 +9284,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-22T19:30:53.064Z",
+  "lastUpdated": "2026-09-22T20:30:53.099Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

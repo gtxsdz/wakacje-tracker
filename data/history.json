@@ -416,7 +416,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T10:30:53.065Z"
+      "lastSeenAt": "2026-09-22T12:30:53.070Z"
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -831,10 +831,60 @@
             }
           },
           "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-22",
+          "at": "2026-09-22T12:30:53.070Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwgerJ1QZIomFQQVibAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEAC4EJalY",
+          "price": 12450,
+          "currency": "PLN",
+          "room": "Standard room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T10:30:53.065Z"
+      "lastSeenAt": "2026-09-22T12:30:53.070Z"
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -842,7 +892,7 @@
       "region": "Egipt / Marsa El Alam / Al-Kusajr",
       "stars": 5,
       "rating": 8.5,
-      "opinions": 671,
+      "opinions": 672,
       "operator": "Coral Travel",
       "duration": 7,
       "departureDate": "2026-09-29",
@@ -1252,7 +1302,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T10:30:53.065Z"
+      "lastSeenAt": "2026-09-22T12:30:53.070Z"
     },
     "hotel-263513": {
       "offerId": 1166909,
@@ -1985,10 +2035,60 @@
             }
           },
           "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-22",
+          "at": "2026-09-22T12:30:53.070Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwg-rJ1QZI2GVQQVibAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC0BuYZw",
+          "price": 13016,
+          "currency": "PLN",
+          "room": "Superior room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T10:30:53.065Z"
+      "lastSeenAt": "2026-09-22T12:30:53.070Z"
     },
     "hotel-20196": {
       "offerId": 14032,
@@ -2502,7 +2602,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-22T10:30:53.065Z"
+      "lastSeenAt": "2026-09-22T12:30:53.070Z"
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -3137,7 +3237,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-22T10:30:53.065Z"
+      "lastSeenAt": "2026-09-22T12:30:53.070Z"
     },
     "hotel-6218": {
       "offerId": 1166973,
@@ -7342,7 +7442,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-22",
-      "lastSeenAt": "2026-09-22T10:30:53.065Z",
+      "lastSeenAt": "2026-09-22T12:30:53.070Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -7867,6 +7967,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-22T10:30:53.065Z",
+  "lastUpdated": "2026-09-22T12:30:53.070Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

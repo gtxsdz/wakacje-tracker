@@ -126,7 +126,7 @@ echo 'export PATH="$HOME/.local/node/bin:$PATH"' >> ~/.bashrc
 # 2. Repo + push przez deploy key (klucz SSH z prawem zapisu w ustawieniach repo):
 git clone git@github.com:<uzytkownik>/<repo>.git ~/wakacje-tracker
 
-# 3. Timer użytkownika (co 2h w oknie 08:30–22:30):
+# 3. Timer użytkownika (co godzinę w oknie 08:30–22:30):
 mkdir -p ~/.config/systemd/user
 cp ~/wakacje-tracker/automation/systemd/user/wakacje-tracker.* ~/.config/systemd/user/
 systemctl --user daemon-reload

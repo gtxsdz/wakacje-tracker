@@ -27,11 +27,50 @@ async function loadData() {
   state.history = hr && hr.ok ? await hr.json() : { offers: {} };
 }
 
+// Ile minut temu wygenerowano dane (na podstawie generatedAt).
+function dataAgeMinutes() {
+  const iso = state.latest?.generatedAt;
+  if (!iso) return null;
+  const ms = Date.now() - new Date(iso).getTime();
+  return ms >= 0 ? Math.round(ms / 60000) : null;
+}
+
+// Czytelny opis wieku danych ("12 min", "3 godz.", "2 dni").
+function humanAge(min) {
+  if (min == null) return "";
+  if (min < 60) return `${min} min`;
+  const h = Math.round(min / 60);
+  if (h < 48) return `${h} godz.`;
+  return `${Math.round(h / 24)} dni`;
+}
+
+// Heartbeat: dane powinny odświeżać się co godzinę (timer 8:30–22:30).
+// Jeśli są starsze niż STALE_AFTER_MIN, scraper prawdopodobnie nie działa
+// (blokada anty-bot, serwer offline, padnięty timer) — pokazujemy ostrzeżenie.
+const STALE_AFTER_MIN = 90; // ~1,5 cyklu godzinowego tolerancji
+
 function renderMeta() {
   const { generatedAt, count, sourceUrl } = state.latest;
-  $("#updated").textContent = "Aktualizacja: " + fmtDateTime(generatedAt);
+  const age = dataAgeMinutes();
+  const stale = age != null && age > STALE_AFTER_MIN;
+
+  const updated = $("#updated");
+  updated.textContent = "Aktualizacja: " + fmtDateTime(generatedAt);
+  updated.classList.toggle("stale", stale);
+
   $("#count").textContent = count + " ofert";
   if (sourceUrl) $("#source-link").href = sourceUrl;
+
+  // Baner ostrzegawczy o nieaktualnych danych (heartbeat).
+  const banner = $("#stale-banner");
+  if (banner) {
+    if (stale) {
+      banner.hidden = false;
+      banner.textContent = `⚠ Dane mogą być nieaktualne — ostatnia aktualizacja ${humanAge(age)} temu. Scraper mógł się zatrzymać (blokada serwisu, offline lub przerwany harmonogram).`;
+    } else {
+      banner.hidden = true;
+    }
+  }
 }
 
 function renderSummary() {

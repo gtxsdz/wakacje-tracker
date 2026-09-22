@@ -531,3 +531,23 @@ body {
   }
   .change-item .creason { grid-column: 1; }
 }
+
+/* Heartbeat: ostrzeżenie o nieaktualnych danych */
+.stale-banner {
+  margin: 20px 0 0;
+  padding: 12px 16px;
+  background: rgba(255, 176, 32, 0.12);
+  border: 1px solid rgba(255, 176, 32, 0.5);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.stale-banner[hidden] { display: none; }
+
+/* Pigułka "Aktualizacja" gdy dane są przeterminowane */
+.meta-pill.stale {
+  color: var(--accent);
+  border-color: rgba(255, 176, 32, 0.6);
+  background: rgba(255, 176, 32, 0.12);
+}

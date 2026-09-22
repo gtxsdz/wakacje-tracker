@@ -1,0 +1,12 @@
+import { chromium } from "playwright";
+import path from "node:path"; import fs from "node:fs"; import { fileURLToPath } from "node:url";
+const OUT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "screenshots");
+fs.mkdirSync(OUT, { recursive: true });
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 800, height: 700 }, deviceScaleFactor: 1.5 });
+await p.goto(process.argv[2] || "http://localhost:8080", { waitUntil: "networkidle" });
+await p.waitForSelector(".summary-card");
+await p.waitForTimeout(400);
+await p.screenshot({ path: path.join(OUT, "heartbeat.png"), clip: { x: 0, y: 0, width: 800, height: 560 } });
+console.log("zapisano heartbeat.png");
+await b.close(); process.exit(0);

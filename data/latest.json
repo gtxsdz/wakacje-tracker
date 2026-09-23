@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T18:31:23.788Z",
+  "generatedAt": "2026-09-23T19:31:24.492Z",
   "date": "2026-09-23",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
   "count": 23,
@@ -22,7 +22,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw4LXQ1QZIvL48UEVYZWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN0_yXCSAAAfDDlLmEic6gMAMOYwEADbYVyLs",
+        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw8NHQ1QZIvL48UEVYZGACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN0_yXCSAAAfDDlLmEic6gMAMOYwEADSKgKPM",
         "price": 9910,
         "currency": "PLN",
         "room": "Superior room",
@@ -97,7 +97,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkw4bXQ1QZI0f1FUEVYfWADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEcgfQK1QS_JWUABMxD9PABuW2wIdgN4NIBwNuP_BCQESYwIMYwEGCx6DHYA",
+        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkw8dHQ1QZI0f1FUEVYfGADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEcgfQK1QS_JWUABMxD9PABuW2wIdgN4NIBwNuP_BCQESYwIMYwEGC2mJPuc",
         "price": 11466,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -172,7 +172,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAw4rXQ1QZI5F5QQViVAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALfRILJw",
+        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAw8tHQ1QZI5F5QQViUAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALgRfF2w",
         "price": 12132,
         "currency": "PLN",
         "room": "Premium family",
@@ -247,7 +247,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw47XQ1QZI7V9QQVh9YAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQALqbMk3Q",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw89HQ1QZI7V9QQVh8YAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQALLiOxjg",
         "price": 12269,
         "currency": "PLN",
         "room": "Standard room",
@@ -322,7 +322,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw5LXQ1QZI819QQVhlYAJqA0xmSXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABH8GUuMBWEAXqcwTNLQOg3T_JcJIAAB8tvAmOOGzKAwAw1jAQAMiK4qVA",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9NHQ1QZI819QQVhkYAJqA0xmSXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABH8GUuMBWEAXqcwTNLQOg3T_JcJIAAB8tvAmOOGzKAwAw1jAQAMSl2dHQ",
         "price": 12275,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -397,7 +397,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw5bXQ1QZIjZRLUEVYfWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA1CA4ff",
+        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw9dHQ1QZIjZRLUEVYfGACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA35ZmyT",
         "price": 12314,
         "currency": "PLN",
         "room": "Standard room",
@@ -472,7 +472,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pklfkxJs2eXXnUF9MkAqiwAAogxmd5zKiPjIUPVDyKrYSjQK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw5rXQ1QZImGFQQVhlYAJqAzBFUHJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGPGkv5BGEAXqcwTNLQOg3T_JcJIAABmeSIwJSH0qAwAw1jAQQLcUjsWw",
+        "apiHash": "pklfkxJs2eXXnUF9MkAqiwAAogxmd5zKiPjIUPVDyKrYSjQK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9tHQ1QZImGFQQVhkYAJqAzBFUHJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGPGkv5BGEAXqcwTNLQOg3T_JcJIAABmeSIwJSH0qAwAw1jAQQL_uY8RA",
         "price": 12440,
         "currency": "PLN",
         "room": "Deluxe garden view",
@@ -547,7 +547,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw57XQ1QZI2mFQQViVAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADMHgetE",
+        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw99HQ1QZI2mFQQViUAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADG6psdM",
         "price": 12506,
         "currency": "PLN",
         "room": "Garden view",
@@ -622,7 +622,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw6LXQ1QZI_2JQQVhlYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMYFEAwg",
+        "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw-NHQ1QZI_2JQQVhkYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMH3usrA",
         "price": 12671,
         "currency": "PLN",
         "room": "Garden view",
@@ -697,7 +697,7 @@
       "cheapest": {
         "variantId": "rainbow",
         "operator": "Rainbow",
-        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw6bXQ1QZIwoVOUEVYfWACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NWoTNDA0LDQwNyw0MDgsNTIxLDUyOHJBlgGeAZQBFQcXAFgICuQBQOQFEdAsGbMoEMgdTOAZS_I-YQBT40RSAA_q6kAdXiCizZEJDQBfvfr_gQMDDmMBBg0Gt2Fx",
+        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw-dHQ1QZIwoVOUEVYfGACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NWoTNDA0LDQwNyw0MDgsNTIxLDUyOHJBlgGeAZQBFQcXAFgICuQBQOQFEdAsGbMoEMgdTOAZS_I-YQBT40RSAA_q6kAdXiCizZEJDQBfvfr_gQMDDmMBBg2NJDmr",
         "price": 12787,
         "currency": "PLN",
         "room": "Junior suita z widokiem na basen",
@@ -772,7 +772,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw6rXQ1QZIo2RQQVh9YAJqAzAyWXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHmElLADVMATKywOg3U_JcJIAABhbLQkPOIzKAwAw1jAQALNv5xsQ",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw-tHQ1QZIo2RQQVh8YAJqAzAyWXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHmElLADVMATKywOg3U_JcJIAABhbLQkPOIzKAwAw1jAQALPU-R-A",
         "price": 12835,
         "currency": "PLN",
         "room": "Superior room",
@@ -854,7 +854,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkw6rXQ1QZI27RPUEVYfWADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEbgOQL1hS_JWUABMxD9PAB2WuRAgHBvy-WMNxoXeCAESYwIOYwEGDfXR6M4",
+        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkw-9HQ1QZI27RPUEVYfGADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEbgOQL1hS_JWUABMxD9PAB2WuRAgHBvy-WMNxoXeCAESYwIOYwEGDZey2BM",
         "price": 13011,
         "currency": "PLN",
         "room": "Diamond sea view",
@@ -929,7 +929,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw67XQ1QZI9GRQQVh9YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVG9qMLGQE_v2xwDDWMBAgzj6rPB",
+        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_NHQ1QZI9GRQQVh8YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVG9qMLGQE_v2xwDDWMBAgxrO-K1",
         "price": 13036,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1011,7 +1011,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7LXQ1QZIqGZQQVh9YAJyQBoAFQcXAFwDWAVAjwNbvpcBYZg4SwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVHuoMfGQE--4xcDDWMBAgzKOC9p",
+        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_dHQ1QZIqGZQQVh8YAJyQBoAFQcXAFwDWAVAjwNbvpcBYZg4SwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVHuoMfGQE--4xcDDWMBAgyRmiDQ",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój rodzinny 4 os.",
@@ -1086,7 +1086,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7bXQ1QZIqGZQQVh9YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAU-shN_GQFGfwhMDDWMBAgzKEQiH",
+        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_tHQ1QZIqGZQQVh8YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAU-shN_GQFGfwhMDDWMBAgxr9G4J",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1161,7 +1161,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pMn4cnBYUSKkkyYt82cDYXAAogor_eyfiP7xwFwiUFD0qXtmoNHdqQY8pgRvpu-4jQzi0qBEpPSVAw7rXQ1QZIseBQUEVYfWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSvBRTABH2AUygujoN1PyXCSAAAY6W9MDjiMygMAMNYwEAC3qYc9M",
+        "apiHash": "pMn4cnBYUSKkkyYt82cDYXAAogor_eyfiP7xwFwiUFD0qXtmoNHdqQY8pgRvpu-4jQzi0qBEpPSVAw_9HQ1QZIseBQUEVYfGACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSvBRTABH2AUygujoN1PyXCSAAAY6W9MDjiMygMAMNYwEAC1qtR3E",
         "price": 13231,
         "currency": "PLN",
         "room": "Family room",
@@ -1236,7 +1236,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw77XQ1QZIxWdQQVh9YAJyQxQBFQYXAFwDWAVWAkDKBk_iAV0AW_ICEcXDAUuABGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIwJSZ84jMoDADDWMBAAsVYbeu",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwgNLQ1QZIxWdQQVh8YAJyQxQBFQYXAFwDWAVWAkDKBk_iAV0AW_ICEcXDAUuABGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIwJSZ84jMoDADDWMBAAsNjvZU",
         "price": 13253,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -1294,81 +1294,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-20196",
-      "offerId": 14032,
-      "hotelId": 20196,
-      "hotel": "Titanic Palace Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8,
-      "opinions": 495,
-      "operator": "Coral Travel",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-14032.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 5,
-      "cheapest": {
-        "variantId": "coral travel",
-        "operator": "Coral Travel",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw8rXQ1QZI-bJRUEVYfWADaglFbnRlciBBaXJqBDAzMTBqBDA4NDVqBDA5MTVyQJ4BkwGUAZUBHwAcAQIAFgAXBhG9ARKZAxjBBUCDd0zLMk8AS4gfUAAdicAQIBwb4NpkDcji3QgBEmMCDGMBBgs36Cdc",
-        "price": 13336,
-        "currency": "PLN",
-        "room": "Coral standard room",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "ENT 4039",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "03:10"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "08:45"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "09:15"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "13:10"
-          }
-        },
-        "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
-      },
-      "price": 13336,
-      "prevPrice": 12336,
-      "change": 1000,
-      "changePct": 8.11,
-      "minPrice": 12336,
-      "maxPrice": 13376,
-      "isLowest": false,
-      "pointCount": 14,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": "najtańsze teraz w innym biurze",
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-18520",
       "offerId": 1166792,
       "hotelId": 18520,
@@ -1386,7 +1311,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw87XQ1QZI68xRUEVYZWACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQAL6QArhg",
+        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwg9LQ1QZI68xRUEVYZGACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQALzIGDiA",
         "price": 13369,
         "currency": "PLN",
         "room": "Family deluxe",
@@ -1444,6 +1369,81 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-20196",
+      "offerId": 14032,
+      "hotelId": 20196,
+      "hotel": "Titanic Palace Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 5,
+      "rating": 8,
+      "opinions": 495,
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/titanic-palace-resort-14032.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 5,
+      "cheapest": {
+        "variantId": "coral travel",
+        "operator": "Coral Travel",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwhNLQ1QZI1dFRUEVYfGADaglFbnRlciBBaXJqBDAzMTBqBDA4NDVqBDA5MTVyQJ4BkwGUAZUBHwAcAQIAFgAXBhG9ARKZAxjBBUCDd0zLMk8AS4gfUAAdicAQIBwb4NpkDcji3QgBEmMCDGMBBguEGonA",
+        "price": 13376,
+        "currency": "PLN",
+        "room": "Coral standard room",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "ENT 4039",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "03:10"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "08:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "09:15"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "13:10"
+          }
+        },
+        "label": "Coral standard room • KTW 29.09 (Wt.) 03:10 • powrót 06.10 (Wt.) 09:15"
+      },
+      "price": 13376,
+      "prevPrice": 13336,
+      "change": 40,
+      "changePct": 0.3,
+      "minPrice": 12336,
+      "maxPrice": 13376,
+      "isLowest": false,
+      "pointCount": 15,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": "najtańsze teraz w innym biurze",
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-20321",
       "offerId": 1166816,
       "hotelId": 20321,
@@ -1461,7 +1461,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAw9LXQ1QZI5WhQQViVAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADJ7TRsQ",
+        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwhdLQ1QZI5WhQQViUAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADLFjr2w",
         "price": 13413,
         "currency": "PLN",
         "room": "Bungalow",
@@ -1536,7 +1536,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw9bXQ1QZIyGlQQVh9YAJqAzAwTXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHWE1LQDFMATKywOg3U_JcJIAABmcaMmaWJzKAwAw1jAQAM_dgsdA",
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwhtLQ1QZIyGlQQVh8YAJqAzAwTXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHWE1LQDFMATKywOg3U_JcJIAABmcaMmaWJzKAwAw1jAQAMQT4NfQ",
         "price": 13512,
         "currency": "PLN",
         "room": "Family room",
@@ -1623,7 +1623,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pkh0KEDC0QCSy8cK1FhUrpAAogEoq07RlaAUwNFDtl0y_cO2oNHdqQY8pgRvpu-4jQzi0qBEpPSVAw97XQ1QZIjmpQQVh9YAJqAzBuSHJDmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMFK8FFMAEYW_AUyR_TgN1PyXCSAAAYGQjLnjiMygMAMNYwEADMxoLeA",
+        "apiHash": "pkh0KEDC0QCSy8cK1FhUrpAAogEoq07RlaAUwNFDtl0y_cO2oNHdqQY8pgRvpu-4jQzi0qBEpPSVAwiNLQ1QZIjmpQQVh8YAJqAzBuSHJDmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMFK8FFMAEYW_AUyR_TgN1PyXCSAAAYGQjLnjiMygMAMNYwEADHFMIxk",
         "price": 13582,
         "currency": "PLN",
         "room": "Superior garden",
@@ -1698,7 +1698,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw-bXQ1QZI6WtQQVh9YAJqAzBGSHJCmwEUARUGFwBcA1gFVgJAygZP4gFdABHDxgFL9ANhAF6nMFKmIFMATKywOg3U_JcJIAABg7b4oLOJzKAwAw1jAQALM4Juow",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwitLQ1QZI6WtQQVh8YAJqAzBGSHJCmwEUARUGFwBcA1gFVgJAygZP4gFdABHDxgFL9ANhAF6nMFKmIFMATKywOg3U_JcJIAABg7b4oLOJzKAwAw1jAQALYtt_cw",
         "price": 13801,
         "currency": "PLN",
         "room": "Deluxe pool view",

@@ -566,7 +566,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -1081,10 +1081,60 @@
             }
           },
           "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwxZzO1QZI7V9QQViHAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEACz7mY0c",
+          "price": 12269,
+          "currency": "PLN",
+          "room": "Standard room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -1549,10 +1599,60 @@
             }
           },
           "label": "Standard room pool view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkwwZzO1QZIiLZIUEVYhwFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgs9mqrl",
+          "price": 11866,
+          "currency": "PLN",
+          "room": "Standard room garden view",
+          "departureCode": "LCJ",
+          "luggageIncluded": true,
+          "carrier": "ENT 4855",
+          "outbound": {
+            "from": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "16:20"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "22:20"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:25"
+            },
+            "to": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:30"
+            }
+          },
+          "label": "Standard room garden view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-263513": {
       "offerId": 1166909,
@@ -1770,7 +1870,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-30896": {
       "offerId": 1166735,
@@ -2485,10 +2585,60 @@
             }
           },
           "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwyJzO1QZIo2RQQViHAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC3gIVu8",
+          "price": 12835,
+          "currency": "PLN",
+          "room": "Superior room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Superior room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-20196": {
       "offerId": 14032,
@@ -3182,7 +3332,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -4182,10 +4332,60 @@
             }
           },
           "label": "Superior pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw0ZzO1QZIxWdQQViHAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALOYIDvQ",
+          "price": 13253,
+          "currency": "PLN",
+          "room": "Superior pool view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Superior pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-23785": {
       "offerId": 815532,
@@ -4699,7 +4899,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-1086": {
       "offerId": 1027388,
@@ -4917,7 +5117,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-67092": {
       "offerId": 1166936,
@@ -5185,7 +5385,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-7065": {
       "offerId": 1166815,
@@ -5959,7 +6159,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-17532": {
       "offerId": 254865,
@@ -6093,7 +6293,7 @@
           "at": "2026-09-19T12:00:00.000Z"
         }
       ],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -7061,7 +7261,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -7226,10 +7426,60 @@
             }
           },
           "label": "Family room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw1ZzO1QZIyGlQQViHAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADNH2-Qk",
+          "price": 13512,
+          "currency": "PLN",
+          "room": "Family room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Family room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-1679": {
       "offerId": 1166464,
@@ -7394,10 +7644,60 @@
             }
           },
           "label": "Deluxe pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw3ZzO1QZI6WtQQViHAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEAC73-S90",
+          "price": 13801,
+          "currency": "PLN",
+          "room": "Deluxe pool view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Deluxe pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-15278": {
       "offerId": 1166543,
@@ -7715,7 +8015,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-45236": {
       "offerId": 813153,
@@ -7836,16 +8136,16 @@
       "lastSeenAt": "2026-09-20T06:30:53.094Z"
     },
     "hotel-61904": {
-      "offerId": 788826,
+      "offerId": 816043,
       "hotel": "Pickalbatros Vita Resort Portofino",
       "region": "Egipt / Marsa El Alam",
       "stars": 4,
       "rating": 9.3,
       "opinions": 395,
-      "operator": "Coral Travel",
+      "operator": "Sun&Fun",
       "duration": 7,
       "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
+      "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
       "firstSeen": "2026-09-18",
       "prices": [
@@ -8248,10 +8548,76 @@
             }
           },
           "label": "Superior poolview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "variantId": "sun&fun",
+          "operator": "Sun&Fun",
+          "apiHash": "peuV7QG_pzmcSFRruB1TcvAAog6uegsUMWX7aVCOQZ4HHfRFAgCbWQz1TEPYxZN4-49yYqBFNGUEww2ZzO1QZImmpQQViHAWADciYLAxUEIgUSKFzGAkAuDZnN1AlRpJm7DFuu4-SpBgISYwENYwECDAv2jeY",
+          "price": 13594,
+          "currency": "PLN",
+          "room": "Superior room pool view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "SKYUP U57831",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:55"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "08:20"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "20:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "00:25"
+            }
+          },
+          "label": "Superior room pool view • KTW 29.09 (Wt.) 02:55 • powrót 06.10 (Wt.) 20:50"
         }
       ],
-      "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "variantChanges": [
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T08:30:53.061Z",
+          "from": {
+            "variantId": "coral travel",
+            "operator": "Coral Travel",
+            "price": 13683
+          },
+          "to": {
+            "variantId": "sun&fun",
+            "operator": "Sun&Fun",
+            "price": 13594
+          },
+          "reason": "najtańsze teraz w innym biurze (taniej)"
+        }
+      ],
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-10838": {
       "offerId": 1166500,
@@ -8940,7 +9306,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T07:30:53.111Z"
+      "lastSeenAt": "2026-09-23T08:30:53.061Z"
     },
     "hotel-27771": {
       "offerId": 725111,
@@ -8954,7 +9320,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T07:30:53.111Z",
+      "lastSeenAt": "2026-09-23T08:30:53.061Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -9572,7 +9938,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T07:30:53.111Z",
+      "lastSeenAt": "2026-09-23T08:30:53.061Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -9690,7 +10056,7 @@
       "departureDate": "2026-09-30",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T07:30:53.111Z",
+      "lastSeenAt": "2026-09-23T08:30:53.061Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -9747,6 +10113,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-23T07:30:53.111Z",
+  "lastUpdated": "2026-09-23T08:30:53.061Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

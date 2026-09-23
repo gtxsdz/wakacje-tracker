@@ -566,7 +566,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -1134,7 +1134,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -1652,7 +1652,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-263513": {
       "offerId": 1166909,
@@ -1870,7 +1870,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-30896": {
       "offerId": 1166735,
@@ -2638,7 +2638,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-20196": {
       "offerId": 14032,
@@ -3332,7 +3332,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -4385,7 +4385,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-23785": {
       "offerId": 815532,
@@ -4899,7 +4899,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-1086": {
       "offerId": 1027388,
@@ -5382,10 +5382,60 @@
             }
           },
           "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T09:30:53.066Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAw5LjO1QZIs2hQQViGAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAzV9FHL",
+          "price": 13363,
+          "currency": "PLN",
+          "room": "Standard room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-7065": {
       "offerId": 1166815,
@@ -6159,7 +6209,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-17532": {
       "offerId": 254865,
@@ -6293,7 +6343,7 @@
           "at": "2026-09-19T12:00:00.000Z"
         }
       ],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -7261,7 +7311,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -7479,7 +7529,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-1679": {
       "offerId": 1166464,
@@ -7697,7 +7747,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-15278": {
       "offerId": 1166543,
@@ -8015,7 +8065,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-45236": {
       "offerId": 813153,
@@ -8617,7 +8667,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-10838": {
       "offerId": 1166500,
@@ -9306,7 +9356,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T08:30:53.061Z"
+      "lastSeenAt": "2026-09-23T09:30:53.066Z"
     },
     "hotel-27771": {
       "offerId": 725111,
@@ -9320,7 +9370,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T08:30:53.061Z",
+      "lastSeenAt": "2026-09-23T09:30:53.066Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -9938,7 +9988,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T08:30:53.061Z",
+      "lastSeenAt": "2026-09-23T09:30:53.066Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -10056,7 +10106,7 @@
       "departureDate": "2026-09-30",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T08:30:53.061Z",
+      "lastSeenAt": "2026-09-23T09:30:53.066Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -10113,6 +10163,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-23T08:30:53.061Z",
+  "lastUpdated": "2026-09-23T09:30:53.066Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

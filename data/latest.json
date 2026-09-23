@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-23T11:31:20.627Z",
+  "generatedAt": "2026-09-23T12:31:25.148Z",
   "date": "2026-09-23",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
-  "count": 19,
+  "count": 22,
   "offers": [
     {
       "key": "hotel-32171",
@@ -18,11 +18,11 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/gravity-hotel-aquapark-hurghada-ex-samra-bay-resort-1166489.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 3,
+      "variantCount": 2,
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw8PDO1QZI6lZQQVhsYAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW_gCU7eoAVIAS4gfYQBepzARuD9MmpE6INP8lwkNAAGVxJS5hInOoDADDmMBAA26CaBy",
+        "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwgI3P1QZI6lZQQVhrYAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW_gCU7eoAVIAS4gfYQBepzARuD9MmpE6INP8lwkNAAGVxJS5hInOoDADDmMBAA2zl7pV",
         "price": 11114,
         "currency": "PLN",
         "room": "Superior sea view",
@@ -93,11 +93,11 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/al-kusajr/akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort-254866.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 90,
+      "variantCount": 54,
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5MpF0D4ukxUYUTDIY0aG3AAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAAAqBFdFWlkw8fDO1QZI0f1FUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgsnHC9N",
+        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkwgY3P1QZI0f1FUEVYgwFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgs2mn17",
         "price": 11466,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -172,7 +172,7 @@
       "cheapest": {
         "variantId": "rainbow",
         "operator": "Rainbow",
-        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw8vDO1QZIiPRGUEVYhAFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNH4qbjw",
+        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcwgo3P1QZIiPRGUEVYgwFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNoNJGUQ",
         "price": 11617,
         "currency": "PLN",
         "room": "Junior suita z widokiem na basen",
@@ -230,81 +230,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-263513",
-      "offerId": 1166909,
-      "hotelId": 263513,
-      "hotel": "Rewaya Majestic Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 5,
-      "rating": 8.4,
-      "opinions": 259,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/rewaya-majestic-resort-1166909.html?od-2026-09-29,7-dni,all-inclusive,z-warszawy,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 4,
-      "cheapest": {
-        "variantId": "join up",
-        "operator": "Join UP",
-        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw8_DO1QZIsF1QQViEAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA05bRRc",
-        "price": 11952,
-        "currency": "PLN",
-        "room": "Standard room",
-        "departureCode": "WAW",
-        "luggageIncluded": true,
-        "carrier": "U5 8623",
-        "outbound": {
-          "from": {
-            "airportCode": "WAW",
-            "airportName": "Warszawa - Chopin",
-            "city": "Warszawa - Chopin",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "13:40"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "19:05"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "09:05"
-          },
-          "to": {
-            "airportCode": "WAW",
-            "airportName": "Warszawa - Chopin",
-            "city": "Warszawa - Chopin",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "12:50"
-          }
-        },
-        "label": "Standard room • WAW 29.09 (Wt.) 13:40 • powrót 06.10 (Wt.) 09:05"
-      },
-      "price": 11952,
-      "prevPrice": 12765,
-      "change": -813,
-      "changePct": -6.37,
-      "minPrice": 11952,
-      "maxPrice": 12765,
-      "isLowest": true,
-      "pointCount": 4,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-7231",
       "offerId": 1166986,
       "hotelId": 7231,
@@ -322,7 +247,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw9PDO1QZI7V9QQViEAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEAC5CfM8g",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwg43P1QZI7V9QQViDAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEAC876TVY",
         "price": 12269,
         "currency": "PLN",
         "room": "Standard room",
@@ -380,6 +305,156 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-263513",
+      "offerId": 1166909,
+      "hotelId": 263513,
+      "hotel": "Rewaya Majestic Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 5,
+      "rating": 8.4,
+      "opinions": 259,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/rewaya-majestic-resort-1166909.html?od-2026-09-29,7-dni,all-inclusive,z-warszawy,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 4,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAwhI3P1QZImmBQQViDAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA1MocZH",
+        "price": 12314,
+        "currency": "PLN",
+        "room": "Standard room",
+        "departureCode": "WAW",
+        "luggageIncluded": true,
+        "carrier": "U5 8623",
+        "outbound": {
+          "from": {
+            "airportCode": "WAW",
+            "airportName": "Warszawa - Chopin",
+            "city": "Warszawa - Chopin",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "13:40"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "19:05"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "09:05"
+          },
+          "to": {
+            "airportCode": "WAW",
+            "airportName": "Warszawa - Chopin",
+            "city": "Warszawa - Chopin",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "12:50"
+          }
+        },
+        "label": "Standard room • WAW 29.09 (Wt.) 13:40 • powrót 06.10 (Wt.) 09:05"
+      },
+      "price": 12314,
+      "prevPrice": 11952,
+      "change": 362,
+      "changePct": 3.03,
+      "minPrice": 11952,
+      "maxPrice": 12765,
+      "isLowest": false,
+      "pointCount": 5,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-6373",
+      "offerId": 1167460,
+      "hotelId": 6373,
+      "hotel": "Sindbad Club",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.3,
+      "opinions": 538,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-30",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/sindbad-club-1167460.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 1,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAwhY3P1QZIzWFQQVibAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALfKagyA",
+        "price": 12493,
+        "currency": "PLN",
+        "room": "Premium family",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7363",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "12:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "17:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "08:05"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "11:35"
+          }
+        },
+        "label": "Premium family • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+      },
+      "price": 12493,
+      "prevPrice": 12832,
+      "change": -339,
+      "changePct": -2.64,
+      "minPrice": 12493,
+      "maxPrice": 13396,
+      "isLowest": true,
+      "pointCount": 14,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-17802",
       "offerId": 1166521,
       "hotelId": 17802,
@@ -393,11 +468,11 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-jungle-aqua-park-resort-neverland-1166521.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 6,
+      "variantCount": 4,
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9fDO1QZIhJ1OUEVYbGACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADCol0jg",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwho3P1QZIhJ1OUEVYa2ACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADB0beZM",
         "price": 12817,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -472,7 +547,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw9vDO1QZIo2RQQViEAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC3fBBhA",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwh43P1QZIo2RQQViDAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEACz4BZ_4",
         "price": 12835,
         "currency": "PLN",
         "room": "Superior room",
@@ -543,8 +618,13 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/fantazia-resort-254865.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 10,
+      "variantCount": 6,
       "altOffers": [
+        {
+          "offerId": 1166793,
+          "operator": "Join UP",
+          "price": 13301
+        },
         {
           "offerId": 768830,
           "operator": "Rainbow",
@@ -554,7 +634,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p7xlgFvYjVakYB6omSoUqQAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcAEQAqBFdFWlkw9_DO1QZI27RPUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg0IAQZG",
+        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkwiI3P1QZI27RPUEVYgwFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg2Auop4",
         "price": 13011,
         "currency": "PLN",
         "room": "Diamond sea view",
@@ -629,7 +709,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw-PDO1QZI9GRQQViEAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMZQukmA",
+        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwiY3P1QZI9GRQQViDAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMOLBuog",
         "price": 13036,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -704,7 +784,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw-fDO1QZI-GVQQVicAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADOKj-vY",
+        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAwio3P1QZI-GVQQVibAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADGflLkA",
         "price": 13048,
         "currency": "PLN",
         "room": "Garden view",
@@ -762,6 +842,81 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-15278",
+      "offerId": 1166543,
+      "hotelId": 15278,
+      "hotel": "Pickalbatros Aqua Vista Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.8,
+      "opinions": 193,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-30",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-aqua-vista-resort-1166543.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 4,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAwi43P1QZI-GVQQVibAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARpxlL4QVhAF6nMEzS0DoN1fyXCSAAAYKgwICUh8ygMAMNYwEADMKKXNE",
+        "price": 13048,
+        "currency": "PLN",
+        "room": "Garden view",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7363",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "12:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "17:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "08:05"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "11:35"
+          }
+        },
+        "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+      },
+      "price": 13048,
+      "prevPrice": 13409,
+      "change": -361,
+      "changePct": -2.69,
+      "minPrice": 13048,
+      "maxPrice": 13809,
+      "isLowest": true,
+      "pointCount": 6,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-23785",
       "offerId": 815532,
       "hotelId": 23785,
@@ -786,7 +941,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw-_DO1QZIqGZQQViEAWACckAaABUHFwBcA1gFQI8DW76XAWGYOEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFR7qDHxkBPvuMXAw1jAQIMBDV4dg",
+        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwjY3P1QZIqGZQQViDAWACckAaABUHFwBcA1gFQI8DW76XAWGYOEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFR7qDHxkBPvuMXAw1jAQIMnLMXsg",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój rodzinny 4 os.",
@@ -861,7 +1016,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_PDO1QZIqGZQQViEAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFPrITfxkBRn8ITAw1jAQIMbe7pfQ",
+        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwjo3P1QZIqGZQQViDAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFPrITfxkBRn8ITAw1jAQIMSOitNg",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -936,7 +1091,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw_fDO1QZIxWdQQViEAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALLPLSDg",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwkI3P1QZIxWdQQViDAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALLGmDRQ",
         "price": 13253,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -1007,12 +1162,12 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/pickalbatros-vita-resort-portofino-788826.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 15,
+      "variantCount": 9,
       "altOffers": [
         {
-          "offerId": 816043,
-          "operator": "Sun&Fun",
-          "price": 13594
+          "offerId": 1166646,
+          "operator": "Join UP",
+          "price": 13582
         },
         {
           "offerId": 1177616,
@@ -1023,7 +1178,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p-346QFCwFF-zOQTCgEBxKAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAEQAqBFdFWlkw_vDO1QZI3YlRUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC2HhXY4",
+        "apiHash": "p93cjLl6z7HWc2Qr6NW5mrAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcABQAqBFdFWlkwkY3P1QZI3YlRUEVYgwFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC-VcdAs",
         "price": 13283,
         "currency": "PLN",
         "room": "Superior poolview",
@@ -1098,7 +1253,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw__DO1QZI-bJRUEVYhAFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLiKw6tw",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwk43P1QZI-bJRUEVYgwFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLwxRE5A",
         "price": 13336,
         "currency": "PLN",
         "room": "Coral standard room",
@@ -1173,7 +1328,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwgPHO1QZIs2hQQViEAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAx6glZ4",
+        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwlI3P1QZIs2hQQViDAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAxMoppG",
         "price": 13363,
         "currency": "PLN",
         "room": "Standard room",
@@ -1248,7 +1403,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwgfHO1QZIyGlQQViEAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADFPatnY",
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwlY3P1QZIyGlQQViDAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADN5HJfs",
         "price": 13512,
         "currency": "PLN",
         "room": "Family room",
@@ -1306,81 +1461,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-20321",
-      "offerId": 1166816,
-      "hotelId": 20321,
-      "hotel": "Beach Albatros Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 4,
-      "rating": 8.7,
-      "opinions": 35,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-30",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/beach-albatros-resort-1166816.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 6,
-      "cheapest": {
-        "variantId": "join up",
-        "operator": "Join UP",
-        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwhvHO1QZI3mtQQVicAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADEGXLcw",
-        "price": 13790,
-        "currency": "PLN",
-        "room": "Bungalow",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7363",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "12:30"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "17:45"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "08:05"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "11:35"
-          }
-        },
-        "label": "Bungalow • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
-      },
-      "price": 13790,
-      "prevPrice": null,
-      "change": null,
-      "changePct": null,
-      "minPrice": 13790,
-      "maxPrice": 13790,
-      "isLowest": true,
-      "pointCount": 1,
-      "firstSeen": "2026-09-23",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-1679",
       "offerId": 1166464,
       "hotelId": 1679,
@@ -1398,7 +1478,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwh_HO1QZI6WtQQViEAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEACxZy9Vo",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwmo3P1QZI6WtQQViDAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEAC2T7PCI",
         "price": 13801,
         "currency": "PLN",
         "room": "Deluxe pool view",
@@ -1454,6 +1534,156 @@
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-18520",
+      "offerId": 1166792,
+      "hotelId": 18520,
+      "hotel": "Jaz Aquamarine Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 5,
+      "rating": 9.2,
+      "opinions": 1188,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-28",
+      "returnDate": "2026-10-05",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/jaz-aquamarine-resort-1166792.html?od-2026-09-28,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 4,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwm43P1QZI3GxQQVhrYAJqAzF6VXJBmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTAEuIH2EAET9e6C9M0tA6DdP8lwkgAAGLutiAtYbMoDADDWMBAAthDwmw",
+        "price": 13916,
+        "currency": "PLN",
+        "room": "Family deluxe",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 8941",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "14:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-28",
+            "customDate": "28.09 (Pon.)",
+            "time": "19:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "10:20"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-05",
+            "customDate": "05.10 (Pon.)",
+            "time": "13:50"
+          }
+        },
+        "label": "Family deluxe • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+      },
+      "price": 13916,
+      "prevPrice": null,
+      "change": null,
+      "changePct": null,
+      "minPrice": 13916,
+      "maxPrice": 13916,
+      "isLowest": true,
+      "pointCount": 1,
+      "firstSeen": "2026-09-23",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
+      "key": "hotel-20321",
+      "offerId": 1166816,
+      "hotelId": 20321,
+      "hotel": "Beach Albatros Resort",
+      "region": "Egipt / Hurghada",
+      "stars": 4,
+      "rating": 8.7,
+      "opinions": 35,
+      "operator": "Join UP",
+      "duration": 7,
+      "departureDate": "2026-09-30",
+      "returnDate": "2026-10-07",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/beach-albatros-resort-1166816.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 6,
+      "cheapest": {
+        "variantId": "join up",
+        "operator": "Join UP",
+        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwnI3P1QZIg21QQVibAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADJJ6MvE",
+        "price": 13955,
+        "currency": "PLN",
+        "room": "Bungalow",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "U5 7363",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "12:30"
+          },
+          "to": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-09-30",
+            "customDate": "30.09 (Śr.)",
+            "time": "17:45"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "HRG",
+            "airportName": "Hurghada",
+            "city": "Hurghada",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "08:05"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-07",
+            "customDate": "07.10 (Śr.)",
+            "time": "11:35"
+          }
+        },
+        "label": "Bungalow • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+      },
+      "price": 13955,
+      "prevPrice": 13790,
+      "change": 165,
+      "changePct": 1.2,
+      "minPrice": 13790,
+      "maxPrice": 13955,
+      "isLowest": false,
+      "pointCount": 2,
+      "firstSeen": "2026-09-23",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
     }
   ],
   "disappeared": [
@@ -1465,24 +1695,10 @@
       "lastSeen": "2026-09-18"
     },
     {
-      "key": "hotel-6373",
-      "hotel": "Sindbad Club",
-      "region": "Egipt / Hurghada",
-      "lastPrice": 12493,
-      "lastSeen": "2026-09-22"
-    },
-    {
       "key": "hotel-1086",
       "hotel": "Long Beach Resort (ex Hilton Long Beach)",
       "region": "Egipt / Hurghada",
       "lastPrice": 13206,
-      "lastSeen": "2026-09-23"
-    },
-    {
-      "key": "hotel-15278",
-      "hotel": "Pickalbatros Aqua Vista Resort",
-      "region": "Egipt / Hurghada",
-      "lastPrice": 13048,
       "lastSeen": "2026-09-23"
     },
     {

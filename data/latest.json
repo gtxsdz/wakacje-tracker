@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T10:31:51.665Z",
+  "generatedAt": "2026-09-23T11:31:20.627Z",
   "date": "2026-09-23",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
   "count": 19,
@@ -22,7 +22,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw4NTO1QZI6lZQQVhtYAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW_gCU7eoAVIAS4gfYQBepzARuD9MmpE6INP8lwkNAAGVxJS5hInOoDADDmMBAA0SSJ8e",
+        "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw8PDO1QZI6lZQQVhsYAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW_gCU7eoAVIAS4gfYQBepzARuD9MmpE6INP8lwkNAAGVxJS5hInOoDADDmMBAA26CaBy",
         "price": 11114,
         "currency": "PLN",
         "room": "Superior sea view",
@@ -93,11 +93,11 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/al-kusajr/akassia-swiss-resort-ex-calimera-club-akassia-swiss-resort-254866.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 72,
+      "variantCount": 90,
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5MpF0D4ukxUYUTDIY0aG3AAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAAAqBFdFWlkw4dTO1QZI0f1FUEVYhQFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgunVcXi",
+        "apiHash": "p5MpF0D4ukxUYUTDIY0aG3AAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcAAAAqBFdFWlkw8fDO1QZI0f1FUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBHIH0CtUEvyVlAATMQ_TwAbltsCHYDeDSAcDbj_wQkBEmMCDGMBBgsnHC9N",
         "price": 11466,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -155,6 +155,81 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-27771",
+      "offerId": 725111,
+      "hotelId": 27771,
+      "hotel": "Radisson Individuals Marina Port Ghalib (ex. Sunrise Marina Resort)",
+      "region": "Egipt / Marsa El Alam / Port Ghalib",
+      "stars": 5,
+      "rating": 8.1,
+      "opinions": 265,
+      "operator": "Rainbow",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/port-ghalib/radisson-individuals-marina-port-ghalib-ex-sunrise-marina-resort-725111.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 3,
+      "cheapest": {
+        "variantId": "rainbow",
+        "operator": "Rainbow",
+        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw8vDO1QZIiPRGUEVYhAFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNH4qbjw",
+        "price": 11617,
+        "currency": "PLN",
+        "room": "Junior suita z widokiem na basen",
+        "departureCode": "KTW",
+        "luggageIncluded": true,
+        "carrier": "ENT1155",
+        "outbound": {
+          "from": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "04:15"
+          },
+          "to": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "10:00"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "10:30"
+          },
+          "to": {
+            "airportCode": "KTW",
+            "airportName": "Katowice",
+            "city": "Katowice",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "14:25"
+          }
+        },
+        "label": "Junior suita z widokiem na basen • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
+      },
+      "price": 11617,
+      "prevPrice": 12017,
+      "change": -400,
+      "changePct": -3.33,
+      "minPrice": 11617,
+      "maxPrice": 13194,
+      "isLowest": true,
+      "pointCount": 13,
+      "firstSeen": "2026-09-19",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-263513",
       "offerId": 1166909,
       "hotelId": 263513,
@@ -172,7 +247,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw4tTO1QZIsF1QQViFAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA0LewUd",
+        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw8_DO1QZIsF1QQViEAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA05bRRc",
         "price": 11952,
         "currency": "PLN",
         "room": "Standard room",
@@ -230,81 +305,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-27771",
-      "offerId": 725111,
-      "hotelId": 27771,
-      "hotel": "Radisson Individuals Marina Port Ghalib (ex. Sunrise Marina Resort)",
-      "region": "Egipt / Marsa El Alam / Port Ghalib",
-      "stars": 5,
-      "rating": 8.1,
-      "opinions": 265,
-      "operator": "Rainbow",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-06",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/port-ghalib/radisson-individuals-marina-port-ghalib-ex-sunrise-marina-resort-725111.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 2,
-      "cheapest": {
-        "variantId": "rainbow",
-        "operator": "Rainbow",
-        "apiHash": "pRjAYqpu-eWrXqMawQz899AAog0vbtXFLenCisbzCeF1ss3QYYz-qb1QuxQH25V7P9SB4qBFJOQlcw49TO1QZI0KxJUEVYhQFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNS7i1tw",
-        "price": 12017,
-        "currency": "PLN",
-        "room": "Junior suita z widokiem na basen",
-        "departureCode": "KTW",
-        "luggageIncluded": false,
-        "carrier": "ENT1155",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "04:15"
-          },
-          "to": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "10:00"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "10:30"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "14:25"
-          }
-        },
-        "label": "Junior suita z widokiem na basen • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
-      },
-      "price": 12017,
-      "prevPrice": 12256,
-      "change": -239,
-      "changePct": -1.95,
-      "minPrice": 11712,
-      "maxPrice": 13194,
-      "isLowest": false,
-      "pointCount": 12,
-      "firstSeen": "2026-09-19",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-7231",
       "offerId": 1166986,
       "hotelId": 7231,
@@ -322,7 +322,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw5NTO1QZI7V9QQViFAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEAC36Q8GE",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw9PDO1QZI7V9QQViEAWACagNDR21yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARpcYBS5IEYQBepzBSpiBTAEyssDoN1PyXCSAAAYS-jJCFicygMAMNYwEAC5CfM8g",
         "price": 12269,
         "currency": "PLN",
         "room": "Standard room",
@@ -397,7 +397,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw5dTO1QZIhJ1OUEVYbWACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADNbfCJk",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9fDO1QZIhJ1OUEVYbGACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADCol0jg",
         "price": 12817,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -472,7 +472,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw5tTO1QZIo2RQQViFAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC1eydxU",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw9vDO1QZIo2RQQViEAWACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR5hJSwA1TAEyssDoN1PyXCSAAAYWy0JDziMygMAMNYwEAC3fBBhA",
         "price": 12835,
         "currency": "PLN",
         "room": "Superior room",
@@ -530,6 +530,88 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-17532",
+      "offerId": 254865,
+      "hotelId": 17532,
+      "hotel": "Fantazia Resort",
+      "region": "Egipt / Marsa El Alam",
+      "stars": 5,
+      "rating": 8.2,
+      "opinions": 238,
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/fantazia-resort-254865.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 10,
+      "altOffers": [
+        {
+          "offerId": 768830,
+          "operator": "Rainbow",
+          "price": 13647
+        }
+      ],
+      "cheapest": {
+        "variantId": "coral travel",
+        "operator": "Coral Travel",
+        "apiHash": "p7xlgFvYjVakYB6omSoUqQAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcAEQAqBFdFWlkw9_DO1QZI27RPUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg0IAQZG",
+        "price": 13011,
+        "currency": "PLN",
+        "room": "Diamond sea view",
+        "departureCode": "LCJ",
+        "luggageIncluded": true,
+        "carrier": "ENT 4855",
+        "outbound": {
+          "from": {
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "16:20"
+          },
+          "to": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "22:20"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "09:25"
+          },
+          "to": {
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "13:30"
+          }
+        },
+        "label": "Diamond sea view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
+      },
+      "price": 13011,
+      "prevPrice": 13411,
+      "change": -400,
+      "changePct": -2.98,
+      "minPrice": 13011,
+      "maxPrice": 13411,
+      "isLowest": true,
+      "pointCount": 3,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": null,
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-15351",
       "offerId": 412446,
       "hotelId": 15351,
@@ -547,7 +629,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw59TO1QZI9GRQQViFAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMMHJuEQ",
+        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw-PDO1QZI9GRQQViEAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFRvajCxkBP79scAw1jAQIMZQukmA",
         "price": 13036,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -622,7 +704,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw6NTO1QZI-GVQQVidAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADOOO_Ao",
+        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw-fDO1QZI-GVQQVicAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADOKj-vY",
         "price": 13048,
         "currency": "PLN",
         "room": "Garden view",
@@ -680,81 +762,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-15278",
-      "offerId": 1166543,
-      "hotelId": 15278,
-      "hotel": "Pickalbatros Aqua Vista Resort",
-      "region": "Egipt / Hurghada",
-      "stars": 4,
-      "rating": 8.8,
-      "opinions": 193,
-      "operator": "Join UP",
-      "duration": 7,
-      "departureDate": "2026-09-30",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/hurghada/hurghada/pickalbatros-aqua-vista-resort-1166543.html?od-2026-09-30,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 4,
-      "cheapest": {
-        "variantId": "join up",
-        "operator": "Join UP",
-        "apiHash": "phHzVrZvc0lZ8x6tnS91LyAAogzaBCEYy5ms2VdMsaf85VnwGowmXf5xuKtFirsM-7dRgqBEpPSVAw6tTO1QZI-GVQQVidAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARpxlL4QVhAF6nMEzS0DoN1fyXCSAAAYKgwICUh8ygMAMNYwEADCEudx8",
-        "price": 13048,
-        "currency": "PLN",
-        "room": "Garden view",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "U5 7363",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "12:30"
-          },
-          "to": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-09-30",
-            "customDate": "30.09 (Śr.)",
-            "time": "17:45"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "HRG",
-            "airportName": "Hurghada",
-            "city": "Hurghada",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "08:05"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "11:35"
-          }
-        },
-        "label": "Garden view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
-      },
-      "price": 13048,
-      "prevPrice": 13409,
-      "change": -361,
-      "changePct": -2.69,
-      "minPrice": 13048,
-      "maxPrice": 13809,
-      "isLowest": true,
-      "pointCount": 6,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": null,
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-23785",
       "offerId": 815532,
       "hotelId": 23785,
@@ -779,7 +786,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7NTO1QZIqGZQQViFAWACckAaABUHFwBcA1gFQI8DW76XAWGYOEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFR7qDHxkBPvuMXAw1jAQIM3V9XPw",
+        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw-_DO1QZIqGZQQViEAWACckAaABUHFwBcA1gFQI8DW76XAWGYOEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFR7qDHxkBPvuMXAw1jAQIMBDV4dg",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój rodzinny 4 os.",
@@ -854,7 +861,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7dTO1QZIqGZQQViFAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFPrITfxkBRn8ITAw1jAQIM4d-C8A",
+        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_PDO1QZIqGZQQViEAWACckAaABUHFwBcA1gFQI8DW8CDAWGWTEsAXqcwUqYgUwBM_dg5DYPUmAkgAF3klZXsqAFPrITfxkBRn8ITAw1jAQIMbe7pfQ",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -929,7 +936,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw7tTO1QZIxWdQQViFAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALFNdUnw",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw_fDO1QZIxWdQQViEAWACckMUARUGFwBcA1gFVgJAygZP4gFdAFvyAhHFwwFLgARhAF6nMFKmIFMATKywOg3U_JcJIAABiMCUmfOIzKAwAw1jAQALLPLSDg",
         "price": 13253,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -987,6 +994,93 @@
       "soldOutCheaperCount": 0
     },
     {
+      "key": "hotel-61904",
+      "offerId": 788826,
+      "hotelId": 61904,
+      "hotel": "Pickalbatros Vita Resort Portofino",
+      "region": "Egipt / Marsa El Alam",
+      "stars": 4,
+      "rating": 9.3,
+      "opinions": 396,
+      "operator": "Coral Travel",
+      "duration": 7,
+      "departureDate": "2026-09-29",
+      "returnDate": "2026-10-06",
+      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/pickalbatros-vita-resort-portofino-788826.html?od-2026-09-29,7-dni,all-inclusive,z-lodzi,2dorosle-2dzieci-20091119-20150707",
+      "variantCount": 15,
+      "altOffers": [
+        {
+          "offerId": 816043,
+          "operator": "Sun&Fun",
+          "price": 13594
+        },
+        {
+          "offerId": 1177616,
+          "operator": "TUI",
+          "price": null
+        }
+      ],
+      "cheapest": {
+        "variantId": "coral travel",
+        "operator": "Coral Travel",
+        "apiHash": "p-346QFCwFF-zOQTCgEBxKAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAEQAqBFdFWlkw_vDO1QZI3YlRUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC2HhXY4",
+        "price": 13283,
+        "currency": "PLN",
+        "room": "Superior poolview",
+        "departureCode": "LCJ",
+        "luggageIncluded": true,
+        "carrier": "ENT 4855",
+        "outbound": {
+          "from": {
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "16:20"
+          },
+          "to": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-09-29",
+            "customDate": "29.09 (Wt.)",
+            "time": "22:20"
+          }
+        },
+        "inbound": {
+          "from": {
+            "airportCode": "RMF",
+            "airportName": "Marsa Alam",
+            "city": "Marsa Alam",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "09:25"
+          },
+          "to": {
+            "airportCode": "LCJ",
+            "airportName": "Łódź",
+            "city": "Łódź",
+            "date": "2026-10-06",
+            "customDate": "06.10 (Wt.)",
+            "time": "13:30"
+          }
+        },
+        "label": "Superior poolview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
+      },
+      "price": 13283,
+      "prevPrice": 13594,
+      "change": -311,
+      "changePct": -2.29,
+      "minPrice": 13283,
+      "maxPrice": 13683,
+      "isLowest": true,
+      "pointCount": 10,
+      "firstSeen": "2026-09-18",
+      "soldOutNote": "najtańsze teraz w innym biurze (taniej)",
+      "soldOutCheaperCount": 0
+    },
+    {
       "key": "hotel-20196",
       "offerId": 14032,
       "hotelId": 20196,
@@ -1004,7 +1098,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw79TO1QZI-bJRUEVYhQFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLCQPSDA",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkw__DO1QZI-bJRUEVYhAFgA2oJRW50ZXIgQWlyagQwMzEwagQwODQ1agQwOTE1ckCeAZMBlAGVAR8AHAECABYAFwYRvQESmQMYwQVAg3dMyzJPAEuIH1AAHYnAECAcG-DaZA3I4t0IARJjAgxjAQYLiKw6tw",
         "price": 13336,
         "currency": "PLN",
         "room": "Coral standard room",
@@ -1079,7 +1173,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAw8NTO1QZIs2hQQViFAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAw47hPB",
+        "apiHash": "pFX-TB3b_QAcTKHCcSXEEXAAogpSKKihKIjsMZQlBOYb1tCS8PvU47v8YC-6AwDzyZL18qBEpPSVAwgPHO1QZIs2hQQViEAWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSpiBTABG2uwFM9vQ4DdT8lwkgAAGG2Li4o4nMoDADDWMBAAx6glZ4",
         "price": 13363,
         "currency": "PLN",
         "room": "Standard room",
@@ -1154,7 +1248,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwkNXO1QZIyGlQQViFAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADI7HGk4",
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwgfHO1QZIyGlQQViEAWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzAR1hNS0AxTAEyssDoN1PyXCSAAAZnGjJmlicygMAMNYwEADFPatnY",
         "price": 13512,
         "currency": "PLN",
         "room": "Family room",
@@ -1212,93 +1306,6 @@
       "soldOutCheaperCount": 0
     },
     {
-      "key": "hotel-61904",
-      "offerId": 816043,
-      "hotelId": 61904,
-      "hotel": "Pickalbatros Vita Resort Portofino",
-      "region": "Egipt / Marsa El Alam",
-      "stars": 4,
-      "rating": 9.3,
-      "opinions": 396,
-      "operator": "Sun&Fun",
-      "duration": 7,
-      "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
-      "detailUrl": "https://www.wakacje.pl/oferty/egipt/marsa-el-alam/pickalbatros-vita-resort-portofino-816043.html?od-2026-09-29,7-dni,all-inclusive,z-katowic,2dorosle-2dzieci-20091119-20150707",
-      "variantCount": 1,
-      "altOffers": [
-        {
-          "offerId": 1177616,
-          "operator": "TUI",
-          "price": null
-        },
-        {
-          "offerId": 788826,
-          "operator": "Coral Travel",
-          "price": 13683
-        }
-      ],
-      "cheapest": {
-        "variantId": "sun&fun",
-        "operator": "Sun&Fun",
-        "apiHash": "peuV7QG_pzmcSFRruB1TcvAAog6uegsUMWX7aVCOQZ4HHfRFAgCbWQz1TEPYxZN4-49yYqBFNGUEwwktXO1QZImmpQQViFAWADciYLAxUEIgUSKFzGAkAuDZnN1AlRpJm7DFuu4-SpBgISYwENYwECDED6XnE",
-        "price": 13594,
-        "currency": "PLN",
-        "room": "Superior room pool view",
-        "departureCode": "KTW",
-        "luggageIncluded": true,
-        "carrier": "SKYUP U57831",
-        "outbound": {
-          "from": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "02:55"
-          },
-          "to": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-09-29",
-            "customDate": "29.09 (Wt.)",
-            "time": "08:20"
-          }
-        },
-        "inbound": {
-          "from": {
-            "airportCode": "RMF",
-            "airportName": "Marsa Alam",
-            "city": "Marsa Alam",
-            "date": "2026-10-06",
-            "customDate": "06.10 (Wt.)",
-            "time": "20:50"
-          },
-          "to": {
-            "airportCode": "KTW",
-            "airportName": "Katowice",
-            "city": "Katowice",
-            "date": "2026-10-07",
-            "customDate": "07.10 (Śr.)",
-            "time": "00:25"
-          }
-        },
-        "label": "Superior room pool view • KTW 29.09 (Wt.) 02:55 • powrót 06.10 (Wt.) 20:50"
-      },
-      "price": 13594,
-      "prevPrice": 13683,
-      "change": -89,
-      "changePct": -0.65,
-      "minPrice": 13594,
-      "maxPrice": 13683,
-      "isLowest": true,
-      "pointCount": 9,
-      "firstSeen": "2026-09-18",
-      "soldOutNote": "najtańsze teraz w innym biurze (taniej)",
-      "soldOutCheaperCount": 0
-    },
-    {
       "key": "hotel-20321",
       "offerId": 1166816,
       "hotelId": 20321,
@@ -1316,7 +1323,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwldXO1QZI3mtQQVidAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADGXlXFo",
+        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwhvHO1QZI3mtQQVicAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADEGXLcw",
         "price": 13790,
         "currency": "PLN",
         "room": "Bungalow",
@@ -1391,7 +1398,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwltXO1QZI6WtQQViFAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEAC5FOvB0",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwh_HO1QZI6WtQQViEAWACagMwRkhyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQARw8YBS_QDYQBepzBSpiBTAEyssDoN1PyXCSAAAYO2-KCzicygMAMNYwEACxZy9Vo",
         "price": 13801,
         "currency": "PLN",
         "room": "Deluxe pool view",
@@ -1469,6 +1476,13 @@
       "hotel": "Long Beach Resort (ex Hilton Long Beach)",
       "region": "Egipt / Hurghada",
       "lastPrice": 13206,
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "key": "hotel-15278",
+      "hotel": "Pickalbatros Aqua Vista Resort",
+      "region": "Egipt / Hurghada",
+      "lastPrice": 13048,
       "lastSeen": "2026-09-23"
     },
     {

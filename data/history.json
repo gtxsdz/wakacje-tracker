@@ -566,7 +566,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -1134,7 +1134,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -1702,7 +1702,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-263513": {
       "offerId": 1166909,
@@ -1920,7 +1920,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-30896": {
       "offerId": 1166735,
@@ -2688,7 +2688,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-20196": {
       "offerId": 14032,
@@ -3382,7 +3382,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -4435,7 +4435,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-23785": {
       "offerId": 815532,
@@ -4949,7 +4949,7 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-1086": {
       "offerId": 1027388,
@@ -5485,7 +5485,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-7065": {
       "offerId": 1166815,
@@ -6259,7 +6259,7 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-17532": {
       "offerId": 254865,
@@ -6374,6 +6374,56 @@
           },
           "label": "Diamond sea view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25",
           "at": "2026-09-19T12:00:00.000Z"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T11:30:53.103Z",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "p7xlgFvYjVakYB6omSoUqQAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcAEQAqBFdFWlkw9_DO1QZI27RPUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckKeAZUBHwACARwAFgQXAhLrAhjABxOiAhTYBBG4DkC9YUvyVlAATMQ_TwAdlrkQIBwb8vljDcaF3ggBEmMCDmMBBg0IAQZG",
+          "price": 13011,
+          "currency": "PLN",
+          "room": "Diamond sea view",
+          "departureCode": "LCJ",
+          "luggageIncluded": true,
+          "carrier": "ENT 4855",
+          "outbound": {
+            "from": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "16:20"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "22:20"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:25"
+            },
+            "to": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:30"
+            }
+          },
+          "label": "Diamond sea view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
         }
       ],
       "variantChanges": [
@@ -6393,7 +6443,7 @@
           "at": "2026-09-19T12:00:00.000Z"
         }
       ],
-      "lastSeenAt": "2026-09-23T09:30:53.066Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -7361,7 +7411,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -7579,7 +7629,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-1679": {
       "offerId": 1166464,
@@ -7797,7 +7847,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-15278": {
       "offerId": 1166543,
@@ -8236,16 +8286,16 @@
       "lastSeenAt": "2026-09-20T06:30:53.094Z"
     },
     "hotel-61904": {
-      "offerId": 816043,
+      "offerId": 788826,
       "hotel": "Pickalbatros Vita Resort Portofino",
       "region": "Egipt / Marsa El Alam",
       "stars": 4,
       "rating": 9.3,
       "opinions": 396,
-      "operator": "Sun&Fun",
+      "operator": "Coral Travel",
       "duration": 7,
       "departureDate": "2026-09-29",
-      "returnDate": "2026-10-07",
+      "returnDate": "2026-10-06",
       "lastSeen": "2026-09-23",
       "firstSeen": "2026-09-18",
       "prices": [
@@ -8698,6 +8748,56 @@
             }
           },
           "label": "Superior room pool view • KTW 29.09 (Wt.) 02:55 • powrót 06.10 (Wt.) 20:50"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T11:30:53.103Z",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "p-346QFCwFF-zOQTCgEBxKAAogPBFz6cSLpuUzgxXDJ36JHwAAAABtqAQAiagEAAcAEQAqBFdFWlkw_vDO1QZI3YlRUEVYhAFgA2oJRW50ZXIgQWlyagQwOTI1ckGeAZUBHwAcAQIAFgQXAhELEuACGMAHE6ICFNgEQPVvS_JWUABMxD9PABubww4d-_UBIBwNuP_BCQESYwINYwECC2HhXY4",
+          "price": 13283,
+          "currency": "PLN",
+          "room": "Superior poolview",
+          "departureCode": "LCJ",
+          "luggageIncluded": true,
+          "carrier": "ENT 4855",
+          "outbound": {
+            "from": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "16:20"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "22:20"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:25"
+            },
+            "to": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:30"
+            }
+          },
+          "label": "Superior poolview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
         }
       ],
       "variantChanges": [
@@ -8715,9 +8815,24 @@
             "price": 13594
           },
           "reason": "najtańsze teraz w innym biurze (taniej)"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T11:30:53.103Z",
+          "from": {
+            "variantId": "sun&fun",
+            "operator": "Sun&Fun",
+            "price": 13594
+          },
+          "to": {
+            "variantId": "coral travel",
+            "operator": "Coral Travel",
+            "price": 13283
+          },
+          "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-10838": {
       "offerId": 1166500,
@@ -9456,7 +9571,7 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-23T10:30:53.080Z"
+      "lastSeenAt": "2026-09-23T11:30:53.103Z"
     },
     "hotel-27771": {
       "offerId": 725111,
@@ -9470,7 +9585,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T10:30:53.080Z",
+      "lastSeenAt": "2026-09-23T11:30:53.103Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -10072,6 +10187,56 @@
             }
           },
           "label": "Junior suita z widokiem na basen • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
+        },
+        {
+          "date": "2026-09-23",
+          "at": "2026-09-23T11:30:53.103Z",
+          "variantId": "rainbow",
+          "operator": "Rainbow",
+          "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw8vDO1QZIiPRGUEVYhAFgAmoNQUxMX0lOQ0xVU0lWRWoXMjk2LDM4MCw0NzcsNDgzLDQ4NCw0ODVqEzQwNCw0MDcsNDA4LDUyMSw1MjhyQZYBngGUARUHFwBYCArkAUDkBRHQLBmzKBDIHUzgGUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNH4qbjw",
+          "price": 11617,
+          "currency": "PLN",
+          "room": "Junior suita z widokiem na basen",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "ENT1155",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "04:15"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "10:00"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "10:30"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "14:25"
+            }
+          },
+          "label": "Junior suita z widokiem na basen • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
         }
       ],
       "variantChanges": []
@@ -10088,7 +10253,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T10:30:53.080Z",
+      "lastSeenAt": "2026-09-23T11:30:53.103Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -10206,7 +10371,7 @@
       "departureDate": "2026-09-30",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-23",
-      "lastSeenAt": "2026-09-23T10:30:53.080Z",
+      "lastSeenAt": "2026-09-23T11:30:53.103Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -10263,6 +10428,6 @@
       "variantChanges": []
     }
   },
-  "lastUpdated": "2026-09-23T10:30:53.080Z",
+  "lastUpdated": "2026-09-23T11:30:53.103Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

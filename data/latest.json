@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T19:31:24.492Z",
+  "generatedAt": "2026-09-23T20:31:53.362Z",
   "date": "2026-09-23",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
   "count": 23,
@@ -22,7 +22,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw8NHQ1QZIvL48UEVYZGACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN0_yXCSAAAfDDlLmEic6gMAMOYwEADSKgKPM",
+        "apiHash": "pZ7Iu_PkBaKuNDpFFb9-ltAAogE8yPh1VruY-OenUD9BO6rq1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwgO7Q1QZIvL48UEVYY2ACagMwMllyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hAF6nMBG4P0yakToN0_yXCSAAAfDDlLmEic6gMAMOYwEADbGXrTM",
         "price": 9910,
         "currency": "PLN",
         "room": "Superior room",
@@ -97,8 +97,8 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkw8dHQ1QZI0f1FUEVYfGADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEcgfQK1QS_JWUABMxD9PABuW2wIdgN4NIBwNuP_BCQESYwIMYwEGC2mJPuc",
-        "price": 11466,
+        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkwge7Q1QZI47JEUEVYe2ADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEcgfQK1QS_JWUABMxD9PABuW2wIdgN4NIBwNuP_BCQESYwIMYwEGC7uEGg4",
+        "price": 11206,
         "currency": "PLN",
         "room": "Standard room garden view",
         "departureCode": "LCJ",
@@ -142,14 +142,14 @@
         },
         "label": "Standard room garden view • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
       },
-      "price": 11466,
-      "prevPrice": 11866,
-      "change": -400,
-      "changePct": -3.37,
-      "minPrice": 11466,
+      "price": 11206,
+      "prevPrice": 11466,
+      "change": -260,
+      "changePct": -2.27,
+      "minPrice": 11206,
       "maxPrice": 12138,
       "isLowest": true,
-      "pointCount": 11,
+      "pointCount": 12,
       "firstSeen": "2026-09-18",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
@@ -172,7 +172,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAw8tHQ1QZI5F5QQViUAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALgRfF2w",
+        "apiHash": "ptgqBikEzrR2zDTRWK5Fb0AAog_vp5ORLWcXNDJw47eCwoBAGowmXf5xuKtFirsM-7dRgqBEpPSVAwgu7Q1QZI5F5QQViTAWACckMUARUGFwBcA1gFVgJAygZd4gFPAFubhQFTlCZSAEuIH2EAXqcwEccXTIu5OiDV_JcJDQABj9bwmLSGzKAwAw1jAQALFPLS4g",
         "price": 12132,
         "currency": "PLN",
         "room": "Premium family",
@@ -247,7 +247,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw89HQ1QZI7V9QQVh8YAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQALLiOxjg",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwg-7Q1QZI7V9QQVh7YAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQALp9VNew",
         "price": 12269,
         "currency": "PLN",
         "room": "Standard room",
@@ -322,7 +322,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9NHQ1QZI819QQVhkYAJqA0xmSXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABH8GUuMBWEAXqcwTNLQOg3T_JcJIAAB8tvAmOOGzKAwAw1jAQAMSl2dHQ",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwhO7Q1QZI1PVKUEVYY2ACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADFl4ECk",
         "price": 12275,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -397,7 +397,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw9dHQ1QZIjZRLUEVYfGACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA35ZmyT",
+        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAwhe7Q1QZIjZRLUEVYe2ACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA2gKslP",
         "price": 12314,
         "currency": "PLN",
         "room": "Standard room",
@@ -472,7 +472,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pklfkxJs2eXXnUF9MkAqiwAAogxmd5zKiPjIUPVDyKrYSjQK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw9tHQ1QZImGFQQVhkYAJqAzBFUHJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGPGkv5BGEAXqcwTNLQOg3T_JcJIAABmeSIwJSH0qAwAw1jAQQL_uY8RA",
+        "apiHash": "pklfkxJs2eXXnUF9MkAqiwAAogxmd5zKiPjIUPVDyKrYSjQK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwhu7Q1QZImGFQQVhjYAJqAzBFUHJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGPGkv5BGEAXqcwTNLQOg3T_JcJIAABmeSIwJSH0qAwAw1jAQQLU7ZvbA",
         "price": 12440,
         "currency": "PLN",
         "room": "Deluxe garden view",
@@ -547,7 +547,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw99HQ1QZI2mFQQViUAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADG6psdM",
+        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAwhu7Q1QZI2mFQQViTAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADPpGWoU",
         "price": 12506,
         "currency": "PLN",
         "room": "Garden view",
@@ -622,7 +622,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw-NHQ1QZI_2JQQVhkYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMH3usrA",
+        "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwh-7Q1QZI_2JQQVhjYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMOOoByw",
         "price": 12671,
         "currency": "PLN",
         "room": "Garden view",
@@ -697,7 +697,7 @@
       "cheapest": {
         "variantId": "rainbow",
         "operator": "Rainbow",
-        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw-dHQ1QZIwoVOUEVYfGACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NWoTNDA0LDQwNyw0MDgsNTIxLDUyOHJBlgGeAZQBFQcXAFgICuQBQOQFEdAsGbMoEMgdTOAZS_I-YQBT40RSAA_q6kAdXiCizZEJDQBfvfr_gQMDDmMBBg2NJDmr",
+        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcwiO7Q1QZIwoVOUEVYe2ACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NWoTNDA0LDQwNyw0MDgsNTIxLDUyOHJBlgGeAZQBFQcXAFgICuQBQOQFEdAsGbMoEMgdTOAZS_I-YQBT40RSAA_q6kAdXiCizZEJDQBfvfr_gQMDDmMBBg1ZTAhm",
         "price": 12787,
         "currency": "PLN",
         "room": "Junior suita z widokiem na basen",
@@ -772,7 +772,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw-tHQ1QZIo2RQQVh8YAJqAzAyWXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHmElLADVMATKywOg3U_JcJIAABhbLQkPOIzKAwAw1jAQALPU-R-A",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAwie7Q1QZIo2RQQVh7YAJqAzAyWXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHmElLADVMATKywOg3U_JcJIAABhbLQkPOIzKAwAw1jAQALy4NXdg",
         "price": 12835,
         "currency": "PLN",
         "room": "Superior room",
@@ -848,13 +848,13 @@
         {
           "offerId": 1166793,
           "operator": "Join UP",
-          "price": 13301
+          "price": null
         }
       ],
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkw-9HQ1QZI27RPUEVYfGADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEbgOQL1hS_JWUABMxD9PAB2WuRAgHBvy-WMNxoXeCAESYwIOYwEGDZey2BM",
+        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkwiu7Q1QZI3bRPUEVYe2ADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEbgOQL1hS_JWUABMxD9PAB2WuRAgHBvy-WMNxoXeCAESYwIOYwEGDW1PfPI",
         "price": 13011,
         "currency": "PLN",
         "room": "Diamond sea view",
@@ -929,7 +929,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_NHQ1QZI9GRQQVh8YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVG9qMLGQE_v2xwDDWMBAgxrO-K1",
+        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwi-7Q1QZI9GRQQVh7YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVG9qMLGQE_v2xwDDWMBAgyYI47Z",
         "price": 13036,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1011,7 +1011,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_dHQ1QZIqGZQQVh8YAJyQBoAFQcXAFwDWAVAjwNbvpcBYZg4SwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVHuoMfGQE--4xcDDWMBAgyRmiDQ",
+        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwjO7Q1QZIqGZQQVh7YAJyQBoAFQcXAFwDWAVAjwNbvpcBYZg4SwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVHuoMfGQE--4xcDDWMBAgy_7KD2",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój rodzinny 4 os.",
@@ -1086,7 +1086,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw_tHQ1QZIqGZQQVh8YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAU-shN_GQFGfwhMDDWMBAgxr9G4J",
+        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgwje7Q1QZIqGZQQVh7YAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAU-shN_GQFGfwhMDDWMBAgxSXK0M",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1161,7 +1161,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pMn4cnBYUSKkkyYt82cDYXAAogor_eyfiP7xwFwiUFD0qXtmoNHdqQY8pgRvpu-4jQzi0qBEpPSVAw_9HQ1QZIseBQUEVYfGACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSvBRTABH2AUygujoN1PyXCSAAAY6W9MDjiMygMAMNYwEAC1qtR3E",
+        "apiHash": "pMn4cnBYUSKkkyYt82cDYXAAogor_eyfiP7xwFwiUFD0qXtmoNHdqQY8pgRvpu-4jQzi0qBEpPSVAwju7Q1QZIseBQUEVYe2ACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSvBRTABH2AUygujoN1PyXCSAAAY6W9MDjiMygMAMNYwEACzUNbs8",
         "price": 13231,
         "currency": "PLN",
         "room": "Family room",
@@ -1236,7 +1236,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwgNLQ1QZIxWdQQVh8YAJyQxQBFQYXAFwDWAVWAkDKBk_iAV0AW_ICEcXDAUuABGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIwJSZ84jMoDADDWMBAAsNjvZU",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAwj-7Q1QZIxWdQQVh7YAJyQxQBFQYXAFwDWAVWAkDKBk_iAV0AW_ICEcXDAUuABGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIwJSZ84jMoDADDWMBAAvA-Hxs",
         "price": 13253,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -1311,7 +1311,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwg9LQ1QZI68xRUEVYZGACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQALzIGDiA",
+        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwsO7Q1QZI68xRUEVYY2ACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQALVpFPjA",
         "price": 13369,
         "currency": "PLN",
         "room": "Family deluxe",
@@ -1386,7 +1386,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwhNLQ1QZI1dFRUEVYfGADaglFbnRlciBBaXJqBDAzMTBqBDA4NDVqBDA5MTVyQJ4BkwGUAZUBHwAcAQIAFgAXBhG9ARKZAxjBBUCDd0zLMk8AS4gfUAAdicAQIBwb4NpkDcji3QgBEmMCDGMBBguEGonA",
+        "apiHash": "pBl3DpMYla2KxfNyj00INhAAogrNNqTKHSH1vKaOeQZIRq6gAAAAB9iQQAmYkEAAcAAQAqBFdFWlkwse7Q1QZI1dFRUEVYe2ADaglFbnRlciBBaXJqBDAzMTBqBDA4NDVqBDA5MTVyQJ4BkwGUAZUBHwAcAQIAFgAXBhG9ARKZAxjBBUCDd0zLMk8AS4gfUAAdicAQIBwb4NpkDcji3QgBEmMCDGMBBgvrihIu",
         "price": 13376,
         "currency": "PLN",
         "room": "Coral standard room",
@@ -1461,7 +1461,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwhdLQ1QZI5WhQQViUAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADLFjr2w",
+        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwsu7Q1QZI5WhQQViTAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADHl18rA",
         "price": 13413,
         "currency": "PLN",
         "room": "Bungalow",
@@ -1536,7 +1536,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAwhtLQ1QZIyGlQQVh8YAJqAzAwTXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHWE1LQDFMATKywOg3U_JcJIAABmcaMmaWJzKAwAw1jAQAMQT4NfQ",
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAws-7Q1QZIyGlQQVh7YAJqAzAwTXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHWE1LQDFMATKywOg3U_JcJIAABmcaMmaWJzKAwAw1jAQAMtVB19A",
         "price": 13512,
         "currency": "PLN",
         "room": "Family room",
@@ -1623,7 +1623,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pkh0KEDC0QCSy8cK1FhUrpAAogEoq07RlaAUwNFDtl0y_cO2oNHdqQY8pgRvpu-4jQzi0qBEpPSVAwiNLQ1QZIjmpQQVh8YAJqAzBuSHJDmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMFK8FFMAEYW_AUyR_TgN1PyXCSAAAYGQjLnjiMygMAMNYwEADHFMIxk",
+        "apiHash": "pkh0KEDC0QCSy8cK1FhUrpAAogEoq07RlaAUwNFDtl0y_cO2oNHdqQY8pgRvpu-4jQzi0qBEpPSVAwte7Q1QZIjmpQQVh7YAJqAzBuSHJDmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMFK8FFMAEYW_AUyR_TgN1PyXCSAAAYGQjLnjiMygMAMNYwEADHaiXnw",
         "price": 13582,
         "currency": "PLN",
         "room": "Superior garden",
@@ -1698,7 +1698,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwitLQ1QZI6WtQQVh8YAJqAzBGSHJCmwEUARUGFwBcA1gFVgJAygZP4gFdABHDxgFL9ANhAF6nMFKmIFMATKywOg3U_JcJIAABg7b4oLOJzKAwAw1jAQALYtt_cw",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAwt-7Q1QZI6WtQQVh7YAJqAzBGSHJCmwEUARUGFwBcA1gFVgJAygZP4gFdABHDxgFL9ANhAF6nMFKmIFMATKywOg3U_JcJIAABg7b4oLOJzKAwAw1jAQALMyuBHw",
         "price": 13801,
         "currency": "PLN",
         "room": "Deluxe pool view",

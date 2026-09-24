@@ -223,14 +223,49 @@ body {
   color: var(--text-dim);
   margin-top: 4px;
 }
-.badge-lowest {
+.badge-lowest,
+.badge-highest {
   margin-top: 6px;
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--down);
-  border: 1px solid var(--down);
   border-radius: 6px;
   padding: 2px 6px;
+}
+.badge-lowest { color: var(--down); border: 1px solid var(--down); }
+.badge-highest { color: var(--up); border: 1px solid var(--up); }
+
+/* Pulsowanie ekstremum ceny: karta z najniższą/najwyższą zanotowaną ceną.
+   Puls dotyczy obramowania karty ORAZ badge'a. prefers-reduced-motion wyłącza. */
+.offer-card.extreme-low {
+  animation: pulse-low 1.8s ease-in-out infinite;
+}
+.offer-card.extreme-high {
+  animation: pulse-high 1.8s ease-in-out infinite;
+}
+.badge-lowest.pulse { animation: pulse-badge-low 1.8s ease-in-out infinite; }
+.badge-highest.pulse { animation: pulse-badge-high 1.8s ease-in-out infinite; }
+
+@keyframes pulse-low {
+  0%, 100% { border-color: var(--down); box-shadow: var(--shadow); }
+  50% { border-color: var(--down); box-shadow: 0 0 0 3px rgba(53, 208, 127, 0.35), var(--shadow); }
+}
+@keyframes pulse-high {
+  0%, 100% { border-color: var(--up); box-shadow: var(--shadow); }
+  50% { border-color: var(--up); box-shadow: 0 0 0 3px rgba(255, 93, 93, 0.35), var(--shadow); }
+}
+@keyframes pulse-badge-low {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(53, 208, 127, 0); }
+  50% { box-shadow: 0 0 0 3px rgba(53, 208, 127, 0.3); }
+}
+@keyframes pulse-badge-high {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 93, 93, 0); }
+  50% { box-shadow: 0 0 0 3px rgba(255, 93, 93, 0.3); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .offer-card.extreme-low,
+  .offer-card.extreme-high,
+  .badge-lowest.pulse,
+  .badge-highest.pulse { animation: none; }
 }
 /* Notki o ostatnim zrzucie: poprzednia cena i kiedy sprawdzono. */
 .snap-prev,

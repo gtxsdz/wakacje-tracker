@@ -215,16 +215,24 @@ function offerCard(o) {
           .join(", ")}</div>`
       : "";
 
-  const lowestBadge =
-    o.isLowest && o.pointCount > 1 ? `<span class="badge-lowest">najniższa dotąd</span>` : "";
+  // Ekstrema z zanotowanej historii (wymaga >1 pomiaru i realnego zakresu).
+  const hasRange = o.minPrice != null && o.maxPrice != null && o.minPrice !== o.maxPrice && o.pointCount > 1;
+  const isLow = hasRange && o.price <= o.minPrice;
+  const isHigh = hasRange && o.price >= o.maxPrice;
+  const extremeClass = isLow ? "extreme-low" : isHigh ? "extreme-high" : "";
 
-  const range =
-    o.minPrice != null && o.maxPrice != null && o.minPrice !== o.maxPrice
-      ? `<div class="price-range">min ${fmtPrice(o.minPrice)} • max ${fmtPrice(o.maxPrice)}</div>`
-      : "";
+  const badge = isLow
+    ? `<span class="badge-lowest pulse">najniższa dotąd</span>`
+    : isHigh
+    ? `<span class="badge-highest pulse">najwyższa dotąd</span>`
+    : "";
+
+  const range = hasRange
+    ? `<div class="price-range">min ${fmtPrice(o.minPrice)} • max ${fmtPrice(o.maxPrice)}</div>`
+    : "";
 
   return `
-    <article class="offer-card state-${priceState(o)} ${o.isLowest && o.pointCount > 1 ? "lowest" : ""}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
+    <article class="offer-card state-${priceState(o)} ${extremeClass}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
       <div class="offer-main">
         <h3 class="hotel">${o.hotel}</h3>
         <p class="region">${o.region || ""}</p>
@@ -239,7 +247,7 @@ function offerCard(o) {
         <span class="price-unit">za wszystkich</span>
         ${changeMarkup(o)}
         ${range}
-        ${lowestBadge}
+        ${badge}
       </div>
     </article>`;
 }

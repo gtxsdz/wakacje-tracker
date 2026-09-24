@@ -224,7 +224,7 @@ function offerCard(o) {
       : "";
 
   return `
-    <article class="offer-card ${o.isLowest && o.pointCount > 1 ? "lowest" : ""}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
+    <article class="offer-card state-${priceState(o)} ${o.isLowest && o.pointCount > 1 ? "lowest" : ""}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
       <div class="offer-main">
         <h3 class="hotel">${o.hotel}</h3>
         <p class="region">${o.region || ""}</p>
@@ -234,7 +234,7 @@ function offerCard(o) {
         ${alt}
         ${soldOut}
       </div>
-      <div class="offer-price price-${priceState(o)}">
+      <div class="offer-price">
         <span class="price-now">${fmtPrice(o.price)}</span>
         <span class="price-unit">za wszystkich</span>
         ${changeMarkup(o)}

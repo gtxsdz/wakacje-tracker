@@ -113,21 +113,36 @@ function renderSummary() {
     .join("");
 }
 
+// Stan ceny sterujący podświetleniem komórki:
+//  'stable' — cena zastygła (3+ identyczne odczyty z rzędu) → pomarańczowy, bez strzałki
+//  'down'   — cena niższa niż poprzednio → zielony
+//  'up'     — cena wyższa niż poprzednio → czerwony
+//  'none'   — brak danych do porównania (nowa oferta / bez zmian od zawsze)
+function priceState(o) {
+  if (o.stable) return "stable";
+  if (o.change == null || o.change === 0) return "none";
+  return o.change < 0 ? "down" : "up";
+}
+
 function changeMarkup(o) {
   // Notka o ostatnim sprawdzeniu (konkretna data i godzina).
   const checked = o.lastCheckedAt
     ? `<span class="snap-checked" title="Ostatnie sprawdzenie ceny">🕒 sprawdzono ${fmtWhen(o.lastCheckedAt)}</span>`
     : "";
 
-  // Znacznik: czy cena jest taka sama jak przy POPRZEDNIM sprawdzeniu (zrzucie).
-  // Niezależne od `change` (które liczy różnicę względem ostatniej INNEJ ceny).
-  const sameNote = o.sameSincePrevRun
-    ? `<span class="snap-same">= tyle samo co przy ostatnim sprawdzeniu</span>`
-    : "";
+  const state = priceState(o);
+
+  // STABILNA: cena taka sama w 3+ kolejnych sprawdzeniach. Nie pokazujemy strzałki
+  // ani starego spadku/wzrostu — tylko informację, że cena się utrzymuje.
+  if (state === "stable") {
+    const since = o.lastChangeAt ? fmtWhen(o.lastChangeAt) : o.lastChangeDate || "";
+    const sinceTxt = since ? ` (od ${since})` : "";
+    return `<span class="change flat">= cena stabilna${sinceTxt}</span>${checked}`;
+  }
 
   // Nowa oferta — brak poprzedniego pomiaru.
   if (o.change == null) {
-    return `<span class="change flat">nowa oferta</span>${sameNote}${checked}`;
+    return `<span class="change flat">nowa oferta</span>${checked}`;
   }
 
   // Cena identyczna względem ostatniej zmiany (rzadkie — praktycznie tylko przy 1 pkt).
@@ -137,8 +152,7 @@ function changeMarkup(o) {
     return `<span class="change flat">→ bez zmian${sinceTxt}</span>${checked}`;
   }
 
-  // Cena różni się od ostatniej INNEJ ceny — pokazujemy kierunek i wielkość.
-  // Jeśli mimo to od ostatniego zrzutu nic się nie ruszyło, dokładamy notkę "sameNote".
+  // Cena różni się od ostatniej INNEJ ceny — kierunek i wielkość.
   const down = o.change < 0;
   const arrow = down ? "▼" : "▲";
   const sign = down ? "" : "+";
@@ -147,6 +161,10 @@ function changeMarkup(o) {
     o.prevPrice != null
       ? `<span class="snap-prev">poprzednio ${fmtPrice(o.prevPrice)}</span>`
       : "";
+  // Notka "tyle samo co ostatnio" tylko gdy jeszcze nie osiągnęliśmy progu stabilności.
+  const sameNote = o.sameSincePrevRun
+    ? `<span class="snap-same">= tyle samo co przy ostatnim sprawdzeniu</span>`
+    : "";
   return `<span class="change ${down ? "down" : "up"}">${arrow} ${sign}${fmtPrice(o.change)}${pct}</span>${sameNote}${prev}${checked}`;
 }
 
@@ -216,7 +234,7 @@ function offerCard(o) {
         ${alt}
         ${soldOut}
       </div>
-      <div class="offer-price">
+      <div class="offer-price price-${priceState(o)}">
         <span class="price-now">${fmtPrice(o.price)}</span>
         <span class="price-unit">za wszystkich</span>
         ${changeMarkup(o)}

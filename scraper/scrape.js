@@ -123,9 +123,14 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   // zmianie), więc pozwala odpowiedzieć: "czy cena drgnęła od ostatniego razu".
   const prevSeenPrice = entry.lastSeenPrice ?? null;
   const prevSeenAt = entry.lastSeenAt ?? null;
+  const sameAsPrevRun = prevSeenPrice != null && prevSeenPrice === flat.price;
   entry.changedSincePrevRun = prevSeenPrice != null && prevSeenPrice !== flat.price;
   entry.prevSeenPrice = prevSeenPrice;
   entry.prevSeenAt = prevSeenAt;
+
+  // Seria kolejnych sprawdzeń z TĄ SAMĄ ceną. 1 = pierwszy odczyt tej ceny,
+  // 2 = drugi z rzędu identyczny, 3+ = cena "zastygła" (traktujemy jako stabilną).
+  entry.sameRunStreak = sameAsPrevRun ? (entry.sameRunStreak || 1) + 1 : 1;
 
   // Aktualizacja znaczników "ostatnio widziane" — KAŻDY przebieg.
   entry.lastSeen = date;
@@ -212,6 +217,9 @@ function buildLatest(history, currentResults, date) {
     // Porównanie z POPRZEDNIM ZRZUTEM: czy cena drgnęła od ostatniego sprawdzenia.
     const sameSincePrevRun = entry ? entry.changedSincePrevRun === false && entry.prevSeenPrice != null : false;
     const prevRunAt = entry ? entry.prevSeenAt || null : null;
+    // Seria identycznych odczytów; od 3. z rzędu uznajemy cenę za STABILNĄ.
+    const sameRunStreak = entry ? entry.sameRunStreak || 1 : 1;
+    const stable = sameRunStreak >= 3;
 
     offers.push({
       key: r.offer.key,
@@ -244,6 +252,8 @@ function buildLatest(history, currentResults, date) {
       lastCheckedAt,
       sameSincePrevRun,
       prevRunAt,
+      sameRunStreak,
+      stable,
       soldOutNote: variantChangedToday
         ? lastChange.reason
         : null,

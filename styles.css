@@ -229,6 +229,16 @@ body {
   border-radius: 6px;
   padding: 2px 6px;
 }
+/* Notki o ostatnim zrzucie: poprzednia cena i kiedy sprawdzono. */
+.snap-prev,
+.snap-checked {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 3px;
+  line-height: 1.3;
+}
+.snap-checked { opacity: 0.8; }
 
 /* Disappeared */
 .disappeared { margin-bottom: 40px; }

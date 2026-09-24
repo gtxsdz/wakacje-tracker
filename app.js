@@ -17,6 +17,22 @@ const fmtDateTime = (iso) => {
   });
 };
 
+// Zwięzły czas względny, np. "przed chwilą", "2 godz. temu", "wczoraj", "3 dni temu".
+const fmtAgo = (iso) => {
+  if (!iso) return "";
+  const diffMs = Date.now() - new Date(iso).getTime();
+  if (!Number.isFinite(diffMs) || diffMs < 0) return fmtDateTime(iso);
+  const min = Math.floor(diffMs / 60000);
+  if (min < 5) return "przed chwilą";
+  if (min < 60) return `${min} min temu`;
+  const hrs = Math.floor(min / 60);
+  if (hrs < 24) return `${hrs} godz. temu`;
+  const days = Math.floor(hrs / 24);
+  if (days === 1) return "wczoraj";
+  if (days < 7) return `${days} dni temu`;
+  return fmtDateTime(iso);
+};
+
 async function loadData() {
   const [lr, hr] = await Promise.all([
     fetch("./data/latest.json", { cache: "no-store" }),
@@ -104,13 +120,33 @@ function renderSummary() {
 }
 
 function changeMarkup(o) {
-  if (o.change == null) return `<span class="change flat">nowa oferta</span>`;
-  if (o.change === 0) return `<span class="change flat">→ bez zmian</span>`;
+  // Notka o ostatnim sprawdzeniu (kiedy pobraliśmy dane po raz ostatni).
+  const checked = o.lastCheckedAt
+    ? `<span class="snap-checked" title="Ostatnie sprawdzenie ceny">🕒 sprawdzono ${fmtAgo(o.lastCheckedAt)}</span>`
+    : "";
+
+  // Nowa oferta — brak poprzedniego pomiaru.
+  if (o.change == null) {
+    return `<span class="change flat">nowa oferta</span>${checked}`;
+  }
+
+  // Cena identyczna jak przy ostatniej zmianie — podkreślamy "bez zmian"
+  // i pokazujemy, od kiedy cena się trzyma.
+  if (o.change === 0) {
+    const since = o.lastChangeAt || o.lastChangeDate;
+    const sinceTxt = since ? ` od ${fmtAgo(o.lastChangeAt) || o.lastChangeDate}` : "";
+    return `<span class="change flat">→ bez zmian${sinceTxt}</span>${checked}`;
+  }
+
   const down = o.change < 0;
   const arrow = down ? "▼" : "▲";
   const sign = down ? "" : "+";
   const pct = o.changePct != null ? ` (${sign}${o.changePct}%)` : "";
-  return `<span class="change ${down ? "down" : "up"}">${arrow} ${sign}${fmtPrice(o.change)}${pct}</span>`;
+  const prev =
+    o.prevPrice != null
+      ? `<span class="snap-prev">poprzednio ${fmtPrice(o.prevPrice)}</span>`
+      : "";
+  return `<span class="change ${down ? "down" : "up"}">${arrow} ${sign}${fmtPrice(o.change)}${pct}</span>${prev}${checked}`;
 }
 
 /** Blok z rozkładem lotu wariantu. */

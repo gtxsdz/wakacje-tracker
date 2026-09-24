@@ -189,6 +189,15 @@ function buildLatest(history, currentResults, date) {
         : null;
     const variantChangedToday = lastChange && lastChange.date === date;
 
+    // Kiedy cena ostatnio FAKTYCZNIE się zmieniła (ostatni zapisany punkt).
+    // Punkty zapisujemy tylko przy zmianie, więc `at` ostatniego punktu = moment
+    // ostatniej zmiany ceny. Gdy jest tylko 1 punkt, to pierwszy pomiar.
+    const lastPoint = prices.length ? prices[prices.length - 1] : null;
+    const lastChangeAt = lastPoint ? lastPoint.at || null : null;
+    const lastChangeDate = lastPoint ? lastPoint.date || null : null;
+    // Kiedy oferta była ostatnio sprawdzona (niezależnie od zmiany ceny).
+    const lastCheckedAt = entry ? entry.lastSeenAt || null : null;
+
     offers.push({
       key: r.offer.key,
       offerId: r.offer.offerId,
@@ -215,6 +224,9 @@ function buildLatest(history, currentResults, date) {
       isLowest: current != null && minPrice != null && current <= minPrice,
       pointCount: prices.length,
       firstSeen: entry ? entry.firstSeen : date,
+      lastChangeAt,
+      lastChangeDate,
+      lastCheckedAt,
       soldOutNote: variantChangedToday
         ? lastChange.reason
         : null,

@@ -203,20 +203,11 @@ body {
   border: 1px solid transparent;
   transition: background 0.15s ease, border-color 0.15s ease;
 }
-/* Podświetlenie komórki ceny wg stanu:
+/* Obramowanie komórki ceny wg stanu (bez wypełnienia tła):
    spadek = zielony, wzrost = czerwony, stabilna (3+ te same odczyty) = pomarańczowy. */
-.offer-price.price-down {
-  background: rgba(53, 208, 127, 0.12);
-  border-color: rgba(53, 208, 127, 0.45);
-}
-.offer-price.price-up {
-  background: rgba(255, 93, 93, 0.12);
-  border-color: rgba(255, 93, 93, 0.45);
-}
-.offer-price.price-stable {
-  background: rgba(255, 176, 32, 0.12);
-  border-color: rgba(255, 176, 32, 0.5);
-}
+.offer-price.price-down { border-color: var(--down); }
+.offer-price.price-up { border-color: var(--up); }
+.offer-price.price-stable { border-color: var(--accent); }
 .price-now {
   font-size: 1.5rem;
   font-weight: 800;

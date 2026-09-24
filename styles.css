@@ -272,6 +272,7 @@ body {
 .snap-checked,
 .snap-same {
   display: block;
+  flex-basis: 100%; /* własna linia w flexowym bloku ceny — bez rozjazdu wyrównania */
   font-size: 0.7rem;
   color: var(--text-dim);
   margin-top: 3px;

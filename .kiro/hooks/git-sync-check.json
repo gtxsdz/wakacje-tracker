@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Sprawdzenie synchronizacji z repo",
+      "trigger": "SessionStart",
+      "action": {
+        "type": "command",
+        "command": "git fetch origin --quiet 2>/dev/null; echo \"== stan repo wakacje-tracker ==\"; echo \"lokalne zmiany:\"; git status --short; echo \"za origin/main o commitow:\"; git rev-list --count HEAD..origin/main 2>/dev/null; echo \"(jesli >0: zrob git pull przed praca)\""
+      }
+    }
+  ]
+}

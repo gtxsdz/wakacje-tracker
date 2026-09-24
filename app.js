@@ -17,20 +17,14 @@ const fmtDateTime = (iso) => {
   });
 };
 
-// Zwięzły czas względny, np. "przed chwilą", "2 godz. temu", "wczoraj", "3 dni temu".
-const fmtAgo = (iso) => {
+// Konkretna data i godzina, zwięźle: "24.09, 07:42" (bez roku dla oszczędności miejsca).
+const fmtWhen = (iso) => {
   if (!iso) return "";
-  const diffMs = Date.now() - new Date(iso).getTime();
-  if (!Number.isFinite(diffMs) || diffMs < 0) return fmtDateTime(iso);
-  const min = Math.floor(diffMs / 60000);
-  if (min < 5) return "przed chwilą";
-  if (min < 60) return `${min} min temu`;
-  const hrs = Math.floor(min / 60);
-  if (hrs < 24) return `${hrs} godz. temu`;
-  const days = Math.floor(hrs / 24);
-  if (days === 1) return "wczoraj";
-  if (days < 7) return `${days} dni temu`;
-  return fmtDateTime(iso);
+  const d = new Date(iso);
+  if (isNaN(d)) return "";
+  return d.toLocaleString("pl-PL", {
+    day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit",
+  });
 };
 
 async function loadData() {
@@ -120,9 +114,9 @@ function renderSummary() {
 }
 
 function changeMarkup(o) {
-  // Notka o ostatnim sprawdzeniu (kiedy pobraliśmy dane po raz ostatni).
+  // Notka o ostatnim sprawdzeniu (konkretna data i godzina).
   const checked = o.lastCheckedAt
-    ? `<span class="snap-checked" title="Ostatnie sprawdzenie ceny">🕒 sprawdzono ${fmtAgo(o.lastCheckedAt)}</span>`
+    ? `<span class="snap-checked" title="Ostatnie sprawdzenie ceny">🕒 sprawdzono ${fmtWhen(o.lastCheckedAt)}</span>`
     : "";
 
   // Nowa oferta — brak poprzedniego pomiaru.
@@ -131,10 +125,10 @@ function changeMarkup(o) {
   }
 
   // Cena identyczna jak przy ostatniej zmianie — podkreślamy "bez zmian"
-  // i pokazujemy, od kiedy cena się trzyma.
+  // i pokazujemy, od kiedy (konkretna data/godzina) cena się trzyma.
   if (o.change === 0) {
-    const since = o.lastChangeAt || o.lastChangeDate;
-    const sinceTxt = since ? ` od ${fmtAgo(o.lastChangeAt) || o.lastChangeDate}` : "";
+    const since = o.lastChangeAt ? fmtWhen(o.lastChangeAt) : o.lastChangeDate || "";
+    const sinceTxt = since ? ` od ${since}` : "";
     return `<span class="change flat">→ bez zmian${sinceTxt}</span>${checked}`;
   }
 
@@ -287,6 +281,8 @@ function openModal(key) {
     { l: "Max", v: values.length ? fmtPrice(Math.max(...values)) : "—" },
     { l: "Zanotowanych cen", v: String(points.length) },
     { l: "Wariantów teraz", v: String(offer.variantCount ?? "—") },
+    { l: "Ostatnia zmiana ceny", v: offer.lastChangeAt ? fmtWhen(offer.lastChangeAt) : (offer.lastChangeDate || "—") },
+    { l: "Sprawdzono", v: offer.lastCheckedAt ? fmtWhen(offer.lastCheckedAt) : "—" },
   ];
   $("#modal-stats").innerHTML = stats
     .map((s) => `<div class="stat"><div class="l">${s.l}</div><div class="v">${s.v}</div></div>`)

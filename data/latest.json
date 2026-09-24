@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T05:45:15.161Z",
+  "generatedAt": "2026-09-24T06:00:28.372Z",
   "date": "2026-09-24",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters",
   "count": 24,
@@ -22,7 +22,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwzPHS1QZI66sGUENYWmACckMUARUGFwBcA1gFVgJAygZd4gFPAFv4AlO3qAFSAEuIH2EAXqcwEbg_TJqROiDT_JcJDQABlcSUuYSJzqAwAw5jAQANh7M6cg",
+        "apiHash": "pefFCGrEWPoIlqCHOd2YKLAAogklp7khBnN7pjMg8AXbSNZK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw3vjS1QZI66sGUENYWmACckMUARUGFwBcA1gFVgJAygZd4gFPAFv4AlO3qAFSAEuIH2EAXqcwEbg_TJqROiDT_JcJDQABlcSUuYSJzqAwAw5jAQANe95yhQ",
         "price": 10392,
         "currency": "PLN",
         "room": "Superior sea view",
@@ -78,7 +78,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-24T05:42:58.649Z",
       "lastChangeDate": "2026-09-24",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -100,7 +102,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkwzfHS1QZI47JEUEVYcmADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEcgfQK1QS_JWUABMxD9PABuW2wIdgN4NIBwNuP_BCQESYwIMYwEGC9Pi4rM",
+        "apiHash": "p5JTrVNloV5peOamEyjhrlAAogZ7Jhj86fgvsDGunf_yX17AAAAABtqAQAiagEAAcABQAqBFdFWlkw3_jS1QZI47JEUEVYcmADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEcgfQK1QS_JWUABMxD9PABuW2wIdgN4NIBwNuP_BCQESYwIMYwEGCx8aKSc",
         "price": 11206,
         "currency": "PLN",
         "room": "Standard room garden view",
@@ -156,7 +158,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T20:30:53.077Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -178,7 +182,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pTt-w9EDIyZny9f9hrfiUmAAog_vp5ORLWcXNDJw47eCwoBK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwzvHS1QZI5F5QQVhaYAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW5uFAVOUJlIAS4gfYQBepzARxxdMi7k6INP8lwkNAAHx2fCYtIbMoDADDWMBAAtOYz5K",
+        "apiHash": "pTt-w9EDIyZny9f9hrfiUmAAog_vp5ORLWcXNDJw47eCwoBK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw4PjS1QZI5F5QQVhaYAJyQxQBFQYXAFwDWAVWAkDKBl3iAU8AW5uFAVOUJlIAS4gfYQBepzARxxdMi7k6INP8lwkNAAHx2fCYtIbMoDADDWMBAAt5BMe8",
         "price": 12132,
         "currency": "PLN",
         "room": "Premium family",
@@ -234,7 +238,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T14:30:53.081Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -256,7 +262,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwz_HS1QZI7V9QQVhyYAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQALqWlyoA",
+        "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAw4fjS1QZI7V9QQVhxYAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQAL12uurQ",
         "price": 12269,
         "currency": "PLN",
         "room": "Standard room",
@@ -312,7 +318,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T08:30:53.061Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -334,7 +342,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw0PHS1QZI1PVKUEVYWmACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADF1qrJE",
+        "apiHash": "p0oWIf6Aebrsdzm0xszay8AAogckHjWgXHnD7d0pfsjKAu4K1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw4vjS1QZI1PVKUEVYWWACagNMZklyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAfLbwJjjhsygMAMNYwEADKojR0o",
         "price": 12275,
         "currency": "PLN",
         "room": "Splash room aqua park",
@@ -390,7 +398,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T13:30:53.131Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -412,7 +422,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw0fHS1QZIjZRLUEVYcmACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA0cs5Sg",
+        "apiHash": "pZELMkQGL_5AW7mTrVvuAkAAognzPS7_zhqez5PNEk5hgIrOErWs0tVGkUnula-RMaXKwqBEpPSVAw4_jS1QZIjZRLUEVYcWACagNDR21yQ5sBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBer09L7UNhABHl1QFMgLc4DdT8lwkgAAGAnrCgxYbMoDADDmMBAA2IrK1_",
         "price": 12314,
         "currency": "PLN",
         "room": "Standard room",
@@ -468,7 +478,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T12:30:53.089Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -497,7 +509,7 @@
       "cheapest": {
         "variantId": "exim tours",
         "operator": "Exim Tours",
-        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0w0vHS1QZIsGBQAVhaYAJqA1VBSXIhHBGPuwa5BOz_PasEFBvp704Yw9FLAaictNYNAwBjAQIL_d2QBQ",
+        "apiHash": "pjCrORAUrs_HvKPascpHY_AAogCsJ9_pR_XfLaJ9YVfcm2sBBoRXUWerNxRHeDmlcvUqwqBEVYSU0w5PjS1QZIsGBQAVhZYAJqA1VBSXIhHBGPuwa5BOz_PasEFBvp704Yw9FLAaictNYNAwBjAQILLz-Tig",
         "price": 12336,
         "currency": "PLN",
         "room": "Standard standard pool view triple room",
@@ -553,7 +565,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-24T05:42:58.649Z",
       "lastChangeDate": "2026-09-24",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": "najtańsze teraz w innym biurze (taniej)",
       "soldOutCheaperCount": 0
     },
@@ -575,7 +589,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pklfkxJs2eXXnUF9MkAqiwAAogxmd5zKiPjIUPVDyKrYSjQK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw0_HS1QZImGFQQVhaYAJqAzBFUHJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGPGkv5BGEAXqcwTNLQOg3T_JcJIAABmeSIwJSH0qAwAw1jAQQLZf3Mcg",
+        "apiHash": "pklfkxJs2eXXnUF9MkAqiwAAogxmd5zKiPjIUPVDyKrYSjQK1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw5fjS1QZImGFQQVhZYAJqAzBFUHJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGPGkv5BGEAXqcwTNLQOg3T_JcJIAABmeSIwJSH0qAwAw1jAQQL5BcxlA",
         "price": 12440,
         "currency": "PLN",
         "room": "Deluxe garden view",
@@ -631,7 +645,9 @@
       "firstSeen": "2026-09-23",
       "lastChangeAt": "2026-09-23T18:30:53.120Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -653,7 +669,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw1PHS1QZI2mFQQViKAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADCEbBGw",
+        "apiHash": "piPIcn193VtbY3-77VBl82AAogchgViV8PBl9ZGaFN0o_HeQGowmXf5xuKtFirsM-7dRgqBEpPSVAw5vjS1QZI2mFQQViJAWACagMwMEZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARqhlL3gVhAF6nMEzS0DoN1fyXCSAAAZDezJiUh8ygMAMNYwEADKf-Ndg",
         "price": 12506,
         "currency": "PLN",
         "room": "Garden view",
@@ -709,7 +725,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T14:30:53.081Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -731,7 +749,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw1vHS1QZI_2JQQVhaYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMVPLYqQ",
+        "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw5_jS1QZI_2JQQVhZYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMb0GOiQ",
         "price": 12671,
         "currency": "PLN",
         "room": "Garden view",
@@ -787,7 +805,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T14:30:53.081Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -809,7 +829,7 @@
       "cheapest": {
         "variantId": "rainbow",
         "operator": "Rainbow",
-        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw1_HS1QZIwoVOUEVYcmACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NWoTNDA0LDQwNyw0MDgsNTIxLDUyOHJBlgGeAZQBFQcXAFgICuQBQOQFEdAsGbMoEMgdTOAZS_I-YQBT40RSAA_q6kAdXiCizZEJDQBfvfr_gQMDDmMBBg3t7GJG",
+        "apiHash": "pHbt0cfaNsuhW9-8IAzh4eAAogER2njFbH7NUsyiqh2chpOAYYz-qb1QuxQH25V7P9SB4qBFJOQlcw6PjS1QZIwoVOUEVYcWACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NWoTNDA0LDQwNyw0MDgsNTIxLDUyOHJBlgGeAZQBFQcXAFgICuQBQOQFEdAsGbMoEMgdTOAZS_I-YQBT40RSAA_q6kAdXiCizZEJDQBfvfr_gQMDDmMBBg3db2v4",
         "price": 12787,
         "currency": "PLN",
         "room": "Junior suita z widokiem na basen",
@@ -865,7 +885,9 @@
       "firstSeen": "2026-09-19",
       "lastChangeAt": "2026-09-23T15:30:53.058Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -887,7 +909,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw1_HS1QZIo2RQQVhyYAJqAzAyWXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHmElLADVMATKywOg3U_JcJIAABhbLQkPOIzKAwAw1jAQAL2tJRAg",
+        "apiHash": "pu4fivscjnQ4pJfSkhhgp5AAogqzb7DRVGXBZHTupAxj4AQi8PvU47v8YC-6AwDzyZL18qBEpPSVAw6fjS1QZIo2RQQVhxYAJqAzAyWXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHmElLADVMATKywOg3U_JcJIAABhbLQkPOIzKAwAw1jAQALeiZGrA",
         "price": 12835,
         "currency": "PLN",
         "room": "Superior room",
@@ -943,7 +965,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T08:30:53.061Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -965,7 +989,7 @@
       "cheapest": {
         "variantId": "exim tours",
         "operator": "Exim Tours",
-        "apiHash": "p-N5Vj9xg96ZLpYpDRCsksAAogqVN3A3sPnzqhNqlMV41tRxBoRXUWerNxRHeDmlcvUqwqBEVYSU0w2PHS1QZI6mRQAVhaYAJqAkFJciEcEY2hBrkE7pk-qwQUG867LBiQgC8B-fuFjwgDAGMBAg1I_Eui",
+        "apiHash": "p-N5Vj9xg96ZLpYpDRCsksAAogqVN3A3sPnzqhNqlMV41tRxBoRXUWerNxRHeDmlcvUqwqBEVYSU0w6vjS1QZI6mRQAVhZYAJqAkFJciEcEY2hBrkE7pk-qwQUG867LBiQgC8B-fuFjwgDAGMBAg0AwPCs",
         "price": 12906,
         "currency": "PLN",
         "room": "Deluxe deluxe triple room",
@@ -1021,7 +1045,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T15:30:53.058Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1050,7 +1076,7 @@
       "cheapest": {
         "variantId": "coral travel",
         "operator": "Coral Travel",
-        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkw2fHS1QZI3bRPUEVYcmADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEbgOQL1hS_JWUABMxD9PAB2WuRAgHBvy-WMNxoXeCAESYwIOYwEGDRYP-EI",
+        "apiHash": "pv94YPD3OJNOgzFzoYsuipAAogVetPBAgwMvyz1H6baRQ0CgAAAABtqAQAiagEAAcABQAqBFdFWlkw6_jS1QZI3bRPUEVYcWADaglFbnRlciBBaXJqBDA5MjVyQp4BlQEfAAIBHAAWBBcCEusCGMAHE6ICFNgEEbgOQL1hS_JWUABMxD9PAB2WuRAgHBvy-WMNxoXeCAESYwIOYwEGDaBoStE",
         "price": 13011,
         "currency": "PLN",
         "room": "Diamond sea view",
@@ -1106,7 +1132,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T11:30:53.103Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1128,7 +1156,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw2vHS1QZI9GRQQVhyYAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVG9qMLGQE_v2xwDDWMBAgzLzF0e",
+        "apiHash": "pyVmDS3R0rqW26Tsi8eEugAAog2uMkp5uJPcgSkZupfL6d-UKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7PjS1QZI9GRQQVhxYAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVG9qMLGQE_v2xwDDWMBAgz0nf-J",
         "price": 13036,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1184,7 +1212,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T10:30:53.080Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1213,7 +1243,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw2_HS1QZIqGZQQVhyYAJyQBoAFQcXAFwDWAVAjwNbvpcBYZg4SwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVHuoMfGQE--4xcDDWMBAgwCi_20",
+        "apiHash": "pL0XRsIBzlNSfkbTcI32ojAAogRXfqyCJ0jHCpFNNlAAJorEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7fjS1QZIqGZQQVhxYAJyQBoAFQcXAFwDWAVAjwNbvpcBYZg4SwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAVHuoMfGQE--4xcDDWMBAgzvIz0R",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój rodzinny 4 os.",
@@ -1269,7 +1299,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T18:30:53.120Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1291,7 +1323,7 @@
       "cheapest": {
         "variantId": "itaka",
         "operator": "Itaka",
-        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw3PHS1QZIqGZQQVhyYAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAU-shN_GQFGfwhMDDWMBAgy6hmsc",
+        "apiHash": "pfR5jdE1Psc4mneDmz_oPDAAog_mUF-9pSU5Ve2S9jRiWynUKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw7vjS1QZIqGZQQVhxYAJyQBoAFQcXAFwDWAVAjwNbwIMBYZZMSwBepzBSpiBTAEz92DkNg9SYCSAAXeSVleyoAU-shN_GQFGfwhMDDWMBAgz3Loo1",
         "price": 13216,
         "currency": "PLN",
         "room": "Pokój 2 os. + 2 dostawki",
@@ -1347,7 +1379,9 @@
       "firstSeen": "2026-09-21",
       "lastChangeAt": "2026-09-23T07:30:53.111Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1369,7 +1403,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pMn4cnBYUSKkkyYt82cDYXAAogor_eyfiP7xwFwiUFD0qXtmoNHdqQY8pgRvpu-4jQzi0qBEpPSVAw3fHS1QZIseBQUEVYcmACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSvBRTABH2AUygujoN1PyXCSAAAY6W9MDjiMygMAMNYwEAC-AQ-jY",
+        "apiHash": "pMn4cnBYUSKkkyYt82cDYXAAogor_eyfiP7xwFwiUFD0qXtmoNHdqQY8pgRvpu-4jQzi0qBEpPSVAw7_jS1QZIseBQUEVYcWACagMwME1yQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBLt8oBYQBepzBSvBRTABH2AUygujoN1PyXCSAAAY6W9MDjiMygMAMNYwEAC6zl2aA",
         "price": 13231,
         "currency": "PLN",
         "room": "Family room",
@@ -1425,7 +1459,9 @@
       "firstSeen": "2026-09-23",
       "lastChangeAt": "2026-09-23T15:30:53.058Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1447,7 +1483,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw3vHS1QZIxWdQQVhyYAJyQxQBFQYXAFwDWAVWAkDKBk_iAV0AW_ICEcXDAUuABGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIwJSZ84jMoDADDWMBAAtlfLlr",
+        "apiHash": "pxAspk2k2XkMprHsdztUCfAAogoOhbj_Vo8rVJ38Y0PtQf1y8PvU47v8YC-6AwDzyZL18qBEpPSVAw8PjS1QZIxWdQQVhxYAJyQxQBFQYXAFwDWAVWAkDKBk_iAV0AW_ICEcXDAUuABGEAXqcwUqYgUwBMrLA6DdT8lwkgAAGIwJSZ84jMoDADDWMBAAuvrp7F",
         "price": 13253,
         "currency": "PLN",
         "room": "Superior pool view",
@@ -1503,7 +1539,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T08:30:53.061Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1525,7 +1563,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw4fHS1QZI68xRUEVYWmACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQALPdc9gA",
+        "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAw8vjS1QZI68xRUEVYWWACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQALAxY5Dw",
         "price": 13369,
         "currency": "PLN",
         "room": "Family deluxe",
@@ -1581,7 +1619,9 @@
       "firstSeen": "2026-09-23",
       "lastChangeAt": "2026-09-23T15:30:53.058Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1603,7 +1643,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAw4_HS1QZI5WhQQViKAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADOYRwu8",
+        "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAw9PjS1QZI5WhQQViJAWACagMwMGZyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwARwBlLyAVhAF6nMEzS0DoN1fyXCSAAAZSg6IiVhsygMAMNYwEADP2cWxY",
         "price": 13413,
         "currency": "PLN",
         "room": "Bungalow",
@@ -1659,7 +1699,9 @@
       "firstSeen": "2026-09-23",
       "lastChangeAt": "2026-09-23T14:30:53.081Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1681,7 +1723,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw5PHS1QZIyGlQQVhyYAJqAzAwTXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHWE1LQDFMATKywOg3U_JcJIAABmcaMmaWJzKAwAw1jAQAM5kraJg",
+        "apiHash": "pJHlOnx9rLzc9oDQ--rZV7AAogem2WBLYNxp4Jaq3L2yiExC8PvU47v8YC-6AwDzyZL18qBEpPSVAw9fjS1QZIyGlQQVhxYAJqAzAwTXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMBHWE1LQDFMATKywOg3U_JcJIAABmcaMmaWJzKAwAw1jAQAMsDNBrA",
         "price": 13512,
         "currency": "PLN",
         "room": "Family room",
@@ -1737,7 +1779,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T08:30:53.061Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1771,7 +1815,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "pkh0KEDC0QCSy8cK1FhUrpAAogEoq07RlaAUwNFDtl0y_cO2oNHdqQY8pgRvpu-4jQzi0qBEpPSVAw5_HS1QZIjmpQQVhyYAJqAzBuSHJDmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMFK8FFMAEYW_AUyR_TgN1PyXCSAAAYGQjLnjiMygMAMNYwEADAcsLKM",
+        "apiHash": "pkh0KEDC0QCSy8cK1FhUrpAAogEoq07RlaAUwNFDtl0y_cO2oNHdqQY8pgRvpu-4jQzi0qBEpPSVAw-PjS1QZIjmpQQVhxYAJqAzBuSHJDmwEUARUGFwBcA1gFVgJAygZP4gFdAEu3ygFhAF6nMFK8FFMAEYW_AUyR_TgN1PyXCSAAAYGQjLnjiMygMAMNYwEADIyPaus",
         "price": 13582,
         "currency": "PLN",
         "room": "Superior garden",
@@ -1827,7 +1871,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T16:30:53.079Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     },
@@ -1849,7 +1895,7 @@
       "cheapest": {
         "variantId": "join up",
         "operator": "Join UP",
-        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw6fHS1QZI6WtQQVhyYAJqAzBGSHJCmwEUARUGFwBcA1gFVgJAygZP4gFdABHDxgFL9ANhAF6nMFKmIFMATKywOg3U_JcJIAABg7b4oLOJzKAwAw1jAQALVJBtpg",
+        "apiHash": "plqW_pWXqvWMRt2U8p7eL9AAogTXWyGr38cp83jSrzHMruXC8PvU47v8YC-6AwDzyZL18qBEpPSVAw-vjS1QZI6WtQQVhxYAJqAzBGSHJCmwEUARUGFwBcA1gFVgJAygZP4gFdABHDxgFL9ANhAF6nMFKmIFMATKywOg3U_JcJIAABg7b4oLOJzKAwAw1jAQALIIS1Ow",
         "price": 13801,
         "currency": "PLN",
         "room": "Deluxe pool view",
@@ -1905,7 +1951,9 @@
       "firstSeen": "2026-09-18",
       "lastChangeAt": "2026-09-23T08:30:53.061Z",
       "lastChangeDate": "2026-09-23",
-      "lastCheckedAt": "2026-09-24T05:44:41.931Z",
+      "lastCheckedAt": "2026-09-24T05:59:55.100Z",
+      "sameSincePrevRun": false,
+      "prevRunAt": "2026-09-24T05:44:41.931Z",
       "soldOutNote": null,
       "soldOutCheaperCount": 0
     }

@@ -109,8 +109,6 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   entry.duration = offer.duration;
   entry.departureDate = offer.departureDate;
   entry.returnDate = offer.returnDate;
-  entry.lastSeen = date;
-  entry.lastSeenAt = at;
   if (!entry.firstSeen) entry.firstSeen = date;
 
   entry.prices = entry.prices || [];
@@ -119,6 +117,20 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   const prev = entry.prices[entry.prices.length - 1];
 
   if (!flat) return; // brak dostępnego wariantu — nie dopisujemy punktu
+
+  // Porównanie ze SPRAWDZENIEM (zrzutem) sprzed tego uruchomienia.
+  // entry.lastSeenPrice/lastSeenAt trzymamy z każdego przebiegu (nie tylko przy
+  // zmianie), więc pozwala odpowiedzieć: "czy cena drgnęła od ostatniego razu".
+  const prevSeenPrice = entry.lastSeenPrice ?? null;
+  const prevSeenAt = entry.lastSeenAt ?? null;
+  entry.changedSincePrevRun = prevSeenPrice != null && prevSeenPrice !== flat.price;
+  entry.prevSeenPrice = prevSeenPrice;
+  entry.prevSeenAt = prevSeenAt;
+
+  // Aktualizacja znaczników "ostatnio widziane" — KAŻDY przebieg.
+  entry.lastSeen = date;
+  entry.lastSeenAt = at;
+  entry.lastSeenPrice = flat.price;
 
   // Czy coś realnego się zmieniło od ostatniego punktu? Zapisujemy punkt tylko
   // przy zmianie CENY lub BIURA — inaczej baza puchłaby przy częstych przebiegach.
@@ -197,6 +209,9 @@ function buildLatest(history, currentResults, date) {
     const lastChangeDate = lastPoint ? lastPoint.date || null : null;
     // Kiedy oferta była ostatnio sprawdzona (niezależnie od zmiany ceny).
     const lastCheckedAt = entry ? entry.lastSeenAt || null : null;
+    // Porównanie z POPRZEDNIM ZRZUTEM: czy cena drgnęła od ostatniego sprawdzenia.
+    const sameSincePrevRun = entry ? entry.changedSincePrevRun === false && entry.prevSeenPrice != null : false;
+    const prevRunAt = entry ? entry.prevSeenAt || null : null;
 
     offers.push({
       key: r.offer.key,
@@ -227,6 +242,8 @@ function buildLatest(history, currentResults, date) {
       lastChangeAt,
       lastChangeDate,
       lastCheckedAt,
+      sameSincePrevRun,
+      prevRunAt,
       soldOutNote: variantChangedToday
         ? lastChange.reason
         : null,

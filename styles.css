@@ -231,7 +231,8 @@ body {
 }
 /* Notki o ostatnim zrzucie: poprzednia cena i kiedy sprawdzono. */
 .snap-prev,
-.snap-checked {
+.snap-checked,
+.snap-same {
   display: block;
   font-size: 0.7rem;
   color: var(--text-dim);
@@ -239,6 +240,8 @@ body {
   line-height: 1.3;
 }
 .snap-checked { opacity: 0.8; }
+/* "tyle samo co ostatnio" — lekko wyróżnione, ale nienachalne. */
+.snap-same { color: var(--accent); opacity: 0.85; }
 
 /* Disappeared */
 .disappeared { margin-bottom: 40px; }

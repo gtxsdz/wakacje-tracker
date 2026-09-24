@@ -119,19 +119,26 @@ function changeMarkup(o) {
     ? `<span class="snap-checked" title="Ostatnie sprawdzenie ceny">🕒 sprawdzono ${fmtWhen(o.lastCheckedAt)}</span>`
     : "";
 
+  // Znacznik: czy cena jest taka sama jak przy POPRZEDNIM sprawdzeniu (zrzucie).
+  // Niezależne od `change` (które liczy różnicę względem ostatniej INNEJ ceny).
+  const sameNote = o.sameSincePrevRun
+    ? `<span class="snap-same">= tyle samo co przy ostatnim sprawdzeniu</span>`
+    : "";
+
   // Nowa oferta — brak poprzedniego pomiaru.
   if (o.change == null) {
-    return `<span class="change flat">nowa oferta</span>${checked}`;
+    return `<span class="change flat">nowa oferta</span>${sameNote}${checked}`;
   }
 
-  // Cena identyczna jak przy ostatniej zmianie — podkreślamy "bez zmian"
-  // i pokazujemy, od kiedy (konkretna data/godzina) cena się trzyma.
+  // Cena identyczna względem ostatniej zmiany (rzadkie — praktycznie tylko przy 1 pkt).
   if (o.change === 0) {
     const since = o.lastChangeAt ? fmtWhen(o.lastChangeAt) : o.lastChangeDate || "";
     const sinceTxt = since ? ` od ${since}` : "";
     return `<span class="change flat">→ bez zmian${sinceTxt}</span>${checked}`;
   }
 
+  // Cena różni się od ostatniej INNEJ ceny — pokazujemy kierunek i wielkość.
+  // Jeśli mimo to od ostatniego zrzutu nic się nie ruszyło, dokładamy notkę "sameNote".
   const down = o.change < 0;
   const arrow = down ? "▼" : "▲";
   const sign = down ? "" : "+";
@@ -140,7 +147,7 @@ function changeMarkup(o) {
     o.prevPrice != null
       ? `<span class="snap-prev">poprzednio ${fmtPrice(o.prevPrice)}</span>`
       : "";
-  return `<span class="change ${down ? "down" : "up"}">${arrow} ${sign}${fmtPrice(o.change)}${pct}</span>${prev}${checked}`;
+  return `<span class="change ${down ? "down" : "up"}">${arrow} ${sign}${fmtPrice(o.change)}${pct}</span>${sameNote}${prev}${checked}`;
 }
 
 /** Blok z rozkładem lotu wariantu. */
@@ -283,6 +290,7 @@ function openModal(key) {
     { l: "Wariantów teraz", v: String(offer.variantCount ?? "—") },
     { l: "Ostatnia zmiana ceny", v: offer.lastChangeAt ? fmtWhen(offer.lastChangeAt) : (offer.lastChangeDate || "—") },
     { l: "Sprawdzono", v: offer.lastCheckedAt ? fmtWhen(offer.lastCheckedAt) : "—" },
+    { l: "Od ostatniego sprawdzenia", v: offer.sameSincePrevRun ? "bez zmian" : (offer.change ? (offer.change < 0 ? "▼ spadek" : "▲ wzrost") : "—") },
   ];
   $("#modal-stats").innerHTML = stats
     .map((s) => `<div class="stat"><div class="l">${s.l}</div><div class="v">${s.v}</div></div>`)

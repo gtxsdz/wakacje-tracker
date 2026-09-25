@@ -85,22 +85,25 @@ function renderMeta() {
 
 function renderSummary() {
   const offers = state.latest.offers;
-  const changed = offers.filter((o) => o.change != null && o.change !== 0);
-  const drops = changed.filter((o) => o.change < 0);
-  const rises = changed.filter((o) => o.change > 0);
+  const today = state.latest.date; // "YYYY-MM-DD"
+
+  // Spadki i wzrosty liczymy tylko z DZISIEJSZEGO dnia — zmiana musi być odnotowana
+  // dziś (lastChangeDate = today), żeby nie pokazywać stale „10 spadków" z poprzednich dni.
+  const todayDrops = offers.filter((o) => o.change != null && o.change < 0 && o.lastChangeDate === today);
+  const todayRises = offers.filter((o) => o.change != null && o.change > 0 && o.lastChangeDate === today);
   const soldOut = offers.filter((o) => o.soldOutNote);
   const lowest = offers.length
     ? offers.reduce((a, b) => ((a.price ?? Infinity) <= (b.price ?? Infinity) ? a : b))
     : null;
-  const biggestDrop = drops.length
-    ? drops.reduce((a, b) => (a.change <= b.change ? a : b))
+  const biggestDrop = todayDrops.length
+    ? todayDrops.reduce((a, b) => (a.change <= b.change ? a : b))
     : null;
 
   const cards = [
     { label: "Najtańsza teraz", value: lowest ? fmtPrice(lowest.price) : "—", cls: "" },
-    { label: "Spadki", value: String(drops.length), cls: drops.length ? "down" : "" },
-    { label: "Wzrosty", value: String(rises.length), cls: rises.length ? "up" : "" },
-    { label: "Największy spadek", value: biggestDrop ? fmtPrice(biggestDrop.change) : "—", cls: biggestDrop ? "down" : "" },
+    { label: "Spadki dziś", value: String(todayDrops.length), cls: todayDrops.length ? "down" : "" },
+    { label: "Wzrosty dziś", value: String(todayRises.length), cls: todayRises.length ? "up" : "" },
+    { label: "Największy spadek dziś", value: biggestDrop ? fmtPrice(biggestDrop.change) : "—", cls: biggestDrop ? "down" : "" },
     { label: "Zmiany biura", value: String(soldOut.length), cls: soldOut.length ? "up" : "" },
   ];
 
@@ -119,6 +122,11 @@ function renderSummary() {
 //  'up'     — cena wyższa niż poprzednio → czerwony
 //  'none'   — brak danych do porównania (nowa oferta / bez zmian od zawsze)
 function priceState(o) {
+  // Gdy cena jest ekstremum (min/max z historii) — ramkę i sygnał wizualny dają
+  // klasy extreme-low/extreme-high + puls. Nie nakładamy dodatkowo koloru stanu,
+  // żeby pomarańczowy "stable" nie przykrywał pulsującego ekstremum.
+  const hasRange = o.minPrice != null && o.maxPrice != null && o.minPrice !== o.maxPrice && o.pointCount > 1;
+  if (hasRange && (o.price <= o.minPrice || o.price >= o.maxPrice)) return "none";
   if (o.stable) return "stable";
   if (o.change == null || o.change === 0) return "none";
   return o.change < 0 ? "down" : "up";

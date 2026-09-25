@@ -103,7 +103,7 @@ function renderSummary() {
     { label: "Najtańsza teraz", value: lowest ? fmtPrice(lowest.price) : "—", cls: "" },
     { label: "Spadki dziś", value: String(todayDrops.length), cls: todayDrops.length ? "down" : "" },
     { label: "Wzrosty dziś", value: String(todayRises.length), cls: todayRises.length ? "up" : "" },
-    { label: "Największy spadek dziś", value: biggestDrop ? fmtPrice(biggestDrop.change) : "—", cls: biggestDrop ? "down" : "" },
+    { label: "Największy spadek", value: biggestDrop ? fmtPrice(biggestDrop.change) : "—", cls: biggestDrop ? "down" : "" },
     { label: "Zmiany biura", value: String(soldOut.length), cls: soldOut.length ? "up" : "" },
   ];
 

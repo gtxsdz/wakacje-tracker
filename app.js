@@ -122,12 +122,11 @@ function renderSummary() {
 //  'up'     — cena wyższa niż poprzednio → czerwony
 //  'none'   — brak danych do porównania (nowa oferta / bez zmian od zawsze)
 function priceState(o) {
-  // Gdy cena jest ekstremum (min/max z historii) — ramkę i sygnał wizualny dają
-  // klasy extreme-low/extreme-high + puls. Nie nakładamy dodatkowo koloru stanu,
-  // żeby pomarańczowy "stable" nie przykrywał pulsującego ekstremum.
+  // stable ma wyższy priorytet: 3+ identyczne odczyty → pomarańczowa ramka,
+  // bez pulsowania ramki. Badge extremum (min/max) nadal pulsuje niezależnie.
+  if (o.stable) return "stable";
   const hasRange = o.minPrice != null && o.maxPrice != null && o.minPrice !== o.maxPrice && o.pointCount > 1;
   if (hasRange && (o.price <= o.minPrice || o.price >= o.maxPrice)) return "none";
-  if (o.stable) return "stable";
   if (o.change == null || o.change === 0) return "none";
   return o.change < 0 ? "down" : "up";
 }
@@ -240,7 +239,7 @@ function offerCard(o) {
     : "";
 
   return `
-    <article class="offer-card state-${priceState(o)} ${extremeClass}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
+    <article class="offer-card state-${priceState(o)} ${extremeClass}${o.stable ? " is-stable" : ""}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
       <div class="offer-main">
         <h3 class="hotel">${o.hotel}</h3>
         <p class="region">${o.region || ""}</p>

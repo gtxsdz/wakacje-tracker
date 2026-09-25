@@ -267,6 +267,10 @@ body {
   .badge-lowest.pulse,
   .badge-highest.pulse { animation: none; }
 }
+/* Cena zastygła (3+ te same odczyty): ramka karty nie pulsuje,
+   ale badge nadal pulsuje — żeby wiadomo było że to nadal min/max. */
+.offer-card.is-stable.extreme-low,
+.offer-card.is-stable.extreme-high { animation: none; }
 /* Notki o ostatnim zrzucie: poprzednia cena i kiedy sprawdzono. */
 .snap-prev,
 .snap-checked,

@@ -1016,12 +1016,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9363,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 9363,
-      "sameRunStreak": 3
+      "sameRunStreak": 4
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -1836,14 +1836,64 @@
             }
           },
           "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-25",
+          "at": "2026-09-25T14:30:53.065Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pPAhLjJLVFqhFUsP4Xy5N-AAogs7fped7Xgd8ZbtIx12bT7y8PvU47v8YC-6AwDzyZL18qBEpPSVAwoova1QZI5khQQVhRYAJqA0NHbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdABGlxgFLkgRhAF6nMFKmIFMATKywOg3U_JcJIAABhL6MkIWJzKAwAw1jAQALJeLVTA",
+          "price": 9318,
+          "currency": "PLN",
+          "room": "Standard room",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7345",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "02:05"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "07:10"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El Sheikh",
+              "city": "Sharm El Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "23:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "03:10"
+            }
+          },
+          "label": "Standard room • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": true,
-      "prevSeenPrice": 10643,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "lastSeenPrice": 10282,
+      "prevSeenPrice": 10282,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenPrice": 9318,
       "sameRunStreak": 1
     },
     "hotel-20313": {
@@ -2985,12 +3035,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11411,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11411,
-      "sameRunStreak": 2
+      "sameRunStreak": 3
     },
     "hotel-30896": {
       "offerId": 1166735,
@@ -3958,12 +4008,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 11209,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 10848,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 10848,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-20196": {
       "offerId": 1050343,
@@ -5082,12 +5132,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 13656,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 13656,
-      "sameRunStreak": 2
+      "sameRunStreak": 3
     },
     "hotel-23085": {
       "offerId": 1166540,
@@ -6122,12 +6172,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10506,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 10506,
-      "sameRunStreak": 3
+      "sameRunStreak": 4
     },
     "hotel-6218": {
       "offerId": 1166973,
@@ -6595,12 +6645,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 11627,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 11266,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11266,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-23785": {
       "offerId": 815532,
@@ -7444,12 +7494,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 10216,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 9616,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 9616,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-1086": {
       "offerId": 1027388,
@@ -7717,12 +7767,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 12906,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 12906,
-      "sameRunStreak": 18
+      "sameRunStreak": 19
     },
     "hotel-67092": {
       "offerId": 1166936,
@@ -9014,12 +9064,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11252,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11252,
-      "sameRunStreak": 2
+      "sameRunStreak": 3
     },
     "hotel-17532": {
       "offerId": 768830,
@@ -9548,12 +9598,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 12258,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 13411,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 13411,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -10821,12 +10871,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11061,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11061,
-      "sameRunStreak": 6
+      "sameRunStreak": 7
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -11244,12 +11294,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 11886,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 11525,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11525,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-1679": {
       "offerId": 1166464,
@@ -11748,12 +11798,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 12175,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 11814,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11814,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-15278": {
       "offerId": 1166543,
@@ -12321,12 +12371,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11252,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11252,
-      "sameRunStreak": 2
+      "sameRunStreak": 3
     },
     "hotel-45236": {
       "offerId": 813153,
@@ -13403,12 +13453,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 12671,
-      "prevSeenAt": "2026-09-25T11:30:53.090Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 11739,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 11739,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-10838": {
       "offerId": 1166500,
@@ -14347,12 +14397,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 9916,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 9316,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 9316,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-27771": {
       "offerId": 725111,
@@ -14366,7 +14416,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "firstSeen": "2026-09-19",
       "prices": [
         {
@@ -15471,11 +15521,11 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 9991,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 10555,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 10555,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-8684": {
       "offerId": 412468,
@@ -15489,7 +15539,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -15844,11 +15894,11 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 10816,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 10216,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 10216,
-      "sameRunStreak": 1
+      "sameRunStreak": 2
     },
     "hotel-20321": {
       "offerId": 1166816,
@@ -15862,7 +15912,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -16169,9 +16219,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12915,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 12915,
-      "sameRunStreak": 3
+      "sameRunStreak": 4
     },
     "hotel-18520": {
       "offerId": 1166792,
@@ -16185,7 +16235,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -16637,14 +16687,64 @@
             }
           },
           "label": "Family deluxe • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-25",
+          "at": "2026-09-25T14:30:53.065Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pqrAbbFmOSVYgMHP3nJlDkAAog50AvBpicTczYSbsiKbhrh61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwsova1QZI29ZHUEVYOWACagMxelVyQZsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwBLiB9hABE_XugvTNLQOg3T_JcJIAABi7rYgLWGzKAwAw1jAQALhOpoMA",
+          "price": 11744,
+          "currency": "PLN",
+          "room": "Family deluxe",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Family deluxe • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": false,
+      "changedSincePrevRun": true,
       "prevSeenPrice": 11748,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "lastSeenPrice": 11748,
-      "sameRunStreak": 3
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenPrice": 11744,
+      "sameRunStreak": 1
     },
     "hotel-16891": {
       "offerId": 1166390,
@@ -16881,7 +16981,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -17138,9 +17238,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 10814,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeenPrice": 10814,
-      "sameRunStreak": 3
+      "sameRunStreak": 4
     },
     "hotel-20356": {
       "offerId": 1166822,
@@ -17359,11 +17459,11 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12668,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 12668,
-      "sameRunStreak": 2
+      "sameRunStreak": 3
     },
     "hotel-9818": {
       "offerId": 1178749,
@@ -17530,12 +17630,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 13752,
-      "prevSeenAt": "2026-09-25T11:30:53.090Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 12521,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 12521
     },
     "hotel-28697": {
@@ -17826,12 +17926,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 13884,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 13082,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 13082
     },
     "hotel-22203": {
@@ -18172,12 +18272,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 13329,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 12968,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 12968
     },
     "hotel-15396": {
@@ -18345,12 +18445,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 13405,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 13044,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 13044
     },
     "hotel-32886": {
@@ -18468,12 +18568,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 13604,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 13243,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 13243
     },
     "hotel-35569": {
@@ -18593,10 +18693,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 13317,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "sameRunStreak": 2,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 3,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 13317
     },
     "hotel-16478": {
@@ -18666,10 +18766,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 13877,
-      "prevSeenAt": "2026-09-25T12:30:53.106Z",
-      "sameRunStreak": 2,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 3,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 13877
     },
     "hotel-16190": {
@@ -18738,14 +18838,14 @@
       ],
       "variantChanges": [],
       "changedSincePrevRun": false,
-      "prevSeenPrice": null,
-      "prevSeenAt": null,
-      "sameRunStreak": 1,
+      "prevSeenPrice": 13919,
+      "prevSeenAt": "2026-09-25T13:30:53.129Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-25",
-      "lastSeenAt": "2026-09-25T13:30:53.129Z",
+      "lastSeenAt": "2026-09-25T14:30:53.065Z",
       "lastSeenPrice": 13919
     }
   },
-  "lastUpdated": "2026-09-25T13:30:53.129Z",
+  "lastUpdated": "2026-09-25T14:30:53.065Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

@@ -18,6 +18,7 @@ import {
   DATA_DIR,
   LISTING_URL,
   SEARCH_QUERY,
+  AIRPORTS,
 } from "./config.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -162,6 +163,13 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   if (prev && !priceChanged && !operatorChanged) return;
 
   entry.prices.push({ date, at, ...flat });
+
+  // Zabezpieczenie przed niekontrolowanym rozrastaniem się history.json.
+  // Zbieramy co godzinę — 500 punktów to ~3 tygodnie częstych zmian.
+  const MAX_HISTORY_POINTS = 500;
+  if (entry.prices.length > MAX_HISTORY_POINTS) {
+    entry.prices = entry.prices.slice(-MAX_HISTORY_POINTS);
+  }
 }
 
 /** Buduje snapshot latest.json ze zmianami cen. */
@@ -295,6 +303,12 @@ function buildLatest(history, currentResults, date) {
  * (różni operatorzy). Zostawiamy jeden wynik na hotel — ten z najtańszym
  * wybranym wariantem. Klucz historii ustawiamy na hotel-{hotelId}, żeby historia
  * była spójna niezależnie od tego, przez którego operatora hotel akurat jest tani.
+ *
+ * KLUCZE (Fix 12): parse.js generuje klucz wejściowy offer-{offerId} (per oferta/operator).
+ * Ta funkcja konsoliduje oferty per hotel i zamienia klucz na hotel-{hotelId} —
+ * dzięki temu historia cen hotelu jest ciągła, nawet gdy najtańszy operator
+ * zmienia się w czasie (np. Coral -> Itaka). Klucz hotel-{hotelId} jest
+ * zapisywany w history.json.
  */
 function collapseByHotel(results) {
   const byHotel = new Map();
@@ -336,22 +350,6 @@ function altInfo(r) {
     price: r.chosen ? r.chosen.price : null,
   };
 }
-
-// Kod lotniska (IATA) -> slug miasta wylotu w URL wakacje.pl.
-const AIRPORT_SLUG = {
-  KTW: "katowic",
-  WAW: "warszawy",
-  WMI: "warszawy",
-  WRO: "wroclawia",
-  POZ: "poznania",
-  LCJ: "lodzi",
-  GDN: "gdanska",
-  KRK: "krakowa",
-  RZE: "rzeszowa",
-  SZZ: "szczecina",
-  BZG: "bydgoszczy",
-  LUZ: "lublina",
-};
 
 /** Slug wyżywienia w URL (serwis 1 = all inclusive). */
 function serviceSlug(serviceId) {
@@ -411,7 +409,7 @@ function buildDetailUrl(offer, chosen) {
   if (svc) parts.push(svc);
 
   const airport = chosen?.departureCode || chosen?.outbound?.from?.airportCode;
-  const slug = airport ? AIRPORT_SLUG[airport] : null;
+  const slug = airport ? AIRPORTS[airport]?.slug : null;
   if (slug) parts.push(`z-${slug}`);
 
   // Skład osób: 2 dorosłych + 2 dzieci z datami urodzenia (zgodnie z filtrem).

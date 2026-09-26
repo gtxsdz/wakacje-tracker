@@ -1,56 +1,10 @@
 // Parser listingu wakacje.pl.
 //
-// Strona osadza w HTML czysty JSON z ofertami (React Query cache):
-//   "offers":{"data":[ { ...oferta... }, ... ]}
-// Parsujemy tę tablicę zamiast kruchego HTML-a (klasy CSS są hashowane).
-// Z każdej oferty wyciągamy pola potrzebne do wywołania API wariantów wylotów.
-
-/**
- * Znajduje i parsuje tablicę ofert osadzoną w HTML.
- * Zwraca surowe obiekty ofert (jak w JSON serwisu) albo [] gdy nie znaleziono.
- */
-export function extractRawOffers(html) {
-  const marker = '"offers":{"data":[';
-  const at = html.indexOf(marker);
-  if (at === -1) return [];
-
-  // Początek tablicy = pozycja '[' po markerze.
-  const arrStart = at + marker.length - 1; // wskazuje na '['
-  const jsonArray = scanBalanced(html, arrStart, "[", "]");
-  if (!jsonArray) return [];
-
-  try {
-    return JSON.parse(jsonArray);
-  } catch {
-    return [];
-  }
-}
-
-/**
- * Skanuje zbalansowany fragment (nawiasy), respektując stringi JSON.
- * Zwraca podłańcuch od openIdx do pasującego domknięcia (włącznie) lub null.
- */
-function scanBalanced(str, openIdx, openCh, closeCh) {
-  let depth = 0;
-  let inStr = false;
-  let esc = false;
-  for (let i = openIdx; i < str.length; i++) {
-    const ch = str[i];
-    if (inStr) {
-      if (esc) esc = false;
-      else if (ch === "\\") esc = true;
-      else if (ch === '"') inStr = false;
-      continue;
-    }
-    if (ch === '"') inStr = true;
-    else if (ch === openCh) depth++;
-    else if (ch === closeCh) {
-      depth--;
-      if (depth === 0) return str.slice(openIdx, i + 1);
-    }
-  }
-  return null;
-}
+// Parser i normalizator obiektów ofert wakacje.pl.
+//
+// Uwaga: dawniej oferty były parsowane bezpośrednio z HTML (metodami extractRawOffers / scanBalanced).
+// Obecnie listing.js pobiera oferty bezpośrednio z JSON Search API wakacje.pl,
+// a parse.js odpowiada za ich normalizację (normalizeOffer) i generowanie kluczy (makeOfferKey).
 
 /** Kod dostawcy z offerHash, np. "JOIP:188808" -> "JOIP". */
 function providerFromHash(offerHash) {
@@ -62,6 +16,13 @@ function providerFromHash(offerHash) {
 /**
  * Buduje stabilny klucz oferty na podstawie identyfikatorów serwisu.
  * Preferujemy offerId (stabilny), z fallbackiem na hotelId+termin.
+ *
+ * KLUCZE (Fix 12):
+ * - normalizeOffer generuje klucz początkowy `offer-{offerId}` (per wariant/operator).
+ * - scrape.js (funkcja collapseByHotel) konsoliduje oferty per hotel i zamienia klucz
+ *   na `hotel-{hotelId}` — dzięki temu historia cen hotelu jest ciągła, nawet gdy
+ *   najtańszy operator zmienia się w czasie (np. Coral -> Itaka).
+ * - Klucz `hotel-{hotelId}` jest zapisywany w history.json.
  */
 export function makeOfferKey(o) {
   if (o.offerId) return `offer-${o.offerId}`;
@@ -140,12 +101,4 @@ export function normalizeOffer(raw) {
   return offer;
 }
 
-/** Parsuje listing i zwraca znormalizowane oferty. */
-export function parseOffers(html) {
-  const raw = extractRawOffers(html);
-  return raw
-    .filter((o) => o && (o.offerId || o.hotelId))
-    .map(normalizeOffer);
-}
-
-export default { parseOffers, extractRawOffers, normalizeOffer, makeOfferKey };
+export default { normalizeOffer, makeOfferKey };

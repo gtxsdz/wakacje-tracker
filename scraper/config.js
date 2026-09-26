@@ -52,3 +52,21 @@ export const REQUEST_DELAY_MS = 1500;
 export const DATA_DIR = "data";
 export const HISTORY_FILE = "data/history.json";
 export const LATEST_FILE = "data/latest.json";
+
+// Kod lotniska (IATA) -> { id: ID w API wyszukiwarki, slug: część URL wakacje.pl }.
+// id: null = lotnisko pominięte w filtrze API (np. Modlin jako alias Warszawy).
+// Jedno źródło prawdy — zastępuje lokalny AIRPORT_SLUG w scrape.js.
+export const AIRPORTS = {
+  KTW: { id: 2622, slug: "katowic" },
+  LCJ: { id: 2654, slug: "lodzi" },
+  POZ: { id: 2632, slug: "poznania" },
+  WAW: { id: 278,  slug: "warszawy" },
+  WMI: { id: null, slug: "warszawy" }, // Modlin — alias Warszawy, bez osobnego ID w API
+  WRO: { id: 256,  slug: "wroclawia" },
+  GDN: { id: 2620, slug: "gdanska" },
+  KRK: { id: 2624, slug: "krakowa" },
+  RZE: { id: 2638, slug: "rzeszowa" },
+  SZZ: { id: 2640, slug: "szczecina" },
+  BZG: { id: 2618, slug: "bydgoszczy" },
+  LUZ: { id: null, slug: "lublina" },  // Lublin — bez ID w API wakacje.pl
+};

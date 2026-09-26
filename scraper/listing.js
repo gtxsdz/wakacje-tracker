@@ -6,10 +6,9 @@
 
 import { postJson } from "./http.js";
 import { normalizeOffer } from "./parse.js";
-import { SEARCH_API, SEARCH_QUERY } from "./config.js";
+import { SEARCH_API, SEARCH_QUERY, MAX_PAGES } from "./config.js";
 
 const PAGE_SIZE = 10;
-const MAX_PAGES = 30; // bezpiecznik
 
 function buildBody(pageNumber) {
   return [

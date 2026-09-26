@@ -1,6 +1,10 @@
 // Uruchamia scraper, a następnie commituje i wypycha zmiany w data/ do repo.
-// Przeznaczony do uruchamiania lokalnie (z domowego IP), cyklicznie przez
-// Harmonogram zadań Windows lub cron/systemd na Linuksie.
+// Uruchamia scraper, a następnie commituje i wypycha zmiany w data/ do repo.
+//
+// Przeznaczenie:
+//   - Wywołania ręczne / Harmonogram zadań Windows: node scraper/push.js
+//   - Serwer Linux (systemd timer): używa automation/scrape-deploy.sh,
+//     który wywołuje scraper/scrape.js bezpośrednio (bez tego pliku).
 //
 // Uruchomienie: node scraper/push.js   (albo: npm run push)
 //

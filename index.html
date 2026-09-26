@@ -36,6 +36,7 @@
         <select id="sort">
           <option value="price-asc">Cena rosnąco</option>
           <option value="price-desc">Cena malejąco</option>
+          <option value="recent-change">Ostatnio zmienione ceny</option>
           <option value="change-asc">Największe spadki</option>
           <option value="change-desc">Największe wzrosty</option>
           <option value="rating-desc">Ocena malejąco</option>
@@ -81,7 +82,13 @@
       </div>
       <div id="modal-stats" class="modal-stats"></div>
       <div id="modal-changes" class="modal-changes" hidden></div>
-      <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noopener" hidden>Otwórz ofertę na wakacje.pl ↗</a>
+      <div class="modal-actions">
+        <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noopener" hidden>Otwórz ofertę na wakacje.pl ↗</a>
+        <div class="modal-export-btns">
+          <button id="modal-copy-btn" class="btn-secondary" type="button">📋 Kopiuj historię</button>
+          <button id="modal-csv-btn" class="btn-secondary" type="button">📥 Pobierz CSV</button>
+        </div>
+      </div>
     </div>
   </div>
 

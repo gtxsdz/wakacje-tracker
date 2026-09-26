@@ -2,7 +2,7 @@
 // Czyta data/latest.json (najtańszy wariant per oferta + zmiany) oraz
 // data/history.json (szeregi cen do wykresów).
 
-const state = { latest: null, history: null, chart: null };
+const state = { latest: null, history: null, chart: null, currentModalOffer: null, currentModalPoints: null };
 const $ = (s) => document.querySelector(s);
 
 const fmtPrice = (n) =>
@@ -57,7 +57,8 @@ function humanAge(min) {
 // Heartbeat: dane powinny odświeżać się co godzinę (timer 8:30–22:30).
 // Jeśli są starsze niż STALE_AFTER_MIN, scraper prawdopodobnie nie działa
 // (blokada anty-bot, serwer offline, padnięty timer) — pokazujemy ostrzeżenie.
-const STALE_AFTER_MIN = 90; // ~1,5 cyklu godzinowego tolerancji
+// 660 min (~11h) = 10h nocnej przerwy (22:30→8:30) + 1h buforu (Fix 1).
+const STALE_AFTER_MIN = 660;
 
 function renderMeta() {
   const { generatedAt, count, sourceUrl } = state.latest;
@@ -269,6 +270,11 @@ function getFilteredSorted() {
   const cmp = {
     "price-asc": (a, b) => (a.price ?? Infinity) - (b.price ?? Infinity),
     "price-desc": (a, b) => (b.price ?? -Infinity) - (a.price ?? -Infinity),
+    "recent-change": (a, b) => {
+      const tA = a.lastChangeAt ? new Date(a.lastChangeAt).getTime() : (a.lastChangeDate ? new Date(a.lastChangeDate).getTime() : 0);
+      const tB = b.lastChangeAt ? new Date(b.lastChangeAt).getTime() : (b.lastChangeDate ? new Date(b.lastChangeDate).getTime() : 0);
+      return tB - tA;
+    },
     "change-asc": (a, b) => (a.change ?? 0) - (b.change ?? 0),
     "change-desc": (a, b) => (b.change ?? 0) - (a.change ?? 0),
     "rating-desc": (a, b) => (b.rating ?? 0) - (a.rating ?? 0),
@@ -360,12 +366,70 @@ function openModal(key) {
   if (offer.detailUrl) { link.hidden = false; link.href = offer.detailUrl; }
   else link.hidden = true;
 
+  // Zapamiętaj ofertę i punkty do eksportu CSV (Fix 11).
+  state.currentModalOffer = offer;
+  state.currentModalPoints = points;
+
   $("#modal").hidden = false;
 }
 
 function closeModal() {
   $("#modal").hidden = true;
   if (state.chart) { state.chart.destroy(); state.chart = null; }
+  state.currentModalOffer = null;
+  state.currentModalPoints = null;
+}
+
+// ---- Eksport historii cen (Fix 11) ----
+function buildPointsCsv(offer, points) {
+  const headers = ["Data", "Godzina", "Cena_PLN", "Biuro", "Pokoj", "Lotnisko"];
+  const rows = (points || []).map((p) => {
+    let date = p.date || "";
+    let time = "";
+    if (p.at) {
+      const d = new Date(p.at);
+      date = d.toISOString().slice(0, 10);
+      time = d.toTimeString().slice(0, 5);
+    }
+    const price = p.price ?? "";
+    const op = (p.operator || "").replace(/"/g, '""');
+    const room = (p.room || "").replace(/"/g, '""');
+    const dep = p.departureCode || "";
+    return `"${date}","${time}",${price},"${op}","${room}","${dep}"`;
+  });
+  return [headers.join(","), ...rows].join("\r\n");
+}
+
+async function copyModalHistory() {
+  if (!state.currentModalPoints || !state.currentModalOffer) return;
+  const csv = buildPointsCsv(state.currentModalOffer, state.currentModalPoints);
+  const btn = $("#modal-copy-btn");
+  try {
+    await navigator.clipboard.writeText(csv);
+    if (btn) {
+      const orig = btn.textContent;
+      btn.textContent = "✓ Skopiowano!";
+      btn.classList.add("copied");
+      setTimeout(() => { btn.textContent = orig; btn.classList.remove("copied"); }, 2000);
+    }
+  } catch (err) {
+    console.error("Błąd kopiowania do schowka:", err);
+  }
+}
+
+function downloadModalCsv() {
+  if (!state.currentModalPoints || !state.currentModalOffer) return;
+  const csv = buildPointsCsv(state.currentModalOffer, state.currentModalPoints);
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  const hotelSafe = (state.currentModalOffer.hotel || "hotel").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  link.href = url;
+  link.download = `historia-cen-${hotelSafe}.csv`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 }
 
 // Etykieta osi X: data + godzina jeśli punkt ma znacznik czasu (at),
@@ -468,6 +532,12 @@ function wireEvents() {
   });
   document.querySelectorAll("[data-close]").forEach((el) => el.addEventListener("click", closeModal));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+  // Eksport historii cen z modala (Fix 11).
+  const copyBtn = $("#modal-copy-btn");
+  if (copyBtn) copyBtn.addEventListener("click", copyModalHistory);
+  const csvBtn = $("#modal-csv-btn");
+  if (csvBtn) csvBtn.addEventListener("click", downloadModalCsv);
 }
 
 async function init() {
@@ -478,6 +548,16 @@ async function init() {
     renderOffers();
     renderDisappeared();
     wireEvents();
+
+    // Automatyczne odświeżanie danych w tle co 10 minut (Fix 7).
+    setInterval(async () => {
+      try {
+        await loadData();
+        renderMeta(); renderSummary(); renderOffers(); renderDisappeared();
+      } catch (err) {
+        console.warn("Błąd okresowego odświeżania danych:", err);
+      }
+    }, 10 * 60 * 1000);
   } catch (err) {
     console.error(err);
     $("#offers").innerHTML = `<div class="state error">Nie udało się wczytać danych.<br>${err.message}<br><br>Uruchom scraper (npm run scrape).</div>`;

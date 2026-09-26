@@ -555,12 +555,41 @@ body {
 }
 .modal-link {
   display: inline-block;
-  margin-top: 16px;
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
 }
 .modal-link:hover { text-decoration: underline; }
+
+/* Kontener przycisków akcji na dole modala (link + eksport CSV). */
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.modal-export-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 13px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.btn-secondary:hover { border-color: var(--accent); color: var(--text); }
+.btn-secondary:active { transform: translateY(1px); }
+.btn-secondary.copied { border-color: var(--down); color: var(--down); }
 
 .alt-offers {
   margin-top: 6px;

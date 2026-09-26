@@ -1416,12 +1416,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 8873,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 8873,
-      "sameRunStreak": 4
+      "sameRunStreak": 5,
+      "minSeenPrice": 8820,
+      "maxSeenPrice": 11656
     },
     "hotel-7231": {
       "offerId": 1166986,
@@ -2439,12 +2441,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9042,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 9042,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 9018,
+      "maxSeenPrice": 12992
     },
     "hotel-20313": {
       "offerId": 254866,
@@ -3224,8 +3228,8 @@
       "hotel": "Rewaya Majestic Resort",
       "region": "Egipt / Hurghada",
       "stars": 5,
-      "rating": 8.5,
-      "opinions": 261,
+      "rating": 8.4,
+      "opinions": 262,
       "operator": "Join UP",
       "duration": 7,
       "departureDate": "2026-09-29",
@@ -3685,12 +3689,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10925,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10925,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 10869,
+      "maxSeenPrice": 12765
     },
     "hotel-30896": {
       "offerId": 1166735,
@@ -4858,12 +4864,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9600,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 9600,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 9583,
+      "maxSeenPrice": 13557
     },
     "hotel-20196": {
       "offerId": 1050343,
@@ -7122,12 +7130,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10534,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10534,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 10484,
+      "maxSeenPrice": 13396
     },
     "hotel-6218": {
       "offerId": 1166973,
@@ -7745,12 +7755,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10057,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10057,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 10001,
+      "maxSeenPrice": 13600
     },
     "hotel-23785": {
       "offerId": 815532,
@@ -8644,12 +8656,14 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9016,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 9016,
-      "sameRunStreak": 5
+      "sameRunStreak": 6,
+      "minSeenPrice": 9016,
+      "maxSeenPrice": 14116
     },
     "hotel-1086": {
       "offerId": 1166908,
@@ -8983,12 +8997,14 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 13418,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 13418,
-      "sameRunStreak": 4
+      "sameRunStreak": 5,
+      "minSeenPrice": 12906,
+      "maxSeenPrice": 13418
     },
     "hotel-67092": {
       "offerId": 1166936,
@@ -10221,6 +10237,56 @@
             }
           },
           "label": "Garden view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pBF3pa2tY7ONaFDISXuMiBAAogchgViV8PBl9ZGaFN0o_Hea1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwrK7f1QZIvFhQQVghYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGqGUveBWEAXqcwTNLQOg3T_JcJIAABlJTQmJSHzKAwAw1jAQAM5jQ9YQ",
+          "price": 11324,
+          "currency": "PLN",
+          "room": "Garden view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Garden view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [
@@ -10330,21 +10396,23 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "changedSincePrevRun": false,
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "changedSincePrevRun": true,
       "prevSeenPrice": 11282,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "lastSeenPrice": 11282,
-      "sameRunStreak": 7
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenPrice": 11324,
+      "sameRunStreak": 1,
+      "minSeenPrice": 11252,
+      "maxSeenPrice": 13951
     },
     "hotel-17532": {
-      "offerId": 254865,
+      "offerId": 768830,
       "hotel": "Fantazia Resort",
       "region": "Egipt / Marsa El Alam",
       "stars": 5,
       "rating": 8.2,
-      "opinions": 239,
-      "operator": "Coral Travel",
+      "opinions": 240,
+      "operator": "Rainbow",
       "duration": 7,
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-06",
@@ -11050,6 +11118,56 @@
             }
           },
           "label": "Family suite • WRO 29.09 (Wt.) 00:40 • powrót 06.10 (Wt.) 09:25"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "variantId": "rainbow",
+          "operator": "Rainbow",
+          "apiHash": "p5BWePvisUPU_t9D5ubCd2AAogZ0fbFfMDF-PvGVO5SulKXGC1OzpkmkuOnFPfcjsvXEMqBFJOQlcwt67f1QZIq7tNUEVYOWACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NXI_lgGeARUHFwBYCArkAUDkBRGVAxnuURDdKUzLDUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNcRs_8w",
+          "price": 12692,
+          "currency": "PLN",
+          "room": "Pokój superior",
+          "departureCode": "KTW",
+          "luggageIncluded": false,
+          "carrier": "ENT1155",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "04:15"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "10:00"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "10:30"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "14:25"
+            }
+          },
+          "label": "Pokój superior • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
         }
       ],
       "variantChanges": [
@@ -11157,14 +11275,31 @@
             "price": 12464
           },
           "reason": "najtańsze teraz w innym biurze (taniej)"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "from": {
+            "variantId": "coral travel",
+            "operator": "Coral Travel",
+            "price": 12464
+          },
+          "to": {
+            "variantId": "rainbow",
+            "operator": "Rainbow",
+            "price": 12692
+          },
+          "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "changedSincePrevRun": false,
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "changedSincePrevRun": true,
       "prevSeenPrice": 12464,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "lastSeenPrice": 12464,
-      "sameRunStreak": 2
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenPrice": 12692,
+      "sameRunStreak": 1,
+      "minSeenPrice": 12217,
+      "maxSeenPrice": 13859
     },
     "hotel-17802": {
       "offerId": 1166521,
@@ -12663,12 +12798,14 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10647,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10647,
-      "sameRunStreak": 2
+      "sameRunStreak": 3,
+      "minSeenPrice": 10647,
+      "maxSeenPrice": 13995
     },
     "hotel-24497": {
       "offerId": 1166496,
@@ -13236,12 +13373,14 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10136,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10136,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 10080,
+      "maxSeenPrice": 13692
     },
     "hotel-1679": {
       "offerId": 1166464,
@@ -13990,12 +14129,14 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10791,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10791,
-      "sameRunStreak": 3
+      "sameRunStreak": 4,
+      "minSeenPrice": 10730,
+      "maxSeenPrice": 13982
     },
     "hotel-15278": {
       "offerId": 1166543,
@@ -14610,15 +14751,67 @@
             }
           },
           "label": "Garden view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pw4i22A_CBZYsqcSO7NntVAAogzaBCEYy5ms2VdMsaf85Vn61Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwra7f1QZIvFhQQVghYAJqAzAwRnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABGnGUvhBWEAXqcwTNLQOg3T_JcJIAABhrrAgJSHzKAwAw1jAQAMX0Nbhg",
+          "price": 11324,
+          "currency": "PLN",
+          "room": "Garden view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Garden view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "changedSincePrevRun": false,
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "changedSincePrevRun": true,
       "prevSeenPrice": 11282,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "lastSeenPrice": 11282,
-      "sameRunStreak": 7
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenPrice": 11324,
+      "sameRunStreak": 1,
+      "minSeenPrice": 11171,
+      "maxSeenPrice": 13809
     },
     "hotel-45236": {
       "offerId": 813153,
@@ -17947,7 +18140,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -18470,9 +18663,11 @@
       ],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12399,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 12399,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 9916,
+      "maxSeenPrice": 14116
     },
     "hotel-20321": {
       "offerId": 1166816,
@@ -18486,7 +18681,7 @@
       "departureDate": "2026-09-30",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -18888,14 +19083,66 @@
             }
           },
           "label": "Bungalow • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pDsETJbzg9BZtWwUau-6hlAAogA6cpRuQ_m6jTsOTwoqInSAGowmXf5xuKtFirsM-7dRgqBEpPSVAwua7f1QZI2WRQQVhRYAJqAzAwZnJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABHAGUvIBWEAXqcwTNLQOg3V_JcJIAABlKDoiJWGzKAwAw1jAQAMeVpTrQ",
+          "price": 12889,
+          "currency": "PLN",
+          "room": "Bungalow",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7363",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "12:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "17:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "08:05"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "11:35"
+            }
+          },
+          "label": "Bungalow • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": false,
+      "changedSincePrevRun": true,
       "prevSeenPrice": 12839,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "lastSeenPrice": 12839,
-      "sameRunStreak": 6
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenPrice": 12889,
+      "sameRunStreak": 1,
+      "minSeenPrice": 12805,
+      "maxSeenPrice": 13955
     },
     "hotel-18520": {
       "offerId": 1166792,
@@ -18909,7 +19156,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -19466,9 +19713,11 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11820,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 11820,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 11744,
+      "maxSeenPrice": 13916
     },
     "hotel-16891": {
       "offerId": 1166390,
@@ -19705,7 +19954,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -20012,9 +20261,11 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 10843,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeenPrice": 10843,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 10814,
+      "maxSeenPrice": 13250
     },
     "hotel-20356": {
       "offerId": 1166822,
@@ -20383,11 +20634,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11470,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
       "lastSeenPrice": 11470,
-      "sameRunStreak": 7
+      "sameRunStreak": 8,
+      "minSeenPrice": 11404,
+      "maxSeenPrice": 13852
     },
     "hotel-9818": {
       "offerId": 1178749,
@@ -20606,11 +20859,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12121,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 12121
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 12121,
+      "minSeenPrice": 12121,
+      "maxSeenPrice": 13752
     },
     "hotel-28697": {
       "offerId": 342409,
@@ -20691,7 +20946,7 @@
       "region": "Egipt / Marsa El Alam / Madinat Coraya",
       "stars": 5,
       "rating": 9.3,
-      "opinions": 641,
+      "opinions": 642,
       "operator": "Coral Travel",
       "duration": 7,
       "departureDate": "2026-09-29",
@@ -21047,16 +21302,68 @@
             }
           },
           "label": "Room deluxe door poolview • WRO 29.09 (Wt.) 00:40 • powrót 06.10 (Wt.) 09:25"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "prFm9PMIMnprL2-Nqo_Af6AAog93usBArWG4Bn7nThFkYg6wAAAABtqAQAiagEAAcABQAqBFdFWlkwuq7f1QZIp-xPUEVYOWADaglFbnRlciBBaXJqBDA5MjVyQZ4BlQEfABwBAgAWBBcCEQcS5AIYwAcTogIU2ARA9W9L8lZQAEzEP08AHZa5ECAcG-_TMg3Jq48JARJjAg1jAQYM--6eUQ",
+          "price": 13082,
+          "currency": "PLN",
+          "room": "Room deluxe door poolview",
+          "departureCode": "LCJ",
+          "luggageIncluded": true,
+          "carrier": "ENT 4855",
+          "outbound": {
+            "from": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "16:20"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "22:20"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:25"
+            },
+            "to": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:30"
+            }
+          },
+          "label": "Room deluxe door poolview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": false,
+      "changedSincePrevRun": true,
       "prevSeenPrice": 11391,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 2,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 1,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 11391
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 13082,
+      "minSeenPrice": 11391,
+      "maxSeenPrice": 13884
     },
     "hotel-22203": {
       "offerId": 1166982,
@@ -21748,11 +22055,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11591,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 11591
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 11591,
+      "minSeenPrice": 11523,
+      "maxSeenPrice": 13871
     },
     "hotel-15396": {
       "offerId": 1166862,
@@ -22121,11 +22430,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11752,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 11752
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 11752,
+      "minSeenPrice": 11599,
+      "maxSeenPrice": 13947
     },
     "hotel-32886": {
       "offerId": 1166897,
@@ -22394,11 +22705,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12147,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 12147
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 12147,
+      "minSeenPrice": 11979,
+      "maxSeenPrice": 13604
     },
     "hotel-35569": {
       "offerId": 1166984,
@@ -22785,16 +23098,68 @@
             }
           },
           "label": "Pool view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
+        },
+        {
+          "date": "2026-09-26",
+          "at": "2026-09-26T14:30:53.070Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "pPNAsrqc97hvuwWMGO2ef6AAogxkNtkNRWm1wbbqvNMwAddAGowmXf5xuKtFirsM-7dRgqBEpPSVAwvK7f1QZI4WpQQVhRYAJqAzExbXJCmwEUARUGFwBcA1gFVgJAygZP4gFdAFKvqwFTABHBGUvHBWEAXqcwTNLQOg3V_JcJIAABg77YqOSGzKAwAw1jAQAMMCguMw",
+          "price": 13665,
+          "currency": "PLN",
+          "room": "Pool view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 7363",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "12:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-30",
+              "customDate": "30.09 (Śr.)",
+              "time": "17:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "08:05"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "11:35"
+            }
+          },
+          "label": "Pool view • KTW 30.09 (Śr.) 12:30 • powrót 07.10 (Śr.) 08:05"
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": false,
+      "changedSincePrevRun": true,
       "prevSeenPrice": 13611,
-      "prevSeenAt": "2026-09-26T10:30:53.068Z",
-      "sameRunStreak": 6,
+      "prevSeenAt": "2026-09-26T11:30:53.083Z",
+      "sameRunStreak": 1,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T11:30:53.083Z",
-      "lastSeenPrice": 13611
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 13665,
+      "minSeenPrice": 13575,
+      "maxSeenPrice": 13877
     },
     "hotel-16190": {
       "offerId": 1167000,
@@ -23013,11 +23378,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12828,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 12828
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 12828,
+      "minSeenPrice": 12655,
+      "maxSeenPrice": 13919
     },
     "hotel-6656": {
       "offerId": 1166820,
@@ -23186,11 +23553,13 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12607,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 12607
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 12607,
+      "minSeenPrice": 12573,
+      "maxSeenPrice": 12935
     },
     "hotel-3211": {
       "offerId": 1166849,
@@ -23309,13 +23678,15 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 13901,
-      "prevSeenAt": "2026-09-26T11:30:53.083Z",
-      "sameRunStreak": 7,
+      "prevSeenAt": "2026-09-26T12:30:53.061Z",
+      "sameRunStreak": 8,
       "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T12:30:53.061Z",
-      "lastSeenPrice": 13901
+      "lastSeenAt": "2026-09-26T14:30:53.070Z",
+      "lastSeenPrice": 13901,
+      "minSeenPrice": 13864,
+      "maxSeenPrice": 13901
     }
   },
-  "lastUpdated": "2026-09-26T12:30:53.061Z",
+  "lastUpdated": "2026-09-26T14:30:53.070Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

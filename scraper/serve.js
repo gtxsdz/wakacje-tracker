@@ -23,7 +23,11 @@ const server = http.createServer((req, res) => {
   if (urlPath === "/") urlPath = "/index.html";
   const filePath = path.join(ROOT, urlPath);
 
-  if (!filePath.startsWith(ROOT)) {
+  // Ochrona przed path traversal. NIE używamy startsWith(ROOT), bo przepuszcza
+  // katalog-sąsiada o wspólnym prefiksie (np. ../wakacje-tracker-2-x). Liczy się
+  // ścieżka relatywna do ROOT — każda wychodząca poza ROOT zaczyna się od "..".
+  const rel = path.relative(ROOT, filePath);
+  if (rel.startsWith("..") || path.isAbsolute(rel)) {
     res.writeHead(403);
     res.end("Forbidden");
     return;
@@ -41,6 +45,11 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Podgląd: http://localhost:${PORT}`);
+// Domyślnie tylko lokalnie (127.0.0.1). Gdy potrzebujesz podglądu z telefonu
+// w tej samej sieci, uruchom z HOST=0.0.0.0 — świadomie, bo to odsłania pliki
+// projektu na LAN.
+const HOST = process.env.HOST || "127.0.0.1";
+
+server.listen(PORT, HOST, () => {
+  console.log(`Podgląd: http://localhost:${PORT} (bind ${HOST})`);
 });

@@ -560,6 +560,10 @@ body {
   font-weight: 600;
 }
 .modal-link:hover { text-decoration: underline; }
+/* Link ukrywany atrybutem [hidden] (oferta bez detailUrl). Bez tej reguły
+   `display: inline-block` wygrywa z regułą UA `[hidden] { display: none }`,
+   więc link zostawałby widoczny i prowadził do "#". */
+.modal-link[hidden] { display: none; }
 
 /* Kontener przycisków akcji na dole modala (link + eksport CSV). */
 .modal-actions {

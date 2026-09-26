@@ -5,6 +5,17 @@
 const state = { latest: null, history: null, chart: null, currentModalOffer: null, currentModalPoints: null };
 const $ = (s) => document.querySelector(s);
 
+// Escaping tekstu wstawianego do HTML. Nazwy hoteli/biur/pokoi pochodzą z
+// zewnętrznego serwisu, więc mogą zawierać " & < > — cudzysłów złamałby
+// atrybut (np. aria-label), a < > pozwoliłyby wstrzyknąć znaczniki.
+const esc = (s) =>
+  String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
 const fmtPrice = (n) =>
   n == null ? "—" : new Intl.NumberFormat("pl-PL").format(n) + " zł";
 
@@ -126,8 +137,10 @@ function priceState(o) {
   // stable ma wyższy priorytet: 3+ identyczne odczyty → pomarańczowa ramka,
   // bez pulsowania ramki. Badge extremum (min/max) nadal pulsuje niezależnie.
   if (o.stable) return "stable";
-  const hasRange = o.minPrice != null && o.maxPrice != null && o.minPrice !== o.maxPrice && o.pointCount > 1;
-  if (hasRange && (o.price <= o.minPrice || o.price >= o.maxPrice)) return "none";
+  // Ekstrema (min/max historii) NIE zmieniają stanu — sygnalizuje je osobny
+  // badge („najniższa/najwyższa dotąd”) + pulsująca ramka (extreme-low/high
+  // w CSS). Wcześniej cena na ekstremum wymuszała „none”, przez co spadek do
+  // nowego minimum gubił zieloną ramkę.
   if (o.change == null || o.change === 0) return "none";
   return o.change < 0 ? "down" : "up";
 }
@@ -179,15 +192,15 @@ function changeMarkup(o) {
 /** Blok z rozkładem lotu wariantu. */
 function flightMarkup(v) {
   if (!v) return "";
-  const seg = (node, arrowFrom, arrowTo) => {
+  const seg = (node) => {
     if (!node?.from || !node?.to) return "";
     return `
       <div class="flight-row">
-        <span class="airport">${node.from.airportCode || "?"}</span>
-        <span class="flight-detail">${node.from.customDate} ${node.from.time}</span>
+        <span class="airport">${esc(node.from.airportCode || "?")}</span>
+        <span class="flight-detail">${esc(node.from.customDate)} ${esc(node.from.time)}</span>
         <span class="flight-arrow">→</span>
-        <span class="airport">${node.to.airportCode || "?"}</span>
-        <span class="flight-detail">${node.to.time}</span>
+        <span class="airport">${esc(node.to.airportCode || "?")}</span>
+        <span class="flight-detail">${esc(node.to.time)}</span>
       </div>`;
   };
   return `
@@ -202,14 +215,14 @@ function offerCard(o) {
   const tags = [];
   if (o.stars) tags.push(`<span class="tag stars">${"★".repeat(o.stars)}</span>`);
   if (o.rating != null) tags.push(`<span class="tag rating">${o.rating}/10</span>`);
-  if (v?.room) tags.push(`<span class="tag">${v.room}</span>`);
-  if (o.operator) tags.push(`<span class="tag">${o.operator}</span>`);
+  if (v?.room) tags.push(`<span class="tag">${esc(v.room)}</span>`);
+  if (o.operator) tags.push(`<span class="tag">${esc(o.operator)}</span>`);
   if (v?.luggageIncluded) tags.push(`<span class="tag">🧳 bagaż w cenie</span>`);
   if (o.variantCount > 1) tags.push(`<span class="tag muted">${o.variantCount} wariantów</span>`);
 
   const dep = v?.outbound?.from;
   const airportLine = dep
-    ? `<p class="airport-line">✈ Najtańszy wylot z <strong>${dep.airportName || dep.airportCode}</strong> (${dep.airportCode})</p>`
+    ? `<p class="airport-line">✈ Najtańszy wylot z <strong>${esc(dep.airportName || dep.airportCode)}</strong> (${esc(dep.airportCode)})</p>`
     : "";
 
   const soldOut = o.soldOutNote
@@ -219,7 +232,7 @@ function offerCard(o) {
   const alt =
     o.altOffers && o.altOffers.length
       ? `<div class="alt-offers">Ten hotel też u: ${o.altOffers
-          .map((a) => `${a.operator || "inny operator"} (${fmtPrice(a.price)})`)
+          .map((a) => `${esc(a.operator || "inny operator")} (${fmtPrice(a.price)})`)
           .join(", ")}</div>`
       : "";
 
@@ -240,10 +253,10 @@ function offerCard(o) {
     : "";
 
   return `
-    <article class="offer-card state-${priceState(o)} ${extremeClass}${o.stable ? " is-stable" : ""}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${o.hotel}">
+    <article class="offer-card state-${priceState(o)} ${extremeClass}${o.stable ? " is-stable" : ""}" data-key="${o.key}" tabindex="0" role="button" aria-label="Historia cen: ${esc(o.hotel)}">
       <div class="offer-main">
-        <h3 class="hotel">${o.hotel}</h3>
-        <p class="region">${o.region || ""}</p>
+        <h3 class="hotel">${esc(o.hotel)}</h3>
+        <p class="region">${esc(o.region || "")}</p>
         ${airportLine}
         ${flightMarkup(v)}
         <div class="tags">${tags.join("")}</div>
@@ -297,7 +310,7 @@ function renderDisappeared() {
   if (!dis.length) { section.hidden = true; return; }
   section.hidden = false;
   $("#disappeared-list").innerHTML = dis
-    .map((d) => `<li>${d.hotel} — ${d.region || ""}, ostatnia cena ${fmtPrice(d.lastPrice)}, widziana ${d.lastSeen}</li>`)
+    .map((d) => `<li>${esc(d.hotel)} — ${esc(d.region || "")}, ostatnia cena ${fmtPrice(d.lastPrice)}, widziana ${esc(d.lastSeen)}</li>`)
     .join("");
 }
 
@@ -332,7 +345,7 @@ function openModal(key) {
     { l: "Od ostatniego sprawdzenia", v: offer.sameSincePrevRun ? "bez zmian" : (offer.change ? (offer.change < 0 ? "▼ spadek" : "▲ wzrost") : "—") },
   ];
   $("#modal-stats").innerHTML = stats
-    .map((s) => `<div class="stat"><div class="l">${s.l}</div><div class="v">${s.v}</div></div>`)
+    .map((s) => `<div class="stat"><div class="l">${esc(s.l)}</div><div class="v">${esc(s.v)}</div></div>`)
     .join("");
 
   // Historia zmian biura, przez które hotel był najtańszy (jeśli była).
@@ -351,9 +364,9 @@ function openModal(key) {
         .reverse()
         .map(
           (c) => `<div class="change-item">
-            <span class="cdate">${whenChange(c)}</span>
-            <span>${who(c.from)} (${fmtPrice(c.from?.price)}) → ${who(c.to)} (${fmtPrice(c.to?.price)})</span>
-            <span class="creason">${c.reason || ""}</span>
+            <span class="cdate">${esc(whenChange(c))}</span>
+            <span>${esc(who(c.from))} (${fmtPrice(c.from?.price)}) → ${esc(who(c.to))} (${fmtPrice(c.to?.price)})</span>
+            <span class="creason">${esc(c.reason || "")}</span>
           </div>`
         )
         .join("");
@@ -382,14 +395,18 @@ function closeModal() {
 
 // ---- Eksport historii cen (Fix 11) ----
 function buildPointsCsv(offer, points) {
-  const headers = ["Data", "Godzina", "Cena_PLN", "Biuro", "Pokoj", "Lotnisko"];
+  const headers = ["Data", "Godzina", "Cena_PLN", "Biuro", "Pokój", "Lotnisko"];
   const rows = (points || []).map((p) => {
     let date = p.date || "";
     let time = "";
     if (p.at) {
       const d = new Date(p.at);
+      // Data i godzina MUSZĄ pochodzić z tego samego źródła strefy (UTC).
+      // Wcześniej data była z UTC (toISOString), a godzina lokalna
+      // (toTimeString) — punkt o 23:30 UTC w Polsce dawał datę z jednego
+      // dnia i godzinę z drugiego.
       date = d.toISOString().slice(0, 10);
-      time = d.toTimeString().slice(0, 5);
+      time = d.toISOString().slice(11, 16);
     }
     const price = p.price ?? "";
     const op = (p.operator || "").replace(/"/g, '""');
@@ -420,7 +437,10 @@ async function copyModalHistory() {
 function downloadModalCsv() {
   if (!state.currentModalPoints || !state.currentModalOffer) return;
   const csv = buildPointsCsv(state.currentModalOffer, state.currentModalPoints);
-  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  // BOM UTF-8 na POCZĄTKU pliku: bez niego Excel (Windows) otwiera CSV jako ANSI
+  // i polskie znaki („Pokój ekonomiczny”, nazwy biur) wychodzą jako krzaki.
+  // Do schowka BOM NIE trafia — byłby niewidocznym znakiem w tekście.
+  const blob = new Blob(["\uFEFF" + csv], { type: "text/csv;charset=utf-8;" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   const hotelSafe = (state.currentModalOffer.hotel || "hotel").toLowerCase().replace(/[^a-z0-9]+/g, "-");

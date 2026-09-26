@@ -20,11 +20,11 @@ automatyczne pushe ze scrapera na Linuksie (co godzinę 8:30–22:30). Dlatego:
   się co przebieg, więc rebase jest bezpieczny). Nie force-push.
 
 ## Scraper produkcyjny (Linux przez Tailscale)
-- Host: gtx@100.117.63.42 (nazwa `deb` w Tailscale). Klucz SSH już autoryzowany.
+- Host: gtx@<TAILSCALE-IP-SERWERA> (nazwa `deb` w Tailscale). Klucz SSH już autoryzowany.
 - Repo na serwerze: /home/gtx/wakacje-tracker
 - Node: pełna ścieżka ~/.local/node/bin/node (NIE ma w domyślnym PATH sesji SSH).
 - Timer systemd użytkownika: co godzinę 8:30–22:30 (strefa Europe/Warsaw).
-- UWAGA: 100.80.242.7 to Raspberry Pi (`rpi`), NIE serwer scrapera.
+- UWAGA: <TAILSCALE-IP-RPI> to Raspberry Pi (`rpi`), NIE serwer scrapera.
 
 ## Pułapki techniczne (Windows/PowerShell)
 - Komendy SSH przez PowerShell: unikać nawiasów `()` i spacji w komunikatach

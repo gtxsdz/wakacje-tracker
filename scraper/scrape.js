@@ -9,7 +9,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { pickCheapestAvailable, BlockedError } from "./variants.js";
 import { fetchAllOffers } from "./listing.js";
 import {
@@ -27,6 +27,10 @@ const ROOT = path.resolve(__dirname, "..");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const today = () => new Date().toISOString().slice(0, 10);
 const nowIso = () => new Date().toISOString();
+
+// Limity rozmiaru historii — żeby pliki nie rosły w nieskończoność.
+const MAX_HISTORY_POINTS = 500; // maks. punktów cenowych per hotel
+const MAX_VARIANT_CHANGES = 200; // maks. wpisów o zmianach biura per hotel
 
 /** Krótki, czytelny opis wariantu (do notek i porównań). */
 function variantLabel(v) {
@@ -96,7 +100,7 @@ function writeJson(absPath, data) {
  * Aktualizuje historię o dzisiejszą najniższą cenę danego hotelu.
  * Wykrywa zmianę biura, przez które hotel jest teraz najtańszy.
  */
-function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
+export function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   const flat = flattenVariant(chosen, offer.operator);
 
   // Metadane oferty (mogą się zmieniać: ocena, liczba opinii).
@@ -117,7 +121,7 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
 
   const prev = entry.prices[entry.prices.length - 1];
 
-  if (!flat) return; // brak dostępnego wariantu — nie dopisujemy punktu
+  if (!flat || flat.price == null) return; // brak dostępnego wariantu/ceny — nie dopisujemy punktu
 
   // Porównanie ze SPRAWDZENIEM (zrzutem) sprzed tego uruchomienia.
   // entry.lastSeenPrice/lastSeenAt trzymamy z każdego przebiegu (nie tylko przy
@@ -138,6 +142,19 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
   entry.lastSeenAt = at;
   entry.lastSeenPrice = flat.price;
 
+  // Kumulatywne ekstrema — NIEZALEŻNE od przycinania `prices` do 500 punktów,
+  // dzięki czemu min/max w UI nadal oznaczają CAŁĄ zanotowaną historię.
+  // (Przy pierwszym przebiegu po wdrożeniu zasiewamy je z istniejących punktów.)
+  const seenPrices = entry.prices.map((p) => p.price).filter((n) => n != null);
+  entry.minSeenPrice =
+    entry.minSeenPrice == null
+      ? (seenPrices.length ? Math.min(...seenPrices, flat.price) : flat.price)
+      : Math.min(entry.minSeenPrice, flat.price);
+  entry.maxSeenPrice =
+    entry.maxSeenPrice == null
+      ? (seenPrices.length ? Math.max(...seenPrices, flat.price) : flat.price)
+      : Math.max(entry.maxSeenPrice, flat.price);
+
   // Czy coś realnego się zmieniło od ostatniego punktu? Zapisujemy punkt tylko
   // przy zmianie CENY lub BIURA — inaczej baza puchłaby przy częstych przebiegach.
   const priceChanged = !prev || prev.price !== flat.price;
@@ -157,6 +174,10 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
         ? "najtańsze teraz w innym biurze (taniej)"
         : "najtańsze teraz w innym biurze",
     });
+    // Bez limitu ta lista rosłaby bez końca (punkty już przycinamy).
+    if (entry.variantChanges.length > MAX_VARIANT_CHANGES) {
+      entry.variantChanges = entry.variantChanges.slice(-MAX_VARIANT_CHANGES);
+    }
   }
 
   // Nic się nie zmieniło (ta sama cena i to samo biuro) — nie dopisujemy punktu.
@@ -166,14 +187,15 @@ function updateOfferHistory(entry, offer, chosen, soldOutCheaper, date, at) {
 
   // Zabezpieczenie przed niekontrolowanym rozrastaniem się history.json.
   // Zbieramy co godzinę — 500 punktów to ~3 tygodnie częstych zmian.
-  const MAX_HISTORY_POINTS = 500;
+  // (Min/max liczymy z kumulatywnych minSeenPrice/maxSeenPrice — patrz wyżej,
+  // dzięki temu przycięcie listy nie zaniża zanotowanego zakresu cen.)
   if (entry.prices.length > MAX_HISTORY_POINTS) {
     entry.prices = entry.prices.slice(-MAX_HISTORY_POINTS);
   }
 }
 
 /** Buduje snapshot latest.json ze zmianami cen. */
-function buildLatest(history, currentResults, date) {
+export function buildLatest(history, currentResults, date) {
   const offers = [];
 
   for (const r of currentResults) {
@@ -196,10 +218,18 @@ function buildLatest(history, currentResults, date) {
       }
     }
 
+    // Min/max z CAŁEJ zanotowanej historii: kumulatywne pola z entry (odporne na
+    // przycięcie `prices`); fallback na bieżącą listę punktów dla starych wpisów.
     const values = prices.map((p) => p.price).filter((n) => n != null);
     if (current != null) values.push(current);
-    const minPrice = values.length ? Math.min(...values) : null;
-    const maxPrice = values.length ? Math.max(...values) : null;
+    const minPrice =
+      entry && entry.minSeenPrice != null
+        ? entry.minSeenPrice
+        : (values.length ? Math.min(...values) : null);
+    const maxPrice =
+      entry && entry.maxSeenPrice != null
+        ? entry.maxSeenPrice
+        : (values.length ? Math.max(...values) : null);
 
     let change = null;
     let changePct = null;
@@ -288,6 +318,12 @@ function buildLatest(history, currentResults, date) {
     }
   }
 
+  // Najświeżej widziane na górze — lista rośnie wraz z rotacją ofert, a front
+  // pokazuje ją w całości.
+  disappeared.sort((a, b) =>
+    String(b.lastSeen || "").localeCompare(String(a.lastSeen || ""))
+  );
+
   return {
     generatedAt: nowIso(),
     date,
@@ -310,7 +346,7 @@ function buildLatest(history, currentResults, date) {
  * zmienia się w czasie (np. Coral -> Itaka). Klucz hotel-{hotelId} jest
  * zapisywany w history.json.
  */
-function collapseByHotel(results) {
+export function collapseByHotel(results) {
   const byHotel = new Map();
   for (const r of results) {
     const hotelId = r.offer.hotelId;
@@ -327,11 +363,13 @@ function collapseByHotel(results) {
         ...r,
         offer: { ...r.offer, key: hotelKey, hotelId },
         // zachowaj informację o alternatywnych ofertach tego hotelu
-        altOffers: prev ? [...(prev.altOffers || []), altInfo(prev)] : [],
+        altOffers: prev ? [...(prev.altOffers || []), ...altInfos(prev)] : [],
       };
       byHotel.set(hotelKey, merged);
-    } else {
+    } else if (r.chosen) {
       // Ten wariant nie jest tańszy — dopisz jako alternatywę.
+      // Wyniki bez wariantu (błąd pobierania, chosen = null) POMIJAMY, bo inaczej
+      // lista „Ten hotel też u…” pokazywałaby operatorów z ceną „—”.
       prev.altOffers = prev.altOffers || [];
       prev.altOffers.push(altInfo(r));
     }
@@ -349,6 +387,15 @@ function altInfo(r) {
     operator: r.offer.operator,
     price: r.chosen ? r.chosen.price : null,
   };
+}
+
+/**
+ * Alternatywy do zachowania przy podmianie wpisu hotelu. Zwraca [] dla wyniku
+ * bez wariantu (chosen = null) — taki „alt” miałby cenę null i pokazywałby się
+ * w UI jako operator z ceną „—”.
+ */
+function altInfos(r) {
+  return r.chosen ? [altInfo(r)] : [];
 }
 
 /** Slug wyżywienia w URL (serwis 1 = all inclusive). */
@@ -526,7 +573,15 @@ async function main() {
   console.log(`Zapisano do ${DATA_DIR}/  | spadki: ${drops.length}, wzrosty: ${rises.length}, zmiany biura: ${changes.length}`);
 }
 
-main().catch((err) => {
-  console.error("Błąd krytyczny:", err);
-  process.exitCode = 1;
-});
+// Uruchomienie jako skrypt (node scraper/scrape.js). Przy IMPORCIE z testów
+// (np. research/test-scrape-logic.js) main() NIE startuje — dostajemy czyste
+// funkcje bez efektów ubocznych (żadnych zapisów do data/ ani zapytań HTTP).
+const isDirectRun =
+  Boolean(process.argv[1]) && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (isDirectRun) {
+  main().catch((err) => {
+    console.error("Błąd krytyczny:", err);
+    process.exitCode = 1;
+  });
+}

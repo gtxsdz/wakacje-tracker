@@ -2,6 +2,9 @@ node_modules/
 *.log
 .DS_Store
 
+# katalog budowany w CI dla GitHub Pages (artefakt witryny)
+_site/
+
 # artefakty testowe scrapera
 scraper/_*.html
 scraper/_*.json

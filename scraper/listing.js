@@ -84,7 +84,11 @@ export async function fetchAllOffers({ delayMs = 500 } = {}) {
       const withOfferId = { ...raw, offerId: raw.offerId ?? raw.id };
       const norm = normalizeOffer(withOfferId);
       if (!norm.offerId && !norm.hotelId) continue;
-      if (!seen.has(norm.offerId)) seen.set(norm.offerId, norm);
+      // Klucz deduplikacji: offerId, a gdy API go nie zwróci — stabilny klucz
+      // oferty (hotel-{hotelId} + data). Bez fallbacku wszystkie oferty bez `id`
+      // wpadały do wspólnego gniazda `null` i zostawała tylko pierwsza.
+      const dedupKey = norm.offerId ?? norm.key;
+      if (!seen.has(dedupKey)) seen.set(dedupKey, norm);
     }
 
     // Koniec, gdy zebraliśmy wszystko albo strona niepełna.

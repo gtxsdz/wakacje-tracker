@@ -91,6 +91,10 @@ npm run serve
 3. Workflow `.github/workflows/scrape.yml` publikuje witrynę na GitHub Pages przy
    każdym pushu danych (`data/**`) lub zmianie frontendu. Można go też odpalić ręcznie
    w zakładce **Actions**.
+4. Workflow publikuje **tylko pliki witryny** (`index.html`, `app.js`, `styles.css`,
+   `.nojekyll`, `data/`). Buduje je do katalogu `_site/` i dopiero ten katalog trafia
+   jako artefakt Pages — dzięki temu narzędzia i notatki z repo (`.kiro/`, `research/`,
+   `automation/`, `package.json`) **nie są** dostępne publicznie pod adresem strony.
 
 ## Automatyczne pobieranie cen (cyklicznie)
 
@@ -146,6 +150,22 @@ są w `automation/systemd/` (bez podkatalogu `user/`).
 
 Historia cen buduje się z czasem — pierwszego dnia wszystkie oferty mają jeden pomiar,
 a strzałki spadków/wzrostów pojawią się po kolejnych uruchomieniach.
+
+## Weryfikacja zmian
+
+Zestaw testów uruchamiany przed pushem (bez zależności zewnętrznych; tylko
+`check-live.js` potrzebuje Playwrighta):
+
+```bash
+node research/test-logic.js          # logika historii cen (6 scenariuszy)
+node research/test-detailurl.js      # budowa URL oferty (4 testy)
+node research/test-scrape-logic.js   # min/max, limity, dedup po hotelu, „zniknięte" (10 testów)
+node research/test-front-render.js   # render kart, escapowanie, modal, eksport CSV (31 kontroli)
+node research/check-live.js          # prawdziwa przeglądarka: overflow, błędy konsoli, modal, zrzuty
+```
+
+`check-live.js` przyjmuje opcjonalny URL (domyślnie strona na GitHub Pages), więc ten sam
+test działa też na podglądzie lokalnym: `node research/check-live.js http://127.0.0.1:8080/`.
 
 ## Struktura projektu
 

@@ -3,8 +3,9 @@
 //
 // Przeznaczenie:
 //   - Wywołania ręczne / Harmonogram zadań Windows: node scraper/push.js
-//   - Serwer Linux (systemd timer): używa automation/scrape-deploy.sh,
-//     który wywołuje scraper/scrape.js bezpośrednio (bez tego pliku).
+//   - Serwer Linux (systemd timer): ten sam plik — jednostka
+//     automation/systemd/user/wakacje-tracker.service uruchamia scraper/push.js,
+//     więc commit i push danych robi się automatycznie po każdym przebiegu.
 //
 // Uruchomienie: node scraper/push.js   (albo: npm run push)
 //

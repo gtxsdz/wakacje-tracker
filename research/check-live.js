@@ -76,6 +76,50 @@ async function visit(label, ctxOpts, shot) {
 await visit("MOBILE (iPhone 13)", { ...devices["iPhone 13"] }, "pw-mobile.png");
 await visit("DESKTOP 1440x900", { viewport: { width: 1440, height: 900 } }, "pw-desktop.png");
 
+// Sekcja „Oferty, które zniknęły z listy” ma być zwijaną komórką (details/
+// summary) i domyślnie zwiniętą — nie może wydłużać strony.
+{
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const page = await ctx.newPage();
+  await page.goto(URL_ARG, { waitUntil: "networkidle", timeout: 45000 });
+  await page.waitForSelector(".offer-card");
+
+  const box = await page.evaluate(() => {
+    const sec = document.querySelector("#disappeared-section");
+    const det = sec ? sec.querySelector("details") : null;
+    return {
+      widoczna: sec ? !sec.hidden : false,
+      znacznik: det ? det.tagName.toLowerCase() : null,
+      otwarta: det ? det.open : null,
+      licznik: ((document.querySelector("#disappeared-count") || {}).textContent || "").trim(),
+      pozycji: document.querySelectorAll("#disappeared-list li").length,
+      wysokosc: sec ? Math.round(sec.getBoundingClientRect().height) : 0,
+    };
+  });
+
+  const okTag = box.znacznik === "details";
+  const okCollapsed = box.otwarta === false;
+  const okCount = box.pozycji === 0 || box.licznik === `(${box.pozycji})`;
+  console.log("\n=== ZWIJANA KOMORKA (oferty, ktore zniknely) ===");
+  console.log(JSON.stringify(box));
+  console.log(`   markup <details>: ${okTag ? "OK" : "BŁĄD"}`);
+  console.log(`   domyślnie zwinięta: ${okCollapsed ? "OK" : "BŁĄD"}`);
+  console.log(`   licznik = liczba pozycji: ${okCount ? "OK" : "BŁĄD"} (${box.licznik || "-"} / ${box.pozycji})`);
+  if (!okTag || !okCollapsed || !okCount) problems++;
+
+  if (box.widoczna && box.pozycji > 0) {
+    await page.locator(".disappeared-summary").click();
+    const otwarta = await page.evaluate(() => document.querySelector("#disappeared-section details").open);
+    const poOtwarciu = await page.evaluate(() => Math.round(document.querySelector("#disappeared-section").getBoundingClientRect().height));
+    console.log(`   rozwija się po kliknięciu: ${otwarta === true ? "OK" : "BŁĄD"} (wysokość ${box.wysokosc}px -> ${poOtwarciu}px)`);
+    if (otwarta !== true) problems++;
+  } else {
+    console.log("   (sekcja bez pozycji — pomijam test kliknięcia)");
+  }
+
+  await ctx.close();
+}
+
 // Modal + reguła .modal-link[hidden] — sprawdzane w prawdziwej przeglądarce.
 {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });

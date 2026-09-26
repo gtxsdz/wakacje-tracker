@@ -309,6 +309,13 @@ function renderDisappeared() {
   const section = $("#disappeared-section");
   if (!dis.length) { section.hidden = true; return; }
   section.hidden = false;
+
+  // Licznik w nagłówku zwijanej komórki. Podmieniamy TYLKO treść listy, nie cały
+  // <details> — dzięki temu stan rozwinięcia (otwarta/zamknięta) zachowuje się
+  // między odświeżeniami danych. Domyślnie komórka startuje zwinięta.
+  const counter = $("#disappeared-count");
+  if (counter) counter.textContent = `(${dis.length})`;
+
   $("#disappeared-list").innerHTML = dis
     .map((d) => `<li>${esc(d.hotel)} — ${esc(d.region || "")}, ostatnia cena ${fmtPrice(d.lastPrice)}, widziana ${esc(d.lastSeen)}</li>`)
     .join("");

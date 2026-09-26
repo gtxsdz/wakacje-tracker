@@ -55,8 +55,13 @@
     <section id="offers" class="offers" aria-live="polite"></section>
 
     <section id="disappeared-section" class="disappeared" hidden>
-      <h2>Oferty, które zniknęły z listy</h2>
-      <ul id="disappeared-list"></ul>
+      <details class="disappeared-box">
+        <summary class="disappeared-summary">
+          <span>Oferty, które zniknęły z listy</span>
+          <span id="disappeared-count" class="disappeared-count"></span>
+        </summary>
+        <ul id="disappeared-list"></ul>
+      </details>
     </section>
   </main>
 

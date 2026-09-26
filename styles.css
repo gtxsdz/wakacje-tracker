@@ -286,16 +286,45 @@ body {
 /* "tyle samo co ostatnio" — lekko wyróżnione, ale nienachalne. */
 .snap-same { color: var(--accent); opacity: 0.85; }
 
-/* Disappeared */
+/* Disappeared — zwijana komórka (domyślnie zwinięta, żeby nie wydłużała strony).
+   Stan rozwinięcia trzyma sam <details>; JS podmienia tylko treść listy, więc
+   otwarcie/zamknięcie przeżywa automatyczne odświeżanie danych. */
 .disappeared { margin-bottom: 40px; }
-.disappeared h2 { font-size: 1.1rem; }
-.disappeared ul { list-style: none; padding: 0; }
+.disappeared-box {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.disappeared-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  cursor: pointer;
+  list-style: none; /* bez domyślnego trójkąta listy */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.disappeared-summary::-webkit-details-marker { display: none; }
+.disappeared-summary:hover { color: var(--accent); }
+.disappeared-summary::after {
+  content: "▾";
+  margin-left: auto;
+  color: var(--text-dim);
+  transition: transform 0.15s ease;
+}
+.disappeared-box[open] .disappeared-summary::after { transform: rotate(180deg); }
+.disappeared-count { color: var(--text-dim); font-size: 0.95rem; font-weight: 500; }
+.disappeared ul { list-style: none; padding: 0 14px 4px; margin: 0; }
 .disappeared li {
   color: var(--text-dim);
   font-size: 0.9rem;
   padding: 8px 0;
   border-bottom: 1px solid var(--border);
 }
+.disappeared li:last-child { border-bottom: none; }
 
 /* Footer */
 .site-footer {

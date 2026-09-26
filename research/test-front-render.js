@@ -137,6 +137,13 @@ check("5 kafli podsumowania", (store.get("#summary").innerHTML.match(/summary-ca
 check("link źródłowy ustawiony", store.get("#source-link").href.includes("wakacje.pl"));
 const disCount = (L.disappeared || []).length;
 check("sekcja 'zniknięte' spójna z danymi", disCount === 0 ? store.get("#disappeared-section").hidden === true : store.get("#disappeared-section").hidden === false);
+if (disCount > 0) {
+  check(
+    `licznik „znikniętych” w nagłówku zwijanej komórki (${disCount})`,
+    store.get("#disappeared-count").textContent === `(${disCount})`,
+    store.get("#disappeared-count").textContent
+  );
+}
 
 console.log("\n== escapowanie danych z zewnątrz ==");
 const html = offers.innerHTML;

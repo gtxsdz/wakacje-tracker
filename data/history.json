@@ -1466,12 +1466,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 8873,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 8874,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 8874,
-      "sameRunStreak": 1,
+      "sameRunStreak": 2,
       "minSeenPrice": 8820,
       "maxSeenPrice": 11656
     },
@@ -2541,12 +2541,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9004,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 9004,
-      "sameRunStreak": 6,
+      "sameRunStreak": 7,
       "minSeenPrice": 9004,
       "maxSeenPrice": 12992
     },
@@ -4964,12 +4964,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9600,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 9600,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 9583,
       "maxSeenPrice": 13557
     },
@@ -7230,12 +7230,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10534,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 10534,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 10484,
       "maxSeenPrice": 13396
     },
@@ -7855,12 +7855,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10057,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 10057,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 10001,
       "maxSeenPrice": 13600
     },
@@ -8806,12 +8806,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9616,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 9616,
-      "sameRunStreak": 7,
+      "sameRunStreak": 8,
       "minSeenPrice": 9016,
       "maxSeenPrice": 14116
     },
@@ -9212,12 +9212,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 13418,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 12906,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 12906,
-      "sameRunStreak": 1,
+      "sameRunStreak": 2,
       "minSeenPrice": 12906,
       "maxSeenPrice": 13418
     },
@@ -10611,12 +10611,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11324,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 11324,
-      "sameRunStreak": 8,
+      "sameRunStreak": 9,
       "minSeenPrice": 11252,
       "maxSeenPrice": 13951
     },
@@ -11483,6 +11483,56 @@
             }
           },
           "label": "Pokój superior • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
+        },
+        {
+          "date": "2026-09-27",
+          "at": "2026-09-27T07:30:53.053Z",
+          "variantId": "rainbow",
+          "operator": "Rainbow",
+          "apiHash": "p5BWePvisUPU_t9D5ubCd2AAogZ0fbFfMDF-PvGVO5SulKXGC1OzpkmkuOnFPfcjsvXEMqBFJOQlcw4Izj1QZIp-RIUEVYKGACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NXI_lgGeARUHFwBYCArkAUDkBRGVAxnuURDdKUzLDUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYNk8lkyA",
+          "price": 11925,
+          "currency": "PLN",
+          "room": "Pokój superior",
+          "departureCode": "KTW",
+          "luggageIncluded": false,
+          "carrier": "ENT1155",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "04:15"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "10:00"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "10:30"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "14:25"
+            }
+          },
+          "label": "Pokój superior • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
         }
       ],
       "variantChanges": [
@@ -11607,13 +11657,13 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": true,
-      "prevSeenPrice": 12858,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "lastSeenPrice": 12258,
+      "prevSeenPrice": 12258,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenPrice": 11925,
       "sameRunStreak": 1,
-      "minSeenPrice": 12217,
+      "minSeenPrice": 11925,
       "maxSeenPrice": 13859
     },
     "hotel-17802": {
@@ -13263,12 +13313,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 10647,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 11132,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 11132,
-      "sameRunStreak": 1,
+      "sameRunStreak": 2,
       "minSeenPrice": 10647,
       "maxSeenPrice": 13995
     },
@@ -13838,23 +13888,23 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10136,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 10136,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 10080,
       "maxSeenPrice": 13692
     },
     "hotel-1679": {
-      "offerId": 1166464,
+      "offerId": 776812,
       "hotel": "Doubletree by Hilton Sharks Bay (ex. Hilton Sharks Bay)",
       "region": "Egipt / Sharm el Sheikh / Sharm El Sheikh",
       "stars": 4,
       "rating": 8.1,
       "opinions": 71,
-      "operator": "Join UP",
+      "operator": "Itaka",
       "duration": 7,
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
@@ -14560,6 +14610,56 @@
             }
           },
           "label": "Deluxe pool view • KTW 29.09 (Wt.) 02:05 • powrót 06.10 (Wt.) 23:50"
+        },
+        {
+          "date": "2026-09-27",
+          "at": "2026-09-27T07:30:53.053Z",
+          "variantId": "itaka",
+          "operator": "Itaka",
+          "apiHash": "pYj34idX06fCFLuW-XYYVOAAogeb2dMp8BzuoBZ3nrTcUHtEKKHfpP4Omm0GdYSX1YkxgqBFZJVFgw24zj1QZIoFhQQVgoYAJyQBoAFQcXAFwDWAVAjwNbupkBYZw2SwBepzBSpiBTAEyA2TkNgNSYCSAAXeSVleyoAVHe2crGQE_OqhQDDGMBAgvWAB8R",
+          "price": 11416,
+          "currency": "PLN",
+          "room": "Pokój rodzinny deluxe 4 os.",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "AMQ 270",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "17:00"
+            },
+            "to": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El-Sheikh",
+              "city": "Sharm El-Sheikh",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "21:50"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "SSH",
+              "airportName": "Sharm El-Sheikh",
+              "city": "Sharm El-Sheikh",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "22:50"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-07",
+              "customDate": "07.10 (Śr.)",
+              "time": "01:55"
+            }
+          },
+          "label": "Pokój rodzinny deluxe 4 os. • KTW 29.09 (Wt.) 17:00 • powrót 06.10 (Wt.) 22:50"
         }
       ],
       "variantChanges": [
@@ -14592,14 +14692,29 @@
             "price": 12175
           },
           "reason": "najtańsze teraz w innym biurze (taniej)"
+        },
+        {
+          "date": "2026-09-27",
+          "at": "2026-09-27T07:30:53.053Z",
+          "from": {
+            "variantId": "join up",
+            "operator": "Join UP",
+            "price": 10791
+          },
+          "to": {
+            "variantId": "itaka",
+            "operator": "Itaka",
+            "price": 11416
+          },
+          "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
-      "changedSincePrevRun": false,
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
+      "changedSincePrevRun": true,
       "prevSeenPrice": 10791,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "lastSeenPrice": 10791,
-      "sameRunStreak": 11,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenPrice": 11416,
+      "sameRunStreak": 1,
       "minSeenPrice": 10730,
       "maxSeenPrice": 13982
     },
@@ -15269,12 +15384,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11324,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 11324,
-      "sameRunStreak": 8,
+      "sameRunStreak": 9,
       "minSeenPrice": 11171,
       "maxSeenPrice": 13809
     },
@@ -18605,7 +18720,7 @@
       "departureDate": "2026-09-29",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "firstSeen": "2026-09-21",
       "prices": [
         {
@@ -19128,9 +19243,9 @@
       ],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12399,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 12399,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 9916,
       "maxSeenPrice": 14116
     },
@@ -19145,8 +19260,8 @@
       "duration": 7,
       "departureDate": "2026-09-30",
       "returnDate": "2026-10-07",
-      "lastSeen": "2026-09-26",
-      "lastSeenAt": "2026-09-26T20:30:53.072Z",
+      "lastSeen": "2026-09-27",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -19603,9 +19718,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12889,
-      "prevSeenAt": "2026-09-26T19:30:53.084Z",
+      "prevSeenAt": "2026-09-26T20:30:53.072Z",
       "lastSeenPrice": 12889,
-      "sameRunStreak": 7,
+      "sameRunStreak": 8,
       "minSeenPrice": 12805,
       "maxSeenPrice": 13955
     },
@@ -19621,7 +19736,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -20178,9 +20293,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11820,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 11820,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 11744,
       "maxSeenPrice": 13916
     },
@@ -20419,7 +20534,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -20726,9 +20841,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 10843,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeenPrice": 10843,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 10814,
       "maxSeenPrice": 13250
     },
@@ -21099,11 +21214,11 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11470,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 11470,
-      "sameRunStreak": 15,
+      "sameRunStreak": 16,
       "minSeenPrice": 11404,
       "maxSeenPrice": 13852
     },
@@ -21372,12 +21487,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 12121,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 11721,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 11721,
       "minSeenPrice": 11721,
       "maxSeenPrice": 13752
@@ -21970,12 +22085,12 @@
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": true,
-      "prevSeenPrice": 12482,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 1,
+      "changedSincePrevRun": false,
+      "prevSeenPrice": 13617,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 2,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 13617,
       "minSeenPrice": 11391,
       "maxSeenPrice": 13884
@@ -23045,10 +23160,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11752,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 15,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 16,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 11752,
       "minSeenPrice": 11599,
       "maxSeenPrice": 13947
@@ -23320,10 +23435,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12147,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 15,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 16,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 12147,
       "minSeenPrice": 11979,
       "maxSeenPrice": 13604
@@ -23993,10 +24108,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12828,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 15,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 16,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 12828,
       "minSeenPrice": 12655,
       "maxSeenPrice": 13919
@@ -24168,10 +24283,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 12607,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 15,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 16,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 12607,
       "minSeenPrice": 12573,
       "maxSeenPrice": 12935
@@ -24293,15 +24408,15 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 13901,
-      "prevSeenAt": "2026-09-26T20:30:53.072Z",
-      "sameRunStreak": 15,
+      "prevSeenAt": "2026-09-27T06:30:53.081Z",
+      "sameRunStreak": 16,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T06:30:53.081Z",
+      "lastSeenAt": "2026-09-27T07:30:53.053Z",
       "lastSeenPrice": 13901,
       "minSeenPrice": 13864,
       "maxSeenPrice": 13901
     }
   },
-  "lastUpdated": "2026-09-27T06:30:53.081Z",
+  "lastUpdated": "2026-09-27T07:30:53.053Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

@@ -9,6 +9,7 @@
 // bierzemy kolejny najtańszy.
 
 import { getText, postJson as curlPostJson } from "./http.js";
+import { isAllowedDeparture } from "./config.js";
 
 const VARIANTS_URL = (offerId) =>
   `https://www.wakacje.pl/v2/api/getCalculatorOfferVariants/${offerId}`;
@@ -81,8 +82,12 @@ async function postJson(url, body) {
 }
 
 /**
- * Pobiera wszystkie warianty oferty i zwraca je znormalizowane,
- * posortowane rosnąco po cenie.
+ * Pobiera wszystkie warianty oferty (ze WSZYSTKICH lotnisk!) i zwraca je
+ * znormalizowane, posortowane rosnąco po cenie.
+ *
+ * UWAGA: bez departureCityId API zwraca warianty ze wszystkich lotnisk,
+ * także spoza WYLOTY. Filtrowaniem zajmuje się pickCheapestAvailable
+ * (przez splitByAllowedDepartures).
  */
 export async function fetchVariants(offer) {
   const json = await postJson(VARIANTS_URL(offer.offerId), offer.variantParams);
@@ -92,6 +97,20 @@ export async function fetchVariants(offer) {
     .map(normalizeVariant)
     .filter((v) => v.price != null)
     .sort((a, b) => a.price - b.price);
+}
+
+/** Kod IATA lotniska WYLOTU wariantu (wielkie litery, "" gdy brak danych). */
+export function variantDepartureCode(v) {
+  return String(v?.departureCode || v?.outbound?.from?.airportCode || "")
+    .trim()
+    .toUpperCase();
+}
+
+/** Kod IATA lotniska POWROTU wariantu ("" gdy API go nie podało). */
+export function variantReturnCode(v) {
+  return String(v?.inbound?.to?.airportCode || "")
+    .trim()
+    .toUpperCase();
 }
 
 /**
@@ -141,20 +160,65 @@ export async function checkAvailability(offer, variant) {
 }
 
 /**
- * Zwraca najtańszy DOSTĘPNY wariant oraz informację o wariantach niedostępnych,
- * które były tańsze (żeby móc odnotować "wyprzedane").
+ * Dzieli warianty na DOZWOLONE (wylot — i powrót — z lotniska z WYLOTY)
+ * oraz pominięte (inne lotniska).
+ *
+ * PO CO: filtr listingu (`SEARCH_QUERY.departure`) zawęża tylko oferty, ale
+ * endpoint wariantów nie ma `departureCityId` i zwraca wyloty ze WSZYSTKICH
+ * lotnisk. Bez tego podziału „najtańszy wariant” mógł wypaść np. z Krakowa,
+ * choć w konfiguracji są tylko KTW/LCJ/POZ/WAW/WRO — takie lotniska lądowały
+ * na kartach ofert i w historii.
+ *
+ * Powrót sprawdzamy warunkowo (tylko gdy API go podało) — chroni to przed
+ * wariantami „open-jaw”, a zarazem nie odrzuca danych sprzed zmiany API.
+ */
+export function splitByAllowedDepartures(variants) {
+  const allowed = [];
+  const skipped = [];
+  for (const v of variants) {
+    const dep = variantDepartureCode(v);
+    const ret = variantReturnCode(v);
+    const ok = isAllowedDeparture(dep) && (!ret || isAllowedDeparture(ret));
+    (ok ? allowed : skipped).push(v);
+  }
+  return { allowed, skipped };
+}
+
+/** Unikalne kody lotnisk (posortowane) z listy wariantów — do logów/komunikatów. */
+export function departureCodes(variants) {
+  return [...new Set(variants.map(variantDepartureCode).filter(Boolean))].sort();
+}
+
+/**
+ * Zwraca najtańszy DOSTĘPNY wariant zezwolonego lotniska oraz informację
+ * o wariantach niedostępnych, które były tańsze (żeby móc odnotować "wyprzedane").
+ *
+ * `variants` = tylko dozwolone lotniska (to one zasilają liczniki w UI),
+ * `variantsAll` = wszystkie warianty z API (kontekst + wykrywanie lotnisk
+ * spoza filtra), `skippedNotAllowed` / `skippedCodes` = co odrzucono i skąd.
+ *
+ * Gdy oferta nie ma ANI JEDNEGO wariantu z dozwolonego lotniska, zwracamy
+ * chosen = null — taka oferta nie wchodzi do wyników (nie zgadujemy lotniska).
  *
  * verifyAvailability=false => ufamy, że warianty z listy są dostępne
  * (getCalculatorOfferVariants zwraca aktualnie sprzedawane).
  */
 export async function pickCheapestAvailable(offer, { verifyAvailability = false } = {}) {
-  const variants = await fetchVariants(offer);
+  const all = await fetchVariants(offer);
+  const { allowed, skipped } = splitByAllowedDepartures(all);
+  const variants = allowed;
+  const meta = {
+    variantsAll: all,
+    skippedNotAllowed: skipped.length,
+    skippedCodes: departureCodes(skipped),
+  };
+
   if (variants.length === 0) {
-    return { chosen: null, variants: [], soldOutCheaper: [] };
+    return { chosen: null, variants: [], soldOutCheaper: [], ...meta };
   }
 
   if (!verifyAvailability) {
-    return { chosen: variants[0], variants, soldOutCheaper: [] };
+    return { chosen: variants[0], variants, soldOutCheaper: [], ...meta };
   }
 
   const soldOutCheaper = [];
@@ -170,10 +234,19 @@ export async function pickCheapestAvailable(offer, { verifyAvailability = false 
       continue;
     }
     // true lub null (nie potwierdzono) => bierzemy jako wybrany.
-    return { chosen: v, variants, soldOutCheaper, verified: true };
+    return { chosen: v, variants, soldOutCheaper, verified: true, ...meta };
   }
   // W ramach limitu nie znaleziono dostępnego — bierzemy najtańszy mimo to.
-  return { chosen: variants[0], variants, soldOutCheaper, verified: true };
+  return { chosen: variants[0], variants, soldOutCheaper, verified: true, ...meta };
 }
 
-export default { fetchVariants, checkAvailability, pickCheapestAvailable, BlockedError };
+export default {
+  fetchVariants,
+  checkAvailability,
+  pickCheapestAvailable,
+  splitByAllowedDepartures,
+  variantDepartureCode,
+  variantReturnCode,
+  departureCodes,
+  BlockedError,
+};

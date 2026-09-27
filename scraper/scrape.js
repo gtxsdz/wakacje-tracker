@@ -19,6 +19,7 @@ import {
   LISTING_URL,
   SEARCH_QUERY,
   AIRPORTS,
+  WYLOTY,
 } from "./config.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -273,6 +274,8 @@ export function buildLatest(history, currentResults, date) {
       departureDate: r.offer.departureDate,
       returnDate: r.offer.returnDate,
       detailUrl: buildDetailUrl(r.offer, r.chosen),
+      // Liczba wariantów z WYBRANYCH lotnisk (WYLOTY) — a nie wszystkich z API,
+      // bo tylko te są realnymi opcjami dla użytkownika (patrz variants.js).
       variantCount: r.variants.length,
       altOffers: r.altOffers && r.altOffers.length ? r.altOffers : undefined,
       cheapest: flat,
@@ -494,7 +497,10 @@ async function main() {
     return;
   }
 
-  // Dla każdej oferty pobierz warianty i wybierz najtańszy.
+  // Dla każdej oferty pobierz warianty i wybierz najtańszy — ALE TYLKO
+  // z lotnisk wymienionych w WYLOTY. Endpoint wariantów zwraca wyloty ze
+  // wszystkich lotnisk, więc bez tego filtra na kartach ofert (i w historii)
+  // pojawiały się miasta spoza konfiguracji.
   // UWAGA: weryfikacja dostępności (checkOfferAvailability) okazała się
   // niewiarygodna — endpoint wymaga offerHash z tej samej sesji, a hashe z
   // getCalculatorOfferVariants rotują, więc zwraca fałszywe "niedostępne" nawet
@@ -508,12 +514,15 @@ async function main() {
       const picked = await pickCheapestAvailable(offer, { verifyAvailability: false });
       results.push({ offer, ...picked });
       const c = picked.chosen;
+      const skippedInfo = picked.skippedNotAllowed
+        ? `, POMINIĘTO ${picked.skippedNotAllowed} z ${picked.skippedCodes.join("/")} (poza filtrem wyloty)`
+        : "";
       console.log(
         `  ${offer.hotel.slice(0, 30).padEnd(30)} → ${
-          c ? `${c.price} zł | ${variantLabel(c)}` : "brak wariantów"
-        } (${picked.variants.length} wariantów${
+          c ? `${c.price} zł | ${variantLabel(c)}` : "brak wariantu z wybranych lotnisk"
+        } (${picked.variants.length} z ${picked.variantsAll?.length ?? picked.variants.length} wariantów${
           picked.soldOutCheaper.length ? `, ${picked.soldOutCheaper.length} tańszych niedostępnych` : ""
-        })`
+        }${skippedInfo})`
       );
     } catch (err) {
       if (err instanceof BlockedError) {
@@ -531,6 +540,18 @@ async function main() {
   if (blocked) {
     process.exitCode = 1;
     return;
+  }
+
+  // Ile ofert wypadło wyłącznie dlatego, że nie mają wylotu z wybranych miast.
+  const noAllowedAirport = results.filter((r) => !r.chosen && r.variantsAll?.length);
+  if (noAllowedAirport.length) {
+    console.log(
+      `Pominięto ${noAllowedAirport.length} ofert bez wariantu z lotnisk: ${WYLOTY.join(", ")} ` +
+        `(np. ${noAllowedAirport
+          .slice(0, 3)
+          .map((r) => `${r.offer.hotel.slice(0, 25)} [${r.skippedCodes.join("/") || "?"}]`)
+          .join("; ")})`
+    );
   }
 
   const withVariants = results.filter((r) => r.chosen);

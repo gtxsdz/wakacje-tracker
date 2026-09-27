@@ -41,8 +41,11 @@ wakacje.pl ─► scraper ─► data/*.json ─► git push ─► GitHub Pages
    `scraper/parse.js` normalizuje każdą ofertę (`offerId`, `hotelId`, operator itd.).
 2. **`scraper/variants.js`** dla każdej oferty woła publiczne API
    `POST /v2/api/getCalculatorOfferVariants/{offerId}` (bez autoryzacji). Zwraca ono
-   wszystkie warianty (każde lotnisko × pokój) z ceną, lotniskami i godzinami lotów.
-   Wybieramy **najtańszy dostępny**.
+   wszystkie warianty (każde lotnisko × pokój) z ceną, lotniskami i godzinami lotów —
+   **ze wszystkich lotnisk w Polsce**, nie tylko z filtra. Dlatego warianty spoza
+   `WYLOTY` odrzucamy (`splitByAllowedDepartures`) i dopiero z pozostałych bierzemy
+   **najtańszy**; oferta bez wariantu z dozwolonego lotniska nie trafia do wyników.
+   Bez tego na kartach i w historii pojawiały się miasta, których nie ma w wyszukiwaniu.
 3. **`scraper/scrape.js`** łączy powyższe i aktualizuje dane.
 4. **`data/history.json`** — historia: per oferta śledzony wariant + punkty
    `{date, price, room, departureCode, godziny lotów}` oraz `variantChanges[]`
@@ -161,7 +164,14 @@ node research/test-logic.js          # logika historii cen (6 scenariuszy)
 node research/test-detailurl.js      # budowa URL oferty (4 testy)
 node research/test-scrape-logic.js   # min/max, limity, dedup po hotelu, „zniknięte" (10 testów)
 node research/test-front-render.js   # render kart, escapowanie, modal, eksport CSV (31 kontroli)
+node research/test-variants-filter.js # filtr lotnisk wylotu: konfiguracja + warianty + dane (5 testów)
 node research/check-live.js          # prawdziwa przeglądarka: overflow, błędy konsoli, modal, zrzuty
+
+# diagnostyka danych i jednorazowa migracja (filtr lotnisk wylotu)
+node research/check-data-airports.js                    # raport: czy w data/ są lotniska spoza filtra
+node research/check-departures.js 5                     # LIVE: lotniska z listingu i z API wariantów (bez zapisu)
+node research/migrate-drop-banned-departures.js         # raport migracji (nic nie zapisuje)
+node research/migrate-drop-banned-departures.js --apply # usuwa historyczne punkty spoza filtra
 ```
 
 `check-live.js` przyjmuje opcjonalny URL (domyślnie strona na GitHub Pages), więc ten sam

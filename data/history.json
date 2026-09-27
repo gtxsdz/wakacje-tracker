@@ -1466,12 +1466,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9055,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 9055,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 8820,
       "maxSeenPrice": 11656
     },
@@ -7230,12 +7230,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 10369,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 10369,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 10369,
       "maxSeenPrice": 13396
     },
@@ -8806,12 +8806,12 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 9616,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 9616,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 9016,
       "maxSeenPrice": 14116
     },
@@ -9197,12 +9197,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 13237,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 13237,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 12906,
       "maxSeenPrice": 13418
     },
@@ -10646,12 +10646,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11142,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 11142,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 11142,
       "maxSeenPrice": 13951
     },
@@ -11468,6 +11468,56 @@
             }
           },
           "label": "Pokój superior • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
+        },
+        {
+          "date": "2026-09-27",
+          "at": "2026-09-27T16:30:53.093Z",
+          "variantId": "rainbow",
+          "operator": "Rainbow",
+          "apiHash": "p5BWePvisUPU_t9D5ubCd2AAogZ0fbFfMDF-PvGVO5SulKXGC1OzpkmkuOnFPfcjsvXEMqBFJOQlcwwonl1QZIhNJAUEVYH2ACag1BTExfSU5DTFVTSVZFahcyOTYsMzgwLDQ3Nyw0ODMsNDg0LDQ4NXI_lgGeARUHFwBYCArkAUDkBRGVAxnuURDdKUzLDUvyPmEAU-NEUgAP6upAHV4gos2RCQ0AX736_4EDAw5jAQYN0DV_sw",
+          "price": 10591,
+          "currency": "PLN",
+          "room": "Pokój superior",
+          "departureCode": "KTW",
+          "luggageIncluded": false,
+          "carrier": "ENT1155",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "04:15"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "10:00"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "10:30"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "14:25"
+            }
+          },
+          "label": "Pokój superior • KTW 29.09 (Wt.) 04:15 • powrót 06.10 (Wt.) 10:30"
         }
       ],
       "variantChanges": [
@@ -11592,13 +11642,13 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
-      "changedSincePrevRun": false,
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
+      "changedSincePrevRun": true,
       "prevSeenPrice": 11425,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
-      "lastSeenPrice": 11425,
-      "sameRunStreak": 3,
-      "minSeenPrice": 11425,
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenPrice": 10591,
+      "sameRunStreak": 1,
+      "minSeenPrice": 10591,
       "maxSeenPrice": 13859
     },
     "hotel-17802": {
@@ -13114,6 +13164,56 @@
             }
           },
           "label": "Splash room aqua park • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
+        },
+        {
+          "date": "2026-09-27",
+          "at": "2026-09-27T16:30:53.093Z",
+          "variantId": "join up",
+          "operator": "Join UP",
+          "apiHash": "p6Twp1LzivETUcKEyYharIAAogPhgJQzBgS8s0rhwtCWVVba1Qe6KX0OSkM9Z_GdN8Gu4qBEpPSVAwwonl1QZIyvA_UEVYB2ACagNKdFVyQpsBFAEVBhcAXANYBVYCQMoGT-IBXQBSr6sBUwAR_BlLjAVhAF6nMEzS0DoN0_yXCSAAAZTawJjjhsygMAMNYwEADPxEQSw",
+          "price": 10466,
+          "currency": "PLN",
+          "room": "Family sliding door pool view",
+          "departureCode": "KTW",
+          "luggageIncluded": true,
+          "carrier": "U5 8941",
+          "outbound": {
+            "from": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "14:30"
+            },
+            "to": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-09-28",
+              "customDate": "28.09 (Pon.)",
+              "time": "19:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "HRG",
+              "airportName": "Hurghada",
+              "city": "Hurghada",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "10:20"
+            },
+            "to": {
+              "airportCode": "KTW",
+              "airportName": "Katowice",
+              "city": "Katowice",
+              "date": "2026-10-05",
+              "customDate": "05.10 (Pon.)",
+              "time": "13:50"
+            }
+          },
+          "label": "Family sliding door pool view • KTW 28.09 (Pon.) 14:30 • powrót 05.10 (Pon.) 10:20"
         }
       ],
       "variantChanges": [
@@ -13148,13 +13248,13 @@
           "reason": "najtańsze teraz w innym biurze (taniej)"
         }
       ],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
-      "changedSincePrevRun": false,
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
+      "changedSincePrevRun": true,
       "prevSeenPrice": 10951,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
-      "lastSeenPrice": 10951,
-      "sameRunStreak": 3,
-      "minSeenPrice": 10647,
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenPrice": 10466,
+      "sameRunStreak": 1,
+      "minSeenPrice": 10466,
       "maxSeenPrice": 13995
     },
     "hotel-24497": {
@@ -14544,12 +14644,12 @@
           "reason": "najtańsze teraz w innym biurze"
         }
       ],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11416,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 11416,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 10730,
       "maxSeenPrice": 13982
     },
@@ -15269,12 +15369,12 @@
         }
       ],
       "variantChanges": [],
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "changedSincePrevRun": false,
       "prevSeenPrice": 11142,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 11142,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 11142,
       "maxSeenPrice": 13809
     },
@@ -19146,7 +19246,7 @@
       "departureDate": "2026-09-30",
       "returnDate": "2026-10-07",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -19653,9 +19753,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 13070,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 13070,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 12805,
       "maxSeenPrice": 13955
     },
@@ -19671,7 +19771,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -20278,9 +20378,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11598,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 11598,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 11598,
       "maxSeenPrice": 13916
     },
@@ -20519,7 +20619,7 @@
       "departureDate": "2026-09-28",
       "returnDate": "2026-10-05",
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "firstSeen": "2026-09-23",
       "prices": [
         {
@@ -20876,9 +20976,9 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 10662,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
       "lastSeenPrice": 10662,
-      "sameRunStreak": 3,
+      "sameRunStreak": 4,
       "minSeenPrice": 10662,
       "maxSeenPrice": 13250
     },
@@ -21524,10 +21624,10 @@
       "variantChanges": [],
       "changedSincePrevRun": false,
       "prevSeenPrice": 11721,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
-      "sameRunStreak": 3,
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
+      "sameRunStreak": 4,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
       "lastSeenPrice": 11721,
       "minSeenPrice": 11721,
       "maxSeenPrice": 13752
@@ -22067,16 +22167,66 @@
             }
           },
           "label": "Room deluxe door gardenview • LCJ 29.09 (Wt.) 16:20 • powrót 06.10 (Wt.) 09:25"
+        },
+        {
+          "date": "2026-09-27",
+          "at": "2026-09-27T16:30:53.093Z",
+          "variantId": "coral travel",
+          "operator": "Coral Travel",
+          "apiHash": "pgQkP9UgwXSxIy7lQPXZZCAAogECDBpRylfHjmySTx_t9JvAAAAAD8iQQAiagEAAcABQAqBFdFWlkwyYnl1QZIobpMUEVYH2ADaglFbnRlciBBaXJqBDAwNDBqBDA2NDVqBDA5MjVyQZ4BkwGUAZUBHwAcAQIAFgQXAhEHEscCGN0HQO92UPJWTMQ_TwBLjTQdmMgPII09G-7TMg3Kq48JARJjAg1jAQYMxs7I-Q",
+          "price": 12526,
+          "currency": "PLN",
+          "room": "Room deluxe door gardenview",
+          "departureCode": "WRO",
+          "luggageIncluded": true,
+          "carrier": "ENT 4903",
+          "outbound": {
+            "from": {
+              "airportCode": "WRO",
+              "airportName": "Wrocław",
+              "city": "Wrocław",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "00:40"
+            },
+            "to": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-09-29",
+              "customDate": "29.09 (Wt.)",
+              "time": "06:45"
+            }
+          },
+          "inbound": {
+            "from": {
+              "airportCode": "RMF",
+              "airportName": "Marsa Alam",
+              "city": "Marsa Alam",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "09:25"
+            },
+            "to": {
+              "airportCode": "LCJ",
+              "airportName": "Łódź",
+              "city": "Łódź",
+              "date": "2026-10-06",
+              "customDate": "06.10 (Wt.)",
+              "time": "13:30"
+            }
+          },
+          "label": "Room deluxe door gardenview • WRO 29.09 (Wt.) 00:40 • powrót 06.10 (Wt.) 09:25"
         }
       ],
       "variantChanges": [],
-      "changedSincePrevRun": false,
+      "changedSincePrevRun": true,
       "prevSeenPrice": 12817,
-      "prevSeenAt": "2026-09-27T14:30:53.067Z",
-      "sameRunStreak": 3,
+      "prevSeenAt": "2026-09-27T15:30:53.082Z",
+      "sameRunStreak": 1,
       "lastSeen": "2026-09-27",
-      "lastSeenAt": "2026-09-27T15:30:53.082Z",
-      "lastSeenPrice": 12817,
+      "lastSeenAt": "2026-09-27T16:30:53.093Z",
+      "lastSeenPrice": 12526,
       "minSeenPrice": 11391,
       "maxSeenPrice": 13884
     },
@@ -24402,6 +24552,6 @@
       "maxSeenPrice": 13901
     }
   },
-  "lastUpdated": "2026-09-27T15:30:53.082Z",
+  "lastUpdated": "2026-09-27T16:30:53.093Z",
   "sourceUrl": "https://www.wakacje.pl/wczasy/egipt/?od-2026-09-28,do-2026-10-07,do-14000zl,samolotem,all-inclusive,ocena-8,z-aquaparkiem,z-katowic,z-lodzi,z-poznania,z-warszawy,z-wroclawia,2dorosle-2dzieci-20091119-20150707,tanio&src=fromFilters"
 }

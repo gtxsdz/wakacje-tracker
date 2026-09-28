@@ -1,12 +1,28 @@
-# Timer użytkownika: co godzinę w oknie 08:30–22:30.
-# Persistent=true => nadrobi po włączeniu maszyny, jeśli była wyłączona.
+# Timer użytkownika projektu v1 — WYGASZANIE (2026-09-28).
+# Projekt wakacje-tracker (v1) jest wyłączany, a prace przenoszą się do
+# wakacje-tracker-2. Scraper v1 ma wykonać OSTATNI przebieg dzisiaj
+# (2026-09-28) o 14:30 i potem nie uruchamiać się już nigdy.
+#
+#   OnCalendar=2026-09-28 14:30:00  jedno, ostatnie uruchomienie (data na sztywno)
+#   Persistent=true                 jeśli maszyna była wyłączona o 14:30, ostatni
+#                                   przebieg odbędzie się przy najbliższym starcie
+#                                   (i tylko raz — znacznik czasu blokuje powtórkę)
+#   RemainAfterElapse=no            po tym przebiegu timer przechodzi w stan
+#                                   nieaktywny, mimo że jest włączony w
+#                                   timers.target.wants/
+#
+# Weryfikacja po 14:30:  systemctl --user list-timers wakacje-tracker.timer
+#                        systemctl --user is-active wakacje-tracker.timer   # => inactive
+# Powrót do harmonogramu cyklicznego (co godzinę 08:30–22:30):
+#   OnCalendar=*-*-* 08..22:30:00  i  usunięcie linii RemainAfterElapse.
 
 [Unit]
-Description=Pobranie cen wakacje.pl (co godzinę: 08:30–22:30)
+Description=Pobranie cen wakacje.pl - ostatni przebieg 2026-09-28 14:30
 
 [Timer]
-OnCalendar=*-*-* 08..22:30:00
+OnCalendar=2026-09-28 14:30:00
 Persistent=true
+RemainAfterElapse=no
 
 [Install]
 WantedBy=timers.target

@@ -104,6 +104,13 @@ npm run serve
 Scraper uruchamiamy lokalnie, cyklicznie. `npm run push` pobiera ceny, a następnie
 sam commituje i wypycha `data/` — po pushu GitHub Pages odświeża witrynę.
 
+> **Wygaszanie v1 (2026-09-28).** Projekt jest wyłączany — rozwój przenosi się do
+> `wakacje-tracker-2`. Na serwerze `deb` timer `wakacje-tracker.timer` ma ustawiony
+> **ostatni przebieg na 2026-09-28 14:30** (`OnCalendar=2026-09-28 14:30:00`,
+> `Persistent=true`, `RemainAfterElapse=no`): wykona się jeszcze raz o 14:30, a potem
+> przejdzie w stan nieaktywny i scraper nie uruchomi się już wcale. Wznowienie pracy =
+> powrót do `OnCalendar=*-*-* 08..22:30:00` w `automation/systemd/user/wakacje-tracker.timer`.
+
 ### Windows (Harmonogram zadań)
 
 Jednorazowo, z katalogu projektu:

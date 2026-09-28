@@ -23,7 +23,10 @@ automatyczne pushe ze scrapera na Linuksie (co godzinę 8:30–22:30). Dlatego:
 - Host: gtx@<TAILSCALE-IP-SERWERA> (nazwa `deb` w Tailscale). Klucz SSH już autoryzowany.
 - Repo na serwerze: /home/gtx/wakacje-tracker
 - Node: pełna ścieżka ~/.local/node/bin/node (NIE ma w domyślnym PATH sesji SSH).
-- Timer systemd użytkownika: co godzinę 8:30–22:30 (strefa Europe/Warsaw).
+- Timer systemd użytkownika: **WYGASZONY 2026-09-28** — ustawiony na jeden, ostatni
+  przebieg 2026-09-28 14:30 (`OnCalendar=2026-09-28 14:30:00`, `RemainAfterElapse=no`),
+  po którym przechodzi w stan nieaktywny i nie odpala się już wcale. Projekt v1 jest
+  wygaszany, rozwój przenosi się do `wakacje-tracker-2`.
 - UWAGA: <TAILSCALE-IP-RPI> to Raspberry Pi (`rpi`), NIE serwer scrapera.
 
 ## Pułapki techniczne (Windows/PowerShell)

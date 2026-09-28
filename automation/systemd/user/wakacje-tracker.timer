@@ -4,15 +4,25 @@
 # (2026-09-28) o 14:30 i potem nie uruchamiać się już nigdy.
 #
 #   OnCalendar=2026-09-28 14:30:00  jedno, ostatnie uruchomienie (data na sztywno)
-#   Persistent=true                 jeśli maszyna była wyłączona o 14:30, ostatni
-#                                   przebieg odbędzie się przy najbliższym starcie
-#                                   (i tylko raz — znacznik czasu blokuje powtórkę)
+#   Persistent=true                 gdyby maszyna była wyłączona o 14:30, systemd
+#                                   może nadrobić przebieg przy najbliższym starcie
 #   RemainAfterElapse=no            po tym przebiegu timer przechodzi w stan
 #                                   nieaktywny, mimo że jest włączony w
 #                                   timers.target.wants/
 #
-# Weryfikacja po 14:30:  systemctl --user list-timers wakacje-tracker.timer
-#                        systemctl --user is-active wakacje-tracker.timer   # => inactive
+# Gwarancją „nigdy więcej" jest sam zapis OnCalendar: po 2026-09-28 14:30 nie ma
+# żadnego przyszłego elapse'u, więc timer nie ma już czego wyzwolić. Sprawdzone na
+# systemd 257 (scratch-test): gdy timer ma wyłącznie elapse'y w przeszłości, jego
+# start NIE uruchamia usługi (niezależnie od Persistent/RemainAfterElapse) — czyli
+# restart maszyny po 14:30 nie wywoła żadnego dodatkowego przebiegu. Uwaga: w tym
+# wariancie systemd zapisuje tylko znacznik czasu (stamp-wakacje-tracker.timer);
+# jeśli więc maszyna była wyłączona o 14:30, ostatni przebieg może się nie odbyć —
+# kierunek awarii jest bezpieczny: żadnego przebiegu, nigdy żadnych dodatkowych.
+#
+# Weryfikacja:
+#   systemctl --user list-timers wakacje-tracker.timer     # NEXT = 2026-09-28 14:30
+#   systemctl --user show wakacje-tracker.timer -p NextElapseUSecRealtime -p RemainAfterElapse
+#   systemctl --user is-active wakacje-tracker.timer       # po 14:30 => inactive
 # Powrót do harmonogramu cyklicznego (co godzinę 08:30–22:30):
 #   OnCalendar=*-*-* 08..22:30:00  i  usunięcie linii RemainAfterElapse.
 
